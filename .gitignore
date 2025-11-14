@@ -1,0 +1,25 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# IDEs / Editor
+.vscode/
+.idea/
+
+# OS-Kram
+.DS_Store
+Thumbs.db
+
+# Node (falls du npm für dev-Skripte nutzt)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hugo Cache
+/cache/
+
+# Temp-Dateien
+*.log
+*.swp
+*.swo
