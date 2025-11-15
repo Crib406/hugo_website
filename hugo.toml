@@ -11,7 +11,6 @@ title = "Christoph B. Reimann – Mensch, Betriebswirt & Generalist aus Bad Harz
 metaundogDescription = "Verbindet Menschen, Abläufe und Technik für Zusammenarbeit auf Augenhöhe. Führt ermutigend, schafft Vertrauen und bringt digitale Kompetenz sowie echte Praxiserfahrung zusammen."
 personDescription = "Generalist mit Schwerpunkt Unternehmenskultur, Struktur und vertrauensvoller Zusammenarbeit im Mittelstand. Verbindet Strategie, Führung und Praxis – mit Haltung, Klarheit und Menschlichkeit."
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
+
+[markup.goldmark.renderer]
       unsafe = true
