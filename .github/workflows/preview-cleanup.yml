@@ -1,0 +1,54 @@
+name: Cleanup Preview on Branch Delete
+
+on:
+  delete:
+    branches:
+      - 'feature/**'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Determine deleted branch
+        run: |
+          # GITHUB_REF ist z.B. "refs/heads/feature/preview-test"
+          REF="${GITHUB_REF}"
+          BRANCH="${REF#refs/heads/}"
+          echo "BRANCH_NAME=${BRANCH}" >> $GITHUB_ENV
+          echo "Deleted branch: ${BRANCH}"
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Remove preview directory for deleted branch
+        run: |
+          cd gh-pages
+          TARGET_DIR="preview/${BRANCH_NAME}"
+
+          if [ -d "$TARGET_DIR" ]; then
+            echo "Deleting $TARGET_DIR"
+            rm -rf "$TARGET_DIR"
+          else
+            echo "Nothing to delete, $TARGET_DIR does not exist."
+          fi
+
+      - name: Commit and push changes to gh-pages
+        run: |
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep .; then
+            git add .
+            git commit -m "Cleanup preview for deleted branch ${BRANCH_NAME}"
+            git push origin gh-pages
+          else
+            echo "No changes to commit."
+          fi

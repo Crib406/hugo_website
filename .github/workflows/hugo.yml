@@ -4,24 +4,26 @@ on:
   push:
     branches:
       - main
+      - 'feature/**'
+
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (mit kompletter Git-Historie!)
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # wichtig für .Lastmod
+          fetch-depth: 0
 
       - name: Compute last layout change
         run: |
-          # letztes Commit-Datum, das layouts oder partials betrifft
           LATEST_LAYOUT_CHANGE=$(git log -1 --format=%cI -- layouts partials || echo "")
           mkdir -p data
           echo "{\"layout_lastmod\":\"$LATEST_LAYOUT_CHANGE\"}" > data/layout_lastmod.json
-          cat data/layout_lastmod.json
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -29,11 +31,40 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Load baseURL from config.toml
+        id: load_baseurl
+        run: |
+          RAW=$(grep '^baseURL' config.toml | sed 's/baseURL = "//; s/"$//')
+          CLEAN=$(echo "$RAW" | sed 's#/$##')   # trailing slash entfernen
 
-      - name: Deploy to GitHub Pages
+          echo "BaseURL in config.toml: $CLEAN"
+          echo "BASE_DOMAIN=$CLEAN" >> $GITHUB_ENV
+
+      - name: Determine branch deployment path
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+
+          if [[ "$BRANCH" == "main" ]]; then
+            echo "BASE_URL=${BASE_DOMAIN}/" >> $GITHUB_ENV
+            echo "DEST_DIR=" >> $GITHUB_ENV
+          else
+            echo "BASE_URL=${BASE_DOMAIN}/preview/${BRANCH}/" >> $GITHUB_ENV
+            echo "DEST_DIR=preview/${BRANCH}" >> $GITHUB_ENV
+          fi
+
+          echo "Deploying branch: $BRANCH"
+          echo "BaseURL: ${BASE_URL}"
+          echo "DEST_DIR: ${DEST_DIR}"
+
+      - name: Build
+        run: |
+          hugo --minify --baseURL "${BASE_URL}"
+
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./public
+          destination_dir: ${{ env.DEST_DIR }}
+          keep_files: true
