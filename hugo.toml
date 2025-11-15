@@ -1,7 +1,6 @@
 baseURL = "https://creimann.cc/"
 languageCode = "de-de"
 title = "Christoph B. Reimann"
-theme = ""
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
