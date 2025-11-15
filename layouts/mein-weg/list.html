@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+  {{ partial "breadcrumb.html" . }}
+
+   {{ .RawContent | safeHTML }}
+
+{{ end }}
