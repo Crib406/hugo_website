@@ -4,7 +4,7 @@
       <div class="col-lg-12">
         <div class="breadcrumb-inner text-center">
 
-          <!-- Title -->
+          <!-- Page Title -->
           <h1 class="title split-collab">
             {{ with .Title }}
               {{ . }}
@@ -13,23 +13,54 @@
             {{ end }}
           </h1>
 
-          <!-- Breadcrumb list -->
+          <!-- Breadcrumb Navigation -->
           <ul class="page-list">
+
+            <!-- Level 1: Start -->
             <li class="tmp-breadcrumb-item">
-              <a href="{{ .Site.BaseURL }}">Start</a>
+              <a href="{{ "/" | relURL }}">Start</a>
             </li>
 
+            <!-- Trenner -->
             <li class="icon">
               <i class="fa-solid fa-angle-right"></i>
             </li>
 
-            <li class="tmp-breadcrumb-item active">
-              {{ with .Title }}
-                {{ . }}
-              {{ else }}
-                {{ .File.BaseFileName | humanize | title }}
-              {{ end }}
-            </li>
+            {{/* FALL A: Blog-Übersichtsseite: /blog/  --> Start > Blog */}}
+            {{ if and (eq .Section "blog") (eq .Kind "section") }}
+
+              <li class="tmp-breadcrumb-item active">
+                Blog
+              </li>
+
+            {{/* FALL B: Blog-Post: /blog/post/  --> Start > Blog > Titel */}}
+            {{ else if and (eq .Section "blog") (eq .Kind "page") }}
+
+              <li class="tmp-breadcrumb-item">
+                <a href="{{ "/blog/" | relURL }}">Blog</a>
+              </li>
+
+              <li class="icon">
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+
+              <li class="tmp-breadcrumb-item active">
+                {{ .Title }}
+              </li>
+
+            {{/* FALL C: alle anderen Seiten: Start > Titel */}}
+            {{ else }}
+
+              <li class="tmp-breadcrumb-item active">
+                {{ with .Title }}
+                  {{ . }}
+                {{ else }}
+                  {{ .File.BaseFileName | humanize | title }}
+                {{ end }}
+              </li>
+
+            {{ end }}
+
           </ul>
 
         </div>
