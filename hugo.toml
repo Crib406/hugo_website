@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
 
 [outputs]
-home = ["HTML", "Robots"]
+home = ["HTML", "Robots", "Sitemap"]
 
 [params.siteseo]
 title = "Christoph B. Reimann – Mensch, Betriebswirt & Generalist aus Bad Harzburg (Harz)"
