@@ -15,6 +15,14 @@ jobs:
         with:
           fetch-depth: 0   # wichtig für .Lastmod
 
+      - name: Compute last layout change
+        run: |
+          # letztes Commit-Datum, das layouts oder partials betrifft
+          LATEST_LAYOUT_CHANGE=$(git log -1 --format=%cI -- layouts partials || echo "")
+          mkdir -p data
+          echo "{\"layout_lastmod\":\"$LATEST_LAYOUT_CHANGE\"}" > data/layout_lastmod.json
+          cat data/layout_lastmod.json
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
