@@ -1,4 +1,7 @@
-{{- $host := .Site.BaseURL | replace "https://" "" | replace "http://" "" | trimSuffix "/" -}}
+{{- /* Host extrahieren */ -}}
+{{- $base := .Site.BaseURL -}}
+{{- $host := replace (replace $base "https://" "") "http://" "" -}}
+{{- $host = strings.TrimRight "/" $host -}}
 
 {{- if eq $host "creimann.cc" -}}
 User-agent: *
