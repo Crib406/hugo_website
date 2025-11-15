@@ -1,6 +1,15 @@
-title: "Testpost"
-date: 2025-11-15
 ---
-Hier ist Text.
+title: "Was macht Fürhung aus?"
+date: 2025-11-15
+author: "Christoph B. Reimann"
+category: "Führung"
 
-jkjkjlkjlk
+
+tags: ["Interiour", "Ux design", "Graphics"]
+---
+Hier kommt dein eigentlicher Markdown-Content rein.
+
+jjjj
+
+
+jjj

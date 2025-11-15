@@ -4,6 +4,60 @@
   {{ partial "breadcrumb.html" . }}
  
 
-    {{ .Content }}
 
-  {{ end }}
+<div class="blog-classic-area-wrapper tmp-section-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="blog-details-left-area">
+          <div class="thumbnail-top">
+            {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ $.Title }}">
+            {{ end }}
+          </div>
+
+          <div class="blog-details-discription">
+            <div class="blog-classic-tag">
+              <h4 class="title">Von {{ .Params.author }}</h4>
+              <ul>
+                <li>
+                  <div class="tag-wrap">
+                    <i class="fa-solid fa-tag"></i>
+                    <h4 class="tag-title">{{ .Params.category }}</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="tag-wrap">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <h4 class="tag-title">
+                      {{ .Date.Format "02.01.2006" }} 
+                    </h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="title split-collab">{{ .Title }}</h3>
+
+            <!-- HIER kommt dein Markdown-Inhalt rein -->
+            <div class="disc">
+              {{ .Content }}
+            </div>
+          </div>
+
+          <!-- Rest (Quote, Slider, Navigation, Kommentare, Formular) kannst du
+               vorerst weglassen oder später schrittweise „hugofizieren“. -->
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <!-- Rechte Sidebar: kannst du 1:1 lassen oder später in ein Partial auslagern -->
+        <div class="tmp-sidebar">
+          <!-- hier dein gesamter Sidebar-HTML-Block aus dem Template -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}
