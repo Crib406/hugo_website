@@ -1,0 +1,39 @@
+<div class="breadcrumb-area breadcrumb-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb-inner text-center">
+
+          <!-- Title -->
+          <h1 class="title split-collab">
+            {{ with .Title }}
+              {{ . }}
+            {{ else }}
+              {{ .File.BaseFileName | humanize | title }}
+            {{ end }}
+          </h1>
+
+          <!-- Breadcrumb list -->
+          <ul class="page-list">
+            <li class="tmp-breadcrumb-item">
+              <a href="{{ .Site.BaseURL }}">Start</a>
+            </li>
+
+            <li class="icon">
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+
+            <li class="tmp-breadcrumb-item active">
+              {{ with .Title }}
+                {{ . }}
+              {{ else }}
+                {{ .File.BaseFileName | humanize | title }}
+              {{ end }}
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

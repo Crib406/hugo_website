@@ -1,3 +1,16 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://creimann.cc/"
+languageCode = "de-de"
+title = "Christoph B. Reimann"
+theme = ""
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params.siteseo]
+title = "Christoph B. Reimann – Mensch, Betriebswirt & Generalist aus Bad Harzburg (Harz)"
+metaundogDescription = "Verbindet Menschen, Abläufe und Technik für Zusammenarbeit auf Augenhöhe. Führt ermutigend, schafft Vertrauen und bringt digitale Kompetenz sowie echte Praxiserfahrung zusammen."
+personDescription = "Generalist mit Schwerpunkt Unternehmenskultur, Struktur und vertrauensvoller Zusammenarbeit im Mittelstand. Verbindet Strategie, Führung und Praxis – mit Haltung, Klarheit und Menschlichkeit."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
