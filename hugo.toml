@@ -1,4 +1,4 @@
-baseURL = "https://hugotest.creimann.cc/"
+baseURL = "https://creimann.cc/"
 languageCode = "de-de"
 title = "Christoph B. Reimann"
 enableRobotsTXT = true
