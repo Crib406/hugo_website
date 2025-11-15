@@ -1,9 +1,7 @@
 name: Cleanup Preview on Branch Delete
 
 on:
-  delete:
-    branches:
-      - 'feature/**'
+  delete:   # keine branches-Filter hier, wir filtern im Job
 
 permissions:
   contents: write
@@ -12,14 +10,17 @@ jobs:
   cleanup-preview:
     runs-on: ubuntu-latest
 
+    # Nur laufen, wenn der gelöschte Branch mit "feature/" beginnt
+    if: startsWith(github.event.ref, 'feature/')
+
     steps:
       - name: Determine deleted branch
         run: |
-          # GITHUB_REF ist z.B. "refs/heads/feature/preview-test"
-          REF="${GITHUB_REF}"
-          BRANCH="${REF#refs/heads/}"
-          echo "BRANCH_NAME=${BRANCH}" >> $GITHUB_ENV
-          echo "Deleted branch: ${BRANCH}"
+          # github.event.ref enthält beim delete-Event direkt den Branch-Namen,
+          # z.B. "feature/preview-test"
+          BRANCH_NAME="${{ github.event.ref }}"
+          echo "Deleted branch: ${BRANCH_NAME}"
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
       - name: Checkout gh-pages
         uses: actions/checkout@v4
@@ -32,11 +33,13 @@ jobs:
           cd gh-pages
           TARGET_DIR="preview/${BRANCH_NAME}"
 
+          echo "Target dir: ${TARGET_DIR}"
+
           if [ -d "$TARGET_DIR" ]; then
-            echo "Deleting $TARGET_DIR"
+            echo "Deleting ${TARGET_DIR}"
             rm -rf "$TARGET_DIR"
           else
-            echo "Nothing to delete, $TARGET_DIR does not exist."
+            echo "Nothing to delete, ${TARGET_DIR} does not exist."
           fi
 
       - name: Commit and push changes to gh-pages
