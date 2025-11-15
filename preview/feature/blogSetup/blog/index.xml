@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Christoph B. Reimann</title><link>/preview/feature/blogSetup/blog/</link><description>Recent content in Blog on Christoph B. Reimann</description><generator>Hugo</generator><language>de-de</language><atom:link href="/preview/feature/blogSetup/blog/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/preview/feature/blogSetup/blog/test-post/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/preview/feature/blogSetup/blog/test-post/</guid><description>&lt;h2 id="date-2025-11-15"&gt;title: &amp;ldquo;Testpost&amp;rdquo;
-date: 2025-11-15&lt;/h2&gt;
-&lt;p&gt;Hier ist Text.&lt;/p&gt;
-&lt;p&gt;jkjkjlkjlk&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Christoph B. Reimann</title><link>/preview/feature/blogSetup/blog/</link><description>Recent content in Blog on Christoph B. Reimann</description><generator>Hugo</generator><language>de-de</language><atom:link href="/preview/feature/blogSetup/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Vorlage &amp; Testpost – alle wichtigen Hugo-Felder im Einsatz</title><link>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</link><pubDate>Sat, 15 Nov 2025 10:00:00 +0100</pubDate><guid>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;💡 &lt;strong&gt;Hinweis:&lt;/strong&gt;&lt;br&gt;
+Diese Datei ist als &lt;strong&gt;Vorlage&lt;/strong&gt; gedacht. Kopiere sie, passe Frontmatter an und lösche die Erklär-Textblöcke, sobald du den Mechanismus verstanden hast.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id="1-überschrift-h1--kommt-aus-title-aber-du-kannst-hier-trotzdem-starten"&gt;1. Überschrift (H1) – kommt aus &lt;code&gt;title&lt;/code&gt;, aber du kannst hier trotzdem starten&lt;/h1&gt;
+&lt;p&gt;Normalerweise renderst du den Titel im Template über &lt;code&gt;{{ .Title }}&lt;/code&gt;.&lt;br&gt;
+Im Content selbst startest du meist mit einer H2.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="2-kurz-zusammenfassung--"&gt;2. Kurz-Zusammenfassung &amp;amp; `&lt;/h2&gt;</description></item></channel></rss>
