@@ -1,20 +1,27 @@
 {{ define "main" }}
 
- 
-  {{ partial "breadcrumb.html" . }}
- 
+<style>
+  /* nur für diese single.html */
+  .blog-details-discription .disc p,
+  .blog-details-discription .disc li,
+  .blog-details-discription .disc span {
+    font-weight: 700;
+  }
+</style>
 
+{{ partial "breadcrumb.html" . }}
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
         <div class="blog-details-left-area">
+
+          {{ with .Params.featured_image }}
           <div class="thumbnail-top">
-            {{ with .Params.featured_image }}
               <img src="{{ . }}" alt="{{ $.Title }}">
-            {{ end }}
           </div>
+          {{ end }}
 
           <div class="blog-details-discription">
             <div class="blog-classic-tag">
@@ -39,21 +46,17 @@
 
             <h3 class="title split-collab">{{ .Title }}</h3>
 
-            <!-- HIER kommt dein Markdown-Inhalt rein -->
             <div class="disc">
               {{ .Content }}
             </div>
           </div>
 
-          <!-- Rest (Quote, Slider, Navigation, Kommentare, Formular) kannst du
-               vorerst weglassen oder später schrittweise „hugofizieren“. -->
         </div>
       </div>
 
       <div class="col-lg-4">
-        <!-- Rechte Sidebar: kannst du 1:1 lassen oder später in ein Partial auslagern -->
         <div class="tmp-sidebar">
-          <!-- hier dein gesamter Sidebar-HTML-Block aus dem Template -->
+          <!-- Sidebar bleibt unverändert -->
         </div>
       </div>
     </div>

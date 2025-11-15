@@ -33,7 +33,7 @@ tags:
   - "markdown"
 
 # Spezielle Blog-Parameter für dein Theme
-featured_image: "/assets/images/blog/details/01.png"  # Hero / Teaser Bild
+#featured_image: "/assets/images/blog/details/01.png"  # Hero / Teaser Bild
 featured_image_alt: "Laptop mit Code-Editor"
 category: "Web design"          # falls dein Theme genau dieses Feld nutzt
 comments_count: 3               # Dummy-Wert, wenn dein Layout ihn anzeigt
