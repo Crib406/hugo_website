@@ -1,13 +1,11 @@
 ---
 # Basis-Metadaten
 title: "Vorlage & Testpost – alle wichtigen Hugo-Felder im Einsatz"
-date: 2025-11-15T10:00:00+01:00
-draft: false          # true = nur im Draft-Modus sichtbar, false = live
+date: 2025-11-14T10:00:00+01:00
+draft: True        # true = nur im Draft-Modus sichtbar, false = live
 
 # Autor & Anzeige
 author: "Max Mustermann"
-author_title: "Webentwickler & Designer"   # kannst du im Template anzeigen
-author_image: "/assets/images/authors/max.png"
 
 # SEO / Social
 description: "Diese Datei zeigt dir in einem einzigen Hugo-Blogpost die wichtigsten Frontmatter-Felder, Shortcodes und Markdown-Elemente."
