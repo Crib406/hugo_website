@@ -1,9 +1,10 @@
-{{- $base := .Site.BaseURL -}}
-{{- if eq $base "https://creimann.cc/" -}}
+{{- $host := .Site.BaseURL | replace "https://" "" | replace "http://" "" | trimSuffix "/" -}}
+
+{{- if eq $host "creimann.cc" -}}
 User-agent: *
 Allow: /
 
-Sitemap: {{ $base }}sitemap.xml
+Sitemap: https://creimann.cc/sitemap.xml
 {{- else -}}
 User-agent: *
 Disallow: /
