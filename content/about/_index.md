@@ -6,7 +6,7 @@ jsonld:
   "@context": "https://schema.org"
   "@type": "WebPage"
   name: "Über mich"
-  url: "https://creimann.cc/about/"
+  url: "/about/"
   description: "Über mich – Hintergrund, Haltung und Schwerpunkte von Christoph B. Reimann."
 ---
 
