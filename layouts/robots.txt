@@ -1,0 +1,10 @@
+{{- $base := .Site.BaseURL -}}
+{{- if eq $base "https://creimann.cc/" -}}
+User-agent: *
+Allow: /
+
+Sitemap: {{ $base }}sitemap.xml
+{{- else -}}
+User-agent: *
+Disallow: /
+{{- end -}}
