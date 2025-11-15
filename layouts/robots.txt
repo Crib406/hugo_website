@@ -1,16 +1,5 @@
-{{- $base := .Site.BaseURL -}}
-{{- $cleanBase := strings.TrimRight "/" (replace (replace $base "https://" "") "http://" "") -}}
-
-{{- /* Hauptdomain -> SEO offen, Preview gesperrt */ -}}
-{{- if or (eq $cleanBase "creimann.cc") (eq $cleanBase "www.creimann.cc") -}}
 User-agent: *
 Disallow: /preview/
 Allow: /
 
-Sitemap: {{ $base }}sitemap.xml
-
-{{- /* Alle anderen Domains -> komplett sperren */ -}}
-{{- else -}}
-User-agent: *
-Disallow: /
-{{- end -}}
+Sitemap: https://creimann.cc/sitemap.xml
