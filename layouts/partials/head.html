@@ -180,14 +180,15 @@
   }
   </script>
 
-  <!-- Optional: seiten-spezifisches JSON-LD aus Frontmatter -->
-  {{ with .Params.jsonld }}
-    {{/* JSON-LD aus Frontmatter nehmen und die URL dyn. aus .Permalink ergänzen/überschreiben */}}
-    {{ $schema := merge . (dict "url" $.Permalink) }}
-    <script type="application/ld+json">
-    {{ $schema | jsonify | safeHTML }}
-    </script>
-  {{ end }}
+<!-- Optional: seiten-spezifisches JSON-LD aus Frontmatter -->
+{{ with .Params.jsonld }}
+  {{/* JSON-LD aus Frontmatter nehmen und die URL dyn. aus .Permalink ergänzen/überschreiben */}}
+  {{ $schema := merge . (dict "url" $.Permalink) }}
+  <script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeHTML }}
+  </script>
+{{ end }}
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "assets/css/vendor/fontawesome.css" | relURL }}">
