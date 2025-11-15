@@ -1,0 +1,18 @@
+{{- $target := .RelPermalink -}}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="{{ $target }}" />
+  <meta http-equiv="refresh" content="0; url={{ $target }}" />
+  <title>Weiterleitung …</title>
+</head>
+<body>
+  <p>Weiterleitung zu <a href="{{ $target }}">Startseite</a> …</p>
+  <script>
+    window.location.replace("{{ $target }}");
+  </script>
+</body>
+</html>
