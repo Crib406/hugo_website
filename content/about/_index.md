@@ -85,44 +85,39 @@ jsonld:
   </div> <!-- .container -->
 
 
+<div class="about-content-area">
 
+            <div class="text-para-doc-wrap">
+                       <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+                          Lesen Sie mehr über <span> meinen Weg</span> oder sprechen Sie direkt mit mir. 
+                      </h4>
+                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text"> Mein Weg </span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                       </h2>
+                  <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Kontakt aufnehmen</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                       </h2>
+            </div>
+      
+    </div>
  
 
-
-  <div class="about-content-area">
-  <div class="text-para-doc-wrap">
-
-    <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-      Lesen Sie mehr über <span> meinen Weg</span> oder sprechen Sie direkt mit mir. 
-    </h4>
-
-    <div class="about-btn-group tmp-scroll-trigger tmp-fade-in animation-order-2"
-         style="margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-
-      <a class="tmp-btn hover-icon-reverse radius-round"
-         href="../kontakt"
-         style="color: #000 !important; text-align: center;">
-        <span class="icon-reverse-wrapper" style="color: #000 !important;">
-          <span class="btn-text" style="color: #000 !important;">KONTAKT AUFNEHMEN</span>
-          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-        </span>
-      </a>
-
-      <a class="tmp-btn hover-icon-reverse radius-round"
-         href="../mein-weg/"
-         style="color: #000 !important; text-align: center;">
-        <span class="icon-reverse-wrapper" style="color: #000 !important;">
-          <span class="btn-text" style="color: #000 !important;">MEHR ÜBER MEINEN WEG ERFAHREN</span>
-          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-        </span>
-      </a>
-
-    </div>
-
-  </div>
-</div>
 
 
   
