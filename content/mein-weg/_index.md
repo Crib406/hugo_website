@@ -139,17 +139,14 @@ jsonld:
 </div> <!-- .blog-classic-area-wrapper -->
 
 <div class="about-content-area">
-        <div class="container tmp-section-gap">
+
             <div class="text-para-doc-wrap">
-               
-                       </h2>
-                        <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                        Aktuell bin ich <span>offen für neue Aufgaben</span>.
-                    
-                        </h2>
+                       <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+                          Aktuell bin ich offen für <span>neue Aufgaben.</span>
+                      </h4>
                 <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
                          <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                            <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
                                 <span class="icon-reverse-wrapper">
                         <span class="btn-text">Kontakt aufnehmen</span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -159,6 +156,6 @@ jsonld:
                         </div>
                        </h2>
             </div>
-        </div>
+      
     </div>
 

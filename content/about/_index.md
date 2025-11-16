@@ -92,9 +92,9 @@ jsonld:
   <div class="about-content-area">
   <div class="text-para-doc-wrap">
 
-    <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-      Lesen Sie mehr <span>über meinen Weg</span> oder lassen Sie uns direkt sprechen!
-    </h2>
+    <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+      Lesen Sie mehr über <span> meinen Weg</span> oder sprechen Sie direkt mit mir. 
+    </h4>
 
     <div class="about-btn-group tmp-scroll-trigger tmp-fade-in animation-order-2"
          style="margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
