@@ -17540,10 +17540,12 @@ section.clients-testimonial-area {
   z-index: 1;
   overflow: hidden;
 }
-.rpp-banner-two-area::after, .rpp-banner-two-area::before {
+
+.rpp-banner-two-area::after,
+.rpp-banner-two-area::before {
   content: " ";
-  opacity: 0.3;
-  background: #FF014F;
+  opacity: 0;               /* Rot-GLOW ausgeschaltet */
+  background: transparent;  /* kein Rot mehr */
   position: absolute;
   width: 611px;
   height: 611px;
@@ -17551,14 +17553,17 @@ section.clients-testimonial-area {
   filter: blur(300px);
   z-index: -1;
 }
+
 .rpp-banner-two-area::before {
   top: -73px;
   left: -292px;
 }
+
 .rpp-banner-two-area::after {
   top: -73px;
   right: -292px;
 }
+
 .rpp-banner-two-area .banner-shape-two {
   position: absolute;
   top: 0;
@@ -17566,6 +17571,7 @@ section.clients-testimonial-area {
   left: 0;
   z-index: -1;
 }
+
 
 /*========================
   RPP Banner Four Area
