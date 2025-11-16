@@ -25,7 +25,8 @@ jsonld:
               <div class="our-portfoli-swiper-card">
                 <div class="card-left-content">
                   <p class="disc" style="font-weight: bold;">
-                    Ich bin im Familienunternehmen in vierter Generation aufgewachsen.
+                    Ich bin im Familienunternehmen in vierter Generation aufgewachsen und habe immer gerne an Wochenenden oder 
+                    in den Schulferien mitgeholfen. 
                     Mit sechs Jahren saß ich das erste Mal auf dem Radlader, mit 18 hatte ich bereits den Lkw-Führerschein 
                     und war mit Begeisterung am Wochenende in den Harzer Wäldern unterwegs. Dort habe ich 
                     verstanden, was gewerbliche Arbeit wirklich bedeutet und wie viel Menschen leisten, oft dann, wenn die Mehrheit 

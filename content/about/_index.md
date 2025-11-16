@@ -21,13 +21,13 @@ jsonld:
 
           <div class="our-portfolio-swiper">
             <p class="disc" style="font-weight: bold;">
-              Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Im 
+              Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
               Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
               <br>
               Mit technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, Abläufe schnell zu verstehen
               und sie zu gestalten.
               <br>
-              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiere ich mich auch immer für den Menschen hinter der Rolle und 
+              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und 
               sehe ihn nicht nur als Produktionsfaktor.
             </p>
 
