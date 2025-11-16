@@ -17,7 +17,6 @@ jsonld:
         <div class="blog-details-left-area text-center">
 
           <br>
-
           <h4 class="title">Wer ich bin</h4>
 
           <div class="our-portfolio-swiper">
