@@ -140,8 +140,8 @@ jsonld:
 
 <div class="text-para-doc-wrap">
   <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-    Ich möchte in einem Umfeld arbeiten, in dem Klarheit, Vertrauen und Zusammenarbeit auf Augenhöhe gelebt werden. <span>Lassen 
-    Sie uns darüber sprechen. </span>
+    Lassen 
+    Sie uns über eine <span>Zusammenarbeit</span> sprechen! 
   </h2>
 </div>
 
