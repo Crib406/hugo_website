@@ -138,41 +138,27 @@ jsonld:
   </div> <!-- .container -->
 </div> <!-- .blog-classic-area-wrapper -->
 
-<div class="text-para-doc-wrap">
-  <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-    Lassen 
-    Sie uns über eine <span>Zusammenarbeit</span> sprechen! 
-  </h2>
-</div>
-
-<br>
-
-<section class="service-area tmp-section-gap">
-  <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
+<div class="about-content-area">
+        <div class="container tmp-section-gap">
+            <div class="text-para-doc-wrap">
+               
+                       </h2>
+                        <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                        Aktuell bin ich <span>offen für neue Aufgaben</span>.
+                    
+                        </h2>
+                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="/kontakt">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Kontakt aufnehmen</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                       </h2>
             </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
-          </div>
-        </a>
-      </div>
-
+        </div>
     </div>
-  </div>
-</section>
+

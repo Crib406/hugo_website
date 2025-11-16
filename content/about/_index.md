@@ -84,63 +84,47 @@ jsonld:
     </div> <!-- .row -->
   </div> <!-- .container -->
 
+
+
+ 
+
+
+  <div class="about-content-area">
   <div class="text-para-doc-wrap">
-  <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-    Lassen sie uns darüber <span>sprechen.</span>
-  </h2>
+
+    <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+      Lesen Sie mehr <span>über meinen Weg</span> oder lassen Sie uns direkt sprechen!
+    </h2>
+
+    <div class="about-btn-group tmp-scroll-trigger tmp-fade-in animation-order-2"
+         style="margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+
+      <a class="tmp-btn hover-icon-reverse radius-round"
+         href="/kontakt/"
+         style="color: #000 !important; text-align: center;">
+        <span class="icon-reverse-wrapper" style="color: #000 !important;">
+          <span class="btn-text" style="color: #000 !important;">Kontakt aufnehmen</span>
+          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+        </span>
+      </a>
+
+      <a class="tmp-btn hover-icon-reverse radius-round"
+         href="/mein-weg/"
+         style="color: #000 !important; text-align: center;">
+        <span class="icon-reverse-wrapper" style="color: #000 !important;">
+          <span class="btn-text" style="color: #000 !important;">Mehr über meinen Weg erfahren</span>
+          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+          <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
 </div>
 
-    <div class="row justify-content-center">
-      <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
-      </div>
 
-      <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-
-   <div class="about-content-area">
- 
-      <div class="text-para-doc-wrap">
-           <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-   Oder lesen Sie mehr <span>über meinen Weg.</span>
-  </h2>
-        <br>
-        <h2 class="text-para-documents tmp-scroll-trigge tmp-fade-in animation-order-1 inv-title-animation-wrap">
-          <div class="about-btn tmp-fade-in animation-order-">
-            <a class="tmp-btn hover-icon-reverse radius-round" href="/mein-weg/">
-              <span class="icon-reverse-wrapper">
-                <span class="btn-text">Mehr über meinen Weg erfahren</span>
-                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-              </span>
-            </a>
-            
-          </div>
-          <br>
-        </h2>
-
-       
-      </div>
-    </div>
   
 
 
