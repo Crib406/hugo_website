@@ -27,7 +27,7 @@ jsonld:
               Dank meinem technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
               und sie zu gestalten.
               <br>
-              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und 
+              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
               sehe ihn nicht nur als Produktionsfaktor.
             </p>
 
