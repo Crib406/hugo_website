@@ -10,6 +10,19 @@ jsonld:
   description: "Über mich – Kontaktdaten."
 ---
 
+<br>
+
+<div class="about-content-area">
+
+            <div class="text-para-doc-wrap">
+                       <h4 class="text-para-documents" style="text-align: center;">
+                          Nehmen Sie <span>Kontakt</span> auf. 
+                      </h4>
+ 
+            </div>
+      
+    </div>
+
 <section class="service-area tmp-section-gap">
   <div class="container">
     <div class="row justify-content-center">
