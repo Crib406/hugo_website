@@ -24,7 +24,7 @@ jsonld:
               Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
               Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
               <br>
-              Mit technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, Abläufe schnell zu verstehen
+              Dank meinem technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
               und sie zu gestalten.
               <br>
               Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und 
