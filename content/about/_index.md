@@ -69,8 +69,16 @@ jsonld:
 
               <p class="disc" style="font-weight: bold;">
                 Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. 
-                Verbindungen zu schaffen, ist das, was mich antreibt.
+                Verbindungen zu schaffen, ist das, was mich antreibt. <br>
+                Mein Ziel ist es, in einer Position zu arbeiten, in der klare Kommunikation, Zusammenarbeit auf Augenhöhe und nachhaltige Prozessgestaltung im Mittelpunkt stehen.
+                
               </p>
+
+              <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                        Lassen Sie uns darüber <span>sprechen</span>:
+                    
+                        </h2>
+            
             </div>
           </div> <!-- .our-portfolio-swiper -->
 
@@ -79,30 +87,8 @@ jsonld:
     </div> <!-- .row -->
   </div> <!-- .container -->
 
-  <div class="about-content-area">
-    <div class="container tmp-section-gap">
-      <div class="text-para-doc-wrap">
-        <h2 class="text-para-documents tmp-scroll-trigge tmp-fade-in animation-order-1 inv-title-animation-wrap">
-          <div class="about-btn tmp-fade-in animation-order-">
-            <a class="tmp-btn hover-icon-reverse radius-round" href="/mein-weg/">
-              <span class="icon-reverse-wrapper">
-                <span class="btn-text">Mehr über meinen Weg erfahren</span>
-                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-              </span>
-            </a>
-          </div>
-          <br>
-        </h2>
 
-        <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-          Oder <span>direkt</span> Kontakt aufnehmen. Ich freue mich über jede Nachricht!
-        </h2>
-      </div>
-    </div>
-  </div>
 
-  <div class="container tmp-section-gap">
     <div class="row justify-content-center">
       <div class="col-6 col-sm-6 col-md-3 col-lg-3">
         <a href="mailto:hello@creimann.cc" class="service-card-link">
@@ -129,4 +115,32 @@ jsonld:
     </div>
   </div>
 
+
+   <div class="about-content-area">
+ 
+      <div class="text-para-doc-wrap">
+         <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+          Oder erfahren Sie mehr über meinen Weg:
+        </h2>
+        <br>
+        <h2 class="text-para-documents tmp-scroll-trigge tmp-fade-in animation-order-1 inv-title-animation-wrap">
+          <div class="about-btn tmp-fade-in animation-order-">
+            <a class="tmp-btn hover-icon-reverse radius-round" href="/mein-weg/">
+              <span class="icon-reverse-wrapper">
+                <span class="btn-text">Mehr über meinen Weg erfahren</span>
+                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+              </span>
+            </a>
+          </div>
+          <br>
+        </h2>
+
+       
+      </div>
+    </div>
+  
+
+
 </div> <!-- .blog-classic-area-wrapper -->
+<br>
