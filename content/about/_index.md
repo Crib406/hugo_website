@@ -74,10 +74,7 @@ jsonld:
                 
               </p>
 
-              <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                        Lassen Sie uns darüber <span>sprechen</span>:
-                    
-                        </h2>
+           
             
             </div>
           </div> <!-- .our-portfolio-swiper -->
@@ -87,7 +84,11 @@ jsonld:
     </div> <!-- .row -->
   </div> <!-- .container -->
 
-
+  <div class="text-para-doc-wrap">
+  <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+    Lassen sie uns darüber <span>sprechen.</span>
+  </h2>
+</div>
 
     <div class="row justify-content-center">
       <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -119,9 +120,9 @@ jsonld:
    <div class="about-content-area">
  
       <div class="text-para-doc-wrap">
-         <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-          Oder erfahren Sie mehr über meinen Weg:
-        </h2>
+           <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+   Oder lesen Sie mehr <span>über meinen Weg.</span>
+  </h2>
         <br>
         <h2 class="text-para-documents tmp-scroll-trigge tmp-fade-in animation-order-1 inv-title-animation-wrap">
           <div class="about-btn tmp-fade-in animation-order-">

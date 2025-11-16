@@ -140,7 +140,8 @@ jsonld:
 
 <div class="text-para-doc-wrap">
   <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-    Aktuell suche ich eine <span>neue Aufgabe</span> und freue mich über Gespräche darüber. Schreiben Sie mir gerne!<br>
+    Ich möchte in einem Umfeld arbeiten, in dem Klarheit, Vertrauen und Zusammenarbeit auf Augenhöhe gelebt werden. <span>Lassen 
+    Sie uns darüber sprechen. </span>
   </h2>
 </div>
 
