@@ -95,7 +95,7 @@ jsonld:
                          <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
                             <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
                                 <span class="icon-reverse-wrapper">
-                        <span class="btn-text"> Mein Weg </span>
+                        <span class="btn-text">Mehr über meinen Weg erfahren</span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                 </span>
@@ -106,7 +106,7 @@ jsonld:
                          <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
                             <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
                                 <span class="icon-reverse-wrapper">
-                        <span class="btn-text">Kontakt aufnehmen</span>
+                        <span class="btn-text">Direkt Kontakt aufnehmen</span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                 <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                 </span>
