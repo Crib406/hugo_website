@@ -7,7 +7,7 @@ jsonld:
   "@type": "WebPage"
   name: "Über mich"
   url: "/about/"
-  description: "Über mich – Hintergrund, Haltung und Schwerpunkte von Christoph B. Reimann aus Bad Harzburg (Harz)."
+  description: "Über mich – Hintergrund, Haltung, Schwerpunkte und Ziel von Christoph B. Reimann aus Bad Harzburg (Harz)."
 ---
 
 <div class="blog-classic-area-wrapper tmp-section-gap">

@@ -8,7 +8,7 @@ jsonld:
   "@type": "WebPage"
   name: "Mein Weg"
   url: "/mein-weg/"
-  description: "Mein persönlicher Weg – geprägt vom Aufwachsen im Familienunternehmen, praktischer Techniknähe, Ausbildung und Studium bis hin zu meiner heutigen Arbeit: Klar, verbindlich und menschlich im Mittelstand."
+  description: "Mein persönlicher Weg – geprägt vom Aufwachsen im Familienunternehmen, praktischer Techniknähe, Ausbildung und Studium bis hin zu meinem heutigen Ziel: Klare, verbindliche und menschliche Arbeit zu finden."
 ---
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
