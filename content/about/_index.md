@@ -100,20 +100,20 @@ jsonld:
          style="margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
 
       <a class="tmp-btn hover-icon-reverse radius-round"
-         href="kontakt/"
+         href="../kontakt"
          style="color: #000 !important; text-align: center;">
         <span class="icon-reverse-wrapper" style="color: #000 !important;">
-          <span class="btn-text" style="color: #000 !important;">Kontakt aufnehmen</span>
+          <span class="btn-text" style="color: #000 !important;">KONTAKT AUFNEHMEN</span>
           <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
           <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
         </span>
       </a>
 
       <a class="tmp-btn hover-icon-reverse radius-round"
-         href="mein-weg/"
+         href="../mein-weg/"
          style="color: #000 !important; text-align: center;">
         <span class="icon-reverse-wrapper" style="color: #000 !important;">
-          <span class="btn-text" style="color: #000 !important;">Mehr über meinen Weg erfahren</span>
+          <span class="btn-text" style="color: #000 !important;">MEHR ÜBER MEINEN WEG ERFAHREN</span>
           <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
           <span class="btn-icon" style="color: #000 !important;"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
         </span>
