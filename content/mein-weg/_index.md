@@ -8,7 +8,7 @@ jsonld:
   "@type": "WebPage"
   name: "Mein Weg"
   url: "/mein-weg/"
-  description: "Mein persönlicher Weg – geprägt vom Aufwachsen im Familienunternehmen, praktischer Techniknähe, Ausbildung und Studium bis hin zu meiner heutigen Arbeit: Klar, verbindlich und menschlich im Mittelstand."
+  description: "Mein persönlicher Weg – geprägt vom Aufwachsen im Familienunternehmen, praktischer Techniknähe, Ausbildung und Studium bis hin zu meinem heutigen Ziel: Klare, verbindliche und menschliche Arbeit zu finden."
 ---
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
@@ -138,40 +138,15 @@ jsonld:
   </div> <!-- .container -->
 </div> <!-- .blog-classic-area-wrapper -->
 
-<div class="text-para-doc-wrap">
-  <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-    Aktuell suche ich eine <span>neue Aufgabe</span> und freue mich über Gespräche darüber. Schreiben Sie mir gerne!<br>
-  </h2>
-</div>
+<div class="about-content-area">
+
+            <div class="text-para-doc-wrap">
+                       <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+                          Aktuell bin ich offen für <span>neue Aufgaben. </span>Ich freue mich über ein Gespräch.
+                      </h4>
+             
+            </div>
+      
+    </div>
 
 <br>
-
-<section class="service-area tmp-section-gap">
-  <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
