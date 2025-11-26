@@ -1,11 +1,13 @@
 {{ define "main" }}
 
 <style>
-  /* nur für diese single.html */
-  .blog-details-discription .disc p,
-  .blog-details-discription .disc li,
-  .blog-details-discription .disc span {
+  /* Blog-Bereich mittig */
+  .blog-details-left-area {
+    text-align: center;
+  }
+  .disc, .blog-details-discription .disc p, .blog-details-discription .disc li, .blog-details-discription .disc span {
     font-weight: 700;
+    text-align: center;
   }
 </style>
 
@@ -13,13 +15,13 @@
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8 mx-auto">
         <div class="blog-details-left-area">
 
           {{ with .Params.featured_image }}
           <div class="thumbnail-top">
-              <img src="{{ . }}" alt="{{ $.Title }}">
+            <img src="{{ . }}" alt="{{ $.Title }}">
           </div>
           {{ end }}
 
@@ -43,20 +45,12 @@
                 </li>
               </ul>
             </div>
-
             <h3 class="title split-collab">{{ .Title }}</h3>
-
             <div class="disc">
               {{ .Content }}
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="tmp-sidebar">
-          <!-- Sidebar bleibt unverändert -->
         </div>
       </div>
     </div>
