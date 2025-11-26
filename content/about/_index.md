@@ -10,6 +10,45 @@ jsonld:
   description: "Über mich Christoph Reimann aus Bad Harzburg. Hintergrund, Haltung, Schwerpunkte und Ziel von Christoph B. Reimann aus Bad Harzburg (Harz)."
 ---
 
+<style>
+  /* Bereich bleibt zentriert */
+  .blog-details-left-area {
+    text-align: center;
+  }
+
+  /* Blocksatz + Fett NUR für Fließtext */
+  .blog-details-left-area .disc {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+
+  .blog-details-left-area .disc p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    margin-bottom: 1.2em;
+    font-weight: 700;
+  }
+
+  .blog-details-left-area .disc li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    margin-bottom: 0.6em;
+  }
+
+  /* Falls Zitatbereiche existieren, optional zentrieren */
+  .quote-area-blog-details .disc {
+    text-align: center;
+    text-justify: auto;
+    hyphens: none;
+  }
+</style>
+
+
 <div class="blog-classic-area-wrapper tmp-section-gap">
   <div class="container">
     <div class="row justify-content-center">
@@ -20,7 +59,8 @@ jsonld:
           <h4 class="title">Wer ich bin</h4>
 
           <div class="our-portfolio-swiper">
-            <p class="disc" style="font-weight: bold;">
+
+            <p class="disc">
               Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
               Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
               <br>
@@ -67,15 +107,12 @@ jsonld:
 
               <br>
 
-              <p class="disc" style="font-weight: bold;">
+              <p class="disc">
                 Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. 
                 Verbindungen zu schaffen, ist das, was mich antreibt. <br>
                 Mein Ziel ist es, in einer Position zu arbeiten, in der klare Kommunikation, Zusammenarbeit auf Augenhöhe und nachhaltige Prozessgestaltung im Mittelpunkt stehen.
-                
               </p>
 
-           
-            
             </div>
           </div> <!-- .our-portfolio-swiper -->
 
@@ -85,27 +122,25 @@ jsonld:
   </div> <!-- .container -->
 
 
-<div class="about-content-area">
+  <div class="about-content-area">
+    <div class="text-para-doc-wrap">
+      <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
+        Lesen Sie mehr über <span>meinen Weg</span> oder sprechen Sie <span>direkt</span> mit mir. 
+      </h4>
 
-            <div class="text-para-doc-wrap">
-                       <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-                          Lesen Sie mehr über <span> meinen Weg</span> oder sprechen Sie <span>direkt</span> mit mir. 
-                      </h4>
-                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                            <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
-                                <span class="icon-reverse-wrapper">
-                        <span class="btn-text">Mehr über meinen Weg erfahren</span>
-                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                </span>
-                            </a>
-                        </div>
-                       </h2>
-                  
-            </div>
-      
+      <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+          <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
+            <span class="icon-reverse-wrapper">
+              <span class="btn-text">Mehr über meinen Weg erfahren</span>
+              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+            </span>
+          </a>
+        </div>
+      </h2>
+
     </div>
- 
+  </div>
 
 </div> <!-- .blog-classic-area-wrapper -->
