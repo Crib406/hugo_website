@@ -1,35 +1,49 @@
 {{ define "main" }}
 
 <style>
-  /* Der ganze Bereich bleibt mittig auf der Seite */
+  /* Bereich bleibt mittig */
   .blog-details-left-area {
     text-align: center;
   }
 
-  /* Der Text selbst wird nicht zentriert, sondern Blocksatz */
+  /* Der Text-Container bleibt zentriert, aber der Inhalt ist Blocksatz */
   .blog-details-discription .disc {
-    display: inline-block;        /* sorgt dafür, dass der Block mittig bleibt */
+    display: inline-block;        /* Block mittig halten */
     text-align: justify;          /* Blocksatz */
-    text-justify: inter-word;     /* besseres Wort-Spacing */
-    hyphens: auto;                /* Silbentrennung */
-    max-width: 760px;             /* saubere Lese-Breite */
+    text-justify: inter-word;
+    hyphens: auto;
+    max-width: 760px;             /* lesbare breite */
     line-height: 1.7;
-    font-weight: 400;             /* wieder normal, nicht fett */
   }
 
-  /* Absätze im Blocksatz */
-  .blog-details-discription .disc p {
+  /* Fließtext FETT – aber keine Überschriften */
+  .blog-details-discription .disc p,
+  .blog-details-discription .disc li,
+  .blog-details-discription .disc span {
+    font-weight: 700;             /* fließtext fett */
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
+  }
+
+  /* Überschriften NICHT überschreiben */
+  .blog-details-discription .disc h1,
+  .blog-details-discription .disc h2,
+  .blog-details-discription .disc h3,
+  .blog-details-discription .disc h4,
+  .blog-details-discription .disc h5,
+  .blog-details-discription .disc h6 {
+    font-weight: inherit !important;
+    text-align: center;           /* falls du Überschriften zentriert möchtest */
+  }
+
+  /* Absatz-Abstand */
+  .blog-details-discription .disc p {
     margin-bottom: 1.4em;
   }
 
   /* Listen ebenfalls im Blocksatz */
   .blog-details-discription .disc li {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
     margin-bottom: 0.7em;
   }
 </style>
@@ -68,10 +82,13 @@
                 </li>
               </ul>
             </div>
+
             <h3 class="title split-collab">{{ .Title }}</h3>
+
             <div class="disc">
               {{ .Content }}
             </div>
+
           </div>
 
         </div>
