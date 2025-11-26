@@ -14,10 +14,8 @@ seo_description: "In dem Aritkel geht es darum, weshalb Integrität wichtig ist,
 canonicalURL: "https://example.com/blog/hugo-vorlage-testpost/"
 
 # URL / Routing
-slug: "hugo-vorlage-testpost"   # URL-Slug, falls du den Standard nicht willst
-aliases:                         # alte URLs, die auf diesen Post weiterleiten
-  - "/alt/hugo-test/"
-  - "/blog/hugo-template/"
+slug: "integrität"   # URL-Slug, falls du den Standard nicht willst
+
 
 # Kategorien & Tags (Taxonomien)
 categories:
@@ -49,9 +47,10 @@ highlight: true                 # könntest du nutzen, um Post hervorzuheben
 
 
 
-# 1. Integrität erkennt man erst, wenn sie fehlt
+## 1. Woran erkennt man Integriät?
 
-Text
+Wahre Integrität erkennt man daran, dass jemand sein Wort hält, wenn es leiser, schwieriger oder unpraktischer wird.
+Dass er Grenzen hält, wenn Druck steigt und so handelt, wie er es für richtig hält und nicht so, wie es von außen erwartet wird.
 
 ## 2. Was Integrität wirklich bedeutet
 
