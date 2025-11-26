@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Christoph B. Reimann</title><link>/preview/feature/blogSetup/blog/</link><description>Recent content in Blog on Christoph B. Reimann</description><generator>Hugo</generator><language>de-de</language><atom:link href="/preview/feature/blogSetup/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Integrität - der Grundstein für echtes Vertrauen</title><link>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</link><pubDate>Fri, 14 Nov 2025 10:00:00 +0100</pubDate><guid>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</guid><description>&lt;h1 id="1-integrität-erkennt-man-erst-wenn-sie-fehlt"&gt;1. Integrität erkennt man erst, wenn sie fehlt&lt;/h1&gt;
-&lt;p&gt;Text&lt;/p&gt;
-&lt;h2 id="2-was-integrität-wirklich-bedeutet"&gt;2. Was Integrität wirklich bedeutet&lt;/h2&gt;
-&lt;h3 id="21-die-ebene-verlässlichkeit"&gt;2.1 Die Ebene: Verlässlichkeit&lt;/h3&gt;
-&lt;h3 id="22-die-mutige-ebene-konsequenz"&gt;2.2 Die mutige Ebene: Konsequenz&lt;/h3&gt;
-&lt;hr&gt;
-&lt;h2 id="3-ein-persönlicher-wendepunkt"&gt;3. Ein persönlicher Wendepunkt&lt;/h2&gt;
-&lt;h3 id="31-normaler-text"&gt;3.1 Normaler Text&lt;/h3&gt;
-&lt;h3 id="32-die-situation"&gt;3.2 Die Situation&lt;/h3&gt;
-&lt;h3 id="33-die-erkenntnis"&gt;3.3 Die Erkenntnis&lt;/h3&gt;
-&lt;hr&gt;
-&lt;h2 id="4-zitat--blockquote"&gt;4. Zitat / Blockquote&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;„Hugo ist ein extrem schneller Static Site Generator.“&lt;br&gt;
-– Irgendjemand im Internet&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Christoph B. Reimann</title><link>/preview/feature/blogSetup/blog/</link><description>Recent content in Blog on Christoph B. Reimann</description><generator>Hugo</generator><language>de-de</language><atom:link href="/preview/feature/blogSetup/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Integrität - der Grundstein für echtes Vertrauen</title><link>/preview/feature/blogSetup/blog/integrit%C3%A4t/</link><pubDate>Fri, 14 Nov 2025 10:00:00 +0100</pubDate><guid>/preview/feature/blogSetup/blog/integrit%C3%A4t/</guid><description>&lt;h2 id="was-integrität-wirklich-bedeutet"&gt;Was Integrität wirklich bedeutet&lt;/h2&gt;
+&lt;p&gt;Integrität zeigt sich nicht, wenn alles glatt läuft, sondern in genau einem Moment: Wenn es unbequem wird. &lt;code&gt;Mut&lt;/code&gt; ist die Grundlage für echte Integrität.&lt;/p&gt;
+&lt;p&gt;Aber das wichtigste für einen selbst ist die Konsequenz, wenn man integer lebt, und das wird selten so betont: Echte &lt;code&gt;Zugehörigkeit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Warum das so ist, erkläre ich in diesem Beitrag.&lt;/p&gt;
+&lt;h2 id="woran-erkennt-man-integriät"&gt;Woran erkennt man Integriät?&lt;/h2&gt;
+&lt;p&gt;Im Duden wird Integrität mit Makellosigkeit, Unbestechlichkeit, Anständigkeit oder Rechtschaffenheit gleichgesetzt. Diese Begriffe bringen es gut auf den Punkt. Ich möchte es noch klarer machen, indem ich es an folgenden Aspekte erkläre.&lt;/p&gt;</description></item><item><title>Vorlage &amp; Testpost – alle wichtigen Hugo-Felder im Einsatz</title><link>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</link><pubDate>Fri, 14 Nov 2025 10:00:00 +0100</pubDate><guid>/preview/feature/blogSetup/blog/hugo-vorlage-testpost/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;💡 &lt;strong&gt;Hinweis:&lt;/strong&gt;&lt;br&gt;
+Diese Datei ist als &lt;strong&gt;Vorlage&lt;/strong&gt; gedacht. Kopiere sie, passe Frontmatter an und lösche die Erklär-Textblöcke, sobald du den Mechanismus verstanden hast.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id="5-bilder"&gt;5. Bilder&lt;/h2&gt;
-&lt;h3 id="51-einfaches-markdown-bild"&gt;5.1 Einfaches Markdown-Bild&lt;/h3&gt;
-&lt;p&gt;&lt;img src="/preview/feature/blogSetup/assets/images/blog/details/01.png" alt="Beispielbild"&gt;&lt;/p&gt;
-&lt;h3 id="52-bild-mit-figure-shortcode-falls-im-theme-vorhanden"&gt;5.2 Bild mit &lt;code&gt;figure&lt;/code&gt;-Shortcode (falls im Theme vorhanden)&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{&amp;lt; figure src=&amp;#34;/assets/images/blog/details/01.png&amp;#34; title=&amp;#34;Figure Titel&amp;#34; alt=&amp;#34;Alternativtext&amp;#34; &amp;gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
+&lt;h1 id="1-überschrift-h1--kommt-aus-title-aber-du-kannst-hier-trotzdem-starten"&gt;1. Überschrift (H1) – kommt aus &lt;code&gt;title&lt;/code&gt;, aber du kannst hier trotzdem starten&lt;/h1&gt;
+&lt;p&gt;Normalerweise renderst du den Titel im Template über &lt;code&gt;{{ .Title }}&lt;/code&gt;.&lt;br&gt;
+Im Content selbst startest du meist mit einer H2.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="2-kurz-zusammenfassung--"&gt;2. Kurz-Zusammenfassung &amp;amp; `&lt;/h2&gt;</description></item></channel></rss>
