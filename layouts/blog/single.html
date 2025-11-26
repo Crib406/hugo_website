@@ -1,13 +1,36 @@
 {{ define "main" }}
 
 <style>
-  /* Blog-Bereich mittig */
+  /* Der ganze Bereich bleibt mittig auf der Seite */
   .blog-details-left-area {
     text-align: center;
   }
-  .disc, .blog-details-discription .disc p, .blog-details-discription .disc li, .blog-details-discription .disc span {
-    font-weight: 700;
-    text-align: center;
+
+  /* Der Text selbst wird nicht zentriert, sondern Blocksatz */
+  .blog-details-discription .disc {
+    display: inline-block;        /* sorgt dafür, dass der Block mittig bleibt */
+    text-align: justify;          /* Blocksatz */
+    text-justify: inter-word;     /* besseres Wort-Spacing */
+    hyphens: auto;                /* Silbentrennung */
+    max-width: 760px;             /* saubere Lese-Breite */
+    line-height: 1.7;
+    font-weight: 400;             /* wieder normal, nicht fett */
+  }
+
+  /* Absätze im Blocksatz */
+  .blog-details-discription .disc p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    margin-bottom: 1.4em;
+  }
+
+  /* Listen ebenfalls im Blocksatz */
+  .blog-details-discription .disc li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    margin-bottom: 0.7em;
   }
 </style>
 
@@ -39,7 +62,7 @@
                   <div class="tag-wrap">
                     <i class="fa-solid fa-calendar-day"></i>
                     <h4 class="tag-title">
-                      {{ .Date.Format "02.01.2006" }} 
+                      {{ .Date.Format "02.01.2006" }}
                     </h4>
                   </div>
                 </li>
