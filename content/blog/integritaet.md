@@ -48,7 +48,7 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 
 ## Was Integrität wirklich bedeutet
 
-Integrität zeigt sich nicht, wenn alles glatt läuft, sondern in genau einem Moment: Wenn es unbequem wird und darum geht seine Werte und Haltung zu vertreten. 
+Integrität zeigt sich nicht, wenn alles glatt läuft, sondern in genau einem Moment: Wenn es unbequem wird und wenn es darum geht seine Werte und Haltung zu vertreten. 
 
 Warum das so ist, erkläre ich in diesem Beitrag. 
 
@@ -63,7 +63,7 @@ Spannend wird es, wenn man das um das Fühlen erweitert. Wer Denken, Fühlen und
 
 Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Gefühle zeigen unerbittlich, ob eine Entscheidung wirklich zu einem passt, oder nicht. Sie sind kein absoluter Wahrheitskompass, aber sie geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist. 
 
-Erst wenn Gefühl und Gedanke sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Das fühlt sich gut an. 
+Erst wenn Gefühl und Gedanke sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Das fühlt sich richtig an. 
 
 ### Verlässlichkeit
 Verlässlichkeit bedeutet mehr, als Termine einzuhalten oder Versprechen zu erfüllen. Sie zeigt sich vor allem in Vertraulichkeit: Was jemand im Vertrauen sagt, bleibt im Vertrauen. 
