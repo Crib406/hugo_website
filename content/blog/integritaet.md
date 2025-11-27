@@ -14,7 +14,7 @@ seo_description: "In dem Aritkel geht es darum, weshalb Integrität wichtig ist 
 canonicalURL: "https://example.com/blog/hugo-vorlage-testpost/"
 
 # URL / Routing
-slug: "integrität"   # URL-Slug, falls du den Standard nicht willst
+slug: "integritaet"   # URL-Slug, falls du den Standard nicht willst
 
 
 # Kategorien & Tags (Taxonomien)
