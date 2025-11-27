@@ -61,9 +61,9 @@ Wahrhaftigkeit ist mehr als die Wahrheit zu sagen. Sie bedeutet, dass Denken und
 
 Spannend wird es, wenn man das um das Fühlen erweitert. Wer Denken, Fühlen und Handeln in Einklang bringt, lebt eine hohe Form von Wahrhaftigkeit.
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Gefühle zeigen unerbittlich, ob eine Entscheidung wirklich zu einem passt, oder nicht. Sie sind kein absoluter Wahrheitskompass, aber sie geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist. 
+Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Gefühle sind kein absoluter Wahrheitskompass, aber sie geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist. Sie geben meist einen eindeutigen Hinweis darauf, ob eine Entscheidung wirklich zu einem passt, oder nicht.  
 
-Erst wenn Gefühl und Gedanke sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Das fühlt sich richtig an. 
+Erst wenn Gefühle, Gedanken und Handelung sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Das fühlt sich richtig an. 
 
 ### Verlässlichkeit
 Verlässlichkeit bedeutet mehr, als Termine einzuhalten oder Versprechen zu erfüllen. Sie zeigt sich vor allem in Vertraulichkeit: Was jemand im Vertrauen sagt, bleibt im Vertrauen. 
@@ -74,7 +74,9 @@ Eine verlässliche Person ist berechenbar in ihrem Handeln. Andere wissen: Diese
 
 ### Mut zur Konsequenz
 Charakter zeigt sich dort, wo Mut gefragt ist. 
-Andere auf Fehlverhalten hinzuweisen oder einzustehen, wenn es unbequem wird. Hier trennt sich die Spreu vom Weizen. Es braucht Courage, sein Wort zu halten, auch wenn es unangenehm wird, und Loyalität zu sich selbst und seinen Werten zu bewahren. Wer diesen Mut hat, zeigt echte Integrität.
+Andere auf Fehlverhalten hinzuweisen oder für sich einzustehen, wenn es unbequem wird. Hier trennt sich die Spreu vom Weizen. 
+
+Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren. Wer diesen Mut hat, zeigt echte Integrität.
 
 > 💡 **Hinweis:**  
 > Loyalität zu anderen kann einen verbiegen, abhängig machen oder korrumpieren. Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, ohne die geigenen Werte aufzugeben. 
