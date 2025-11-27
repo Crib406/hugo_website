@@ -1,7 +1,7 @@
 ---
 # Basis-Metadaten
 title: "Integrität - der Grundstein für echtes Vertrauen"
-date: 2025-11-14T10:00:00+01:00
+date: 2025-11-27T10:00:00+01:00
 draft: false        # true = nur im Draft-Modus sichtbar, false = live
 
 # Autor & Anzeige
