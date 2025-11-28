@@ -46,55 +46,66 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 
 
 
-## Was Integrität wirklich bedeutet
+## 1. Was Integrität wirklich bedeutet
 
-Integrität zeigt sich nicht, wenn alles glatt läuft, sondern in genau einem Moment: Wenn es unbequem wird und wenn es darum geht seine Werte und Haltung zu vertreten. 
+Integrität zeigt am klarsten in genau einem Moment: Wenn es darum geht die eigenen Werte und die eigene Haltung zu vertreten, wenn es unangenehm wird. Wenn man sich unbeliebt machen könnte.
 
 Warum das so ist, erkläre ich in diesem Beitrag. 
 
-## Woran erkennt man Integriät?
+## 2. Woran erkennt man Integriät?
 
-Im Duden findet man für Integrität folgende Synonyme: Makellosigkeit, Unbestechlichkeit, Anständigkeit oder Rechtschaffenheit. Diese Begriffe treffen den Kern. Doch zeigen tut sie sich in folgenden drei Bereichen. 
+Im Duden lassen sich folgende Synome für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man findet auch recht schnell Sätze wie: "handelt nach eigenen moralitschen und ethischen Werten. 
 
-### Wahrhaftigkeit 
-Wahrhaftigkeit ist mehr als die Wahrheit zu sagen. Sie bedeutet, dass Denken und Handeln in einer Linie stehen: Man sagt, was man denkt, und tut, was man sagt. 
+ Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und was nicht. An folgenden drei Tugenden, die ich für wichtig halte, möchte ich die etwas ausführen und erklären. 
+
+### 3. Wahrhaftigkeit 
+
+Wahrhaftigkeit endet nich damit, die Wahrheit zusagen, wenngleich das Fundament der Wahahftigkeit die Ehrlichkeit ist.
+
+Sie bedeutet, dass Denken und Handeln in einer Linie stehen: Man sagt, was man denkt, und tut, was man sagt. 
 
 Spannend wird es, wenn man das um das Fühlen erweitert. Wer Denken, Fühlen und Handeln in Einklang bringt, lebt eine hohe Form von Wahrhaftigkeit.
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Gefühle sind kein absoluter Wahrheitskompass, aber sie geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist. Sie geben meist einen eindeutigen Hinweis darauf, ob eine Entscheidung wirklich zu einem passt, oder nicht.  
+Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Ich denke, dass kennt jeder, wenn er mal vor schwierigen Entscheidungen stand wo man schon merkt, dass der Kopf nicht wirklich nützlich ist und man sich bei der Entscheidung letztendlich auf das "Bauchgefühl" verlässt. Und das manchmal nach tagelangem Grübeln. Den Prozess finde ich immer wieder spannend. 
 
-Erst wenn Gefühle, Gedanken und Handelung sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Das fühlt sich richtig an. 
+Erst wenn Gefühle, Gedanken und Handelung sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt.
 
-### Verlässlichkeit
+Aber: Gefühle sind kein absoluter Wahrheitskompass, geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist, ob sie wirklich zu einem passt. 
+
+Hier noch rein, wass es auch Wahrhaftigkeit gibt, die nicht stimmig sind?
+
+### 3.1 Verlässlichkeit
 Verlässlichkeit bedeutet mehr, als Termine einzuhalten oder Versprechen zu erfüllen. Sie zeigt sich vor allem in Vertraulichkeit: Was jemand im Vertrauen sagt, bleibt im Vertrauen. 
 
-Eine verlässliche Person ist berechenbar in ihrem Handeln. Andere wissen: Diese Person steht zu ihrem Wort.
+Eine verlässliche Person ist berechenbar in ihrem Handeln. Man weiß: Ich kann mich darauf verlassen. 
 
 
 
-### Mut zur Konsequenz
+### 3.2 Mut zur Konsequenz
 Charakter zeigt sich dort, wo Mut gefragt ist. 
 Andere auf Fehlverhalten hinzuweisen oder für sich einzustehen, wenn es unbequem wird. Hier trennt sich die Spreu vom Weizen. 
 
 Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren. Wer diesen Mut hat, zeigt echte Integrität.
 
 > 💡 **Hinweis:**  
-> Loyalität zu anderen kann einen verbiegen, abhängig machen oder korrumpieren. Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, ohne die geigenen Werte aufzugeben. 
+> Loyalität zu anderen kann einen verbiegen, abhängig machen oder korrumpieren. Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, ohne die geigenen Werte oder die eigene Haltung aufzugeben. 
 
 
 ---
-## Was bringt einem Integrität?
+## 3.3 Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld.
 
 
 
 ---
-## Wo hat sie ihre Grenzen?
-Integrität macht einen verlässlich, aber nicht unverwundbar. Menschen mit dieser Haltung ziehen manchmal diejenigen an, die diese Werte für eigenen Zwecke nutzen wollen. Deshalb braucht Integrität Grenzen
+## 4. Wo hat sie ihre Grenzen?
+Integrität macht einen verlässlich, aber nicht unverwundbar. Menschen mit dieser Haltung ziehen manchmal diejenigen an, die diese Werte für eigene Zwecke nutzen wollen. Deshalb braucht Integrität Grenzen.
 
 Integrität heißt nicht immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Sie heißt Nein zu sagen, wenn etwas gegen die eigenen Werte läuft. Sie heißt sich selbst treu zu bleiben.
 
-Wie setzt man Grenzen? Man muss die Grenzen erstmal kennen und klar kommunizieren. 
+Wie setzt man Grenzen? 
+
+Es fängt damit an, dass man sich selbst erstmal klar wird: Was sind eigentlich meine Grenzen? Das ist sicherlich die größere Aufgabe. Im zweiten Schritt muss man die dann kommunizeren.
 
 
 Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch Anpassung zu erreichen: echte `Zugehörigkeit`. Den Zugehörigkeit entsteht dort, wo Menschen spüren: Dieser Mensch bleibt auch, wenn es unangenehmen ist. 
