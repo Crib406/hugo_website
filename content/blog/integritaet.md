@@ -62,36 +62,30 @@ Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus,
 
 Wahrhaftigkeit ist ein inneres streben nach nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Sie setzten voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Ich denke, dass kennt jeder, der mal vor schwierigen Entscheidungen stand, bei denen der Kopf nicht wirklich nützlich war und die Entscheidung letztendlich vom "Bauchgefühl" gefällt worden ist. 
-
-Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Eine hohe Form der Wahrhaftigkeit, die nicht einfach zu erreichen ist. 
+Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das "Bauchgefühl" passt.
 
 Wahrhaftgkeit hat aber auch ihre Grenzen:
 - Gefühle sind nicht immer ein verlässlicher Kompass.
    Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
 - Reden ist Silber, schweigen ist Gold.
-    Es gibt Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. Etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder um niemanden zu verletzen. 
+    Es gibt beonsdere Situationen, in denen Wahrhaftigkeit besonders durch Schweigen entsteht. Etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder um niemanden zu verletzen. 
 - "Ich bin halt ehrlich" oder "So bin ich eben": 
     Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeindliche Ehrlichkeit Grenzen und kann verletzend sein. 
 
 > 💡 **Hinweis:**  
-> "Falsche" Gefühle und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  
+> "Falsche" Gefühle und und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  
 
+Wahrhaftigkeit ist die innere Basis.
 
 ### 3.1 Verlässlichkeit
-Bei Verlässlichkeit denkt man schnell an Termintreue. Jemand ist verlässlich, wenn er pünktlich zum Termin kommt, wenn er sich meldet, wenn er sein versprechen hält. Es geht aber auch um Vertraulichkeit. Kann ich mich darauf verlassen, dass meine Probleme nicht zum Dorfgespräch werden?
-
-Für mich ist klar: Nicht nur was im explizieten Vertrauen erzählt wird, bleibt im vertrauen, sondern generell erstmal alles. 
-
-Eine verlässliche Person ist berechenbar in ihrem Handeln. Man weiß: Ich kann mich darauf verlassen. 
+Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
 
 
 
 ### 3.2 Mut zur Konsequenz
-Charakter zeigt sich dort, wo Mut gefragt ist. 
-Andere auf Fehlverhalten hinzuweisen oder für sich einzustehen, wenn es unbequem wird. 
 
-Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren. Wer diesen Mut hat, zeigt echte Integrität.
+
+Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren und Konsequent zu sein. Wer diesen Mut hat, zeigt echte Integrität.
 
 > 💡 **Hinweis:**  
 > Loyalität zu anderen kann einen verbiegen, abhängig machen oder korrumpieren. Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, ohne die geigenen Werte oder die eigene Haltung aufzugeben. 
@@ -101,7 +95,7 @@ Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und de
 ## 3.3 Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld.
 
-Urteilsfähigkeit mit rein?
+Integrität stärkt die Urteilskraft und führt zu stimmigeren Entscheidungen. 
 
 ---
 ## 4. Wo hat sie ihre Grenzen?
