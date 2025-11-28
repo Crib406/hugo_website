@@ -48,7 +48,7 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 
 ## 1. Was Integrität wirklich bedeutet
 
-Integrität zeigt am klarsten in genau einem Moment: Wenn es darum geht die eigenen Werte und die eigene Haltung zu vertreten, wenn es unangenehm wird. Wenn man sich unbeliebt machen könnte.
+Integrität von Menschen zeigt sich am klarsten wenn es unbequem wird und darum geht die eigenen Werte und die eigene Haltung zu vertreten.
 
 Warum das so ist, erkläre ich in diesem Beitrag. 
 
@@ -56,23 +56,27 @@ Warum das so ist, erkläre ich in diesem Beitrag.
 
 Im Duden lassen sich folgende Synome für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man findet auch recht schnell Sätze wie: "handelt nach eigenen moralitschen und ethischen Werten. 
 
- Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und was nicht. An folgenden drei Tugenden, die ich für wichtig halte, möchte ich die etwas ausführen und erklären. 
+Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und eben auch was nicht. An folgenden drei Tugenden, möchte ich das etwas ausführen und erklären. 
 
 ### 3. Wahrhaftigkeit 
 
-Wahrhaftigkeit endet nich damit, die Wahrheit zusagen, wenngleich das Fundament der Wahahftigkeit die Ehrlichkeit ist.
+Wahrhaftigkeit ist ein inneres streben nach nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Sie setzten voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
 
-Sie bedeutet, dass Denken und Handeln in einer Linie stehen: Man sagt, was man denkt, und tut, was man sagt. 
+Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Ich denke, dass kennt jeder, der mal vor schwierigen Entscheidungen stand, bei denen der Kopf nicht wirklich nützlich war und die Entscheidung letztendlich vom "Bauchgefühl" gefällt worden ist. 
 
-Spannend wird es, wenn man das um das Fühlen erweitert. Wer Denken, Fühlen und Handeln in Einklang bringt, lebt eine hohe Form von Wahrhaftigkeit.
+Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt. Eine hohe Form der Wahrhaftigkeit, die nicht einfach zu erreichen ist. 
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Ich denke, dass kennt jeder, wenn er mal vor schwierigen Entscheidungen stand wo man schon merkt, dass der Kopf nicht wirklich nützlich ist und man sich bei der Entscheidung letztendlich auf das "Bauchgefühl" verlässt. Und das manchmal nach tagelangem Grübeln. Den Prozess finde ich immer wieder spannend. 
+Wahrhaftgkeit hat aber auch ihre Grenzen:
+- Gefühle sind nicht immer ein verlässlicher Kompass.
+   Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
+- Reden ist Silber, schweigen ist Gold.
+    Es gibt Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. Etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder um niemanden zu verletzen. 
+- "Ich bin halt ehrlich" oder "So bin ich eben": 
+    Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeindliche Ehrlichkeit Grenzen und kann verletzend sein. 
 
-Erst wenn Gefühle, Gedanken und Handelung sich gegenseitig bestätigen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Man spürt innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das passt.
+> 💡 **Hinweis:**  
+> "Falsche" Gefühle und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  
 
-Aber: Gefühle sind kein absoluter Wahrheitskompass, geben Hinweise darauf, ob eine Entscheidung innerlich stimmig ist, ob sie wirklich zu einem passt. 
-
-Hier noch rein, wass es auch Wahrhaftigkeit gibt, die nicht stimmig sind?
 
 ### 3.1 Verlässlichkeit
 Bei Verlässlichkeit denkt man schnell an Termintreue. Jemand ist verlässlich, wenn er pünktlich zum Termin kommt, wenn er sich meldet, wenn er sein versprechen hält. Es geht aber auch um Vertraulichkeit. Kann ich mich darauf verlassen, dass meine Probleme nicht zum Dorfgespräch werden?
