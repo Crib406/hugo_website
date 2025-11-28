@@ -75,7 +75,9 @@ Aber: Gefühle sind kein absoluter Wahrheitskompass, geben Hinweise darauf, ob e
 Hier noch rein, wass es auch Wahrhaftigkeit gibt, die nicht stimmig sind?
 
 ### 3.1 Verlässlichkeit
-Verlässlichkeit bedeutet mehr, als Termine einzuhalten oder Versprechen zu erfüllen. Sie zeigt sich vor allem in Vertraulichkeit: Was jemand im Vertrauen sagt, bleibt im Vertrauen. 
+Bei Verlässlichkeit denkt man schnell an Termintreue. Jemand ist verlässlich, wenn er pünktlich zum Termin kommt, wenn er sich meldet, wenn er sein versprechen hält. Es geht aber auch um Vertraulichkeit. Kann ich mich darauf verlassen, dass meine Probleme nicht zum Dorfgespräch werden?
+
+Für mich ist klar: Nicht nur was im explizieten Vertrauen erzählt wird, bleibt im vertrauen, sondern generell erstmal alles. 
 
 Eine verlässliche Person ist berechenbar in ihrem Handeln. Man weiß: Ich kann mich darauf verlassen. 
 
@@ -83,7 +85,7 @@ Eine verlässliche Person ist berechenbar in ihrem Handeln. Man weiß: Ich kann 
 
 ### 3.2 Mut zur Konsequenz
 Charakter zeigt sich dort, wo Mut gefragt ist. 
-Andere auf Fehlverhalten hinzuweisen oder für sich einzustehen, wenn es unbequem wird. Hier trennt sich die Spreu vom Weizen. 
+Andere auf Fehlverhalten hinzuweisen oder für sich einzustehen, wenn es unbequem wird. 
 
 Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren. Wer diesen Mut hat, zeigt echte Integrität.
 
@@ -95,7 +97,7 @@ Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und de
 ## 3.3 Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld.
 
-
+Urteilsfähigkeit mit rein?
 
 ---
 ## 4. Wo hat sie ihre Grenzen?
