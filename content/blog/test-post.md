@@ -99,6 +99,24 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 2. Schritt zwei
 3. Schritt drei
 
+### Liste mit chevron (CR- EDIT)
+<ul style="padding-left:14px; margin-left:0;">
+  <li style="list-style:none; margin:12px 0;">
+    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
+    Erster Punkt
+  </li>
+  <li style="list-style:none; margin:12px 0;">
+    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
+    Zweiter Punkt
+  </li>
+  <li style="list-style:none; margin:12px 0;">
+    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
+    Dritter Punkt
+  </li>
+</ul>
+
+
+
 ---
 
 ## 4. Zitat / Blockquote
@@ -118,3 +136,5 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 
 ```text
 {{</* figure src="/assets/images/blog/details/01.png" title="Figure Titel" alt="Alternativtext" */>}}
+
+
