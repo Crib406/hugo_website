@@ -54,13 +54,13 @@ Was genau, woran man das speziell erkennt, und wo die Grenzen der Integrität f�
 
 Im Duden lassen sich folgende Synome für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Im Internet wird es auch mit z.B. folgendem Satz beschrieben: "handelt nach eigenen moralitschen und ethischen Werten."
 
-Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und eben auch was nicht. An folgenden drei Tugenden, möchte ich das etwas ausführen und erklären. 
+Das beschreibt Integrität schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und eben auch was nicht. An folgenden drei Tugenden, möchte ich das etwas ausführen und erklären. 
 
 ### 1.1. Wahrhaftigkeit 
 
 Wahrhaftigkeit ist ein inneres streben nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das "Bauchgefühl" passt.
+Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Der Kopf wird ruhig, und man weiß instinktiv: Das "Bauchgefühl" passt.
 
 Wahrhaftgkeit hat aber auch ihre Grenzen:
 - Gefühle sind nicht immer ein verlässlicher Kompass.
@@ -119,7 +119,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und da
 
 
 
-{{< checklist 
+{{< list_chevron 
 "Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung" 
 "Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz" 
 "Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“" 
