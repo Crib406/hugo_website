@@ -14,10 +14,10 @@
     hyphens: auto !important;
     max-width: 760px;
     line-height: 1.7 !important;
-    font-size: 1.9rem !important;   /* Basis + ca. 30 % */
+    font-size: 1.9rem !important;
   }
 
-  /* Fließtext + Listen (inkl. Checkliste) größer & fett */
+  /* Fließtext + Listen größer & fett */
   .blog-details-discription .disc p,
   .blog-details-discription .disc li,
   .blog-details-discription .disc span {
@@ -25,11 +25,11 @@
     text-align: justify !important;
     text-justify: inter-word !important;
     hyphens: auto !important;
-    font-size: 1.9rem !important;   /* +30 % */
+    font-size: 1.9rem !important;
     line-height: 1.7 !important;
   }
 
-  /* Überschriften links, nicht erzwungen fett */
+  /* Überschriften links */
   .blog-details-discription .disc h1,
   .blog-details-discription .disc h2,
   .blog-details-discription .disc h3,
@@ -51,24 +51,51 @@
   }
 
   /* --- Zusammenfassungs-Checkliste --- */
+  .check-box-wrap {
+    margin-bottom: 45px;
+  }
+
   .check-box-wrap ul {
     list-style: none;
     padding-left: 0;
     margin: 1.5rem 0;
   }
 
-  .check-box-wrap .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    margin-bottom: 0.9rem;
-    /* Typo kommt komplett von .disc li/span */
+  .check-box-wrap ul li {
+    margin: 0;
+    margin-bottom: 7px;
   }
 
-  .check-box-wrap .bullet-icon i {
-    color: #00ff6b;
-    font-size: 1.3rem;
-    padding-top: 3px;
+  .check-box-wrap ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .check-box-wrap .check-box-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+
+    /* Typo wie Fließtext erzwingen */
+    color: var(--color-heading) !important;
+    font-family: var(--font-primary) !important;
+    font-size: 1.9rem !important;
+    font-weight: 700 !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Text soll normale Farbe behalten */
+  .check-box-wrap .check-box-item span {
+    color: inherit !important;
+  }
+
+  /* Nur das Icon grün machen */
+  .check-box-wrap .check-box-item span i {
+    color: var(--color-primary) !important;
+    background: transparent;
+    border-radius: 100px;
+    font-weight: 400;
+    margin-top: 6px;
   }
 </style>
 
