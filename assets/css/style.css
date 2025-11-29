@@ -18433,7 +18433,7 @@ section.clients-testimonial-area {
 }
 @media (min-width: 576px) {
   .text-para-doc-wrap .text-para-documents {
-    font-size: 38px;
+    font-size: 48px;
     line-height: 1.25;
   }
 }
@@ -27439,3 +27439,5 @@ br.desktop-only {
     margin-left: 120px;
   }
 }
+
+
