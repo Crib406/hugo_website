@@ -12,7 +12,7 @@
     text-align: justify;          /* Blocksatz */
     text-justify: inter-word;
     hyphens: auto;
-    max-width: 760px;             /* lesbare breite */
+    max-width: 760px;             /* lesbare Breite */
     line-height: 1.7;
   }
 
@@ -20,7 +20,7 @@
   .blog-details-discription .disc p,
   .blog-details-discription .disc li,
   .blog-details-discription .disc span {
-    font-weight: 700;             /* fließtext fett */
+    font-weight: 700;             /* Fließtext fett */
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
@@ -45,6 +45,32 @@
   /* Listen ebenfalls im Blocksatz */
   .blog-details-discription .disc li {
     margin-bottom: 0.7em;
+  }
+
+  /* Zusammenfassungs-Liste mit Chevron-Bullets */
+  .check-box-wrap ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+
+  .check-box-wrap .check-box-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    /* an den Fließtext angepasst */
+    font-weight: 700;
+    color: #cfcfcf;
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+    text-align: left; /* Liste links statt Blocksatz */
+  }
+
+  .check-box-wrap .bullet-icon i {
+    color: #00ff6b;            /* dein Grün */
+    font-size: 1rem;
+    padding-top: 3px;          /* optisch mittig */
   }
 </style>
 
