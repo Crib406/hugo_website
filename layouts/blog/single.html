@@ -26,7 +26,7 @@
     hyphens: auto;
   }
 
-  /* Überschriften NICHT überschreiben */
+  /* Überschriften LINKS ausrichten */
   .blog-details-discription .disc h1,
   .blog-details-discription .disc h2,
   .blog-details-discription .disc h3,
@@ -34,7 +34,7 @@
   .blog-details-discription .disc h5,
   .blog-details-discription .disc h6 {
     font-weight: inherit !important;
-    text-align: center;           /* falls du Überschriften zentriert möchtest */
+    text-align: left !important;  /* Überschriften links */
   }
 
   /* Absatz-Abstand */
@@ -77,17 +77,16 @@
                     <i class="fa-solid fa-calendar-day"></i>
                     <h4 class="tag-title">
                       {{ .Date.Format "02.01.2006" }}
-                      
                     </h4>
                   </div>
                 </li>
                 <li>
-                   <div class="tag-wrap">
-                  <h4 class="tag-title">
+                  <div class="tag-wrap">
+                    <h4 class="tag-title">
                       {{ if .Params.reading_time }}
-                       <i class="fa-regular fa-clock"></i>  {{ .Params.reading_time }} min
+                        <i class="fa-regular fa-clock"></i> {{ .Params.reading_time }} min
                       {{ end }}
-                  </h4>
+                    </h4>
                   </div>
                 </li>
               </ul>
