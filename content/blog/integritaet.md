@@ -63,13 +63,14 @@ Wahrhaftigkeit ist ein inneres streben nach Warheit. Nicht nur mit dem, was gesa
 Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Der Kopf wird ruhig, und man weiß instinktiv: Das "Bauchgefühl" passt.
 
 Wahrhaftgkeit hat aber auch ihre Grenzen:
-- Gefühle sind nicht immer ein verlässlicher Kompass.
-   Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanem Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
-- Reden ist Silber, schweigen ist Gold.
-    Es gibt beonsdere Situationen, in denen Wahrhaftigkeit besonders durch Schweigen entsteht. Etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder um niemanden zu verletzen. 
-- "Ich bin halt ehrlich" oder "So bin ich eben": 
-    Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeindliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. 
-    Mit rein?:Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg. 
+
+{{< list_chevron
+"Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt."
+"Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht – etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen."
+"„Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg."
+>}}
+
+
 
 > 💡 **Hinweis:**  
 > "Falsche" Gefühle und und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  

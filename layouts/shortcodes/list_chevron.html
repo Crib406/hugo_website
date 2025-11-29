@@ -1,10 +1,12 @@
 <div class="check-box-wrap">
-    <ul>
-        {{ range .Params }}
-        <li class="check-box-item">
-            <span class="bullet-icon"><i class="fa-solid fa-chevron-right"></i></span>
-            {{ . }}
-        </li>
-        {{ end }}
-    </ul>
+  <ul>
+    {{ range .Params }}
+    <li class="check-box-item">
+      <span class="bullet-icon">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+      <span class="check-text">{{ . }}</span>
+    </li>
+    {{ end }}
+  </ul>
 </div>

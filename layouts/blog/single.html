@@ -6,27 +6,30 @@
     text-align: center;
   }
 
-  /* Der Text-Container bleibt zentriert, aber der Inhalt ist Blocksatz */
+  /* Text-Container zentriert, Inhalt im Blocksatz */
   .blog-details-discription .disc {
-    display: inline-block;        /* Block mittig halten */
-    text-align: justify;          /* Blocksatz */
-    text-justify: inter-word;
-    hyphens: auto;
-    max-width: 760px;             /* lesbare Breite */
-    line-height: 1.7;
+    display: inline-block;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    max-width: 760px;
+    line-height: 1.7 !important;
+    font-size: 1.9rem !important;   /* Basis + ca. 30 % */
   }
 
-  /* Fließtext FETT – aber keine Überschriften */
+  /* Fließtext + Listen (inkl. Checkliste) größer & fett */
   .blog-details-discription .disc p,
   .blog-details-discription .disc li,
   .blog-details-discription .disc span {
-    font-weight: 700;             /* Fließtext fett */
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
+    font-weight: 700 !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    font-size: 1.9rem !important;   /* +30 % */
+    line-height: 1.7 !important;
   }
 
-  /* Überschriften LINKS ausrichten */
+  /* Überschriften links, nicht erzwungen fett */
   .blog-details-discription .disc h1,
   .blog-details-discription .disc h2,
   .blog-details-discription .disc h3,
@@ -34,7 +37,7 @@
   .blog-details-discription .disc h5,
   .blog-details-discription .disc h6 {
     font-weight: inherit !important;
-    text-align: left !important;  /* Überschriften links */
+    text-align: left !important;
   }
 
   /* Absatz-Abstand */
@@ -42,12 +45,12 @@
     margin-bottom: 1.4em;
   }
 
-  /* Listen ebenfalls im Blocksatz */
+  /* Normale Listen */
   .blog-details-discription .disc li {
     margin-bottom: 0.7em;
   }
 
-  /* Zusammenfassungs-Liste mit Chevron-Bullets */
+  /* --- Zusammenfassungs-Checkliste --- */
   .check-box-wrap ul {
     list-style: none;
     padding-left: 0;
@@ -58,19 +61,14 @@
     display: flex;
     align-items: flex-start;
     gap: 0.6rem;
-
-    /* an den Fließtext angepasst */
-    font-weight: 700;
-    color: #cfcfcf;
     margin-bottom: 0.9rem;
-    line-height: 1.5;
-    text-align: left; /* Liste links statt Blocksatz */
+    /* Typo kommt komplett von .disc li/span */
   }
 
   .check-box-wrap .bullet-icon i {
-    color: #00ff6b;            /* dein Grün */
-    font-size: 1rem;
-    padding-top: 3px;          /* optisch mittig */
+    color: #00ff6b;
+    font-size: 1.3rem;
+    padding-top: 3px;
   }
 </style>
 
@@ -103,14 +101,8 @@
                     <i class="fa-solid fa-calendar-day"></i>
                     <h4 class="tag-title">
                       {{ .Date.Format "02.01.2006" }}
-                    </h4>
-                  </div>
-                </li>
-                <li>
-                  <div class="tag-wrap">
-                    <h4 class="tag-title">
                       {{ if .Params.reading_time }}
-                        <i class="fa-regular fa-clock"></i> {{ .Params.reading_time }} min
+                        • <i class="fa-regular fa-clock"></i> {{ .Params.reading_time }} min
                       {{ end }}
                     </h4>
                   </div>
