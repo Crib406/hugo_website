@@ -43,22 +43,21 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 ---
 
 
+## Einleitung
+Integrität ist der rote Faden, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Völlig automatisch, wenn man einige Dinge beachtet. 
+
+Wie Integer jemand ist zeigt sich am klarsten wenn es unbequem wird und darum geht die eigenen Werte und die eigene Haltung zu vertreten. 
+
+Was genau Integer ist, woran man das speziell erkennt, und wo die Grenzen liegen für einen selbst liegen, erkläre ich in diesem Artikel. 
 
 
+## 1. Woran erkennt man Integriät?
 
-## 1. Was Integrität wirklich bedeutet
-
-Integrität von Menschen zeigt sich am klarsten wenn es unbequem wird und darum geht die eigenen Werte und die eigene Haltung zu vertreten.
-
-Warum das so ist, erkläre ich in diesem Beitrag. 
-
-## 2. Woran erkennt man Integriät?
-
-Im Duden lassen sich folgende Synome für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man findet auch recht schnell Sätze wie: "handelt nach eigenen moralitschen und ethischen Werten. 
+Im Duden lassen sich folgende Synome für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Im Internet wird es auch mit z.B. folgendem Satz beschrieben: "handelt nach eigenen moralitschen und ethischen Werten."
 
 Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus, um wirklich zu verstehen, was Integrität wirklich beduetet, und eben auch was nicht. An folgenden drei Tugenden, möchte ich das etwas ausführen und erklären. 
 
-### 3. Wahrhaftigkeit 
+### 1.1. Wahrhaftigkeit 
 
 Wahrhaftigkeit ist ein inneres streben nach nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Sie setzten voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
 
@@ -77,12 +76,12 @@ Wahrhaftgkeit hat aber auch ihre Grenzen:
 
 Wahrhaftigkeit ist die innere Basis.
 
-### 3.1 Verlässlichkeit
+### 1.2 Verlässlichkeit
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
 
 
 
-### 3.2 Mut zur Konsequenz
+### 1.3 Mut zur Konsequenz
 
 
 Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren und Konsequent zu sein. Wer diesen Mut hat, zeigt echte Integrität.
@@ -92,13 +91,13 @@ Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und de
 
 
 ---
-## 3.3 Was bringt einem Integrität?
+## 2 Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld.
 
 Integrität stärkt die Urteilskraft und führt zu stimmigeren Entscheidungen. 
 
 ---
-## 4. Wo hat sie ihre Grenzen?
+## 3. Wo hat sie ihre Grenzen?
 Integrität macht einen verlässlich, aber nicht unverwundbar. Menschen mit dieser Haltung ziehen manchmal diejenigen an, die diese Werte für eigene Zwecke nutzen wollen. Deshalb braucht Integrität Grenzen.
 
 Integrität heißt nicht immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Sie heißt Nein zu sagen, wenn etwas gegen die eigenen Werte läuft. Sie heißt sich selbst treu zu bleiben.
@@ -111,5 +110,9 @@ Es fängt damit an, dass man sich selbst erstmal klar wird: Was sind eigentlich 
 Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch Anpassung zu erreichen: echte `Zugehörigkeit`. Den Zugehörigkeit entsteht dort, wo Menschen spüren: Dieser Mensch bleibt auch, wenn es unangenehmen ist. 
 
 
+---
 
+## 4. Zusammenfassung
+
+Hier nochmal kurzen Satz plus Checkliste mit den grünen Punkten
 
