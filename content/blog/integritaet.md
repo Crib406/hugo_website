@@ -44,11 +44,9 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 
 
 ## Einleitung
-Integrität ist der rote Faden, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Völlig automatisch, wenn man einige Dinge beachtet. 
+Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Völlig automatisch, wenn man einige Dinge beachtet. 
 
-Wie Integer jemand ist zeigt sich am klarsten wenn es unbequem wird und darum geht die eigenen Werte und die eigene Haltung zu vertreten. 
-
-Was genau Integer ist, woran man das speziell erkennt, und wo die Grenzen liegen für einen selbst liegen, erkläre ich in diesem Artikel. 
+Was genau, woran man das speziell erkennt, und wo die Grenzen der Integrität für einen selbst liegen, erkläre ich in diesem Artikel. 
 
 
 ## 1. Woran erkennt man Integriät?
@@ -59,17 +57,18 @@ Das beschreibt es schon ganz gut, aber meiner Meinung nach reicht das nicht aus,
 
 ### 1.1. Wahrhaftigkeit 
 
-Wahrhaftigkeit ist ein inneres streben nach nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Sie setzten voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
+Wahrhaftigkeit ist ein inneres streben nach Warheit. Nicht nur mit dem, was gesagt wird, sondern auch im Verhältnis zu sich selbst. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen und immer wieder reflektiert werden.
 
 Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handelungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Innere Ausgeglichenheit, der Kopf wird ruhig, und man weiß instinktiv: Das "Bauchgefühl" passt.
 
 Wahrhaftgkeit hat aber auch ihre Grenzen:
 - Gefühle sind nicht immer ein verlässlicher Kompass.
-   Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
+   Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanem Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
 - Reden ist Silber, schweigen ist Gold.
     Es gibt beonsdere Situationen, in denen Wahrhaftigkeit besonders durch Schweigen entsteht. Etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder um niemanden zu verletzen. 
 - "Ich bin halt ehrlich" oder "So bin ich eben": 
-    Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeindliche Ehrlichkeit Grenzen und kann verletzend sein. 
+    Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeindliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. 
+    Mit rein?:Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg. 
 
 > 💡 **Hinweis:**  
 > "Falsche" Gefühle und und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  
@@ -112,7 +111,16 @@ Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch
 
 ---
 
-## 4. Zusammenfassung
+## 4. Abschluss und Zusammenfassung
+Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und dass man nach den eigenen Werten lebt, auch wenn es unbequem wird. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Integrität schafft Klarheit, Ruhe und echte Zugehörigkeit, weil andere spüren: Dieser Mensch steht zu sich. Und genau deshalb braucht Integrität Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz wollen.
 
-Hier nochmal kurzen Satz plus Checkliste mit den grünen Punkten
+- Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung
+
+- Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz
+
+- Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“
+
+- Integrität schafft Vertrauen, Klarheit und Zugehörigkeit
+
+- Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen
 
