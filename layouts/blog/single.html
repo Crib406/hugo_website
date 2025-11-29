@@ -77,12 +77,21 @@
                     <i class="fa-solid fa-calendar-day"></i>
                     <h4 class="tag-title">
                       {{ .Date.Format "02.01.2006" }}
+                      
                     </h4>
+                  </div>
+                </li>
+                <li>
+                   <div class="tag-wrap">
+                  <h4 class="tag-title">
+                      {{ if .Params.reading_time }}
+                       <i class="fa-regular fa-clock"></i> {{ .Params.reading_time }} min
+                      {{ end }}
+                  </h4>
                   </div>
                 </li>
               </ul>
             </div>
-
 
             <div class="disc">
               {{ .Content }}

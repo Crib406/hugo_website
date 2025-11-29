@@ -2,6 +2,7 @@
 # Basis-Metadaten
 title: "Integrität - der Grundstein für echtes Vertrauen"
 date: 2025-11-27T10:00:00+01:00
+reading_time: 7
 draft: false        # true = nur im Draft-Modus sichtbar, false = live
 
 # Autor & Anzeige
@@ -112,15 +113,21 @@ Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch
 ---
 
 ## 4. Abschluss und Zusammenfassung
-Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und dass man nach den eigenen Werten lebt, auch wenn es unbequem wird. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Integrität schafft Klarheit, Ruhe und echte Zugehörigkeit, weil andere spüren: Dieser Mensch steht zu sich. Und genau deshalb braucht Integrität Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz wollen.
+Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und dass man nach den eigenen Werten lebt, auch wenn es unbequem wird. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Integrität schafft Klarheit, Ruhe und echte `Zugehörigkeit`, weil andere spüren: Dieser Mensch steht zu sich. Und genau deshalb braucht Integrität Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz wollen.
 
-- Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung
 
-- Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz
 
-- Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“
 
-- Integrität schafft Vertrauen, Klarheit und Zugehörigkeit
 
-- Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen
+{{< checklist 
+"Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung" 
+"Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz" 
+"Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“" 
+"Integrität schafft Vertrauen, Klarheit und Zugehörigkeit"
+"Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen"
+>}}
+
+Ich freue mich, dass Sie sich dei Zeit genommen haben, um diesen Artikel zu lesen.
+
+Christoph B. Reimann, Bad Harzburg (Harz)
 

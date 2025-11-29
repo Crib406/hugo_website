@@ -1,0 +1,11 @@
+<div class="check-box-wrap">
+    <ul>
+        {{ range .Params }}
+        <li>
+            <h4 class="check-box-item">
+                <span><i class="fa-solid fa-circle-check"></i></span>{{ . }}
+            </h4>
+        </li>
+        {{ end }}
+    </ul>
+</div>
