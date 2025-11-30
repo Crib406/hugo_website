@@ -99,21 +99,34 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 2. Schritt zwei
 3. Schritt drei
 
-### Liste mit chevron (CR- EDIT)
-<ul style="padding-left:14px; margin-left:0;">
-  <li style="list-style:none; margin:12px 0;">
-    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
-    Erster Punkt
+### Liste chevron grün hervorgehboen
+{{< list_chevron 
+"1. Punkt" 
+"2: KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk" 
+>}}
+
+### Liste mit chevron 
+<ul style="padding-left:0; margin-left:0; list-style:none;">
+  <li style="display:flex; align-items:flex-start; gap:8px; margin:12px 0;">
+    <i class="fa-solid fa-chevron-right"
+       style="color:var(--color-green); margin-top:3px; flex:0 0 auto;"></i>
+    <span style="flex:1 1 auto;">
+      Zweiter Punkt KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
+      KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
+    </span>
   </li>
-  <li style="list-style:none; margin:12px 0;">
-    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
-    Zweiter Punkt
-  </li>
-  <li style="list-style:none; margin:12px 0;">
-    <i class="fa-solid fa-chevron-right" style="color:var(--color-green); margin-right:6px;"></i>
-    Dritter Punkt
+  <li style="display:flex; align-items:flex-start; gap:8px; margin:12px 0;">
+    <i class="fa-solid fa-chevron-right"
+       style="color:var(--color-green); margin-top:3px; flex:0 0 auto;"></i>
+    <span style="flex:1 1 auto;">
+      Zweiter Punkt KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
+      KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
+    </span>
   </li>
 </ul>
+
+
+
 
 
 
