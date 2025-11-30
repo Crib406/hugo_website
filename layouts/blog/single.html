@@ -50,53 +50,87 @@
     margin-bottom: 0.7em;
   }
 
-  /* --- Zusammenfassungs-Checkliste --- */
-  .check-box-wrap {
-    margin-bottom: 45px;
-  }
+/* Grundlayout der Checkliste: nur Abstand, keine Typografie */
+.blog-details-discription .disc .check-box {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid rgba(157, 157, 255, 0.0509803922);
+  padding-top: 43px;
+  padding-bottom: 30px;
+}
 
-  .check-box-wrap ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 1.5rem 0;
+@media (min-width: 992px) {
+  .blog-details-discription .disc .check-box {
+    padding-bottom: 40px;
   }
+}
 
-  .check-box-wrap ul li {
-    margin: 0;
-    margin-bottom: 7px;
+.blog-details-discription .disc .check-box li {
+  margin: 0 0 0.7em 0; /* wie deine anderen li */
+}
+
+/* Wichtig: Typografie vollständig vom umgebenden .disc übernehmen */
+.blog-details-discription .disc .check-box-item,
+.blog-details-discription .disc .check-box .box-para,
+.blog-details-discription .disc .check-box .box-icon {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+}
+
+/* Nur Layout via Flex, keine Typo */
+.blog-details-discription .disc .check-box-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+}
+
+/* Icon leicht nach unten, aber ohne Text zu beeinflussen */
+.blog-details-discription .disc .check-box .box-icon {
+  flex: 0 0 auto;
+  line-height: 1;
+  margin-top: 0.2em;
+}
+
+/* Liste: Layout, aber Typo vom umgebenden Text erben */
+.check-box {
+  border-top: 2px solid rgba(157, 157, 255, 0.0509803922);
+  padding-top: 43px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .check-box {
+    padding-bottom: 40px;
   }
+}
 
-  .check-box-wrap ul li:last-child {
-    margin-bottom: 0;
-  }
+.check-box li {
+  list-style: none;
+  margin: 0 0 0.7em 0; /* wie deine normalen li-Abstände */
+}
 
-  .check-box-wrap .check-box-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 0;
+.check-box .check-box-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
 
-    /* Typo wie Fließtext erzwingen */
-    color: var(--color-heading) !important;
-    font-family: var(--font-primary) !important;
-    font-size: 1.9rem !important;
-    font-weight: 700 !important;
-    line-height: 1.7 !important;
-  }
+/* Text: exakt gleiche Größe/Formatierung wie der Rest, einfach erben */
+.check-box .box-para {
+  font: inherit;
+  color: inherit;
+}
 
-  /* Text soll normale Farbe behalten */
-  .check-box-wrap .check-box-item span {
-    color: inherit !important;
-  }
-
-  /* Nur das Icon grün machen */
-  .check-box-wrap .check-box-item span i {
-    color: var(--color-primary) !important;
-    background: transparent;
-    border-radius: 100px;
-    font-weight: 400;
-    margin-top: 6px;
-  }
+/* Icon explizit wieder grün machen */
+.blog-details-discription .disc .check-box .box-icon,
+.blog-details-discription .disc .check-box .box-icon i {
+  color: var(--color-primary) !important;
+}
 </style>
 
 {{ partial "breadcrumb.html" . }}
