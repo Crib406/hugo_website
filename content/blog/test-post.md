@@ -105,28 +105,16 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 {{< checklist_normal_green >}}
 Verantwortung übernehmen und unternehmerisch handeln
 Technisches Verständnis – vom Lkw bis zur Prozessautomation
-Führung übernehmen – klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll
+**Führung übernehmen – klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll**
 {{< /checklist_normal_green >}}
 
-### Liste mit chevron 
-<ul style="padding-left:0; margin-left:0; list-style:none;">
-  <li style="display:flex; align-items:flex-start; gap:8px; margin:12px 0;">
-    <i class="fa-solid fa-chevron-right"
-       style="color:var(--color-green); margin-top:3px; flex:0 0 auto;"></i>
-    <span style="flex:1 1 auto;">
-      Zweiter Punkt KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
-      KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
-    </span>
-  </li>
-  <li style="display:flex; align-items:flex-start; gap:8px; margin:12px 0;">
-    <i class="fa-solid fa-chevron-right"
-       style="color:var(--color-green); margin-top:3px; flex:0 0 auto;"></i>
-    <span style="flex:1 1 auto;">
-      Zweiter Punkt KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
-      KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk
-    </span>
-  </li>
-</ul>
+{{< checklist_normal_green_check >}}
+Verantwortung übernehmen und unternehmerisch handeln
+Technisches Verständnis – vom Lkw bis zur Prozessautomation
+**Führung übernehmen – klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll**
+{{< /checklist_normal_green_check >}}
+
+
 
 
 
