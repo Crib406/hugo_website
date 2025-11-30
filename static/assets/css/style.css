@@ -20152,7 +20152,7 @@ section.clients-testimonial-area {
 }
 .check-box .check-box-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 .check-box .check-box-item .box-icon {
@@ -25962,7 +25962,7 @@ body.tmp-white-version.index-8 .tmp-contact-about-inner .info-box {
   background: transparent;
   border-radius: 100px;
   font-weight: 400;
-  margin-top: 6px;
+  margin-top: 0;
 }
 
 .project-details-swiper-wrapper .project-details-swiper .project-details-img img {

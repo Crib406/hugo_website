@@ -100,10 +100,32 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 3. Schritt drei
 
 ### Liste chevron grün hervorgehboen
-{{< list_chevron 
-"1. Punkt" 
-"2: KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk KKKKKkkk KKKKKkkk KKKKkkk" 
->}}
+
+
+<ul class="check-box">
+  <li>
+    <div class="check-box-item">
+      <span class="box-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </span>
+      <span class="box-para">
+        Verantwortung übernehmen und unternehmerisch Handeln Verantwortung übernehmen
+        und unternehmerisch Handeln Verantwortung übernehmen und unternehmerisch Handeln
+      </span>
+    </div>
+  </li>
+   <li>
+    <div class="check-box-item">
+      <span class="box-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </span>
+      <span class="box-para">
+        Verantwortung übernehmen und unternehmerisch Handeln Verantwortung übernehmen
+        und unternehmerisch Handeln Verantwortung übernehmen und unternehmerisch Handeln
+      </span>
+    </div>
+  </li>
+</ul>
 
 ### Liste mit chevron 
 <ul style="padding-left:0; margin-left:0; list-style:none;">
