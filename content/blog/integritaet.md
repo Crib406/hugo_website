@@ -80,13 +80,11 @@ Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wa
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
 
 
-
 ### 1.3 Mut zur Konsequenz
-
 
 Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren und Konsequent zu sein. Wer diesen Mut hat, zeigt echte Integrität.
 
- Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, ohne die geigenen Werte oder die eigene Haltung aufzugeben. Gibt man die diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar manipulieren. 
+ Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, **ohne** die geigenen Werte oder die eigene Haltung aufzugeben. Gibt man die diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen. 
 
 
 ---
@@ -94,9 +92,8 @@ Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und de
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld. 
 
 
-
 > 💡 **Hinweis:**  
-> Integrität stäkrt die Urteilskraft und führt zu stimmigeren Entscheidungen, nicht nur zu besseren. 
+> Integrität stäkrt die Urteilskraft und führt zu besseren, aber vor allem stimmigeren Entscheidungen. 
 
 
 
