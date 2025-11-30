@@ -45,7 +45,7 @@ layout: "single"                # erzwingt ein bestimmtes Layout
 
 
 ## Einleitung
-Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Völlig automatisch, wenn man einige Dinge beachtet. 
+Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Völlig automatisch, wenn man einige Dinge beachtet und den willen hat, sich selbst und sein Verhalten zu reflektieren. 
 
 Was genau, woran man das speziell erkennt, und wo die Grenzen der Integrität für einen selbst liegen, erkläre ich in diesem Artikel. 
 
@@ -67,7 +67,7 @@ Wahrhaftgkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
 Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
 Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht – etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen.
-„Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg.
+„Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
 {{< /checklist_normal_green >}}
 
 
@@ -75,7 +75,7 @@ Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wa
 > 💡 **Hinweis:**  
 > "Falsche" Gefühle und und Ausreden können aus alten Mustern stammen. Was man dagegen tun kann, beschreibe ich später in einem weiteren Beitrag.  
 
-Wahrhaftigkeit ist die innere Basis.
+**Wahrhaftigkeit ist die innere Basis der Integrität**
 
 ### 1.2 Verlässlichkeit
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
