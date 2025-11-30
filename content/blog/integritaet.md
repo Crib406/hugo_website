@@ -1,5 +1,5 @@
 ---
-title: "Integrität – der Grundstein für echtes Vertrauen"
+title: "Integrität – der Grundstein für echte Zugehörigkeit"
 date: 2025-11-27T10:00:00+01:00
 reading_time: 7
 draft: false
@@ -10,12 +10,14 @@ slug: "integritaet"
 
 description: "Warum Integrität der Grundstein für echtes Vertrauen ist – über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
 
-categories:
-  - "Werte"
+category: "Menschlichkeit"
+
 tags:
   - "Werte"
   - "Integrität"
   - "Vertrauen"
+  - "Zugehörigkeit"
+  - "Menschlichkeit"
 
 type: "blog"
 layout: "single"
@@ -27,7 +29,7 @@ jsonld:
     "@type": "WebPage"
     "@id": "https://creimann.cc/blog/integritaet"
   headline: "Integrität – der Grundstein für echtes Vertrauen"
-  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt über Integrität und die Tugenden Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz – und darüber, wo die Grenzen der Integrität liegen."
+  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt aus eigener Erfahrung über Integrität und die Tugenden Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz und darüber, wo die Grenzen der Integrität liegen."
   author:
     "@type": "Person"
     name: "Christoph B. Reimann"
@@ -103,7 +105,7 @@ Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertraue
 ## 3. Wo hat sie ihre Grenzen?
 Nichts im leben ist Perfekt. Integrität macht einen zwar ruhiger und klarer, aber nicht unverwundbar. Deshalb braucht Integrität Grenzen.
 
-Es geht nicht darum immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Es geht darum die eigenen Grenzen zu kennen und **Nein** sagen zu können. 
+Es geht nicht darum immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Es geht darum die eigenen Grenzen zu kennen und **nein** sagen zu können. 
 
 Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch Anpassung zu erreichen: echte `Zugehörigkeit`. Denn Zugehörigkeit entsteht dort, wo man echt bleibt. 
 
@@ -118,7 +120,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 **Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz**
 **Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“ als Fundament** 
 **Integrität schafft Vertrauen, Klarheit und Zugehörigkeit**
-**Klare Grenzen: Nein sagen und abgrenzen können**
+**Klare Grenzen und Mut zur Konsequenz**
 {{< /checklist_normal_green_check >}}
 
 Ich freue mich, dass Sie sich die Zeit genommen haben, um diesen Artikel zu lesen. Vielen Dank.
