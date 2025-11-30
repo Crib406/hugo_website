@@ -1,45 +1,47 @@
 ---
-# Basis-Metadaten
-title: "Integrität - der Grundstein für echtes Vertrauen"
+title: "Integrität – der Grundstein für echtes Vertrauen"
 date: 2025-11-27T10:00:00+01:00
 reading_time: 7
-draft: false        # true = nur im Draft-Modus sichtbar, false = live
+draft: false
 
-# Autor & Anzeige
 author: "Christoph B. Reimann"
 
-# SEO / Social
-description: "In diestem Artikel geht es darum was Integrität ist und wie die Zugehörigkeit gefördert wird."
-seo_title: "Warum Integrität wichtig ist"
-seo_description: "In dem Aritkel geht es darum, weshalb Integrität wichtig ist um klar zu sein und Zugehörigkeit zu erleben."
-canonicalURL: "https://example.com/blog/hugo-vorlage-testpost/"
+slug: "integritaet"
 
-# URL / Routing
-slug: "integritaet"   # URL-Slug, falls du den Standard nicht willst
+description: "Warum Integrität der Grundstein für echtes Vertrauen ist – über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
 
-
-# Kategorien & Tags (Taxonomien)
 categories:
   - "Werte"
 tags:
   - "Werte"
+  - "Integrität"
+  - "Vertrauen"
 
-# Spezielle Blog-Parameter für dein Theme
-#featured_image: "/assets/images/blog/details/01.png"  # Hero / Teaser Bild
-#featured_image_alt: "Laptop mit Code-Editor"
-#category: "Werte"          # falls dein Theme genau dieses Feld nutzt
+type: "blog"
+layout: "single"
 
-
-# Steuerung für Layout (Custom-Flags, die du im Theme abfragst)
-#show_breadcrumb: true
-#show_sidebar: true
-#show_toc: true                  # Table of Contents
-#show_author_box: true
-#show_related_posts: true
-
-# Layout / Typ (optional, wenn du verschiedene Layouts hast)
-type: "blog"                    # kann helfen, wenn du spezielle Typen hast
-layout: "single"                # erzwingt ein bestimmtes Layout
+jsonld:
+  "@context": "https://schema.org"
+  "@type": "BlogPosting"
+  mainEntityOfPage:
+    "@type": "WebPage"
+    "@id": "https://creimann.cc/blog/integritaet"
+  headline: "Integrität – der Grundstein für echtes Vertrauen"
+  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt über Integrität und die Tugenden Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz – und darüber, wo die Grenzen der Integrität liegen."
+  author:
+    "@type": "Person"
+    name: "Christoph B. Reimann"
+  datePublished: "2025-11-27T10:00:00+01:00"
+  dateModified: "2025-11-27T10:00:00+01:00"
+  url: "https://creimann.cc/blog/integritaet"
+  inLanguage: "de-DE"
+  keywords:
+    - "Integrität"
+    - "Vertrauen"
+    - "Werte"
+    - "Wahrhaftigkeit"
+    - "Mut zur Konsequenz"
+    - "Mensch sein"
 
 ---
 
