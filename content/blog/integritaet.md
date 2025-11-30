@@ -119,14 +119,13 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und da
 
 
 
-
-{{< list_chevron 
-"Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung" 
-"Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz" 
-"Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“" 
-"Integrität schafft Vertrauen, Klarheit und Zugehörigkeit"
-"Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen"
->}}
+{{< checklist_normal_green >}}
+Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung
+Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz
+Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“
+Integrität schafft Vertrauen, Klarheit und Zugehörigkeit
+Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen
+{{< /checklist_normal_green >}}
 
 Ich freue mich, dass Sie sich dei Zeit genommen haben, um diesen Artikel zu lesen.
 

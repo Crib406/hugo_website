@@ -99,33 +99,14 @@ Dies ist ein normaler Fließtextabschnitt mit **fett**, *kursiv* und `inline-cod
 2. Schritt zwei
 3. Schritt drei
 
-### Liste chevron grün hervorgehboen
+### Liste chevron grün normal
 
 
-<ul class="check-box">
-  <li>
-    <div class="check-box-item">
-      <span class="box-icon">
-        <i class="fa-solid fa-circle-check"></i>
-      </span>
-      <span class="box-para">
-        Verantwortung übernehmen und unternehmerisch Handeln Verantwortung übernehmen
-        und unternehmerisch Handeln Verantwortung übernehmen und unternehmerisch Handeln
-      </span>
-    </div>
-  </li>
-   <li>
-    <div class="check-box-item">
-      <span class="box-icon">
-        <i class="fa-solid fa-circle-check"></i>
-      </span>
-      <span class="box-para">
-        Verantwortung übernehmen und unternehmerisch Handeln Verantwortung übernehmen
-        und unternehmerisch Handeln Verantwortung übernehmen und unternehmerisch Handeln
-      </span>
-    </div>
-  </li>
-</ul>
+{{< checklist_normal_green >}}
+Verantwortung übernehmen und unternehmerisch handeln
+Technisches Verständnis – vom Lkw bis zur Prozessautomation
+Führung übernehmen – klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll klar und verantwortungsvoll
+{{< /checklist_normal_green >}}
 
 ### Liste mit chevron 
 <ul style="padding-left:0; margin-left:0; list-style:none;">
