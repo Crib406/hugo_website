@@ -64,11 +64,11 @@ Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder 
 
 Wahrhaftgkeit hat aber auch ihre Grenzen:
 
-
-1. Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
-2. Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht – etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen.
-3. „Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg.
-
+{{< checklist_normal_green >}}
+Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen Gefühl blind zu folgen, sondern kritisch zu hinterfragen, woher es kommt.
+Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht – etwa dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen.
+„Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein. Speziell hoch integere Menschen, die sich wahrscheinlich jeder im Leben wünscht, stößt man mit solchen Aussagen eher von sich weg.
+{{< /checklist_normal_green >}}
 
 
 
@@ -119,13 +119,13 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und da
 
 
 
-{{< checklist_normal_green >}}
+{{< checklist_normal_green_check >}}
 Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung
 Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz
 Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“
 Integrität schafft Vertrauen, Klarheit und Zugehörigkeit
 Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen
-{{< /checklist_normal_green >}}
+{{< /checklist_normal_green_check >}}
 
 Ich freue mich, dass Sie sich dei Zeit genommen haben, um diesen Artikel zu lesen.
 
