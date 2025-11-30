@@ -82,9 +82,9 @@ Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet
 
 ### 1.3 Mut zur Konsequenz
 
-Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren und Konsequent zu sein. Wer diesen Mut hat, zeigt echte Integrität.
+Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, **ohne** die geigenen Werte oder die eigene Haltung aufzugeben. Gibt man die diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen. 
 
- Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin anderen treu zu bleiben, **ohne** die geigenen Werte oder die eigene Haltung aufzugeben. Gibt man die diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen. 
+Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und dein eigenen Werten zu bewahren und Konsequent zu sein. Wer diesen Mut hat, zeigt echte Integrität.
 
 
 ---
@@ -101,34 +101,27 @@ Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertraue
 ## 3. Wo hat sie ihre Grenzen?
 Nichts im leben ist Perfekt. Integrität macht einen zwar ruhiger und klarer, aber nicht unverwundbar. Deshalb braucht Integrität Grenzen.
 
-Es geht nicht darum immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Es geht darum **Nein** zu sagen, wenn die eigenen Werte misachtet werden. Es geht darum sich selbst treu zu bleiben.
+Es geht nicht darum immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Es geht darum die eigenen Grenzen zu kennen und **Nein** sagen zu können. 
 
-
-Wie setzt man Grenzen? 
-
-Es fängt damit an, dass man sich selbst erstmal klar werden muss: Was sind eigentlich meine Grenzen? Und wie kommuniziere ich die richtig?
-
-
-Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch Anpassung zu erreichen: echte `Zugehörigkeit`. Denn Zugehörigkeit entsteht dort, wo Menschen spüren: Dieser Mensch bleibt echt, auch wenn es unangenehmen wird. 
-
+Wer so klar bleibt schafft paradoxer Weise genau das, was andere versuchen durch Anpassung zu erreichen: echte `Zugehörigkeit`. Denn Zugehörigkeit entsteht dort, wo man echt bleibt. 
 
 ---
 
 ## 4. Abschluss und Zusammenfassung
-Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind und dass man nach den eigenen Werten lebt, auch wenn es unbequem wird. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Integrität schafft Klarheit, Ruhe und echte `Zugehörigkeit`, weil andere spüren: Dieser Mensch steht zu sich. Und genau deshalb braucht Integrität Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz wollen.
-
-
+Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Integrität schafft Klarheit, Ruhe und echte `Zugehörigkeit`, weil andere spüren: Dieser Mensch steht zu sich. Und genau deshalb braucht Integrität Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz und tiefe wollen.
 
 
 {{< checklist_normal_green_check >}}
 **Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung**
 **Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz**
-**Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“**
+**Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“ als Fundament** 
 **Integrität schafft Vertrauen, Klarheit und Zugehörigkeit**
-**Klare Grenzen: Nein sagen, nicht verbiegen, Werte schützen**
+**Klare Grenzen: Nein sagen und abgrenzen können**
 {{< /checklist_normal_green_check >}}
 
-Ich freue mich, dass Sie sich dei Zeit genommen haben, um diesen Artikel zu lesen.
+Ich freue mich, dass Sie sich die Zeit genommen haben, um diesen Artikel zu lesen. Vielen Dank.
+
+Christoph B. Reimann
 
 
 
