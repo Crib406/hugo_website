@@ -7,11 +7,11 @@ jsonld:
   "@context": "https://schema.org"
   "@type": "CollectionPage"
   name: "Blog – Klarheit, Haltung und Zugehörigkeit"
-  url: "https://creimann.cc/blog/"
+  url: "/blog/"
   description: "Artikel über Werte, Haltung und menschliche Zugehörigkeit. Für mehr Verbindung und Vertrauen."
   mainEntity:
     "@type": "Blog"
     name: "Christoph B. Reimann – Blog"
-    url: "https://creimann.cc/blog/"
+    url: "/blog/"
     description: "Ein Blog über Ermutigung, Haltung und die Stärkung echter Zugehörigkeit."
 ---
