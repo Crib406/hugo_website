@@ -1,50 +1,65 @@
 {{ define "main" }}
-
   {{ partial "breadcrumb.html" . }}
 
   <div class="blog-classic-area-wrapper tmp-section-gap">
     <div class="container">
       <div class="row">
-
-        {{ range .Pages }}
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in">
+        <div class="col-lg-8">
+          {{ $index := 0 }}
+          {{ range .Pages }}
+            {{ $index = add $index 1 }}
+          <div class="blog-classic-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-{{ $index }}">
             <div class="img-box">
               <a href="{{ .RelPermalink }}">
                 {{ with .Params.image }}
-                <img class="w-100" src="{{ . }}" alt="Blog Thumbnail">
+                <img class="img-primary hidden-on-mobile w-100" src="{{ . }}" alt="Blog Thumbnail">
+                <img class="img-secondary w-100" src="{{ . }}" alt="Blog Thumbnail">
                 {{ end }}
               </a>
-              <ul class="blog-tags">
-                <li>
-                  <span class="tag-icon"><i class="fa-regular fa-user"></i></span>
-                  {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.defaultAuthor }}{{ end }}
-                </li>
-                <li>
-                  <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>
-                  {{ .Date.Format "Jan 02" }}
-                </li>
-              </ul>
             </div>
-            <div class="blog-content-wrap">
-              <h3 class="blog-title">
+            <div class="blog-classic-content">
+              <div class="blog-classic-tag">
+                <ul>
+                  {{ with .Params.tags }}
+                  <li>
+                    <div class="tag-wrap">
+                      <i class="fa-solid fa-tag"></i>
+                      <h4 class="tag-title">{{ index . 0 }}</h4>
+                    </div>
+                  </li>
+                  {{ end }}
+                  <li>
+                    <div class="tag-wrap">
+                      <i class="fa-solid fa-calendar-day"></i>
+                      <h4 class="tag-title">{{ .Date.Format "02. Jan 2006" }}</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="title">
                 <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-              </h3>
-              <div class="more-btn tmp-link-animation">
-                <a href="{{ .RelPermalink }}" class="read-more-btn">
-                  Mehr lesen
-                  <span class="read-more-icon">
-                    <i class="fa-solid fa-angle-right"></i>
+              </h2>
+              {{ if .Summary }}
+              <p class="para">{{ .Summary | plainify | truncate 150 }}</p>
+              {{ end }}
+              
+              <div class="tmp-button-here">
+                <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="{{ .RelPermalink }}">
+                  <span class="icon-reverse-wrapper">
+                    <span class="btn-text">Mehr lesen</span>
+                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                   </span>
                 </a>
               </div>
             </div>
           </div>
+          {{ end }}
+        
         </div>
-        {{ end }}
 
+       
       </div>
     </div>
   </div>
-
 {{ end }}
