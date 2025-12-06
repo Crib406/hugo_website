@@ -5,6 +5,7 @@ reading_time: 7
 draft: false
 
 author: "Christoph B. Reimann"
+image: "/assets/images/blog/integritet.jpeg"
 
 slug: "integritaet"
 

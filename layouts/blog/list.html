@@ -55,16 +55,7 @@
             </div>
           </div>
           {{ end }}
-          
-          {{ if .Paginator }}
-          <div class="tmp-pagination-button">
-            {{ range $pIndex, $page := .Paginator.Pages }}
-            <a href="{{ $page.Permalink }}" class="pagination-btn {{ if eq $pIndex $.Paginator.PageNumber }}{{ "active" }}{{ end }}">
-              {{ add $pIndex 1 }}
-            </a>
-            {{ end }}
-          </div>
-          {{ end }}
+        
         </div>
 
        
