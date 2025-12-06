@@ -11,6 +11,8 @@ slug: "integritaet"
 
 description: "Warum Integrität der Grundstein für echtes Vertrauen ist – über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
 
+summary: "Was ist eigentlich Integrität? Was nicht? Wo liegen die Grenzen? Das beschreibe ich an 3 Tugenden."
+
 category: "Menschlichkeit"
 
 tags:
@@ -48,11 +50,11 @@ jsonld:
 
 ---
 
-
 ## Einleitung
+
 Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.
 
-Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel.
+Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel anhand von 3 Tugenden.
 
 
 ## 1. Woran erkennt man Integriät?
