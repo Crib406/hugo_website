@@ -2,7 +2,7 @@
 title: "Integrität – der Grundstein für echte Zugehörigkeit"
 date: 2025-11-27T10:00:00+01:00
 reading_time: 7
-draft: false
+draft: true
 
 author: "Christoph B. Reimann"
 
