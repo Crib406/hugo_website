@@ -1,5 +1,5 @@
 ---
-title: "Integrität – der Grundstein für echte Zugehörigkeit"
+title: "Integrität – der Weg zu echter Zugehörigkeit"
 date: 2025-12-06T10:00:00+01:00
 reading_time: 7
 draft: false
@@ -9,9 +9,9 @@ image: "/assets/images/blog/integritet.jpeg"
 
 slug: "integritaet"
 
-description: "Warum Integrität der Grundstein für echtes Vertrauen ist – über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
+description: "Warum Integrität der Grundstein für echtes Vertrauen ist. Über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
 
-summary: "Was ist eigentlich Integrität? Was nicht? Wo liegen die Grenzen? Das beschreibe ich an 3 Tugenden."
+summary: "EIn Artikel über das Fundament der Zugehörigkeit: Die Integrität. Was beudeutet Integrität? Woran erkenne ich sie? Wo liegen die Grenzen?"
 
 category: "Menschlichkeit"
 
@@ -131,7 +131,8 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 **Klare Grenzen und Mut zur Konsequenz**
 {{< /checklist_normal_green_check >}}
 
-Ich freue mich, dass Sie sich die Zeit genommen haben, um diesen Artikel zu lesen. Vielen Dank.
+Integrität ist das Fundament für wahre Zugehörigkeit.
+
 
 Christoph B. Reimann
 
