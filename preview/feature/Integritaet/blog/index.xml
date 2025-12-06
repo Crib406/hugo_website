@@ -2,13 +2,4 @@
 &lt;p&gt;Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.&lt;/p&gt;
 &lt;p&gt;Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel.&lt;/p&gt;
 &lt;h2 id="1-woran-erkennt-man-integriät"&gt;1. Woran erkennt man Integriät?&lt;/h2&gt;
-&lt;p&gt;Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Die Person handelt demnach nach eigenen moralischen und ethischen Werten.&lt;/p&gt;</description></item><item><title>Vorlage &amp; Testpost – alle wichtigen Hugo-Felder im Einsatz</title><link>/preview/feature/Integritaet/blog/hugo-vorlage-testpost/</link><pubDate>Fri, 14 Nov 2025 10:00:00 +0100</pubDate><guid>/preview/feature/Integritaet/blog/hugo-vorlage-testpost/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;💡 &lt;strong&gt;Hinweis:&lt;/strong&gt;&lt;br&gt;
-Diese Datei ist als &lt;strong&gt;Vorlage&lt;/strong&gt; gedacht. Kopiere sie, passe Frontmatter an und lösche die Erklär-Textblöcke, sobald du den Mechanismus verstanden hast.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h1 id="1-überschrift-h1--kommt-aus-title-aber-du-kannst-hier-trotzdem-starten"&gt;1. Überschrift (H1) – kommt aus &lt;code&gt;title&lt;/code&gt;, aber du kannst hier trotzdem starten&lt;/h1&gt;
-&lt;p&gt;Normalerweise renderst du den Titel im Template über &lt;code&gt;{{ .Title }}&lt;/code&gt;.&lt;br&gt;
-Im Content selbst startest du meist mit einer H2.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="2-kurz-zusammenfassung--"&gt;2. Kurz-Zusammenfassung &amp;amp; `&lt;/h2&gt;</description></item></channel></rss>
+&lt;p&gt;Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Die Person handelt demnach nach eigenen moralischen und ethischen Werten.&lt;/p&gt;</description></item></channel></rss>
