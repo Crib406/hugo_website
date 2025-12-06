@@ -1,5 +1,5 @@
 ---
-title: "Menschlicher Blog von Christoph B. Reimann"
+title: "Blog von Christoph B. Reimann"
 type: "blog"
 description: "Menschliche Artikel über Werte, Haltung und Zugehörigkeit, mit dem Fokus, echte Verbindung zu stärken."
 
@@ -8,10 +8,10 @@ jsonld:
   "@type": "CollectionPage"
   name: "Blog – Klarheit, Haltung und Zugehörigkeit"
   url: "/blog/"
-  description: "Artikel über Werte, Haltung und menschliche Zugehörigkeit. Für mehr Verbindung und Vertrauen."
+  description: "Artikel über Werte, Haltung und menschliche Zugehörigkeit. Für mehr Verbindung und Vertrauen. Menschlich. Echt."
   mainEntity:
     "@type": "Blog"
     name: "Christoph B. Reimann – Blog"
     url: "/blog/"
-    description: "Ein Blog über Ermutigung, Haltung und die Stärkung echter Zugehörigkeit."
+    description: "Ein Blog über Werte, Haltung und Zugehörigkeit"
 ---
