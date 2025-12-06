@@ -88,7 +88,7 @@ Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet
 
 Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin, anderen treu zu bleiben, **ohne** die eigenen Werte oder die eigene Haltung aufzugeben. Gibt man diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
 
-Es braucht Courage, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
+Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
 
 
 ---
