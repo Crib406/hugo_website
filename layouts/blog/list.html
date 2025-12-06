@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+  {{ partial "breadcrumb.html" . }}
+
+  <div class="blog-classic-area-wrapper tmp-section-gap">
+    <div class="container">
+      <div class="row">
+
+        {{ range .Pages }}
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in">
+            <div class="img-box">
+              <a href="{{ .RelPermalink }}">
+                {{ with .Params.image }}
+                <img class="w-100" src="{{ . }}" alt="Blog Thumbnail">
+                {{ end }}
+              </a>
+              <ul class="blog-tags">
+                <li>
+                  <span class="tag-icon"><i class="fa-regular fa-user"></i></span>
+                  {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.defaultAuthor }}{{ end }}
+                </li>
+                <li>
+                  <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                  {{ .Date.Format "Jan 02" }}
+                </li>
+              </ul>
+            </div>
+            <div class="blog-content-wrap">
+              <h3 class="blog-title">
+                <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+              <div class="more-btn tmp-link-animation">
+                <a href="{{ .RelPermalink }}" class="read-more-btn">
+                  Mehr lesen
+                  <span class="read-more-icon">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+{{ end }}

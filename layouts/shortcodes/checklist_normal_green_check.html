@@ -1,0 +1,18 @@
+<ul class="check-box">
+  {{- $lines := split (trim .Inner "\n") "\n" -}}
+  {{- range $lines -}}
+    {{- $line := trim . " " -}}
+    {{- if gt (len $line) 0 -}}
+    <li>
+      <div class="check-box-item">
+        <span class="box-icon">
+          <i class="fa-solid fa-check"></i>
+        </span>
+        <span class="box-para">
+          {{ $line | markdownify }}
+        </span>
+      </div>
+    </li>
+    {{- end -}}
+  {{- end -}}
+</ul>
