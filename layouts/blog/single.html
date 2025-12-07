@@ -71,7 +71,7 @@
   }
 
   .blog-details-discription .disc .check-box li {
-    margin: 0 0 0.7em 0; /* wie deine anderen li */
+    margin: 0 0 0.7em 0;
   }
 
   /* Typografie vollständig vom umgebenden .disc übernehmen */
@@ -144,14 +144,14 @@
   .check-box-item .box-para strong {
     font-weight: 800 !important;
     font-size: 1.12em;
-    color: var(--color-heading) !important; /* heller / weiß */
+    color: var(--color-heading) !important;
   }
 
   /* im gesamten Fließtext außerhalb der Box */
   .blog-details-discription .disc strong {
     font-size: 1.12em;
     font-weight: 800 !important;
-    color: var(--color-heading) !important; /* heller / weiß hervorgehoben */
+    color: var(--color-heading) !important;
   }
 </style>
 
@@ -159,8 +159,8 @@
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+    <div class="row">
+      <div class="col-lg-8">
         <div class="blog-details-left-area">
 
           {{ with .Params.featured_image }}
@@ -201,6 +201,26 @@
 
         </div>
       </div>
+
+      <div class="col-lg-4">
+        <div class="tmp-sidebar">
+          <div class="signle-side-bar tmponhover">
+            <div class="header">
+              <h3 class="title">Tags</h3>
+            </div>
+            <div class="body">
+              <div class="tags-wrapper">
+                {{ with .Params.tags }}
+                  {{ range . }}
+                    <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">{{ . }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
