@@ -115,7 +115,7 @@
           {{ $img := or .Params.featured_image .Params.image }}
           {{ with $img }}
           <div class="thumbnail-top">
-            <img src="{{ . }}" alt="{{ $.Title }}">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}">
           </div>
           {{ end }}
 

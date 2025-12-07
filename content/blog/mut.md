@@ -5,7 +5,7 @@ reading_time: 7
 draft: false
 
 author: "Christoph B. Reimann"
-image: "../../assets/images/blog/Adler_1.png"
+image: "/assets/images/blog/Adler_1.png"
 
 slug: "mut"
 
@@ -90,7 +90,9 @@ Jeder Anfang, so klein er wirkt, ist der erste Schritt.
 - Der Mut liegt nicht im Ergebnis.
 - Der Mut liegt im Start, im Losfliegen.
 
-![Adler Mut Bild](../../assets/images/blog/Adler_2.png "Mut beginnt im Kleinen")
+{{< img src="assets/images/blog/Adler_2.png" alt="Adler Mut Bild" title="Mut beginnt im Kleinen" >}}
+
+
 
 
 ## Zusammenfassung

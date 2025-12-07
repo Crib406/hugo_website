@@ -14,7 +14,7 @@
               <div class="img-box">
                 <a href="{{ .RelPermalink }}">
                   {{ with .Params.image }}
-                    <img class="w-100" src="{{ . }}" alt="Blog Thumbnail">
+                    <img class="w-100" src="{{ . | relURL }}" alt="Blog Thumbnail">
                   {{ end }}
                 </a>
                 <ul class="blog-tags">
