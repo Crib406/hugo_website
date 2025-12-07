@@ -134,6 +134,8 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 Integrität ist das Fundament für wahre Zugehörigkeit.
 
 
+Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben.
+
 Christoph B. Reimann
 
 
