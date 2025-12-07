@@ -1,6 +1,6 @@
 ---
-title: "Mut"
-date: 2025-12-06T10:00:00+01:00
+title: "Mut - der wichtige Impuls für Zugehörigkeit"
+date: 2025-12-07T10:00:00+01:00
 reading_time: 7
 draft: false
 
@@ -13,7 +13,7 @@ description: "WOFFEN"
 
 summary: "OFFEN"
 
-category: "Menschlichkeit"
+category: "Zugehörigkeit"
 
 tags:
   - "Werte"
@@ -52,10 +52,18 @@ jsonld:
 
 ## Einleitung
 
-Ausfüllen
+## Mut als Begriff
+
+## Abrgrenzung zu Übermut
+
+## Zusammenfassung
 
 
-Mut beginnt damit zu starten. SIch zu trauen. 
+Mut beginnt damit zu starten. Sich zu trauen. 
+
+Denn: 
+
+`Das Glück ist mit den Mutigen!` 
 
 ![Adler Mut Bild](/assets/images/blog/adler_2.png "Mut beginnt im Kleinen")
 
