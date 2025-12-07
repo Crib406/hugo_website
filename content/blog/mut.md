@@ -50,29 +50,26 @@ jsonld:
 ---
 
 ## Einleitung - Warum Mut wichtiger ist als Perfektion
-Mut ist kein spektakulärer Ausnahmezustand, sondern eine leise, alltägliche Kraft, die wir für unser Leben dringend brauchen. Dieser Text zeigt, wie Mut in der Individualpsychologie verstanden wird, wie er sich klar von Übermut unterscheidet und warum er erst entsteht, wenn wir den ersten Schritt wirklich gehen.
+Mut ist kein spektakulärer Ausnahmezustand, sondern ein alltäglicher Begleiter den wir im kleinen nutzen können und für ein Leben in echter Zugehörigkeit dringend brauchen. Dieser Text zeigt, wie Mut in der Individualpsychologie verstanden wird, wie er sich klar von Übermut unterscheidet und wie wir ihn im täglichen Leben anwenden können. 
 
+## Mut zur Unvollkommenheit
 
-## Mut als Begriff
+In der Individualpsychologie beschreibt Mut keine "Heldentat", sondern eine grunsätzliche Haltung zum Leben. Alfred Adler betonte immer wieder, dass Menschen Mut brauchen, um sich den „Aufgaben des Lebens“ zuzuwenden. Mut ist dabei nicht die Abwesenheit von Angst, sondern die Bereitschaft, trotz Unsicherheit zu handeln und Verantwortung für das eigene Leben zu übernehmen. 
 
-In der Individualpsychologie beschreibt Mut keine Heldentat, sondern eine innere Haltung dem Leben gegenüber. Alfred Adler betonte immer wieder, dass Menschen Mut brauchen, um sich den „Aufgaben des Lebens“ zuzuwenden. Mut ist dabei nicht die Abwesenheit von Angst, sondern die Bereitschaft, trotz Unsicherheit zu handeln und Verantwortung zu übernehmen. Er entsteht erst im Tun – nicht im Warten auf ein passendes Gefühl.
-
-Der bekannte Ausdruck „Mut zur Unvollkommenheit“ stammt nicht wörtlich von Adler selbst, sondern aus der Adlerschule, vor allem von Rudolf Dreikurs. Die Formulierung fasst einen zentralen adlerianischen Gedankengang präzise zusammen:
-
-Wir müssen den Mut entwickeln, unvollkommen zu beginnen, Fehler zu riskieren und uns dennoch in die Welt hinauszubewegen. Denn für Adler ist Mut immer auch eine soziale Bewegung – ein Schritt in Richtung Gemeinschaft, nicht ein Rückzug in Perfektionismus oder Selbstschutz.
+Wir müssen den Mut entwickeln, unvollkommen zu beginnen und Fehler zu riskieren. Mut ist kein immer ein Schritt in Richtung Gemeinschaft und damit stärkt Mut die `Zugehörigkeit`.
 
 Mut bedeutet damit:
-- Ich handle, obwohl ich nicht perfekt bin.
+- Ich handle, obwohl ich nicht perfekt bin und Angst habe. 
 - Ich gehe in Kontakt, obwohl ich nicht alles weiß.
 - Ich traue mich, weil ich Teil der Gemeinschaft bin – nicht trotz ihr.
 
-So wird Mut zu einer tragenden, realistischen Kraft: leise, handlungsorientiert und zutiefst menschlich.
+So wird Mut zu einer stabilen und tragenden Kraft im Leben.
 
 ## Abgrenzung zu Übermut
 
-Mut und Übermut werden im Alltag oft verwechselt – doch aus adlerianischer Sicht sind sie grundverschieden. Mut ist eine realistische, verantwortungsbewusste Bewegung nach vorn. Er anerkennt die eigenen Grenzen, bezieht die Gemeinschaft mit ein und akzeptiert, dass Fehler dazugehören. Mut ist damit eine Haltung, die aus Verbundenheit entsteht.
+Mut und Übermut werden im Alltag oft verwechselt. Mut ist eine verantwortungsbewusste Bewegung nach vorn. Er anerkennt die eigenen Grenzen, bezieht die Gemeinschaft mit ein und akzeptiert, dass Fehler dazugehören. Mut ist damit eine Haltung, die aus Verbundenheit entsteht.
 
-Übermut dagegen ist eine Kompensation. Er entsteht, wenn jemand ein Minderwertigkeitsgefühl überspielen will – durch Lautstärke, Risikofreude oder demonstrative Stärke. Übermut ist nicht kontaktorientiert, sondern abwehrend: Er versucht, Eindruck zu machen, statt Verbindung zu schaffen. Während Mut fragt: „Was ist der nächste tragfähige Schritt?“, fragt Übermut: „Wie wirke ich größer als ich bin?“
+Übermut dagegen ist eine Kompensation. Er entsteht, wenn jemand ein Minderwertigkeitsgefühl überspielen will. Z.B. durch Lautstärke, Risikofreude oder demonstrative Stärke. Übermut ist nicht kontaktorientiert, sondern abwehrend: Er versucht, Eindruck zu machen, statt Verbindung zu schaffen. Während Mut fragt: „Was ist der nächste tragfähige Schritt?“, fragt Übermut: „Wie wirke ich größer als ich bin?“
 
 Adler wäre hier eindeutig:
 - Mut stärkt die Lebensbewältigung – Übermut schwächt sie.
@@ -103,7 +100,7 @@ Mut bedeutet in der Individualpsychologie, sich den Aufgaben des Lebens zuzuwend
 
 
 
-
+Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben ;-).
 
 Christoph B. Reimann
 
