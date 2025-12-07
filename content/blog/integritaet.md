@@ -20,7 +20,6 @@ tags:
   - "Werte"
   - "Vertrauen"
   - "Zugehörigkeit"
-  - "Menschlichkeit"
 
 type: "blog"
 layout: "single"
@@ -46,8 +45,9 @@ jsonld:
     - "Werte"
     - "Wahrhaftigkeit"
     - "Mut zur Konsequenz"
-    - "Mensch sein"
     - "Mut"
+    - "Glück"
+    - "Zufriedenheit"
 
 ---
 
