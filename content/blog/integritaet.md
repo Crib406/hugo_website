@@ -11,7 +11,7 @@ slug: "integritaet"
 
 description: "Warum Integrität der Grundstein für echtes Vertrauen ist. Über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
 
-summary: "EIn Artikel über das Fundament der Zugehörigkeit: Die Integrität. Was beudeutet Integrität? Woran erkenne ich sie? Wo liegen die Grenzen?"
+summary: "Ein Artikel über das Fundament der Zugehörigkeit: Die Integrität. Ihre Wahrhaftigkeit, Mut und Grenzen."
 
 category: "Zugehörigkeit"
 
@@ -95,8 +95,7 @@ Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist 
 
 Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
 
-> 💡         
-> Mutig und konsequent sein lohnt sich, denn: **Das Glück ist mit den Mutigen!**
+`Mutig` und konsequent sein lohnt sich, denn: Das Glück ist mit den Mutigen!
 
 
 ---
