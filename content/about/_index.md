@@ -110,7 +110,7 @@ jsonld:
               <p class="disc">
                 Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. 
                 Verbindungen zu schaffen, ist das, was mich antreibt. <br>
-                Mein Ziel ist es, in einer Position zu arbeiten, in der klare Kommunikation, Zusammenarbeit auf Augenhöhe und nachhaltige Prozessgestaltung im Mittelpunkt stehen.
+                Mein Ziel ist es, für eine klare Kommunikation, Zusammenarbeit auf Augenhöhe zu sorgen und nachhaltige Prozessgestaltung zu gestalten.
               </p>
 
             </div>
@@ -124,9 +124,6 @@ jsonld:
 
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
-      <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-        Lesen Sie mehr über <span>meinen Weg</span> oder sprechen Sie <span>direkt</span> mit mir. 
-      </h4>
 
       <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">

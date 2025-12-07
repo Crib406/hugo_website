@@ -177,12 +177,6 @@ jsonld:
   </div> <!-- .container -->
 </div> <!-- .blog-classic-area-wrapper -->
 
-<div class="about-content-area">
-  <div class="text-para-doc-wrap">
-    <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-      Aktuell bin ich offen für <span>neue Aufgaben. </span>Ich freue mich über ein Gespräch.
-    </h4>
-  </div>
-</div>
+
 
 <br>
