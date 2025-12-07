@@ -4,61 +4,58 @@
   <div class="blog-classic-area-wrapper tmp-section-gap">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-          {{ $index := 0 }}
-          {{ range .Pages }}
-            {{ $index = add $index 1 }}
-          <div class="blog-classic-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-{{ $index }}">
-            <div class="img-box">
-              <a href="{{ .RelPermalink }}">
-                {{ with .Params.image }}
-                <img class="img-primary hidden-on-mobile w-100" src="{{ . }}" alt="Blog Thumbnail">
-                <img class="img-secondary w-100" src="{{ . }}" alt="Blog Thumbnail">
-                {{ end }}
-              </a>
-            </div>
-            <div class="blog-classic-content">
-              <div class="blog-classic-tag">
-                <ul>
-                  {{ with .Params.tags }}
-                  <li>
-                    <div class="tag-wrap">
-                      <i class="fa-solid fa-tag"></i>
-                      <h4 class="tag-title">{{ index . 0 }}</h4>
-                    </div>
-                  </li>
+        {{ $index := 0 }}
+        {{ range .Pages }}
+          {{ $index = add $index 1 }}
+          {{ $animIndex := add (mod (sub $index 1) 3) 1 }} {{/* ergibt 1,2,3,1,2,3,... */}}
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-{{ $animIndex }}">
+              <div class="img-box">
+                <a href="{{ .RelPermalink }}">
+                  {{ with .Params.image }}
+                    <img class="w-100" src="{{ . }}" alt="Blog Thumbnail">
+                  {{ end }}
+                </a>
+                <ul class="blog-tags">
+                  {{ with .Params.category }}
+                    <li>
+                      <span class="tag-icon">
+                        <i class="fa-solid fa-tag"></i>
+                      </span>
+                      {{ . }}
+                    </li>
                   {{ end }}
                   <li>
-                    <div class="tag-wrap">
-                      <i class="fa-solid fa-calendar-day"></i>
-                      <h4 class="tag-title">{{ .Date.Format "02. Jan 2006" }}</h4>
-                    </div>
+                    <span class="tag-icon">
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    {{ .Date.Format "02. Jan 2006" }}
                   </li>
                 </ul>
               </div>
-              <h2 class="title">
-                <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-              </h2>
-              {{ if .Summary }}
-              <p class="para">{{ .Summary | plainify | truncate 150 }}</p>
-              {{ end }}
-              
-              <div class="tmp-button-here">
-                <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="{{ .RelPermalink }}">
-                  <span class="icon-reverse-wrapper">
-                    <span class="btn-text">Mehr lesen</span>
-                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                  </span>
-                </a>
+
+              <div class="blog-content-wrap">
+                <h3 class="blog-title">
+                  <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h3>
+
+                {{ if .Summary }}
+                  <p class="para">{{ .Summary | plainify | truncate 150 }}</p>
+                {{ end }}
+
+                <div class="more-btn tmp-link-animation">
+                  <a href="{{ .RelPermalink }}" class="read-more-btn">
+                    Mehr lesen
+                    <span class="read-more-icon">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          {{ end }}
-        
-        </div>
-
-       
+        {{ end }}
       </div>
     </div>
   </div>
