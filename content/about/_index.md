@@ -60,16 +60,26 @@ jsonld:
 
           <div class="our-portfolio-swiper">
 
-            <p class="disc">
-              Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
+             <div class="blog-details-swiper">
+              <div class="our-portfoli-swiper-card">
+                <div class="card-right-content">
+                  <img src="/assets/images/blog/cr_autor.jpeg" alt="Christoph B. Reimann mit Brille 2024">
+                </div>
+                <div class="card-left-content">
+                  <p class="disc">
+                     Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
               Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
               <br>
-              Dank meinem technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
+               Dank meinem technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
               und sie zu gestalten.
               <br>
-              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
+               Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
               sehe ihn nicht nur als Produktionsfaktor.
-            </p>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br>
 
             <div class="check-box-wrap">
               <ul>
