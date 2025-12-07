@@ -2,7 +2,7 @@
 title: "Loyalität"
 date: 2025-12-06T10:00:00+01:00
 reading_time: 7
-draft: false
+draft: true
 
 author: "Christoph B. Reimann"
 image: "/assets/images/blog/loyalitaet.jpeg"
