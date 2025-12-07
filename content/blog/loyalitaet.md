@@ -5,7 +5,7 @@ reading_time: 7
 draft: true
 
 author: "Christoph B. Reimann"
-image: "/assets/images/blog/loyalitaet.jpeg"
+image: "assets/images/blog/loyalitaet.jpeg"
 
 slug: "loyalitaet"
 
