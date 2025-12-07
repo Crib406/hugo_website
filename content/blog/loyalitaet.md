@@ -49,6 +49,7 @@ jsonld:
     - "Mensch sein"
 
 ---
+# Entwurf !
 
 ## Einleitung
 Loyalität wird oft mit Pflicht oder Anpassung verwechselt. Dabei ist sie etwas anderes: eine freie, innerlich stimmige Entscheidung. Dieser Text zeigt, warum Loyalität ohne ihne Basis nicht ehrlich funtkionieren kann, was Loyalität genau ist und wo die Grenzen liegen.
