@@ -6,7 +6,6 @@
     text-align: center;
   }
 
-  /* Text-Container zentriert, Inhalt im Blocksatz */
   .blog-details-discription .disc {
     display: inline-block;
     text-align: justify !important;
@@ -17,7 +16,6 @@
     font-size: 1.9rem !important;
   }
 
-  /* Fließtext + Listen größer & fett */
   .blog-details-discription .disc p,
   .blog-details-discription .disc li,
   .blog-details-discription .disc span {
@@ -29,7 +27,6 @@
     line-height: 1.7 !important;
   }
 
-  /* Überschriften links */
   .blog-details-discription .disc h1,
   .blog-details-discription .disc h2,
   .blog-details-discription .disc h3,
@@ -40,26 +37,19 @@
     text-align: left !important;
   }
 
-  /* Absatz-Abstand */
   .blog-details-discription .disc p {
     margin-bottom: 1.4em;
   }
 
-  /* Normale Listen */
   .blog-details-discription .disc li {
     margin-bottom: 0.7em;
   }
 
-  /* =========================
-     CHECKLISTE (Shortcode)
-     ========================= */
-
-  /* Grundlayout der Checkliste: nur Abstand, keine Typografie */
   .blog-details-discription .disc .check-box {
     margin: 0;
     padding: 0;
     list-style: none;
-    border-top: 2px solid rgba(157, 157, 255, 0.0509803922);
+    border-top: 2px solid rgba(157, 157, 255, 0.05);
     padding-top: 43px;
     padding-bottom: 30px;
   }
@@ -74,7 +64,6 @@
     margin: 0 0 0.7em 0;
   }
 
-  /* Typografie vollständig vom umgebenden .disc übernehmen */
   .blog-details-discription .disc .check-box-item,
   .blog-details-discription .disc .check-box .box-para,
   .blog-details-discription .disc .check-box .box-icon {
@@ -85,7 +74,6 @@
     color: inherit !important;
   }
 
-  /* Nur Layout via Flex, keine Typo */
   .blog-details-discription .disc .check-box-item {
     display: flex;
     align-items: flex-start;
@@ -93,16 +81,14 @@
     margin: 0;
   }
 
-  /* Icon leicht nach unten, aber ohne Text zu beeinflussen */
   .blog-details-discription .disc .check-box .box-icon {
     flex: 0 0 auto;
     line-height: 1;
     margin-top: 0.2em;
   }
 
-  /* Falls irgendwo außerhalb .disc eine .check-box vorkommt */
   .check-box {
-    border-top: 2px solid rgba(157, 157, 255, 0.0509803922);
+    border-top: 2px solid rgba(157, 157, 255, 0.05);
     padding-top: 43px;
     padding-bottom: 30px;
   }
@@ -124,30 +110,22 @@
     gap: 10px;
   }
 
-  /* Text: exakt gleiche Größe/Formatierung wie der Rest, einfach erben */
   .check-box .box-para {
     font: inherit;
     color: inherit;
   }
 
-  /* Icon explizit grün machen */
   .blog-details-discription .disc .check-box .box-icon,
   .blog-details-discription .disc .check-box .box-icon i {
     color: var(--color-primary) !important;
   }
 
-  /* =========================
-     HERVORHEBUNG: **FETT**
-     ========================= */
-
-  /* in der Checkliste (falls du einzelne Wörter fett markierst) */
   .check-box-item .box-para strong {
     font-weight: 800 !important;
     font-size: 1.12em;
     color: var(--color-heading) !important;
   }
 
-  /* im gesamten Fließtext außerhalb der Box */
   .blog-details-discription .disc strong {
     font-size: 1.12em;
     font-weight: 800 !important;
@@ -204,6 +182,50 @@
 
       <div class="col-lg-4">
         <div class="tmp-sidebar">
+
+          <!-- Autorenbox -->
+          <div class="signle-side-bar tmponhover">
+            <div class="header">
+              <h3 class="title">About Me</h3>
+            </div>
+            <div class="body">
+              <div class="about-me-details">
+                <div class="about-me-details-head">
+                  <div class="about-me-img">
+                    <img src="assets/images/blog/about-me-user-img.png" alt="{{ .Params.author }}">
+                  </div>
+                  <div class="about-me-right-content">
+                    <h3 class="title">
+                      {{ with .Params.author }}
+                        {{ . }}
+                      {{ else }}
+                        Christoph B. Reimann
+                      {{ end }}
+                    </h3>
+                    {{ with .Params.author_role }}
+                      <p class="para">{{ . }}</p>
+                    {{ end }}
+
+                    <div class="social-link">
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <p class="about-me-para">
+                  {{ with .Params.author_bio }}
+                    {{ . }}
+                  {{ else }}
+                    Ich schreibe über Menschlichkeit, Werte und mutige Entscheidungen im Alltag. 
+                  {{ end }}
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags ohne Links -->
           <div class="signle-side-bar tmponhover">
             <div class="header">
               <h3 class="title">Tags</h3>
@@ -212,12 +234,13 @@
               <div class="tags-wrapper">
                 {{ with .Params.tags }}
                   {{ range . }}
-                    <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">{{ . }}</a>
+                    <span class="tag-link">{{ . }}</span>
                   {{ end }}
                 {{ end }}
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
