@@ -50,18 +50,19 @@ jsonld:
 
 ---
 
-## Einleitung
+## Einleitung - Warum Mut wichtiger ist als Perfektion
 
 ## Mut als Begriff
 
 ## Abrgrenzung zu Übermut
 
+## Mut beginnt damit zu starten
+
 ## Zusammenfassung
 
 
-Mut beginnt damit zu starten. Sich zu trauen. 
 
-Denn: 
+ 
 
 `Das Glück ist mit den Mutigen!` 
 
