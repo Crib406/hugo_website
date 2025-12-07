@@ -1,5 +1,5 @@
 ---
-title: "Integrität – der Weg zu echter Zugehörigkeit"
+title: "Integrität – das Fundament echter Zugehörigkeit"
 date: 2025-12-06T10:00:00+01:00
 reading_time: 7
 draft: false
