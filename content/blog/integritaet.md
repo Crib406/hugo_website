@@ -16,8 +16,8 @@ summary: "EIn Artikel über das Fundament der Zugehörigkeit: Die Integrität. W
 category: "Zugehörigkeit"
 
 tags:
+  - "Mut"
   - "Werte"
-  - "Integrität"
   - "Vertrauen"
   - "Zugehörigkeit"
   - "Menschlichkeit"
@@ -47,6 +47,7 @@ jsonld:
     - "Wahrhaftigkeit"
     - "Mut zur Konsequenz"
     - "Mensch sein"
+    - "Mut"
 
 ---
 
@@ -77,7 +78,7 @@ Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wa
 {{< /checklist_normal_green >}}
 
 
-> 💡 **Hinweis:**  
+> 💡        
 > Warum Gefühle nicht immer ein verlässlicher Kompass sind, beschreibe ich in einem anderen Artikel ausführlich.
 
 
@@ -94,8 +95,8 @@ Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist 
 
 Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
 
-> 💡 **Hinweis:**  
-> Loyalität richtet sich nach außen. Integrität nach innen. Wenn beides kollidiert, hat Integrität Vorrang!
+> 💡         
+> Mutig und konsequent sein lohnt sich, denn: **Das Glück ist mit den Mutigen!**
 
 
 ---
@@ -103,7 +104,7 @@ Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und 
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld. 
 
 
-> 💡 **Hinweis:**  
+> 💡   
 > Integrität stärkt zudem die Urteilskraft und führt zu besseren, aber vor allem stimmigeren Entscheidungen.
 
 
