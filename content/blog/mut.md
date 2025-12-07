@@ -48,7 +48,7 @@ jsonld:
     - "Mensch sein"
 
 ---
-
+# Entwurf !!
 ## Einleitung 
 Mut ist kein spektakulärer Ausnahmezustand, sondern ein alltäglicher Begleiter den wir im kleinen nutzen können und für ein Leben in echter `Zugehörigkeit` dringend gebrauchen können. Dieser Text zeigt, wie Mut in der Individualpsychologie verstanden wird, wie er sich klar von Übermut unterscheidet und wie wir ihn im täglichen Leben anwenden können. 
 
