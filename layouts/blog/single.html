@@ -38,29 +38,25 @@
   }
 
   .blog-details-discription .disc p {
-    margin-bottom: 1.4em;
+    margin-bottom: 0.9em; /* kompakter */
   }
 
   .blog-details-discription .disc li {
     margin-bottom: 0.7em;
   }
 
-  .blog-details-discription .disc .check-box {
+  /* ✔️ Kompaktere Check-Box – EINHEITLICH */
+  .blog-details-discription .disc .check-box,
+  .check-box {
     margin: 0;
-    padding: 0;
+    padding: 12px 0 12px 0; /* statt 43px / 30–40px */
     list-style: none;
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
+    border-top: 1px solid rgba(157, 157, 255, 0.08);
   }
 
-  @media (min-width: 992px) {
-    .blog-details-discription .disc .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .blog-details-discription .disc .check-box li {
+  .blog-details-discription .disc .check-box li,
+  .check-box li {
+    list-style: none;
     margin: 0 0 0.7em 0;
   }
 
@@ -74,48 +70,22 @@
     color: inherit !important;
   }
 
-  .blog-details-discription .disc .check-box-item {
+  .blog-details-discription .disc .check-box-item,
+  .check-box .check-box-item {
     display: flex;
     align-items: flex-start;
     gap: 10px;
     margin: 0;
   }
 
-  .blog-details-discription .disc .check-box .box-icon {
+  .blog-details-discription .disc .check-box .box-icon,
+  .check-box .box-icon {
     flex: 0 0 auto;
     line-height: 1;
     margin-top: 0.2em;
+    color: var(--color-primary) !important;
   }
 
-  .check-box {
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: 992px) {
-    .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .check-box li {
-    list-style: none;
-    margin: 0 0 0.7em 0;
-  }
-
-  .check-box .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .check-box .box-para {
-    font: inherit;
-    color: inherit;
-  }
-
-  .blog-details-discription .disc .check-box .box-icon,
   .blog-details-discription .disc .check-box .box-icon i {
     color: var(--color-primary) !important;
   }
@@ -181,36 +151,34 @@
 
         </div>
 
-         <div class="container">
-    <div class="row justify-content-center">
+        <div class="container">
+          <div class="row justify-content-center">
 
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <a href="mailto:hello@creimann.cc" class="service-card-link">
+                <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <h4 class="service-title">Per Mail</h4>
+                </div>
+              </a>
             </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
-      </div>
 
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
+                <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                  <div class="service-card-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                  <h4 class="service-title">Auf LinkedIn</h4>
+                </div>
+              </a>
             </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
+
           </div>
-        </a>
+        </div>
       </div>
-
-    </div>
-  </div>
-      </div>
-
-      
 
       <div class="col-lg-4">
         <div class="tmp-sidebar">
@@ -243,7 +211,6 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </div>
-
                   </div>
                 </div>
 
@@ -281,6 +248,5 @@
     </div>
   </div>
 </div>
-
 
 {{ end }}
