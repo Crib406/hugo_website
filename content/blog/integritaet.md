@@ -13,7 +13,7 @@ description: "Warum Integrität der Grundstein für echtes Vertrauen ist. Über 
 
 summary: "EIn Artikel über das Fundament der Zugehörigkeit: Die Integrität. Was beudeutet Integrität? Woran erkenne ich sie? Wo liegen die Grenzen?"
 
-category: "Menschlichkeit"
+category: "Zugehörigkeit"
 
 tags:
   - "Werte"
