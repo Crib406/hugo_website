@@ -134,9 +134,6 @@ jsonld:
 
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
-      <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-        Lesen Sie mehr über <span>meinen Weg</span> oder sprechen Sie <span>direkt</span> mit mir. 
-      </h4>
 
       <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
         <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
