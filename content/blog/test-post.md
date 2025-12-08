@@ -1,6 +1,6 @@
 ---
 # Basis-Metadaten
-title: "Vorlage & Testpost – alle wichtigen Hugo-Felder im Einsatz"
+title: "Testpost – im Einsatz"
 date: 2025-11-14T10:00:00+01:00
 draft: true        # true = nur im Draft-Modus sichtbar, false = live
 

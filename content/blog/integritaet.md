@@ -35,8 +35,8 @@ jsonld:
   author:
     "@type": "Person"
     name: "Christoph B. Reimann"
-  datePublished: "2025-11-27T10:00:00+01:00"
-  dateModified: "2025-11-27T10:00:00+01:00"
+  datePublished: "2025-12-06T10:00:00+01:00"
+  dateModified: "2025-12-08T10:00:00+01:00"
   url: "/blog/integritaet"
   inLanguage: "de-DE"
   keywords:
@@ -55,20 +55,26 @@ jsonld:
 
 Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.
 
-Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel anhand von 3 Tugenden.
+Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel.
 
 
 ## 1. Woran erkennt man Integriät?
 
-Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Die Person handelt demnach nach eigenen moralischen und ethischen Werten.
+Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man handelt nach eigenen moralischen und ethischen Werten.
 
 An folgenden drei Tugenden möchte ich etwas ausführen und erklären, was Integrität meiner Auffassung nach wirklich bedeutet.
 
 ### 1.1. Wahrhaftigkeit 
 
-Wahrhaftigkeit ist ein inneres Streben nach Wahrheit. Nicht nur mit dem, was im Äußeren gesagt wird. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen.
+Wahrhaftigkeit ist ein **inneres** Streben nach Wahrheit. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen.
 
-Gedanken sind rational und formbar. Sie lassen sich anpassen, relativieren oder verbiegen. Erst wenn Gefühle, Gedanken und Handlungen wirklich in Einklang stehen, entsteht echte Integrität: ein klarer, ruhiger innerer Zustand. Der Kopf wird ruhig, und der Körper weiß instinktiv: Das "Bauchgefühl" passt.
+Gedanken wirken formbar, folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnern die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
+
+Erst wenn Gefühle, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Selbstachtung und und dem Ziel echter Zugehörigkeit. 
+
+Wenn dieser innere Druck nachlässt werden wir ruhiger und es ensteht das "Bauchgefühl": Das passt!
+
+Wahrhaftigkeit bedeutet dann: Der innere Zustand stimmt, nicht der äußere Schein. 
 
 Wahrhaftigkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
@@ -134,7 +140,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 Integrität ist das Fundament für wahre Zugehörigkeit.
 
 
-Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben -;).
+Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben ;-). 
 
 Christoph B. Reimann
 
