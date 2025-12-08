@@ -35,8 +35,8 @@ jsonld:
   author:
     "@type": "Person"
     name: "Christoph B. Reimann"
-  datePublished: "2025-11-27T10:00:00+01:00"
-  dateModified: "2025-11-27T10:00:00+01:00"
+  datePublished: "2025-12-06T10:00:00+01:00"
+  dateModified: "2025-12-08T10:00:00+01:00"
   url: "/blog/integritaet"
   inLanguage: "de-DE"
   keywords:
