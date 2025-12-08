@@ -68,9 +68,9 @@ An folgenden drei Tugenden möchte ich etwas ausführen und erklären, was Integ
 
 Wahrhaftigkeit ist ein **inneres** Streben nach Wahrheit. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen.
 
-Gedanken wirken formbar, folgen in der Tiefe oft nur einem Zweck: unserem Lebensstil. Sie ordnern die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
+Gedanken wirken formbar, folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnern die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
 
-Erst wenn Gefühle, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Zugehörigkeit und Selbstachtung. 
+Erst wenn Gefühle, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Selbstachtung und und dem Ziel echter Zugehörigkeit. 
 
 Wenn dieser innere Druck nachlässt werden wir ruhiger und es ensteht das "Bauchgefühl": Das passt!
 
@@ -140,7 +140,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 Integrität ist das Fundament für wahre Zugehörigkeit.
 
 
-Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben.
+Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben ;-). 
 
 Christoph B. Reimann
 
