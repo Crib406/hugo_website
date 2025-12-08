@@ -157,7 +157,7 @@ jsonld:
 
             <p class="disc">
               Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin neugierig und vielseitig. Ich will gestalten und Verbindungen schaffen, bevor Brüche entstehen. 
+              Ich bin neugierig und vielseitig.
             </p>
 
             <div class="quote-area-blog-details">
@@ -179,9 +179,7 @@ jsonld:
 
 <div class="about-content-area">
   <div class="text-para-doc-wrap">
-    <h4 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap" style="text-align: center;">
-      Aktuell bin ich offen für <span>neue Aufgaben. </span>Ich freue mich über ein Gespräch.
-    </h4>
+   
   </div>
 </div>
 
