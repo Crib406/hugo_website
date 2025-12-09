@@ -36,7 +36,7 @@ jsonld:
     "@type": "Person"
     name: "Christoph B. Reimann"
   datePublished: "2025-12-06T10:00:00+01:00"
-  dateModified: "2025-12-08T10:00:00+01:00"
+  dateModified: "2025-12-09T10:00:00+01:00"
   url: "/blog/integritaet"
   inLanguage: "de-DE"
   keywords:
@@ -55,10 +55,10 @@ jsonld:
 
 Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.
 
-Was genau Integrität ist, woran man sie erkennt und wo die Grenzen liegen, erkläre ich in diesem Artikel.
+Worauf genau es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artikel. 
 
 
-## 1. Woran erkennt man Integriät?
+## 1. Woran erkennt man Integrität?
 
 Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man handelt nach eigenen moralischen und ethischen Werten.
 
@@ -68,11 +68,11 @@ An folgenden drei Tugenden möchte ich etwas ausführen und erklären, was Integ
 
 Wahrhaftigkeit ist ein **inneres** Streben nach Wahrheit. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen.
 
-Gedanken wirken zwar "formbar", folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnern die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
+Warum Gedanken nicht reichen: Sie wirken zwar "formbar", folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnen die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
 
-Erst wenn Gefühle, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Selbstachtung. 
+Erst wenn **Gefühle**, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Selbstachtung.
 
-Wenn dieser innere Druck nachlässt werden wir ruhiger und es ensteht das "Bauchgefühl": Das passt!
+Wenn dieser innere Druck nachlässt, werden wir ruhiger und es ensteht das "Bauchgefühl": Das passt!
 
 Wahrhaftigkeit bedeutet dann: Der innere Zustand stimmt, nicht der äußere Schein. 
 
@@ -82,10 +82,6 @@ Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Must
 Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen.
 „Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
 {{< /checklist_normal_green >}}
-
-
-> 💡        
-> Warum Gefühle nicht immer ein verlässlicher Kompass sind, beschreibe ich in einem anderen Artikel ausführlich.
 
 
 **Wahrhaftigkeit ist das Fundament der Integrität**
@@ -102,7 +98,6 @@ Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist 
 Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
 
 `Mutig` und konsequent sein lohnt sich, denn: Das Glück ist mit den Mutigen!
-
 
 ---
 ## 2 Was bringt einem Integrität?
