@@ -55,7 +55,7 @@ jsonld:
 
 Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.
 
-Worauf genau es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artikel. 
+Worauf es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artikel. 
 
 
 ## 1. Woran erkennt man Integrität?
@@ -68,13 +68,10 @@ An folgenden drei Tugenden möchte ich etwas ausführen und erklären, was Integ
 
 Wahrhaftigkeit ist ein **inneres** Streben nach Wahrheit. Das setzt voraus, dass Gedanken, Gefühle und Handlungen in Einklang stehen.
 
-Warum Gedanken nicht reichen: Sie wirken zwar "formbar", folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnen die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne den emotionalen Boden dahinter zu kennen. 
+Gedanken wirken zwar "formbar", folgen in der Tiefe aber oft nur einem Zweck: unserem Lebensstil. Sie ordnen die Welt so, dass wir uns sicher fühlen. Sie lassen sich nicht einfach mal eben verändern, ohne die Emotionen dahinter zu kennen. 
 
 Erst wenn **Gefühle**, Gedanken und Handlungen aus derselben inneren Haltung kommen, entsteht echte Integrität. Die eigenen Handlungen entstehen nicht mehr aus Angst oder Anpassung, sondern aus Selbstachtung.
 
-Wenn dieser innere Druck nachlässt, werden wir ruhiger und es ensteht das "Bauchgefühl": Das passt!
-
-Wahrhaftigkeit bedeutet dann: Der innere Zustand stimmt, nicht der äußere Schein. 
 
 Wahrhaftigkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
@@ -83,8 +80,8 @@ Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wa
 „Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
 {{< /checklist_normal_green >}}
 
+Wer seine Grenzen kennt, lebt wahrhaftig. Der innere Druck lässt nach, man wird ruhiger und spürt sehr schnell, was stimmig ist und was nicht.
 
-**Wahrhaftigkeit ist das Fundament der Integrität**
 
 ### 1.2 Verlässlichkeit
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
@@ -92,20 +89,17 @@ Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet
 
 ### 1.3 Mut zur Konsequenz
 
+Es gibt Momente in denen Integrität mit Loyalität verschwimmt oder verwechselt wird. 
+
 Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin, anderen treu zu bleiben, **ohne** die eigenen Werte oder die eigene Haltung aufzugeben. Gibt man diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
 
-
-Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
-
-`Mutig` und konsequent sein lohnt sich, denn: Das Glück ist mit den Mutigen!
+Hier lohnt es sich genau zu unterscheiden woher die Loyalität kommt. Von innen, oder von außen? Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
 
 ---
 ## 2 Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld. 
 
-
-> 💡   
-> Integrität stärkt zudem die Urteilskraft und führt zu besseren, aber vor allem stimmigeren Entscheidungen.
+Integrität stärkt zudem die Urteilskraft und führt zu besseren, aber vor allem **stimmigeren** Entscheidungen.
 
 
 
