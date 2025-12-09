@@ -163,7 +163,7 @@ jsonld:
             <div class="quote-area-blog-details">
               <p class="disc" style="font-size: 18px; font-weight: 700;">
                 "Führen heißt für mich, klar zu sein, aktiv zuzuhören und Vertrauen zu ermöglichen. Ich bin davon überzeugt: 
-                Echte Entwicklung beginnt da, wo Menschen sich gesehen und sicher fühlen – und Fehler als Chancen gesehen werden."
+                Echte Entwicklung beginnt da, wo Menschen sich gesehen, sicher und zugehörig fühlen – und Fehler als Chancen gesehen werden."
               </p>
             </div>
 
