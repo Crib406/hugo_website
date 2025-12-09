@@ -2,9 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  {{/* Version-String: JahrMonatTagStundeMinute */}}
+  {{ $version := now | time.Format "200601021504" }}
+
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}">
-  <link rel="icon" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}" type="image/png">
+  <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}?v={{ $version }}">
+  <link rel="icon" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}?v={{ $version }}" type="image/png">
 
   <!-- Title -->
   <title>
@@ -52,7 +55,7 @@
   {{ end }}
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="Christoph B. Reimann">
-  <meta property="og:image" content="{{ "assets/images/about/preview.png" | absURL }}">
+  <meta property="og:image" content="{{ "assets/images/about/preview.png" | absURL }}?v={{ $version }}">
   <meta property="og:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
 
   <!-- Twitter -->
@@ -61,7 +64,7 @@
   {{ if $desc }}
     <meta name="twitter:description" content="{{ $desc }}">
   {{ end }}
-  <meta name="twitter:image" content="{{ "assets/images/about/preview.png" | absURL }}">
+  <meta name="twitter:image" content="{{ "assets/images/about/preview.png" | absURL }}?v={{ $version }}">
 
   <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
@@ -82,7 +85,7 @@
     ],
     "jobTitle": "Mensch · Betriebswirt · Generalist",
     "url": "{{ .Site.BaseURL }}",
-    "image": "{{ "assets/images/about/preview.png" | absURL }}",
+    "image": "{{ "assets/images/about/preview.png" | absURL }}?v={{ $version }}",
     "description": {{ printf "%q" .Site.Params.siteseo.personDescription }},
     "address": {
     "@type": "PostalAddress",
@@ -189,10 +192,10 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "assets/css/vendor/fontawesome.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "assets/css/plugins/swiper.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "assets/css/plugins/odometer.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "assets/css/vendor/animate.min.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "assets/css/vendor/bootstrap.min.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "assets/css/vendor/fontawesome.css" | relURL }}?v={{ $version }}">
+  <link rel="stylesheet" href="{{ "assets/css/plugins/swiper.css" | relURL }}?v={{ $version }}">
+  <link rel="stylesheet" href="{{ "assets/css/plugins/odometer.css" | relURL }}?v={{ $version }}">
+  <link rel="stylesheet" href="{{ "assets/css/vendor/animate.min.css" | relURL }}?v={{ $version }}">
+  <link rel="stylesheet" href="{{ "assets/css/vendor/bootstrap.min.css" | relURL }}?v={{ $version }}">
+  <link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}?v={{ $version }}">
 </head>
