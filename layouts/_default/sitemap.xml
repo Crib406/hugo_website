@@ -1,21 +1,23 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  {{/* Startseite explizit */}}
   <url>
-    <loc>{{ .Site.BaseURL }}</loc>
+    <loc>{{ .Site.BaseURL | safeURL }}</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  {{/* Alle Seiten außer Home + manuell ausgeschlossene */}}
-  {{- range .Site.Pages }}
+  {{/* Alle regulären Seiten außer Home und sitemap_exclude */}}
+  {{- $pages := where .Site.Pages "Kind" "in" (slice "page" "section") -}}
+  {{- range $pages }}
     {{- if and (not .IsHome) (not .Params.sitemap_exclude) }}
       <url>
-        <loc>{{ .Permalink }}</loc>
-        {{ with .Lastmod }}
-          <lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
-        {{ end }}
+        <loc>{{ .Permalink | safeURL }}</loc>
+
+        {{- with .Lastmod }}
+          <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+        {{- end }}
+
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
       </url>
