@@ -3,7 +3,7 @@
 
   {{/* Startseite hart */}}
   <url>
-    <loc>https://creimann.cc/</loc>
+    <loc>{{ .Site.BaseURL | safeURL }}</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -13,7 +13,7 @@
   {{- range $pages }}
     {{- if and (not .IsHome) (not .Params.sitemap_exclude) }}
       <url>
-        <loc>https://creimann.cc{{ .RelPermalink | safeURL }}</loc>
+        <loc>{{ .Permalink | safeURL }}</loc>
 
         {{- with .Lastmod }}
           <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
