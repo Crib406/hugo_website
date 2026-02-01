@@ -53,7 +53,9 @@ jsonld:
 
 ## Einleitung
 
-Integrität ist der rote Faden im Leben, der aus lockeren Kontakten verlässliche Beziehungen mit Substanz entstehen lässt. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen.
+Integrität ist das Fundament für langfristige Zugehörigkeit. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen. 
+
+STUDIE mit REIN?
 
 Worauf es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artikel. 
 
@@ -62,7 +64,7 @@ Worauf es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artik
 
 Im Duden lassen sich folgende Synonyme für Integrität nachschlagen: Makellosigkeit, Unbestechlichkeit, Anständigkeit und Rechtschaffenheit. Man handelt nach eigenen moralischen und ethischen Werten.
 
-An folgenden drei Tugenden möchte ich etwas ausführen und erklären, was Integrität meiner Auffassung nach wirklich bedeutet.
+An folgenden vier Tugenden möchte ich etwas ausführen und erklären, was Integrität meiner Auffassung nach wirklich bedeutet.
 
 ### 1.1. Wahrhaftigkeit 
 
@@ -75,9 +77,9 @@ Erst wenn **Gefühle**, Gedanken und Handlungen aus derselben inneren Haltung ko
 
 Wahrhaftigkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
-Gefühle sind nicht immer ein verlässlicher Kompass. Sie können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen oder impulsiven Gefühl blind zu folgen, sondern zu lernen, es in einem ruhigen Moment wahrzunehmen.
-Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es wichtiger ist, ein gegebenes Wort zu halten oder niemanden zu verletzen.
-„Ich bin halt ehrlich“ oder „So bin ich eben“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
+Gefühle können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen oder impulsiven Gefühl blind zu folgen, sondern zu lernen, es in einem ruhigen Moment wahrzunehmen.
+Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es andere nicht zu verletzten. 
+„Ich bin halt ehrlich“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
 {{< /checklist_normal_green >}}
 
 Wer seine Grenzen kennt, lebt wahrhaftig. Der innere Druck lässt nach, man wird ruhiger und spürt sehr schnell, was stimmig ist und was nicht.
@@ -86,8 +88,14 @@ Wer seine Grenzen kennt, lebt wahrhaftig. Der innere Druck lässt nach, man wird
 ### 1.2 Verlässlichkeit
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
 
+Allerdings ohne die eigenen Werte über Bord zu werfen. 
 
-### 1.3 Mut zur Konsequenz
+### 1.3 Diskretion
+
+Hier geht es darum nicht die Quasseltasche zu sein. Wort halten. Oder nicht alles auszuplaudern, was man weiß. 
+
+
+### 1.4 Mut zur Konsequenz
 
 Es gibt Momente in denen Integrität mit Loyalität verschwimmt oder verwechselt wird. 
 
@@ -119,19 +127,21 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 
 
 {{< checklist_normal_green_check >}}
-**Innere und äußere Stimmigkeit zwischen Gefühl, Gedanke, Wort und Handlung**
-**Drei Säulen: Wahrhaftigkeit, Verlässlichkeit, Mut zur Konsequenz**
-**Reflektierte Wahrhaftigkeit statt impulsiver „Ehrlichkeit“ als Fundament** 
-**Integrität schafft Vertrauen, Klarheit und Zugehörigkeit**
-**Klare Grenzen und Mut zur Konsequenz**
+**Wahrhaftigkeit: Innere Stimmitgkeit statt Impuls**
+**Verlässlichkeit: Wort = Tat**
+**Diskretion: Schweigen als Tugend** 
+**Mut zur Konsequenz: Werte durchsetzten**
+**Ergebnis: Echte Zugehörigkeit**
 {{< /checklist_normal_green_check >}}
 
-Integrität ist das Fundament für wahre Zugehörigkeit.
+Integrität ist das Fundament für wahre Zugehörigkeit. Sie ist ein ständiges Ziel im Leben, und nicht nur Selbstoptimierung.
 
 
 Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben ;-). 
 
 Christoph B. Reimann
+
+
 
 
 
