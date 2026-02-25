@@ -114,7 +114,7 @@ So schafft man paradoxerweise genau das, was andere versuchen, durch Anpassung u
 ---
 
 ## 4. Abschluss und Zusammenfassung
-Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz. Sie schafft Klarheit, Ruhe und echte `Zugehörigkeit`. Integrität braucht aber auch Grenzen: Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz und Tiefe wollen.
+Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie zeigt sich in Wahrhaftigkeit, Verlässlichkeit, Diskretion und vor allem in Mut zur Konsequenz. Sie schafft Klarheit, Ruhe und echte `Zugehörigkeit`. Integrität braucht aber auch Grenzen: Loyalität sollte niemals über der eigenen Integrität stehen. Wer seine Werte schützt, bleibt vertrauenswürdig und zieht die Menschen an, die Substanz und Tiefe wollen.
 
 
 
@@ -126,7 +126,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 **Ergebnis: Echte Zugehörigkeit**
 {{< /checklist_normal_green_check >}}
 
-Integrität ist das Fundament für wahre Zugehörigkeit. Sie ist ein ständiges Ziel im Leben, und nicht nur Selbstoptimierung.
+Integrität ist das Fundament für wahre Zugehörigkeit. 
 
 
 Ich freue mich über Ihr Feedback. Verstehen Sie das als Einladung mir zu schreiben ;-). 
