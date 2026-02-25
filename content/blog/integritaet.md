@@ -55,8 +55,6 @@ jsonld:
 
 Integrität ist das Fundament für langfristige Zugehörigkeit. Fast automatisch, wenn man einige Dinge beachtet und den Willen hat, sich selbst und sein Verhalten zu hinterfragen. 
 
-STUDIE mit REIN?
-
 Worauf es ankommt, aber auch wo die Grenzen liegen, erkläre ich in diesem Artikel. 
 
 
@@ -79,16 +77,12 @@ Wahrhaftigkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
 Gefühle können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen oder impulsiven Gefühl blind zu folgen, sondern zu lernen, es in einem ruhigen Moment wahrzunehmen.
 Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es darum geht andere nicht zu verletzten. 
-„Ich bin halt ehrlich“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
+„Ich bin halt ehrlich“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit schnell Grenzen und kann verletztend sein.
 {{< /checklist_normal_green >}}
-
-Wer seine Grenzen kennt, lebt wahrhaftig. Der innere Druck lässt nach, man wird ruhiger und spürt sehr schnell, was stimmig ist und was nicht.
 
 
 ### 1.2 Verlässlichkeit
 Im Gegensatz zu Wahrhaftigkeit ist Verlässlichkeit sichtbar und kann beobachtet werden. Man sagt etwas zu und hält es ein. Man ist greifbar, berechenbar und steht zu seinen Verpflichtungen und seinem Wort. 
-
-Allerdings ohne die eigenen Werte über Bord zu werfen. 
 
 ### 1.3 Diskretion
 
@@ -97,25 +91,21 @@ Hier geht es darum nicht die Quasseltasche zu sein. Wort halten. Oder nicht alle
 
 ### 1.4 Mut zur Konsequenz
 
-Es gibt Momente, in denen Integrität mit Loyalität verschwimmt oder verwechselt wird.
+Mut konsequent zu handeln ist meiner Meinung nach die wichtigste, und zugleich die schwierigste Tugend. Es geht darum, die eigenen moralsichen Überzeugung nicht aufzugeben und Verwantwortung für sein Handeln zu übernehmen. 
 
-Loyalität gegenüber anderen im Sinne von Ehrlichkeit und Verlässlichkeit ist grundsätzlich gut und wertvoll. Problematisch wird sie jedoch dort, wo sie verlangt, die eigenen moralischen Überzeugungen aufzugeben. Wird Loyalität wichtiger als das eigene Urteil darüber, was richtig ist, kann sie einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
-
-Der Philosoph Immanuel Kant beschrieb moralisches Handeln als die Fähigkeit, nach Prinzipien zu handeln, die unabhängig von persönlichem Vorteil, Druck oder Situation gelten können. Integrität zeigt sich deshalb gerade dann, wenn man einem solchen Prinzip treu bleibt. Auch dann, wenn es einfacher wäre, sich anzupassen.
-
-Hier lohnt es sich, genau zu unterscheiden, woher Loyalität kommt: aus freier Überzeugung oder aus Erwartung und Anpassung. Mut zur Konsequenz bedeutet, seinem moralischen Maßstab treu zu bleiben und Verantwortung für das eigene Handeln zu übernehmen. Haltung zeigen. 
+Der Philosoph Immanuel Kant beschrieb moralisches Handeln als die Fähigkeit, nach Prinzipien zu handeln, die unabhängig von persönlichem Vorteil, Druck oder Situation gelten können. Integrität zeigt sich deshalb gerade dann, wenn man einem solchen Prinzip treu bleibt. Haltung zeigen.
 
 ---
-## 2 Was bringt einem Integrität?
+## 2. Was bringt einem Integrität?
 Integrität schafft innere Klarheit, stärkt die Selbstachtung und baut vertrauensvolle Beziehungen auf. Menschen mit Integrität sind berechenbar, ehrlich und fördern echte `Zugehörigkeit` in ihrem Umfeld. 
 
 Integrität stärkt zudem die Urteilskraft und führt zu besseren, aber vor allem **stimmigeren** Entscheidungen.
 
-
-
 ---
 ## 3. Wo hat sie ihre Grenzen?
-Nichts im Leben ist perfekt. Integrität macht einen ruhiger und klarer, aber nicht unverwundbar. Deshalb braucht Integrität Grenzen.
+Nichts im Leben ist perfekt. Integrität macht einen ruhiger und klarer, aber nicht unverwundbar.
+
+Integrität verschwimmt gerne mit der Loyalität. Anderen gegenüber Loyal zu sein im Sinne von Erhlichkeit und Verlässligkeit sind wertvoll, keine Frage. Problematisch wird sie jedoch dort, wo sie verlangt, die eigenen moralischen Überzeugungen aufzugeben. Wird Loyalität wichtiger als das eigene Urteil darüber, was richtig ist, kann sie einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
 
 Es geht nicht darum, immer verfügbar zu sein, alles auszuhalten oder die Erwartungen anderer zu erfüllen. Es geht darum, die eigenen Grenzen erst einmal zu kennen und diese dann auch klar und fair setzen zu können.
 
