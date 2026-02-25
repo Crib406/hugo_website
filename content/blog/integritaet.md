@@ -103,7 +103,7 @@ Loyalität gegenüber anderen im Sinne von Ehrlichkeit und Verlässlichkeit ist 
 
 Der Philosoph Immanuel Kant beschrieb moralisches Handeln als die Fähigkeit, nach Prinzipien zu handeln, die unabhängig von persönlichem Vorteil, Druck oder Situation gelten können. Integrität zeigt sich deshalb gerade dann, wenn man einem solchen Prinzip treu bleibt. Auch dann, wenn es einfacher wäre, sich anzupassen.
 
-Hier lohnt es sich, genau zu unterscheiden, woher Loyalität kommt: aus freier Überzeugung oder aus Erwartung und Anpassung. Mut zur Konsequenz bedeutet, seinem moralischen Maßstab treu zu bleiben und Verantwortung für das eigene Handeln zu übernehmen.
+Hier lohnt es sich, genau zu unterscheiden, woher Loyalität kommt: aus freier Überzeugung oder aus Erwartung und Anpassung. Mut zur Konsequenz bedeutet, seinem moralischen Maßstab treu zu bleiben und Verantwortung für das eigene Handeln zu übernehmen. Haltung zeigen. 
 
 ---
 ## 2 Was bringt einem Integrität?
@@ -132,7 +132,7 @@ Integrität bedeutet, dass Gedanken, Gefühle und Handlungen stimmig sind. Sie z
 **Wahrhaftigkeit: Innere Stimmitgkeit statt Impuls**
 **Verlässlichkeit: Wort = Tat**
 **Diskretion: Schweigen als Tugend** 
-**Mut zur Konsequenz: Werte durchsetzten**
+**Mut zur Konsequenz: Haltung bewahren**
 **Ergebnis: Echte Zugehörigkeit**
 {{< /checklist_normal_green_check >}}
 
