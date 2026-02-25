@@ -78,7 +78,7 @@ Erst wenn **Gefühle**, Gedanken und Handlungen aus derselben inneren Haltung ko
 Wahrhaftigkeit hat aber auch ihre Grenzen:
 {{< checklist_normal_green >}}
 Gefühle können aus alten Mustern entstehen und uns täuschen. Wahrhaftigkeit bedeutet deshalb nicht, jedem spontanen oder impulsiven Gefühl blind zu folgen, sondern zu lernen, es in einem ruhigen Moment wahrzunehmen.
-Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es andere nicht zu verletzten. 
+Reden ist Silber, Schweigen ist Gold. Es gibt besondere Situationen, in denen Wahrhaftigkeit gerade durch Schweigen entsteht. z. B. dann, wenn es darum geht andere nicht zu verletzten. 
 „Ich bin halt ehrlich“: Solche Sätze klingen nach Wahrhaftigkeit, sind aber Ausreden für Unreflektiertheit. Sie rechtfertigen ungefilterte Meinungen, statt echte Verantwortung für das eigene Verhalten zu übernehmen. Zudem überschreitet diese vermeintliche Ehrlichkeit Grenzen und kann schnell verletzend für andere sein.
 {{< /checklist_normal_green >}}
 
@@ -97,11 +97,13 @@ Hier geht es darum nicht die Quasseltasche zu sein. Wort halten. Oder nicht alle
 
 ### 1.4 Mut zur Konsequenz
 
-Es gibt Momente in denen Integrität mit Loyalität verschwimmt oder verwechselt wird. 
+Es gibt Momente, in denen Integrität mit Loyalität verschwimmt oder verwechselt wird.
 
-Loyalität anderen gegenüber im Sinne von Ehrlichkeit und Verlässlichkeit ist gut. Der feine Unterschied liegt darin, anderen treu zu bleiben, **ohne** die eigenen Werte oder die eigene Haltung aufzugeben. Gibt man diese auf, kann Loyalität zu anderen einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
+Loyalität gegenüber anderen im Sinne von Ehrlichkeit und Verlässlichkeit ist grundsätzlich gut und wertvoll. Problematisch wird sie jedoch dort, wo sie verlangt, die eigenen moralischen Überzeugungen aufzugeben. Wird Loyalität wichtiger als das eigene Urteil darüber, was richtig ist, kann sie einen dauerhaft verbiegen, abhängig machen oder sogar anfällig für Manipulationen machen.
 
-Hier lohnt es sich genau zu unterscheiden woher die Loyalität kommt. Von innen, oder von außen? Es braucht Charakter, sein Wort zu halten und die Loyalität zu sich selbst und den eigenen Werten zu bewahren und dabei konsequent zu sein.
+Der Philosoph Immanuel Kant beschrieb moralisches Handeln als die Fähigkeit, nach Prinzipien zu handeln, die unabhängig von persönlichem Vorteil, Druck oder Situation gelten können. Integrität zeigt sich deshalb gerade dann, wenn man einem solchen Prinzip treu bleibt. Auch dann, wenn es einfacher wäre, sich anzupassen.
+
+Hier lohnt es sich, genau zu unterscheiden, woher Loyalität kommt: aus freier Überzeugung oder aus Erwartung und Anpassung. Mut zur Konsequenz bedeutet, seinem moralischen Maßstab treu zu bleiben und Verantwortung für das eigene Handeln zu übernehmen.
 
 ---
 ## 2 Was bringt einem Integrität?
