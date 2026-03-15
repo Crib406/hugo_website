@@ -70,7 +70,7 @@ jsonld:
                      Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
               Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
               <br>
-               Dank meinem technischem Verständnis aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
+               Dank meines technischen Verständnisses aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
               und sie zu gestalten.
               <br>
                Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
@@ -104,7 +104,7 @@ jsonld:
                 <li>
                   <h4 class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Verantwortung übernehmen und unternehmerisch Handeln
+                    Verantwortung übernehmen und unternehmerisch handeln
                   </h4>
                 </li>
                 <li>
@@ -118,9 +118,9 @@ jsonld:
               <br>
 
               <p class="disc">
-                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. 
-                Verbindungen zu schaffen, ist das, was mich antreibt. <br>
-                Mein Ziel ist es, in einer Position zu arbeiten, in der klare Kommunikation, Zusammenarbeit auf Augenhöhe und nachhaltige Prozessgestaltung im Mittelpunkt stehen.
+                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. In einer Umgebung, wo klar kommuniziert wird und Dinge einfach mal ausprobiert werden, statt endloser Meetings und Hierarchie-Theater. 
+                Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt. 
+               
               </p>
 
             </div>
