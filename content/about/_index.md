@@ -118,7 +118,7 @@ jsonld:
               <br>
 
               <p class="disc">
-                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden. In einer Umgebung, wo klar kommuniziert wird und Dinge einfach mal ausprobiert werden, statt endloser Meetings und Hierarchie-Theater. 
+                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden und ich meine Vielseitigkeit leben darf. In einer Umgebung, wo klar kommuniziert wird und Dinge einfach mal ausprobiert werden, statt endloser Meetings und Hierarchie-Theater. 
                 Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt. 
                
               </p>

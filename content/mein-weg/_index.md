@@ -106,7 +106,7 @@ jsonld:
             <h4 class="title">Mein agiler Weg</h4>
 
             <p class="disc">
-              Bei Ambient, mit denen ich zuvor zwei Softwareprojekte umgesetzt hatte, arbeitete ich anschließend als agiler Projektmanager und Coach.
+              Bei Ambient (heute Beyonder), mit denen ich zuvor zwei Softwareprojekte umgesetzt hatte, arbeitete ich anschließend als agiler Projektmanager und Coach.
               Dort moderierte ich komplexe Individualsoftwareprojekte nach Scrum, konzipierte Meilensteine und unterstützte den "Delivery Circle" 
               bei Kapazitätsplanung 
               und Teamaufstellung.
@@ -144,10 +144,9 @@ jsonld:
                 </div>
                 <div class="card-left-content">
                   <p class="disc">
-                    In den letzten Monaten habe ich mir bewusst Raum genommen, um Klarheit zu gewinnen.
+                    Nach der Zeit bei Ambient habe ich mir bewusst etwas Raum genommen, um Klarheit zu gewinnen.
                     Ich habe meine mehrjährige Ausbildung in der Individualpsychologie mit dem Schwerpunkt ermutigende Führung abgeschlossen.
-                    In dieser Zeit wurde mir noch deutlicher, wie sehr echte Führung bei einem selbst beginnt – und wie wichtig Klarheit, Vertrauen und Ermutigung 
-                    in der Führungsrolle sind. Ebenso, wie schädlich es ist, wenn das fehlt.
+                    In dieser Zeit wurde mir noch deutlicher, wie sehr echte Führung bei einem selbst beginnt und wie wichtig Klarheit, Vertrauen und Ermutigung generell (!) im Leben sind. 
                   </p>
                 </div>
               </div>
@@ -157,13 +156,13 @@ jsonld:
 
             <p class="disc">
               Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin neugierig und vielseitig.
+              Ich bin immer neugierig und dadruch sehr vielseitig.
             </p>
 
             <div class="quote-area-blog-details">
               <p class="disc" style="font-size: 18px; font-weight: 700;">
-                "Führen heißt für mich, klar zu sein, aktiv zuzuhören und Vertrauen zu ermöglichen. Ich bin davon überzeugt: 
-                Echte Entwicklung beginnt da, wo Menschen sich gesehen, sicher und zugehörig fühlen – und Fehler als Chancen gesehen werden."
+                "Klare Kommunikation, echtes Zuhören und Vertrauen sind für mich die Grundlage guter Zusammenarbeit.
+                Ich bin überzeugt: Entwicklung entsteht dort, wo Menschen sich gesehen, sicher und zugehörig fühlen. Dort wo ausprobiert werden darf, ohne Angst vor Fehler haben zu müssen."
               </p>
             </div>
 
