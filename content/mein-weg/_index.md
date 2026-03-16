@@ -162,7 +162,7 @@ jsonld:
             <div class="quote-area-blog-details">
               <p class="disc" style="font-size: 18px; font-weight: 700;">
                 "Klare Kommunikation, echtes Zuhören und Vertrauen sind für mich die Grundlage guter Zusammenarbeit.
-                Ich bin überzeugt: Entwicklung entsteht dort, wo Menschen sich gesehen, sicher und zugehörig fühlen. Dort wo ausprobiert werden darf, ohne Angst vor Fehler haben zu müssen."
+                Ich bin überzeugt: Entwicklung entsteht dort, wo ausprobiert werden darf, ohne Angst vor Fehler haben zu müssen."
               </p>
             </div>
 
