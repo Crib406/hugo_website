@@ -81,6 +81,10 @@ jsonld:
             </div>
             <br>
 
+            <p class="disc">
+              Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt bis heute, wie ich auf Menschen und Zusammenarbeit schaue.
+            </p>
+
             <div class="check-box-wrap">
               <ul>
                 <li>
