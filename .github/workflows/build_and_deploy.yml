@@ -31,13 +31,13 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Load baseURL from config.toml
+      - name: Load baseURL from hugo.toml
         id: load_baseurl
         run: |
-          RAW=$(grep '^baseURL' config.toml | sed 's/baseURL = "//; s/"$//')
+          RAW=$(grep '^baseURL' hugo.toml | sed 's/baseURL = "//; s/"$//')
           CLEAN=$(echo "$RAW" | sed 's#/$##')   # trailing slash entfernen
 
-          echo "BaseURL in config.toml: $CLEAN"
+          echo "BaseURL in hugo.toml: $CLEAN"
           echo "BASE_DOMAIN=$CLEAN" >> $GITHUB_ENV
 
       - name: Determine branch deployment path
