@@ -27440,4 +27440,52 @@ br.desktop-only {
   }
 }
 
+/* Startseite: LinkedIn-Stand-Block – Abstand + Mobile-Typo */
+.about-content-area--stand .container {
+  padding: 140px 0 120px;
+}
+
+.about-content-area--stand + .about-content-area .container.tmp-section-gap {
+  padding-top: 64px;
+}
+
+.about-content-area--stand .text-para-documents {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .about-content-area--stand .container {
+    padding: 96px 0 96px;
+  }
+
+  .about-content-area--stand + .about-content-area .container.tmp-section-gap {
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content-area--stand .container {
+    padding: 80px 0 72px;
+  }
+
+  .about-content-area--stand .text-para-documents {
+    font-size: 22px;
+    line-height: 1.55;
+    font-weight: 600;
+  }
+
+  .about-content-area--stand + .about-content-area .container.tmp-section-gap {
+    padding-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-content-area--stand .text-para-documents {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+}
+
 

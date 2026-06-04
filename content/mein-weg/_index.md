@@ -47,6 +47,9 @@ jsonld:
     text-justify: auto;
     hyphens: none;
   }
+
+  .mw-closing-wrap { padding-top: 24px !important; padding-bottom: 56px !important; }
+  .mw-closing { font-size: clamp(1.3rem, 2.3vw, 1.65rem) !important; line-height: 1.4 !important; max-width: 820px; margin-left: auto; margin-right: auto; }
 </style>
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
@@ -168,6 +171,21 @@ jsonld:
 
             <br>
 
+              <p class="disc">
+              Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
+              Ich bin immer neugierig und dadruch sehr vielseitig.
+            </p>
+
+            
+
+          <div class="about-content-area">
+  <div class="container mw-closing-wrap">
+    <div class="text-para-doc-wrap">
+      <h2 class="text-para-documents mw-closing tmp-scroll-trigger tmp-fade-in animation-order-2 inv-title-animation-wrap">Woran ich gerade arbeite, sehen Sie auf <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>. Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.</h2>
+    </div>
+  </div>
+</div>
+
           </div> <!-- .our-portfolio-swiper -->
 
         </div> <!-- .blog-details-left-area -->
@@ -176,10 +194,6 @@ jsonld:
   </div> <!-- .container -->
 </div> <!-- .blog-classic-area-wrapper -->
 
-<div class="about-content-area">
-  <div class="text-para-doc-wrap">
-   
-  </div>
-</div>
+
 
 <br>
