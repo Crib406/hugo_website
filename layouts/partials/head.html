@@ -192,5 +192,12 @@
   <link rel="stylesheet" href="{{ "assets/css/plugins/odometer.css" | relURL }}?v={{ $version }}">
   <link rel="stylesheet" href="{{ "assets/css/vendor/animate.min.css" | relURL }}?v={{ $version }}">
   <link rel="stylesheet" href="{{ "assets/css/vendor/bootstrap.min.css" | relURL }}?v={{ $version }}">
-  <link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}?v={{ $version }}">
+
+  {{/* Eigenes SCSS ueber Hugo Pipes (Dart Sass, in Hugo Extended eingebaut) statt vorkompiliert eingecheckt */}}
+  {{ with resources.Get "scss/style.scss" }}
+    {{ $opts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" "outputStyle" "compressed" }}
+    {{ with . | css.Sass $opts }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ $version }}">
+    {{ end }}
+  {{ end }}
 </head>

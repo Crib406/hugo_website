@@ -1,14 +1,26 @@
 :root {
 
+    // UI-Refresh 2026: Waldgrün / Messing / Kalkstein statt Neon-Pink
+    --color-forest: #2F4B3A;
+    --color-forest-strong: #1C3025;
+    --color-forest-tint: #DCE5DA;
+    --color-brass: #A87A34;
+    --color-brass-tint: #EFE1C4;
+    --color-paper: #EFEFE5;
+    --color-surface: #F8F8F1;
+    --color-ink: #23281E;
+    --color-ink-soft: #565C4C;
+    --color-line: #D7D8C6;
+
     // themes color
-    --color-primary: #FF014F;
-    --color-primary-alt: #ff014dd9;
+    --color-primary: var(--color-forest);
+    --color-primary-alt: var(--color-forest-strong);
     --color-primary-2nd: #FF494A;
     --color-primary-3rd: #FDC448;
     --color-primary-4th: #0071ff;
     --color-secondary: #060606;
     --color-white:#ffffff;
-    
+
 
     --color-gray: #9F9F9F;
     --color-gray-2: #141414;
@@ -72,8 +84,8 @@
     --color-discord: #7289da;
 
     // Font Family
-    --font-primary: 'Rajdhani', sans-serif;
-    --font-secondary: 'Rubik', sans-serif;
+    --font-primary: 'Fraunces', ui-serif, Georgia, serif;
+    --font-secondary: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
     --font-three: 'fontawesome';
 
     // Font weight
@@ -95,7 +107,7 @@
     --s-black: 900;
 
     --border-width: 2px;
-    --radius: 4px;
+    --radius: 10px;
     
 
     //transition easing

@@ -1,0 +1,100 @@
+/*----------------------------
+ UI-Refresh 2026
+ Feine Anpassungen auf Basis der bestehenden Template-Struktur:
+ wärmerer Papier-Hintergrund statt reinem Weiß, ruhigere Tinte
+ statt Schwarz, dezente Kartenflächen. Läuft zuletzt, damit es
+ gegenüber template/color-theme gewinnt.
+----------------------------*/
+
+body.tmp-white-version {
+    background: var(--color-paper);
+    --color-heading: var(--color-ink);
+    --color-gray: var(--color-ink-soft);
+    --color-body: var(--color-ink-soft);
+    --color-gray-2: var(--color-surface);
+    --color-border: var(--color-line);
+}
+
+// Werte-Karten (Startseite): Icon bekommt eine ruhige Farbfläche statt
+// nur einem Kreis-Outline, Kartenrand folgt der neuen Linienfarbe.
+.service-card-v1 {
+    border-color: var(--color-line);
+    border-radius: var(--radius);
+    transition: var(--transition);
+
+    &:hover {
+        border-color: var(--color-forest);
+        transform: translateY(-2px);
+    }
+
+    .service-card-icon {
+        background: var(--color-forest-tint);
+        border-radius: 12px;
+        color: var(--color-forest);
+    }
+}
+
+// Footer: neu befüllte Spalten (Zitat + Kontakt-Kachel)
+.footer-quote {
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--color-ink);
+    margin: 0;
+    padding-left: 14px;
+    border-left: 2px solid var(--color-brass);
+}
+
+.footer-contact-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-forest);
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-forest-strong);
+        }
+    }
+}
+
+// Fix (vorbestehend, nicht durch das Refresh verursacht): der Button
+// "Mehr über mich erfahren" liegt verschachtelt in einem
+// .text-para-documents-Element, dessen `span`-Regel jeden Span-Text in
+// --color-primary einfärbt - inkl. des Button-Texts auf dem gleichfarbigen
+// Button-Hintergrund. Das machte den Text unsichtbar (vorher: pink auf pink).
+.tmp-btn {
+    .btn-text,
+    .btn-icon,
+    .btn-icon i {
+        color: inherit;
+    }
+}
+
+// Hero-Bild: ruhiger Rahmen statt frei schwebendem Bild
+.banner-right-content .main-img img {
+    border-radius: 16px;
+    border-bottom: 3px solid var(--color-forest);
+}
+
+// Spacer statt manueller <br>-Stapel
+.section-spacer {
+    display: block;
+    height: 64px;
+
+    @media #{$sm-layout} {
+        height: 32px;
+    }
+}
