@@ -16,9 +16,9 @@
   {{ $crumbName = "Blog" }}
 {{ end }}
 
-{{ $crumbs := slice (dict "name" "Start" "url" ("/" | absURL)) }}
+{{ $crumbs := slice (dict "name" "Start" "url" site.Home.Permalink) }}
 {{ if and (eq .Section "blog") (eq .Kind "page") }}
-  {{ $crumbs = $crumbs | append (dict "name" "Blog" "url" ("/blog/" | absURL)) }}
+  {{ $crumbs = $crumbs | append (dict "name" "Blog" "url" ("blog/" | absURL)) }}
 {{ end }}
 {{ $crumbs = $crumbs | append (dict "name" $crumbName "url" .Permalink) }}
 

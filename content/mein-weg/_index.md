@@ -76,7 +76,7 @@ jsonld:
                   </p>
                 </div>
                 <div class="card-right-content">
-                  <img src="/assets/images/banner/arbeit_cropped.webp" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW" width="761" height="747" loading="lazy" decoding="async">
+                  <img src="../assets/images/banner/arbeit_cropped.webp" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW" width="761" height="747" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ jsonld:
             <div class="blog-details-swiper">
               <div class="our-portfoli-swiper-card">
                 <div class="card-right-content">
-                  <img src="/assets/images/about/uebermichich.webp" alt="Christoph B. Reimann. Ein Portrait aus 2025." width="886" height="886" loading="lazy" decoding="async">
+                  <img src="../assets/images/about/uebermichich.webp" alt="Christoph B. Reimann. Ein Portrait aus 2025." width="886" height="886" loading="lazy" decoding="async">
                 </div>
                 <div class="card-left-content">
                   <p class="disc">
@@ -181,7 +181,7 @@ jsonld:
             <div class="text-para-doc-wrap">
               <div class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
                 <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                  <a class="tmp-btn hover-icon-reverse radius-round" href="/kontakt/">
+                  <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
                     <span class="icon-reverse-wrapper">
                       <span class="btn-text">Kontakt aufnehmen</span>
                       <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>

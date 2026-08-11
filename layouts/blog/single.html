@@ -145,7 +145,7 @@
           {{ $img := or .Params.featured_image .Params.image }}
           {{ with $img }}
           <div class="thumbnail-top">
-            <img src="{{ . }}" alt="{{ $.Title }}" width="1000" height="600" fetchpriority="high" decoding="async">
+            <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}" width="1000" height="600" fetchpriority="high" decoding="async">
           </div>
           {{ end }}
 

@@ -15,7 +15,7 @@
                 <a href="{{ .RelPermalink }}">
                   {{ $alt := .Title }}
                   {{ with .Params.image }}
-                    <img class="w-100" src="{{ . }}" alt="{{ $alt }}" width="1000" height="600" loading="lazy" decoding="async">
+                    <img class="w-100" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $alt }}" width="1000" height="600" loading="lazy" decoding="async">
                   {{ end }}
                 </a>
                 <ul class="blog-tags">
