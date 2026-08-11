@@ -7,14 +7,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="banner-right-content">
-                            <div class="main-img">
-                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich.png" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro.">
-                                <!--
-                                <h2 class="banner-big-text-2 up-down">#OpenToWork</h2>
-                                <div class="benner-two-bg-red-img">
-                                    <img src="assets/images/banner/banner-user-image-two-red-bg.png" alt="red-img">
-                                </div>
-                                -->
+                            <div class="main-img hero-portrait">
+                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich_cropped.png" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro.">
+                                <span class="hero-chip">Bad Harzburg, Harz</span>
                             </div>
                         </div>
                     </div>
@@ -25,15 +20,26 @@
                             <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2">
                                 Christoph B. Reimann
                             </h1>
-                            <p class="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3">
-                                <span><strong>Mensch - Betriebswirt - Generalist</strong></span>
+                            <p class="hero-kicker tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                Mensch &middot; Betriebswirt &middot; Generalist
                             </p>
-                            <!--
-                            <p class="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3">
-                                "Ich bringe <span>Menschen</span> und Prozesse<br> 
-                                   zusammen, damit Zusammenarbeit und <br>  <span>Zugehörigkeit</span> entstehen.
+                            <p class="hero-lead tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                Generalist mit praktischem Verständnis für Prozesse. Ich verbinde
+                                Betriebswirtschaft, technisches Know-how und ein gutes Gespür für
+                                Menschen &mdash; um Verbindungen zu schaffen, bevor Brüche entstehen.
                             </p>
-                            -->
+                            {{/* Button bewusst NICHT in ein .inv-title-animation-wrap-Element
+                                 schachteln: die Split-Text-Animation zerlegt sonst auch den
+                                 Buttontext in Buchstaben mit opacity:0. */}}
+                            <div class="hero-actions tmp-scroll-trigger tmp-fade-in animation-order-5">
+                                <a class="tmp-btn hover-icon-reverse radius-round" href="{{ "about/" | relURL }}">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Mehr über mich erfahren</span>
+                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -44,17 +50,10 @@
     </div>
     <!-- tmp banner area end -->
 
-    <div class="about-content-area">
-        <div class="container tmp-section-gap">
-            <div class="text-para-doc-wrap">
-                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                    <span>Generalist</span> mit praktischem Verständnis für Prozesse. Ich verbinde Betriebswirtschaft, technisches Know-how und ein gutes Gespür für <span>Menschen</span>, um <span>Verbindungen</span> zu schaffen bevor Brüche entstehen.
-                </h2>
-            </div>
-        </div>
-    </div>
+    {{/* Der frühere große Absatz "Generalist mit praktischem Verständnis ..."
+         steht jetzt im Hero und wurde hier entfernt, damit er nicht doppelt
+         auf der Seite steht. */}}
 
- 
         <div class="container">
             <div class="row justify-content-center">
 
@@ -114,26 +113,7 @@
         </div>
     </div>
 
-   <div class="about-content-area">
-        <div class="container tmp-section-gap">
-            <div class="text-para-doc-wrap">
-                  
-                {{/* Button bewusst NICHT in ein .inv-title-animation-wrap-Element schachteln:
-                     die Split-Text-Animation zerlegt sonst auch den Buttontext in
-                     einzelne Buchstaben mit opacity:0 und der Button bleibt leer. */}}
-                <div class="about-btn text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <a class="tmp-btn hover-icon-reverse radius-round" href="{{ "about/" | relURL }}">
-                        <span class="icon-reverse-wrapper">
-                            <span class="btn-text">Mehr über mich erfahren</span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        
+    {{/* Der Button steht jetzt im Hero und wurde hier entfernt, damit er
+         nicht zweimal auf der Seite auftaucht. */}}
 
 {{ end }}
