@@ -24,9 +24,8 @@
                                 Mensch &middot; Betriebswirt &middot; Generalist
                             </p>
                             <p class="hero-lead tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                Generalist mit praktischem Verständnis für Prozesse. Ich verbinde
-                                Betriebswirtschaft, technisches Know-how und ein gutes Gespür für
-                                Menschen, um Verbindungen zu schaffen, bevor Brüche entstehen.
+                                Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten,
+                                ist das, was mich antreibt.
                             </p>
                             {{/* Button bewusst NICHT in ein .inv-title-animation-wrap-Element
                                  schachteln: die Split-Text-Animation zerlegt sonst auch den
@@ -50,11 +49,64 @@
     </div>
     <!-- tmp banner area end -->
 
-    {{/* Der frühere große Absatz "Generalist mit praktischem Verständnis ..."
-         steht jetzt im Hero und wurde hier entfernt, damit er nicht doppelt
-         auf der Seite steht. */}}
+    {{/* 2. Schritt der Seiten-Dramaturgie: die These. Bewusst ein eigener
+         Moment und nicht im Hero, damit die Seite einen Spannungsbogen hat. */}}
+    <div class="about-content-area">
+        <div class="container tmp-section-gap">
+            <div class="text-para-doc-wrap">
+                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                    <span>Generalist</span> mit praktischem Verständnis für Prozesse. Ich verbinde Betriebswirtschaft, technisches Know-how und ein gutes Gespür für <span>Menschen</span>, um <span>Verbindungen</span> zu schaffen bevor Brüche entstehen.
+                </h2>
+            </div>
+        </div>
+    </div>
 
+    {{/* 3. Schritt: Was ich tue. Die Schwerpunkte stehen bisher nur auf der
+         Über-mich-Seite - hier beantworten sie die Frage, die ein Besucher
+         als erstes hat. */}}
+    <section class="home-section">
         <div class="container">
+            <div class="home-section-head tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <span class="home-section-eyebrow">Was ich tue</span>
+                <h2 class="home-section-title">Menschen, Abläufe und Technik verbinden</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="focus-card tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <h3>Prozesse gestalten</h3>
+                        <p>Abläufe verstehen, vereinfachen und nachhaltig gestalten.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="focus-card tmp-scroll-trigger tmp-fade-in animation-order-2">
+                        <h3>Technik verstehen</h3>
+                        <p>Vom Lkw bis zur Prozessautomation, mit digitaler Tiefe.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="focus-card tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h3>Menschen ermutigen</h3>
+                        <p>Vertrauen fördern und auf Augenhöhe zusammenarbeiten.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="focus-card tmp-scroll-trigger tmp-fade-in animation-order-4">
+                        <h3>Verantwortung übernehmen</h3>
+                        <p>Unternehmerisch denken und ins Handeln kommen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{/* 4. Schritt: Wie ich dabei bin. Bewusst NACH den Schwerpunkten -
+         Eigenschaften überzeugen erst, wenn klar ist, worum es geht. */}}
+    <section class="home-section home-section--traits">
+        <div class="container">
+            <div class="home-section-head tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <span class="home-section-eyebrow">Wie ich arbeite</span>
+            </div>
             <div class="row justify-content-center">
 
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
@@ -99,8 +151,9 @@
 
             </div>
         </div>
-        <span class="section-spacer"></span>
+    </section>
 
+    {{/* 5. Schritt: Abschluss und nächster Schritt. */}}
     <div class="about-content-area about-content-area--stand">
         <div class="container">
             <div class="text-para-doc-wrap">
@@ -114,7 +167,20 @@
         </div>
     </div>
 
-    {{/* Der Button steht jetzt im Hero und wurde hier entfernt, damit er
-         nicht zweimal auf der Seite auftaucht. */}}
+    {{/* Abschliessender Handlungsaufruf. Der Hero-Button fuehrt zu "Über mich",
+         dieser zum Gespräch - zwei verschiedene Ziele, kein Duplikat. */}}
+    <section class="home-section home-section--cta">
+        <div class="container">
+            <div class="home-cta tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <a class="tmp-btn hover-icon-reverse radius-round" href="{{ "kontakt/" | relURL }}">
+                    <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Lassen Sie uns sprechen</span>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
 
 {{ end }}

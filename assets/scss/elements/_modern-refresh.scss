@@ -244,6 +244,87 @@ h1, h2, h3, h4, h5, h6,
 // ein Rahmen/Radius darauf ergibt eine frei schwebende Linie unter der
 // Person. Daher bewusst KEIN Rahmen auf .banner-right-content .main-img img.
 
+/*----------------------------
+ Startseite: Abschnitte der Dramaturgie
+----------------------------*/
+.home-section {
+    padding: 90px 0;
+
+    @media #{$sm-layout} {
+        padding: 56px 0;
+    }
+
+    &--traits {
+        padding-top: 0;
+    }
+
+    &--cta {
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
+.home-section-head {
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.home-section-eyebrow {
+    display: block;
+    color: var(--color-brass);
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.home-section-title {
+    font-family: var(--font-primary);
+    color: var(--color-ink);
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0;
+
+    @media #{$sm-layout} {
+        font-size: 27px;
+    }
+}
+
+// Schwerpunkt-Karten bewusst OHNE Icon: die Eigenschaftskarten weiter
+// unten haben Symbole, der Unterschied trennt die beiden Bloecke.
+.focus-card {
+    height: 100%;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    border-top: 2px solid var(--color-accent);
+    transition: var(--transition);
+
+    h3 {
+        font-family: var(--font-primary);
+        color: var(--color-ink);
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-family: var(--font-secondary);
+        color: var(--color-ink-soft);
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: var(--color-accent);
+    }
+}
+
 // Spacer statt manueller <br>-Stapel
 .section-spacer {
     display: block;
