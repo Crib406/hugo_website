@@ -76,7 +76,7 @@ jsonld:
                   </p>
                 </div>
                 <div class="card-right-content">
-                  <img src="/assets/images/banner/arbeit_cropped.png" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW">
+                  <img src="../assets/images/banner/arbeit_cropped.webp" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW" width="761" height="747" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ jsonld:
             <div class="blog-details-swiper">
               <div class="our-portfoli-swiper-card">
                 <div class="card-right-content">
-                  <img src="/assets/images/about/uebermichich.jpeg" alt="Christoph B. Reimann. Ein Portrait aus 2025.">
+                  <img src="../assets/images/about/uebermichich.webp" alt="Christoph B. Reimann. Ein Portrait aus 2025." width="886" height="886" loading="lazy" decoding="async">
                 </div>
                 <div class="card-left-content">
                   <p class="disc">
@@ -171,24 +171,26 @@ jsonld:
 
             <br>
 
-              <p class="disc">
-              Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin immer neugierig und dadruch sehr vielseitig.
-
+            <p class="disc">
+              Woran ich gerade arbeite, sehen Sie auf
+              <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener">LinkedIn</a>.
+              Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
             </p>
 
-             <p class="disc">
-             
-
-              Woran ich gerade arbeite, sehen Sie auf LinkedIn. Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.</h3>
-            </p>
-
-            
-
-          <div class="about-content-area">
-
-
- 
+            <!-- gleicher Wrapper wie der CTA auf /about/, damit beide Buttons identisch aussehen -->
+            <div class="text-para-doc-wrap">
+              <div class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
+                <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                  <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
+                    <span class="icon-reverse-wrapper">
+                      <span class="btn-text">Kontakt aufnehmen</span>
+                      <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                      <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
           </div> <!-- .our-portfolio-swiper -->
 

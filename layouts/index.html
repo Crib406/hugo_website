@@ -8,12 +8,10 @@
                     <div class="col-lg-6 order-lg-2">
                         <div class="banner-right-content">
                             <div class="main-img">
-                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich.png" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro.">
+                                {{/* LCP-Bild: bewusst eager + hohe Prioritaet, kein lazy */}}
+                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich.webp" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro." width="902" height="1351" fetchpriority="high" decoding="async">
                                 <!--
                                 <h2 class="banner-big-text-2 up-down">#OpenToWork</h2>
-                                <div class="benner-two-bg-red-img">
-                                    <img src="assets/images/banner/banner-user-image-two-red-bg.png" alt="red-img">
-                                </div>
                                 -->
                             </div>
                         </div>
