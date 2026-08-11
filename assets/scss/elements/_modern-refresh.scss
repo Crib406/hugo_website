@@ -1,31 +1,13 @@
 /*----------------------------
  UI-Refresh 2026
- Feine Anpassungen auf Basis der bestehenden Template-Struktur:
- wärmerer Papier-Hintergrund statt reinem Weiß, ruhigere Tinte
- statt Schwarz, dezente Kartenflächen. Läuft zuletzt, damit es
- gegenüber template/color-theme gewinnt.
+ Dunkle Waldgruen-Palette auf Basis der bestehenden Template-Struktur.
+ Das Template ist von Haus aus dunkel, es bekommt hier nur eine neue
+ Farbwelt und eine saubere Schriftzuordnung. Laeuft zuletzt, damit es
+ gegenueber template/color-theme gewinnt.
 ----------------------------*/
 
-body.tmp-white-version {
+body {
     background: var(--color-paper);
-    --color-heading: var(--color-ink);
-    --color-gray: var(--color-ink-soft);
-    --color-body: var(--color-ink-soft);
-    --color-gray-2: var(--color-surface);
-    --color-border: var(--color-line);
-
-    // Das Template setzt an mehreren Stellen ein hartes Grau (#EDEDED),
-    // das neben dem warmen Papierton als Fremdkoerper wirkt.
-    .breadcrumb-area,
-    #side-hide,
-    .tmp-sidebar-area .inner .top-area {
-        background: var(--color-surface);
-    }
-
-    #side-hide .top-area,
-    .contact-info {
-        background: var(--color-paper);
-    }
 }
 
 // Das Template setzt global body{} auf --font-primary und h1-h6{} auf
@@ -42,33 +24,65 @@ h1, h2, h3, h4, h5, h6,
     font-family: var(--font-primary);
 }
 
-// Hervorgehobene Woerter im Fliesstext deutlich sichtbarer machen.
+// Hervorgehobene Woerter im Fliesstext: helles Gruen, damit sie sich
+// vom hellen Fliesstext auf dunklem Grund klar abheben.
 .text-para-documents span,
 .section-title span,
 .title span {
-    color: var(--color-accent);
+    color: var(--color-accent-strong);
 }
 
-// Werte-Karten (Startseite): Icon bekommt eine ruhige Farbfläche statt
+// Das Banner blendet zwei fest verdrahtete #FF014F-Blurflaechen ein
+// (Rest der Pink-Herkunft des Templates). In der hellen Variante waren
+// sie ausgeblendet, im dunklen Modus leuchten sie rot durch.
+.rpp-banner-two-area {
+    &::before,
+    &::after {
+        background: var(--color-accent);
+        opacity: 0.16;
+    }
+}
+
+// Eyebrow ueber der Ueberschrift ("Ich bin") in warmem Messing.
+.sub-title {
+    color: var(--color-brass);
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+// Werte-Karten (Startseite): Icon bekommt eine ruhige Farbflaeche statt
 // nur einem Kreis-Outline, Kartenrand folgt der neuen Linienfarbe.
 .service-card-v1 {
     border-color: var(--color-line);
     border-radius: var(--radius);
+    background: var(--color-surface);
     transition: var(--transition);
 
     &:hover {
-        border-color: var(--color-forest);
+        border-color: var(--color-accent);
         transform: translateY(-2px);
     }
 
+    // Das Template gibt .service-card-icon nur min-width/min-height und
+    // laesst es als Block ueber die ganze Karte laufen - mit Hintergrund
+    // wird daraus ein Band statt einer Kachel.
     .service-card-icon {
-        background: var(--color-forest-tint);
-        border-radius: 12px;
-        color: var(--color-forest);
+        width: 60px;
+        height: 60px;
+        min-width: 0;
+        min-height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 22px;
+        font-size: 28px;
+        background: var(--color-accent-tint);
+        border-radius: 14px;
+        color: var(--color-accent);
     }
 }
 
-// Footer: neu befüllte Spalten (Zitat + Kontakt-Kachel)
+// Footer: neu befuellte Spalten (Zitat + Kontakt-Kachel)
 .footer-quote {
     font-family: var(--font-primary);
     font-style: italic;
@@ -93,32 +107,38 @@ h1, h2, h3, h4, h5, h6,
         display: flex;
         align-items: center;
         gap: 8px;
-        color: var(--color-forest);
+        color: var(--color-accent);
         font-weight: 600;
         font-size: 15px;
         text-decoration: none;
 
         &:hover {
-            color: var(--color-forest-strong);
+            color: var(--color-accent-strong);
         }
     }
 }
 
-// Fix (vorbestehend, nicht durch das Refresh verursacht): der Button
-// "Mehr über mich erfahren" liegt verschachtelt in einem
-// .text-para-documents-Element, dessen `span`-Regel jeden Span-Text in
-// --color-primary einfärbt - inkl. des Button-Texts auf dem gleichfarbigen
-// Button-Hintergrund. Das machte den Text unsichtbar (vorher: pink auf pink).
 .tmp-btn {
+    // Der Button ist jetzt hellgruen - der Text darauf muss dunkel sein,
+    // nicht weiss wie im Template-Default.
+    background: var(--color-accent);
+    color: var(--color-paper);
+
     // text-transform: capitalize aus dem Template macht aus
-    // "Mehr über mich erfahren" ein "Mehr Über Mich Erfahren" - im
+    // "Mehr ueber mich erfahren" ein "Mehr Ueber Mich Erfahren" - im
     // Deutschen falsch.
     text-transform: none;
+    font-weight: 600;
 
     .btn-text,
     .btn-icon,
     .btn-icon i {
         color: inherit;
+    }
+
+    &:hover {
+        background: var(--color-accent-strong);
+        color: var(--color-paper);
     }
 }
 

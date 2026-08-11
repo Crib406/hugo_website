@@ -1,33 +1,32 @@
 :root {
 
-    // UI-Refresh 2026: Waldgrün / Messing / Kalkstein statt Neon-Pink
-    --color-forest: #2F4B3A;
-    --color-forest-strong: #1C3025;
-    --color-forest-tint: #D3E0D2;
-    // Akzent fuer hervorgehobene Woerter im Fliesstext: deutlich mehr
-    // Sattigung als das Waldgruen, damit es sich vom Text abhebt.
-    --color-accent: #0F7A4E;
-    --color-brass: #A87A34;
-    --color-brass-tint: #EFE1C4;
-    --color-paper: #DEDACA;
-    --color-surface: #EBE7D9;
-    --color-ink: #1E2419;
-    --color-ink-soft: #4E5545;
-    --color-line: #BEBAA2;
+    // UI-Refresh 2026: dunkles Waldgruen / Messing statt Neon-Pink auf Schwarz
+    --color-paper: #161A12;      // Seitenhintergrund
+    --color-surface: #1E2418;    // Karten / abgesetzte Flaechen
+    --color-surface-2: #262D1E;  // noch eine Stufe heller
+    --color-ink: #ECEAE0;        // Ueberschriften / heller Text
+    --color-ink-soft: #A8AD9A;   // Fliesstext
+    --color-line: #333A29;       // Linien / Raender
+
+    --color-accent: #8FB89A;         // helles Gruen: Buttons, Akzente
+    --color-accent-strong: #B7D9BF;  // hervorgehobene Woerter
+    --color-accent-tint: #26332A;    // gruene Flaeche hinter Icons
+    --color-brass: #D6AA62;          // warmer Zweitakzent (Eyebrow, Chip)
+    --color-brass-tint: #3A331E;
 
     // themes color
-    --color-primary: var(--color-forest);
-    --color-primary-alt: var(--color-forest-strong);
+    --color-primary: var(--color-accent);
+    --color-primary-alt: var(--color-accent-strong);
     --color-primary-2nd: #FF494A;
     --color-primary-3rd: #FDC448;
     --color-primary-4th: #0071ff;
-    --color-secondary: #060606;
+    --color-secondary: var(--color-paper);
     --color-white:#ffffff;
 
 
-    --color-gray: #9F9F9F;
-    --color-gray-2: #141414;
-    --color-subtitle: #f9004d;
+    --color-gray: var(--color-ink-soft);
+    --color-gray-2: var(--color-surface);
+    --color-subtitle: var(--color-brass);
     
      
     // background-color
@@ -36,7 +35,7 @@
     --background-color-3: #151521;
     --background-color-4: #242435;
     --background-color-5: #EDF5FF;
-    --color-card: #1b1b1c;
+    --color-card: var(--color-surface);
 
     // color gradient
     --gradient-box: linear-gradient(to right, #5237f9, #FF014F);
@@ -47,8 +46,8 @@
     --text-gradient-one:linear-gradient(to right, #E42032, #4A11EB);
 
     // typo Color
-    --color-heading:#ffffff;
-    --color-body: #9f9f9f;
+    --color-heading: var(--color-ink);
+    --color-body: var(--color-ink-soft);
     --color-dark:#1d1d1d;
 
 
@@ -63,7 +62,7 @@
     --color-light: #E4E6EA;
     --color-lighter: #CED0D4;
     --color-lightest: #F0F2F5;
-    --color-border: #ffffff14;
+    --color-border: var(--color-line);
     --color-white: #ffffff;
     --color-white-75: rgba(255, 255, 255, 0.75);
 
