@@ -145,7 +145,7 @@
           {{ $img := or .Params.featured_image .Params.image }}
           {{ with $img }}
           <div class="thumbnail-top">
-            <img src="{{ . }}" alt="{{ $.Title }}">
+            <img src="{{ . }}" alt="{{ $.Title }}" width="1000" height="600" fetchpriority="high" decoding="async">
           </div>
           {{ end }}
 
@@ -224,7 +224,7 @@
               <div class="about-me-details">
                 <div class="about-me-details-head">
                   <div class="about-me-img">
-                    <img src="/assets/images/blog/cr_autor.jpeg" alt="{{ .Params.author }}">
+                    <img src="{{ "assets/images/blog/cr_autor.webp" | relURL }}" alt="{{ .Params.author | default "Christoph B. Reimann" }}" width="771" height="1028" loading="lazy" decoding="async">
                   </div>
                   <div class="about-me-right-content">
                     <h3 class="title">

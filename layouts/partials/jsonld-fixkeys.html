@@ -1,0 +1,58 @@
+{{/*
+  Hugo schreibt Frontmatter-Keys grundsaetzlich klein ("datePublished" -> "datepublished").
+  Schema.org ist aber case-sensitiv, d. h. solche Properties werden von Google ignoriert.
+  Dieses Partial laeuft rekursiv durch die aus dem Frontmatter geparste Struktur und
+  stellt die korrekte Schreibweise wieder her.
+
+  Aufruf:  {{ $schema := partial "jsonld-fixkeys.html" .Params.jsonld }}
+*/}}
+{{ $map := dict
+  "datepublished"    "datePublished"
+  "datemodified"     "dateModified"
+  "datecreated"      "dateCreated"
+  "inlanguage"       "inLanguage"
+  "mainentityofpage" "mainEntityOfPage"
+  "mainentity"       "mainEntity"
+  "ispartof"         "isPartOf"
+  "haspart"          "hasPart"
+  "itemlistelement"  "itemListElement"
+  "articlebody"      "articleBody"
+  "articlesection"   "articleSection"
+  "wordcount"        "wordCount"
+  "publisher"        "publisher"
+  "alternatename"    "alternateName"
+  "jobtitle"         "jobTitle"
+  "areaserved"       "areaServed"
+  "knowsabout"       "knowsAbout"
+  "sameas"           "sameAs"
+  "addresslocality"  "addressLocality"
+  "addressregion"    "addressRegion"
+  "addresscountry"   "addressCountry"
+  "postalcode"       "postalCode"
+  "streetaddress"    "streetAddress"
+  "contactpoint"     "contactPoint"
+  "timerequired"     "timeRequired"
+  "thumbnailurl"     "thumbnailUrl"
+}}
+
+{{ $in := . }}
+{{ $out := $in }}
+
+{{ if reflect.IsMap $in }}
+  {{ $out = dict }}
+  {{ range $k, $v := $in }}
+    {{ $key := $k }}
+    {{ with index $map (lower $k) }}
+      {{ $key = . }}
+    {{ end }}
+    {{ $out = merge $out (dict $key (partial "jsonld-fixkeys.html" $v)) }}
+  {{ end }}
+{{ else if reflect.IsSlice $in }}
+  {{ $acc := slice }}
+  {{ range $in }}
+    {{ $acc = $acc | append (partial "jsonld-fixkeys.html" .) }}
+  {{ end }}
+  {{ $out = $acc }}
+{{ end }}
+
+{{ return $out }}
