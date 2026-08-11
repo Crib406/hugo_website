@@ -13,6 +13,40 @@ body.tmp-white-version {
     --color-body: var(--color-ink-soft);
     --color-gray-2: var(--color-surface);
     --color-border: var(--color-line);
+
+    // Das Template setzt an mehreren Stellen ein hartes Grau (#EDEDED),
+    // das neben dem warmen Papierton als Fremdkoerper wirkt.
+    .breadcrumb-area,
+    #side-hide,
+    .tmp-sidebar-area .inner .top-area {
+        background: var(--color-surface);
+    }
+
+    #side-hide .top-area,
+    .contact-info {
+        background: var(--color-paper);
+    }
+}
+
+// Das Template setzt global body{} auf --font-primary und h1-h6{} auf
+// --font-secondary - also Display-Schrift fuer Fliesstext und umgekehrt.
+// Die Element-Regeln (Banner-Titel, .service-title = primary; Buttons,
+// .service-para = secondary) stimmen dagegen, deshalb nur diese beiden
+// globalen Regeln geradeziehen.
+body {
+    font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-primary);
+}
+
+// Hervorgehobene Woerter im Fliesstext deutlich sichtbarer machen.
+.text-para-documents span,
+.section-title span,
+.title span {
+    color: var(--color-accent);
 }
 
 // Werte-Karten (Startseite): Icon bekommt eine ruhige Farbfläche statt
@@ -76,6 +110,11 @@ body.tmp-white-version {
 // --color-primary einfärbt - inkl. des Button-Texts auf dem gleichfarbigen
 // Button-Hintergrund. Das machte den Text unsichtbar (vorher: pink auf pink).
 .tmp-btn {
+    // text-transform: capitalize aus dem Template macht aus
+    // "Mehr über mich erfahren" ein "Mehr Über Mich Erfahren" - im
+    // Deutschen falsch.
+    text-transform: none;
+
     .btn-text,
     .btn-icon,
     .btn-icon i {
@@ -83,11 +122,9 @@ body.tmp-white-version {
     }
 }
 
-// Hero-Bild: ruhiger Rahmen statt frei schwebendem Bild
-.banner-right-content .main-img img {
-    border-radius: 16px;
-    border-bottom: 3px solid var(--color-forest);
-}
+// Hinweis: das Hero-Bild ist ein freigestelltes PNG mit Transparenz -
+// ein Rahmen/Radius darauf ergibt eine frei schwebende Linie unter der
+// Person. Daher bewusst KEIN Rahmen auf .banner-right-content .main-img img.
 
 // Spacer statt manueller <br>-Stapel
 .section-spacer {

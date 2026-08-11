@@ -3,14 +3,17 @@
     // UI-Refresh 2026: Waldgrün / Messing / Kalkstein statt Neon-Pink
     --color-forest: #2F4B3A;
     --color-forest-strong: #1C3025;
-    --color-forest-tint: #DCE5DA;
+    --color-forest-tint: #D3E0D2;
+    // Akzent fuer hervorgehobene Woerter im Fliesstext: deutlich mehr
+    // Sattigung als das Waldgruen, damit es sich vom Text abhebt.
+    --color-accent: #0F7A4E;
     --color-brass: #A87A34;
     --color-brass-tint: #EFE1C4;
-    --color-paper: #E7E4D3;
-    --color-surface: #F1EEE1;
-    --color-ink: #23281E;
-    --color-ink-soft: #565C4C;
-    --color-line: #C9C6AF;
+    --color-paper: #DEDACA;
+    --color-surface: #EBE7D9;
+    --color-ink: #1E2419;
+    --color-ink-soft: #4E5545;
+    --color-line: #BEBAA2;
 
     // themes color
     --color-primary: var(--color-forest);
