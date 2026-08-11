@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------
+   Eigene Anpassungen am Theme.
+
+   Diese Datei wird nach style.css eingebunden und gewinnt dadurch bei
+   gleicher Spezifitaet - ohne !important. Aenderungen am Theme gehoeren
+   hierher und nicht in die generierte style.css, damit sie ein
+   Theme-Update ueberleben.
+   ------------------------------------------------------------------ */
+
+/* Mobiles Menue: Panel faehrt von rechts ein, passend zum Burger-Button
+   oben rechts. Ueberschreibt .tmp-popup-mobile-menu .inner aus style.css,
+   das mit left: -150px / left: 0 von links einfaehrt.
+
+   left muss dabei explizit auf auto: sind bei position: absolute mit
+   fester width sowohl left als auch right gesetzt, gewinnt in LTR left
+   und das Panel bliebe links stehen.
+
+   Der Versatz von -150px (statt der vollen Panelbreite von 320px) ist
+   bewusst gespiegelt, damit die Animation - Teil-Slide plus Opacity-Fade -
+   sich genauso anfuehlt wie bisher. */
+.tmp-popup-mobile-menu .inner {
+  left: auto;
+  right: -150px;
+}
+
+.tmp-popup-mobile-menu.active .inner {
+  left: auto;
+  right: 0;
+}
