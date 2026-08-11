@@ -24,9 +24,12 @@ h1, h2, h3, h4, h5, h6,
     font-family: var(--font-primary);
 }
 
-// Hervorgehobene Woerter im Fliesstext: helles Gruen, damit sie sich
+// Hervorgehobene Woerter im Fliesstext: kraeftiges Gruen, damit sie sich
 // vom hellen Fliesstext auf dunklem Grund klar abheben.
-.text-para-documents span,
+// Die Spezifitaet muss die Template-Regel
+// .text-para-doc-wrap .text-para-documents span (zwei Klassen) schlagen.
+.text-para-doc-wrap .text-para-documents span,
+.text-para-doc-wrap .text-para-documents a span,
 .section-title span,
 .title span {
     color: var(--color-accent-strong);
@@ -220,6 +223,15 @@ h1, h2, h3, h4, h5, h6,
     .btn-icon,
     .btn-icon i {
         color: inherit;
+    }
+
+    // Sicherheitsnetz: liegt ein Button doch einmal in einem Element mit
+    // Split-Text-Animation, zerlegt diese den Buttontext in einzelne
+    // Buchstaben-Divs mit opacity:0 und der Button bleibt leer. Hier
+    // erzwingen wir, dass Buttontext immer sichtbar ist.
+    .btn-text div {
+        opacity: 1 !important;
+        transform: none !important;
     }
 
     &:hover {

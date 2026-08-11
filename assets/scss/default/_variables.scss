@@ -9,7 +9,10 @@
     --color-line: #333A29;       // Linien / Raender
 
     --color-accent: #8FB89A;         // helles Gruen: Buttons, Akzente
-    --color-accent-strong: #B7D9BF;  // hervorgehobene Woerter
+    // Hervorgehobene Woerter muessen KRAEFTIGER sein als der helle
+    // Fliesstext (--color-ink), sonst wirkt die Hervorhebung
+    // zurueckgenommen statt betont.
+    --color-accent-strong: #6BE6A0;
     --color-accent-tint: #26332A;    // gruene Flaeche hinter Icons
     --color-brass: #D6AA62;          // warmer Zweitakzent (Eyebrow, Chip)
     --color-brass-tint: #3A331E;

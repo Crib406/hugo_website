@@ -139,17 +139,18 @@ jsonld:
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
 
-      <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-          <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
-            <span class="icon-reverse-wrapper">
-              <span class="btn-text">Mehr über meinen Weg erfahren</span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-            </span>
-          </a>
-        </div>
-      </h2>
+      <!-- Button NICHT in ein .inv-title-animation-wrap-Element schachteln:
+           die Split-Text-Animation zerlegt sonst auch den Buttontext in
+           einzelne Buchstaben mit opacity:0 und der Button bleibt leer. -->
+      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
+        <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
+          <span class="icon-reverse-wrapper">
+            <span class="btn-text">Mehr über meinen Weg erfahren</span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+          </span>
+        </a>
+      </div>
 
     </div>
   </div>

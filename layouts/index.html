@@ -26,7 +26,7 @@
                             <p class="hero-lead tmp-scroll-trigger tmp-fade-in animation-order-4">
                                 Generalist mit praktischem Verständnis für Prozesse. Ich verbinde
                                 Betriebswirtschaft, technisches Know-how und ein gutes Gespür für
-                                Menschen &mdash; um Verbindungen zu schaffen, bevor Brüche entstehen.
+                                Menschen, um Verbindungen zu schaffen, bevor Brüche entstehen.
                             </p>
                             {{/* Button bewusst NICHT in ein .inv-title-animation-wrap-Element
                                  schachteln: die Split-Text-Animation zerlegt sonst auch den
@@ -105,9 +105,10 @@
         <div class="container">
             <div class="text-para-doc-wrap">
                 <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                    Woran ich aktuell arbeite, sehen Sie am besten auf
-                    <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span> LinkedIn</span></a>.
-                    Ich spreche einfach gerne mit <span>Menschen</span>. Über Austausch zu allen möglichen Themen freue ich mich jederzeit.
+                    {{/* Die Split-Text-Animation schluckt Leerzeichen an
+                         Element-Grenzen ("aufLinkedIn.Ich"), daher hier
+                         geschuetzte Leerzeichen. */}}
+                    Woran ich aktuell arbeite, sehen Sie am besten auf&nbsp;<a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>.&nbsp;Ich spreche einfach gerne mit <span>Menschen</span>. Über Austausch zu allen möglichen Themen freue ich mich jederzeit.
                 </h2>
             </div>
         </div>
