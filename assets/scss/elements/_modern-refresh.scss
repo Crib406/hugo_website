@@ -89,15 +89,19 @@ h1, h2, h3, h4, h5, h6,
     }
 }
 
-// Zwischenzeile mit vorangestelltem Strich
+// Zwischenzeile mit vorangestelltem Strich.
+// Die Zeile ist eine Hervorhebung, keine Beschriftung, deshalb die kraeftige
+// Akzentfarbe wie bei den hervorgehobenen Woertern im Fliesstext. Mit dem
+// gedaempften --color-accent fiel sie neben dem cremefarbenen Namen zurueck.
+// Der Strich bleibt gedaempft: er ist Schmuck, die Zeile ist die Aussage.
 .hero-kicker {
     display: flex;
     align-items: center;
     gap: 14px;
-    color: var(--color-accent);
+    color: var(--color-accent-strong);
     font-family: var(--font-secondary);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 26px;
 
     &::before {
@@ -106,6 +110,15 @@ h1, h2, h3, h4, h5, h6,
         width: 34px;
         height: 2px;
         background: var(--color-accent);
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+        gap: 10px;
+
+        &::before {
+            width: 22px;
+        }
     }
 }
 
