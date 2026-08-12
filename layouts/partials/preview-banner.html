@@ -1,0 +1,17 @@
+{{/*
+  Hinweisleiste für Branch-Vorschauen.
+
+  Erscheint nur, wenn die Seite unter /preview/<branch>/ ausgeliefert wird.
+  Der Branch wird aus der baseURL abgeleitet, die der Workflow beim Bauen
+  setzt - dadurch ist keine zusätzliche Konfiguration nötig und auf der
+  Hauptseite erscheint nichts.
+*/}}
+{{ $base := site.BaseURL }}
+{{ if strings.Contains $base "/preview/" }}
+  {{ $branch := index (split $base "/preview/") 1 | strings.TrimSuffix "/" }}
+  <div class="preview-banner">
+    <span class="preview-banner__label">Vorschau</span>
+    <span class="preview-banner__branch">{{ $branch }}</span>
+    <a class="preview-banner__link" href="/preview/">Alle Vorschauen</a>
+  </div>
+{{ end }}
