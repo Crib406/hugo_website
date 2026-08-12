@@ -5,13 +5,13 @@ reading_time: 7
 draft: true
 
 author: "Christoph B. Reimann"
-image: "/assets/images/blog/loyalitaet.jpeg"
+image: "/assets/images/blog/loyalitaet.webp"
 
 slug: "loyalitaet"
 
-description: "Warum Integrität der Grundstein für echtes Vertrauen ist – über Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz im Alltag."
+description: "Was Loyalität wirklich bedeutet – und wo sie endet. Über Treue zu anderen, Treue zu sich selbst und den schmalen Grat dazwischen."
 
-summary: "Was ist eigentlich Integrität? Was nicht? Wo liegen die Grenzen? Das beschreibe ich an 3 Tugenden."
+summary: "Was ist eigentlich Loyalität? Was nicht? Wo liegen ihre Grenzen? Das beschreibe ich aus eigener Erfahrung."
 
 category: "Menschlichkeit"
 
@@ -30,9 +30,9 @@ jsonld:
   "@type": "BlogPosting"
   mainEntityOfPage:
     "@type": "WebPage"
-    "@id": "/blog/loyalität"
-  headline: "Integrität – der Grundstein für echtes Vertrauen"
-  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt aus eigener Erfahrung über Integrität und die Tugenden Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz und darüber, wo die Grenzen der Integrität liegen."
+    "@id": "/blog/loyalitaet"
+  headline: "Loyalität – Treue zu anderen, ohne sich selbst zu verlieren"
+  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt aus eigener Erfahrung über Loyalität: worin sie sich von blinder Gefolgschaft unterscheidet und wo ihre Grenzen liegen."
   author:
     "@type": "Person"
     name: "Christoph B. Reimann"

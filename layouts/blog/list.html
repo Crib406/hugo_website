@@ -13,8 +13,9 @@
             <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-{{ $animIndex }}">
               <div class="img-box">
                 <a href="{{ .RelPermalink }}">
+                  {{ $alt := .Title }}
                   {{ with .Params.image }}
-                    <img class="w-100" src="{{ . }}" alt="Blog Thumbnail">
+                    <img class="w-100" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $alt }}" width="1000" height="600" loading="lazy" decoding="async">
                   {{ end }}
                 </a>
                 <ul class="blog-tags">

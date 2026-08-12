@@ -62,7 +62,7 @@ jsonld:
              <div class="blog-details-swiper">
               <div class="our-portfoli-swiper-card">
                 <div class="card-right-content">
-                  <img src="/assets/images/blog/cr_autor.jpeg" alt="Christoph B. Reimann mit Brille 2024">
+                  <img src="../assets/images/blog/cr_autor.webp" alt="Christoph B. Reimann mit Brille 2024" width="771" height="1028" loading="lazy" decoding="async">
                 </div>
                 <div class="card-left-content">
                   <!-- Neben dem Bild steht bewusst nur EIN Absatz. Die Spalte

@@ -8,11 +8,11 @@ jsonld:
   "@context": "https://schema.org"
   "@type": "WebPage"
   name: "Impressum & Datenschutz"
-  url: "{{ .Permalink }}"
+  url: "https://creimann.cc/impressum/"
   description: "Rechtliche Hinweise, Impressum und Informationen zum Datenschutz für die Website von Christoph B. Reimann."
   about: "Rechtliche Informationen zur Website, Verantwortliche Stelle und Datenschutz."
   isPartOf:
     "@type": "WebSite"
-    name: "{{ .Site.Title }}"
-    url: "{{ .Site.BaseURL }}"
+    name: "Christoph B. Reimann"
+    url: "https://creimann.cc/"
 ---

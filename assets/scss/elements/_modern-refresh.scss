@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 // Freigestelltes PNG wuerde mit Rahmen eine schwebende Linie ergeben -
-// deshalb hier bewusst das nicht freigestellte Foto (ich_cropped.png).
+// deshalb hier bewusst das nicht freigestellte Foto (ich_cropped.webp).
 .hero-portrait {
     position: relative;
     display: inline-block;
@@ -663,5 +663,28 @@ p {
             min-width: 0;
             flex: 0 0 230px;
         }
+    }
+}
+
+// Mobiles Menue faehrt von rechts ein, passend zum Burger-Button oben rechts.
+// Uebernommen aus static/assets/css/custom.css, das auf main nach style.css
+// geladen wurde. Hier laeuft alles ueber die SCSS-Pipeline, deshalb steht die
+// Regel in dieser Datei - sie wird ohnehin zuletzt eingebunden.
+//
+// left muss explizit auf auto: sind bei position: absolute mit fester width
+// sowohl left als auch right gesetzt, gewinnt in LTR left und das Panel
+// bliebe links stehen.
+// Der Versatz von -150px statt der vollen Panelbreite ist bewusst gespiegelt,
+// damit sich die Animation aus Teil-Slide und Opacity-Fade genauso anfuehlt
+// wie vorher.
+.tmp-popup-mobile-menu {
+    .inner {
+        left: auto;
+        right: -150px;
+    }
+
+    &.active .inner {
+        left: auto;
+        right: 0;
     }
 }

@@ -73,7 +73,7 @@ jsonld:
                   </p>
                 </div>
                 <div class="card-right-content">
-                  <img src="/assets/images/banner/arbeit_cropped.png" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW">
+                  <img src="../assets/images/banner/arbeit_cropped.webp" alt="Christoph B. Reimann mit 19 bei der Arbeit im Familienunternehmen im Harz mit einem Kurzholz-LKW" width="761" height="747" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ jsonld:
             <div class="blog-details-swiper">
               <div class="our-portfoli-swiper-card">
                 <div class="card-right-content">
-                  <img src="/assets/images/about/uebermichich.jpeg" alt="Christoph B. Reimann. Ein Portrait aus 2025.">
+                  <img src="../assets/images/about/uebermichich.webp" alt="Christoph B. Reimann. Ein Portrait aus 2025." width="886" height="886" loading="lazy" decoding="async">
                 </div>
                 <div class="card-left-content">
                   <p class="disc">
