@@ -135,6 +135,14 @@ h1, h2, h3, h4, h5, h6,
     @media #{$sm-layout} {
         font-size: 18px;
     }
+
+    // Hervorgehobene Woerter wie im uebrigen Fliesstext. Der Absatz liegt
+    // NICHT in einem .inv-title-animation-wrap, die Split-Text-Animation
+    // kann hier also nichts zerlegen.
+    span {
+        color: var(--color-accent-strong);
+        font-weight: 600;
+    }
 }
 
 // Freigestelltes PNG wuerde mit Rahmen eine schwebende Linie ergeben -
@@ -433,15 +441,20 @@ h1, h2, h3, h4, h5, h6,
         }
     }
 
+    // Lesetext, nicht Nebentext: diese Karten sind der Hauptinhalt der
+    // Startseite und tragen ganze Saetze. Mit 17px las sich die Startseite
+    // eine Stufe kleiner als die Unterseiten. Die Bildunterschriften der
+    // Eigenschaftskarten ("und lernbereit") bleiben dagegen Nebentext - das
+    // sind Zusaetze zu einem Wort, keine Aussagen.
     p {
         font-family: var(--font-secondary);
         color: var(--color-ink-soft);
-        font-size: 17px;
+        font-size: 20px;
         line-height: 1.6;
         margin: 0;
 
         @media #{$sm-layout} {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
