@@ -125,10 +125,16 @@ h1, h2, h3, h4, h5, h6,
 .hero-lead {
     color: var(--color-ink-soft);
     font-family: var(--font-secondary);
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.65;
     max-width: 46ch;
     margin-bottom: 34px;
+
+    // Lag hier bei 18px, waehrend der Fliesstext der Unterseiten auf 17px
+    // fiel - dieselbe Rolle in zwei Groessen.
+    @media #{$sm-layout} {
+        font-size: 18px;
+    }
 }
 
 // Freigestelltes PNG wuerde mit Rahmen eine schwebende Linie ergeben -
@@ -382,26 +388,25 @@ h1, h2, h3, h4, h5, h6,
 .home-section-title {
     font-family: var(--font-primary);
     color: var(--color-ink);
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1.25;
     margin: 0;
 
     @media #{$sm-layout} {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
 // Die Aussagen-Absaetze lagen mit 48px direkt unter der H1 (54px) und
 // konkurrierten dadurch mit dem Namen. Auf dem Handy war die Hierarchie
 // sogar verkehrt: Abschnitts-Titel 27px gegen Aussage 25px.
-// Neue Staffelung: 54 / 38 / 30 / 20 (Desktop), 28 / 24 / 22 / 20 (Handy).
 .text-para-doc-wrap .text-para-documents {
-    font-size: 38px;
+    font-size: 40px;
     line-height: 1.3;
 
     @media #{$sm-layout} {
-        font-size: 24px;
-        line-height: 1.45;
+        font-size: 27px;
+        line-height: 1.4;
     }
 }
 
@@ -419,17 +424,25 @@ h1, h2, h3, h4, h5, h6,
     h3 {
         font-family: var(--font-primary);
         color: var(--color-ink);
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.3;
         margin: 0 0 10px;
+
+        @media #{$sm-layout} {
+            font-size: 22px;
+        }
     }
 
     p {
         font-family: var(--font-secondary);
         color: var(--color-ink-soft);
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
         margin: 0;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
     }
 
     &:hover {
@@ -448,21 +461,98 @@ h1, h2, h3, h4, h5, h6,
     }
 }
 
-// Fliesstext auf dem Handy.
-// Das Template faellt unter 768px von 18px auf 16px zurueck
-// (default/_typography.scss, globale p-Regel). Fuer die langen Texte auf
-// "Mein Weg" und "Ueber mich" ist das zu klein, zumal die Textfarbe bewusst
-// gedaempft ist und Schrift dadurch optisch noch kleiner wirkt.
-// 17px statt 18px, weil bei 18px die Zeilen fuer deutsche Woerter zu kurz
-// werden und der Umbruch unruhig wird.
-// Bewusst als p-Regel und nicht als Klasse: sie korrigiert genau die
-// Template-Regel, die hier stoert. Alles, was eine eigene Groesse hat
-// (Karten, Hero, Footer), gewinnt ueber die hoehere Spezifitaet und bleibt
-// unberuehrt.
+/*----------------------------
+ Schriftskala
+ Es gab vier verschiedene Fliesstextgroessen auf der Seite: 15, 16, 17 und
+ 18px - dieselbe Rolle je nach Seite anders gross. Jetzt gibt es zwei:
+
+   Lesetext   20px / 18px (Handy)   was man wirklich liest
+   Nebentext  17px / 16px           Kartentexte, Bildunterschriften
+
+ Die Navigation (Breadcrumb) bleibt bei 16px, das ist kein Lesetext.
+
+ Der Sprung von 18 auf 20 ist bewusst: 16-20px gilt als empfohlener Bereich,
+ wir lagen am unteren Rand. Auf breiten Bildschirmen wirkt Text im Verhaeltnis
+ zur Flaeche kleiner, als er gemessen ist.
+
+ Bewusst als p-Regel und nicht als Klasse: sie korrigiert genau die
+ Template-Regel in default/_typography.scss, die hier stoert. Alles mit eigener
+ Groesse gewinnt ueber die hoehere Spezifitaet und bleibt unberuehrt.
+----------------------------*/
+p {
+    font-size: 20px;
+}
+
 @media #{$sm-layout} {
     p {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 1.7;
+    }
+}
+
+// Nebentext aus dem Template: die Bildunterschrift der Eigenschaftskarten lag
+// bei 16px, der Untertitel der Schwerpunktkarten bei 15px - gleiche Rolle,
+// zwei Werte. Die Template-Regel steht unter zwei Klassen, deshalb hier auch.
+.service-card-v1 .service-para {
+    font-size: 17px;
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+// Kartentitel: .service-title stand bei 24px, .focus-card h3 bei 20px. Beide
+// sind jetzt h3 und teilen sich eine Groesse.
+.service-card-v1 .service-title {
+    font-size: 24px;
+
+    @media #{$sm-layout} {
+        font-size: 22px;
+    }
+}
+
+// Seitentitel der Unterseiten (_breadcrumb.scss:22). Auf dem Handy war er mit
+// 32px groesser als der Name auf der Startseite (28px) - die Startseite trat
+// damit hinter das Impressum zurueck. Der Name steht jetzt ebenfalls auf 32px,
+// siehe unten.
+// Umschaltpunkt bewusst $sm-layout (767px) statt des Template-Werts
+// $large-mobile (575px), damit die Ueberschrift zur selben Breite umschaltet
+// wie der Rest der Skala.
+.breadcrumb-inner .title {
+    font-size: 44px;
+
+    @media #{$sm-layout} {
+        font-size: 32px;
+    }
+}
+
+.banner-two-main-wrapper .inner .title {
+    @media #{$sm-layout} {
+        font-size: 32px;
+    }
+}
+
+// Abschnittstitel der Unterseiten
+.blog-details-left-area .title {
+    font-size: 38px;
+
+    @media #{$sm-layout} {
+        font-size: 28px;
+    }
+}
+
+// Diese beiden sind als Absatz ausgezeichnet, tragen aber Fraunces und 700 -
+// sie sollen wie Fliesstext gross sein, nicht wie eine Ueberschrift.
+// Die Selektoren sind so lang, weil die Template-Regeln es sind:
+// .check-box-wrap ul li .check-box-item (0-2-2) in _projects-details.scss:54
+// und .blog-details-left-area .quote-area-blog-details .author (0-3-0) in
+// _blog.scss:895. Kuerzere Fassungen verlieren.
+.check-box-wrap ul li .check-box-item,
+.blog-details-left-area .quote-area-blog-details .author {
+    font-size: 20px;
+
+    @media #{$sm-layout} {
+        font-size: 18px;
     }
 }
 
@@ -503,5 +593,48 @@ h1, h2, h3, h4, h5, h6,
     // stehen.
     &.legal-page {
         max-width: 70ch;
+
+        // Die Datenschutzerklaerung besteht aus vollstaendigen Saetzen, auch
+        // in den Listen - das ist Lesetext und lag bei 16px.
+        .legal-text li {
+            font-size: 20px;
+            line-height: 1.7;
+
+            @media #{$sm-layout} {
+                font-size: 18px;
+            }
+        }
+
+        // Die Zwischenueberschriften kommen aus der globalen Skala. Die h5 lag
+        // auf dem Handy bei 16px und war damit kleiner als der Fliesstext -
+        // eine Ueberschrift, die sich nicht mehr abhebt.
+        .legal-text h3 { font-size: 28px; }
+        .legal-text h4 { font-size: 24px; }
+        .legal-text h5 { font-size: 21px; }
+
+        @media #{$sm-layout} {
+            .legal-text h3 { font-size: 24px; }
+            .legal-text h4 { font-size: 21px; }
+            .legal-text h5 { font-size: 19px; }
+        }
+    }
+}
+
+// Zwischen 1200 und 1365px ist die Inhaltsspalte 740px breit. Das Bild in den
+// Text-Bild-Karten nimmt davon 300px, dem Text bleiben 410px - bei 20px
+// Schrift nur noch 42 Zeichen pro Zeile. Ab 1366px wird die Spalte 840px
+// breit und das Problem loest sich von allein.
+// Zwei Fallen dabei:
+// - Die Mindestbreite muss mit zurueckgesetzt werden. min-width schlaegt in
+//   CSS immer max-width; ohne das bleibt das Bild bei seinen 300px.
+// - Nur die Mindestbreite senken hilft nicht: beide Kinder haben width: 100%
+//   und teilen sich den Platz gleichmaessig, das Bild wuerde dann groesser
+//   statt kleiner. Es braucht die Deckelung.
+// Die Template-Regel steht unter .our-portfolio-swiper .our-portfoli-swiper-card
+// .card-right-content (0-3-0), die Ueberschreibung muss mitziehen.
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .our-portfolio-swiper .our-portfoli-swiper-card .card-right-content {
+        min-width: 0;
+        flex: 0 0 250px;
     }
 }
