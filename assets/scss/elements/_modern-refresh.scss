@@ -573,39 +573,44 @@ p {
  Zeilenlaenge auf den Textseiten
  Lesbar sind 45-75 Zeichen pro Zeile, ideal rund 66. Ueber die volle
  Spaltenbreite kamen die Absaetze auf 74 bis 137 Zeichen - dann verliert das
- Auge beim Ruecksprung die naechste Zeile. Gemessen bei 1440px.
- 70ch ist empirisch ermittelt: damit liegen alle Absaetze zwischen 50 und 74.
- In ch statt Pixeln, damit die Grenze mitwaechst, wenn jemand die Schrift
- hochstellt. Auf dem Handy ohne Wirkung, dort ist die Spalte ohnehin schmaler.
+ Auge beim Ruecksprung die naechste Zeile.
+
+ Begrenzt wird die ganze SPALTE, nicht jedes Element einzeln. Nur so teilen
+ sich Ueberschriften, Absaetze, Bildkarten und Zitatkaesten eine linke Kante.
+ Der erste Anlauf deckelte die Elemente einzeln und erzeugte damit vier
+ verschiedene Kanten auf einer Seite.
+
+ Der Wert steht bewusst in PIXELN und nicht in ch: an einem Container misst
+ ch die Schriftgroesse des Containers, nicht die seiner Kinder. Der
+ Zitatkasten erbt 16px vom Grundtext, seine Absaetze stehen auf 20px - sein
+ "70ch" ergab deshalb 557px statt der 696px, die dieselbe Regel an einem
+ 20px-Absatz ergibt. 700px entsprechen rund 70 Zeichen bei 20px Fliesstext.
+ Auf dem Handy ohne Wirkung, dort ist die Spalte ohnehin schmaler.
 ----------------------------*/
 .blog-details-left-area {
-    // Nur Lesetexte. Die Haekchenliste bleibt aussen vor: das sind kurze
-    // Beschriftungen, keine Absaetze. Begrenzt man sie, bricht ein Punkt um
-    // und steht zentriert neben seinem Haken.
-    p.disc,
-    .quote-area-blog-details {
-        max-width: 70ch;
+    &:not(.legal-page) {
+        max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    // Ausnahme: Text neben einem Bild liegt mit 55 Zeichen bereits richtig.
-    // Er ist ausserdem Flex-Kind - eine max-width darauf aendert die
-    // Groessenverteilung des Flex-Containers und wuerde ihn auf 35 Zeichen
-    // zusammenfallen lassen. Die Verschachtelung ergibt 0-3-1 gegen 0-2-1
-    // der Regel darueber, gewinnt also ueber die Spezifitaet und nicht nur
-    // ueber die Reihenfolge.
-    .our-portfoli-swiper-card p.disc {
-        max-width: none;
+    // Das Template gibt der Quellenzeile unter einem Zitat 60px Einzug und
+    // einen 40px-Strich als ::after (_blog.scss:895). Als Flex-Element in
+    // einem zentrierten Container zentriert sich der umbrechende Text und
+    // laeuft vom Strich weg - der stand dann allein daneben.
+    .quote-area-blog-details .author {
+        display: block;
+        text-align: left;
     }
 
-    // Impressum: reine Textseite ohne Bilder. Hier wird die ganze Spalte
-    // schmaler, damit Ueberschriften und Text dieselbe linke Kante behalten.
-    // Die Ueberschriften stehen dort ausserhalb von .legal-text; begrenzt man
-    // nur den Textblock, rueckt der Text ein und die Ueberschriften bleiben
-    // stehen.
+    // Impressum: reine Textseite ohne Bilder, deshalb eine eigene, schmalere
+    // Spalte - hier erzwingt keine Bildkarte eine Mindestbreite.
+    // 560px statt des frueheren "70ch": das ergab durch die 16px des
+    // Containers genau diesen Wert, aber eben zufaellig statt absichtlich.
     &.legal-page {
-        max-width: 70ch;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
 
         // Die Datenschutzerklaerung besteht aus vollstaendigen Saetzen, auch
         // in den Listen - das ist Lesetext und lag bei 16px.
@@ -633,21 +638,30 @@ p {
     }
 }
 
-// Zwischen 1200 und 1365px ist die Inhaltsspalte 740px breit. Das Bild in den
-// Text-Bild-Karten nimmt davon 300px, dem Text bleiben 410px - bei 20px
-// Schrift nur noch 42 Zeichen pro Zeile. Ab 1366px wird die Spalte 840px
-// breit und das Problem loest sich von allein.
+// Text-Bild-Karten: die Spalte ist jetzt 700px breit, davon nahm das Bild die
+// Haelfte. Dem Text blieben dann rund 38 Zeichen pro Zeile.
+// Ab 1200px steht das Bild deshalb fest auf 220px, darunter stapeln die
+// Karten (Bild ueber Text) und der Text nutzt die volle Spalte. Das Template
+// stellte schon ab 769px nebeneinander, was in dem Bereich zu eng wurde.
+//
 // Zwei Fallen dabei:
 // - Die Mindestbreite muss mit zurueckgesetzt werden. min-width schlaegt in
 //   CSS immer max-width; ohne das bleibt das Bild bei seinen 300px.
 // - Nur die Mindestbreite senken hilft nicht: beide Kinder haben width: 100%
 //   und teilen sich den Platz gleichmaessig, das Bild wuerde dann groesser
-//   statt kleiner. Es braucht die Deckelung.
-// Die Template-Regel steht unter .our-portfolio-swiper .our-portfoli-swiper-card
-// .card-right-content (0-3-0), die Ueberschreibung muss mitziehen.
-@media (min-width: 1200px) and (max-width: 1365px) {
-    .our-portfolio-swiper .our-portfoli-swiper-card .card-right-content {
-        min-width: 0;
-        flex: 0 0 250px;
+//   statt kleiner. Es braucht eine feste Breite.
+// Die Template-Regeln stehen unter .our-portfolio-swiper
+// .our-portfoli-swiper-card (0-2-0) bzw. deren .card-right-content (0-3-0),
+// die Ueberschreibungen muessen mitziehen.
+.our-portfolio-swiper .our-portfoli-swiper-card {
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+
+        .card-right-content {
+            min-width: 0;
+            flex: 0 0 220px;
+        }
     }
 }
