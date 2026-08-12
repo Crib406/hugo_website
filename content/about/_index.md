@@ -55,7 +55,7 @@ jsonld:
         <div class="blog-details-left-area text-center">
 
           <br>
-          <h4 class="title">Ich verstehe komplexe Abläufe schnell, weil ich sie aus drei Richtungen kenne.</h4>
+          <h4 class="title">Ich verstehe komplexe Abläufe schnell und gestalte sie.</h4>
 
           <div class="our-portfolio-swiper">
 

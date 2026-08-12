@@ -35,6 +35,25 @@ h1, h2, h3, h4, h5, h6,
     color: var(--color-accent-strong);
 }
 
+// Auf den Unterseiten sind einzelne Woerter im Fliesstext als <span>
+// ausgezeichnet ("LinkedIn", "Austausch") - offensichtlich als Hervorhebung
+// gemeint, wie auf der Startseite. Eine Regel dafuer fehlte, sie wurden also
+// nie farbig dargestellt. Links im Fliesstext waren ausserdem nicht von
+// normalem Text zu unterscheiden.
+.blog-details-left-area .disc {
+    span {
+        color: var(--color-accent-strong);
+    }
+
+    a {
+        color: var(--color-accent-strong);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // Das Banner blendet zwei fest verdrahtete #FF014F-Blurflaechen ein
 // (Rest der Pink-Herkunft des Templates). In der hellen Variante waren
 // sie ausgeblendet, im dunklen Modus leuchten sie rot durch.
