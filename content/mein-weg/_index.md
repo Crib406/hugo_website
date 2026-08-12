@@ -169,7 +169,7 @@ jsonld:
             <br>
 
             <p class="disc">
-              Woran ich gerade arbeite, sehen Sie auf <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>. Über einen ehrlichen <a href="/kontakt/"><span>Austausch</span></a> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
+              Woran ich gerade arbeite, sehen Sie auf <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>. Über einen ehrlichen <a href="../kontakt/"><span>Austausch</span></a> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
             </p>
 
             
