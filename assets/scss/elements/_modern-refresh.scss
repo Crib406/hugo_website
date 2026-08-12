@@ -447,3 +447,21 @@ h1, h2, h3, h4, h5, h6,
         height: 32px;
     }
 }
+
+// Fliesstext auf dem Handy.
+// Das Template faellt unter 768px von 18px auf 16px zurueck
+// (default/_typography.scss, globale p-Regel). Fuer die langen Texte auf
+// "Mein Weg" und "Ueber mich" ist das zu klein, zumal die Textfarbe bewusst
+// gedaempft ist und Schrift dadurch optisch noch kleiner wirkt.
+// 17px statt 18px, weil bei 18px die Zeilen fuer deutsche Woerter zu kurz
+// werden und der Umbruch unruhig wird.
+// Bewusst als p-Regel und nicht als Klasse: sie korrigiert genau die
+// Template-Regel, die hier stoert. Alles, was eine eigene Groesse hat
+// (Karten, Hero, Footer), gewinnt ueber die hoehere Spezifitaet und bleibt
+// unberuehrt.
+@media #{$sm-layout} {
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
