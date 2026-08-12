@@ -465,3 +465,43 @@ h1, h2, h3, h4, h5, h6,
         line-height: 1.7;
     }
 }
+
+/*----------------------------
+ Zeilenlaenge auf den Textseiten
+ Lesbar sind 45-75 Zeichen pro Zeile, ideal rund 66. Ueber die volle
+ Spaltenbreite kamen die Absaetze auf 74 bis 137 Zeichen - dann verliert das
+ Auge beim Ruecksprung die naechste Zeile. Gemessen bei 1440px.
+ 70ch ist empirisch ermittelt: damit liegen alle Absaetze zwischen 50 und 74.
+ In ch statt Pixeln, damit die Grenze mitwaechst, wenn jemand die Schrift
+ hochstellt. Auf dem Handy ohne Wirkung, dort ist die Spalte ohnehin schmaler.
+----------------------------*/
+.blog-details-left-area {
+    // Nur Lesetexte. Die Haekchenliste bleibt aussen vor: das sind kurze
+    // Beschriftungen, keine Absaetze. Begrenzt man sie, bricht ein Punkt um
+    // und steht zentriert neben seinem Haken.
+    p.disc,
+    .quote-area-blog-details {
+        max-width: 70ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Ausnahme: Text neben einem Bild liegt mit 55 Zeichen bereits richtig.
+    // Er ist ausserdem Flex-Kind - eine max-width darauf aendert die
+    // Groessenverteilung des Flex-Containers und wuerde ihn auf 35 Zeichen
+    // zusammenfallen lassen. Die Verschachtelung ergibt 0-3-1 gegen 0-2-1
+    // der Regel darueber, gewinnt also ueber die Spezifitaet und nicht nur
+    // ueber die Reihenfolge.
+    .our-portfoli-swiper-card p.disc {
+        max-width: none;
+    }
+
+    // Impressum: reine Textseite ohne Bilder. Hier wird die ganze Spalte
+    // schmaler, damit Ueberschriften und Text dieselbe linke Kante behalten.
+    // Die Ueberschriften stehen dort ausserhalb von .legal-text; begrenzt man
+    // nur den Textblock, rueckt der Text ein und die Ueberschriften bleiben
+    // stehen.
+    &.legal-page {
+        max-width: 70ch;
+    }
+}
