@@ -148,37 +148,37 @@ h1, h2, h3, h4, h5, h6,
 // Freigestelltes PNG wuerde mit Rahmen eine schwebende Linie ergeben -
 // deshalb hier bewusst das nicht freigestellte Foto (ich_cropped.webp).
 .hero-portrait {
-    position: relative;
     display: inline-block;
-    overflow: visible;
 
-    // Das Template legt ueber .main-img einen Verlauf, der nach #060606
-    // (reines Schwarz der alten Palette) ausblendet. Er passt weder zur
-    // neuen Farbwelt noch zum gerahmten Foto und verdeckt den Chip.
+    // Der Verlauf des Templates blendet nach #060606 aus, dem Schwarz der
+    // alten Palette. Er liegt ausserdem als Flaeche ueber dem ganzen Rahmen -
+    // bei einem freigestellten Motiv wird daraus ein dunkler Kasten neben
+    // der Silhouette. Bleibt aus, die Kanten loest stattdessen die Maske.
     &::after {
         display: none;
     }
 
+    // Keine Rundung: das Motiv steht frei auf dem Hintergrund, eine Rundung
+    // wuerde nur den unsichtbaren Rahmen beschneiden.
+    //
+    // Das Freistellen schneidet den Oberkoerper an der rechten und unteren
+    // Rahmenkante senkrecht ab. Die Maske laesst beide Kanten auslaufen,
+    // statt sie hart stehen zu lassen. Zwei Verlaeufe, per intersect
+    // verschnitten - sonst wuerde der zweite den ersten ersetzen.
+    // Das -webkit-Gegenstueck heisst source-in und muss mitgeschrieben
+    // werden, sonst greift in aelteren WebKit-Fassungen nur der letzte
+    // Verlauf.
     img {
-        border-radius: 18px;
         display: block;
-        position: relative;
-        z-index: 1;
-    }
 
-    .hero-chip {
-        z-index: 2;
-        position: absolute;
-        left: 20px;
-        bottom: -14px;
-        background: var(--color-brass-tint);
-        color: var(--color-brass);
-        font-family: var(--font-secondary);
-        font-size: 14px;
-        font-weight: 600;
-        padding: 7px 14px;
-        border-radius: 999px;
-        white-space: nowrap;
+        --hero-maske:
+            linear-gradient(90deg,  #000 0%, #000 86%, rgb(0 0 0 / 0%) 100%),
+            linear-gradient(180deg, #000 0%, #000 88%, rgb(0 0 0 / 0%) 100%);
+
+        mask-image: var(--hero-maske);
+        mask-composite: intersect;
+        -webkit-mask-image: var(--hero-maske);
+        -webkit-mask-composite: source-in;
     }
 }
 
