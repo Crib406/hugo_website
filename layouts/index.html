@@ -20,8 +20,12 @@
                             <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2">
                                 Christoph B. Reimann
                             </h1>
+                            {{/* tmp-title-split gehoert auf den inneren span, nicht auf
+                                 das p: .hero-kicker ist ein Flex-Container (wegen des
+                                 Strichs davor), und SplitText legt Zeilen-divs an, die
+                                 dort sonst nebeneinander statt untereinander stuenden. */}}
                             <p class="hero-kicker tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                Mensch &middot; Betriebswirt &middot; Generalist
+                                <span class="tmp-title-split">Mensch &middot; Betriebswirt &middot; Generalist</span>
                             </p>
                             <p class="hero-lead tmp-scroll-trigger tmp-fade-in animation-order-4">
                                 Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten,
