@@ -17,27 +17,24 @@ jsonld:
     text-align: center;
   }
 
-  /* Blocksatz + fett ONLY im Fließtext (.disc) */
+  /* Flattersatz statt Blocksatz: in der schmalen Spalte riss der Blocksatz
+     sichtbare Lücken zwischen die Wörter. Normale Schriftstärke statt 700:
+     wenn alles fett ist, lässt sich nichts mehr betonen. */
   .blog-details-left-area .disc {
-    text-align: justify;        /* Blocksatz */
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
-    font-weight: 700;           /* fett wie gewünscht */
+    font-weight: 400;
     line-height: 1.7;
   }
 
-  /* Absätze innerhalb .disc sauber im Blocksatz */
   .blog-details-left-area .disc p {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
     margin-bottom: 1.2em;
   }
 
-  /* Listen auch im Blocksatz */
   .blog-details-left-area .disc li {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
   }
 
@@ -60,7 +57,7 @@ jsonld:
 
           <!-- Herkunft & Familie -->
           <br>
-          <h4 class="title">Herkunft und Familie</h4>
+          <h2 class="title">Herkunft und Familie</h2>
 
           <div class="our-portfolio-swiper">
             <div class="blog-details-swiper">
@@ -95,7 +92,7 @@ jsonld:
                 "Herr Reimann verbindet technisches Verständnis mit unternehmerischem Denken.
                 Er arbeitet effizient, verantwortungsvoll und mit hoher Integrität."
               </p>
-              <h3 class="author">Bruno Reimann GmbH &amp; Co. KG, Bad Harzburg, 2023, Arbeitszeugnis</h3>
+              <p class="author">Bruno Reimann GmbH &amp; Co. KG, Bad Harzburg, 2023, Arbeitszeugnis</p>
             </div>
 
             <br>
@@ -106,7 +103,7 @@ jsonld:
             </p>
 
             <!-- Agiler Weg -->
-            <h4 class="title">Mein agiler Weg</h4>
+            <h2 class="title">Mein agiler Weg</h2>
 
             <p class="disc">
               Bei Ambient (heute Beyonder), mit denen ich zuvor zwei Softwareprojekte umgesetzt hatte, arbeitete ich anschließend als agiler Projektmanager und Coach.
@@ -126,7 +123,7 @@ jsonld:
                 und nimmst dir Zeit für ein echtes Kennenlernen. Dadurch konntest du Brücken zwischen Kunden
                 und Kollegen bauen, die die Zusammenarbeit nachhaltig geprägt haben."
               </p>
-              <h3 class="author">Ambient Innovation: GmbH, 2025, Arbeitszeugnis</h3>
+              <p class="author">Ambient Innovation: GmbH, 2025, Arbeitszeugnis</p>
             </div>
 
             <br>
@@ -137,7 +134,7 @@ jsonld:
             </p>
 
             <!-- Heute -->
-            <h4 class="title">Heute</h4>
+            <h2 class="title">Heute</h2>
             <br>
 
             <div class="blog-details-swiper">
@@ -159,7 +156,7 @@ jsonld:
 
             <p class="disc">
               Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin immer neugierig und dadruch sehr vielseitig.
+              Ich bin immer neugierig und dadurch sehr vielseitig.
             </p>
 
             <div class="quote-area-blog-details">
@@ -172,25 +169,15 @@ jsonld:
             <br>
 
             <p class="disc">
-              Woran ich gerade arbeite, sehen Sie auf
-              <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener">LinkedIn</a>.
-              Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
+              Woran ich gerade arbeite, sehen Sie auf <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>. Über einen ehrlichen <a href="../kontakt/"><span>Austausch</span></a> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
             </p>
 
-            <!-- gleicher Wrapper wie der CTA auf /about/, damit beide Buttons identisch aussehen -->
-            <div class="text-para-doc-wrap">
-              <div class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                  <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
-                    <span class="icon-reverse-wrapper">
-                      <span class="btn-text">Kontakt aufnehmen</span>
-                      <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                      <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            
+
+          <div class="about-content-area">
+
+
+ 
 
           </div> <!-- .our-portfolio-swiper -->
 

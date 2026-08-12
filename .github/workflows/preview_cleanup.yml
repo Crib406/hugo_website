@@ -1,0 +1,69 @@
+name: Vorschauen aufräumen
+
+# Die Branch-Vorschauen unter /preview/ werden mit keep_files: true
+# deployt, damit ein Branch-Build nicht die Hauptseite überschreibt.
+# Dadurch wird aber auch nie etwas gelöscht. Dieser Workflow räumt auf.
+on:
+  # Beim Löschen eines Branches dessen Vorschau entfernen.
+  # Achtung: delete-Workflows laufen nur, wenn die Datei auf dem
+  # Standard-Branch liegt. Greift also erst nach dem Merge.
+  delete:
+
+  # Monatlich alles entfernen, dessen Branch es nicht mehr gibt.
+  # Fängt ab, was vor Einführung dieses Workflows liegen blieb, und
+  # Fälle, in denen das delete-Ereignis verloren ging.
+  # Am 1. jeden Monats um 04:00 UTC.
+  schedule:
+    - cron: "0 4 1 * *"
+
+  # Von Hand auslösbar
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-write
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skripte aus dem Standard-Branch holen
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          path: tools
+
+      - name: gh-pages auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Aufräumen
+        working-directory: pages
+        run: |
+          chmod +x ../tools/.github/scripts/preview-tools.sh
+
+          if [ "${{ github.event_name }}" = "delete" ] && [ "${{ github.event.ref_type }}" = "branch" ]; then
+            echo "Branch gelöscht: ${{ github.event.ref }}"
+            ../tools/.github/scripts/preview-tools.sh remove "${{ github.event.ref }}"
+          else
+            echo "Vollständiger Durchlauf"
+            ../tools/.github/scripts/preview-tools.sh prune
+          fi
+
+      - name: Änderungen übernehmen
+        working-directory: pages
+        run: |
+          if git diff --quiet && git diff --staged --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "Nichts geändert"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Vorschauen aufgeräumt"
+          git push

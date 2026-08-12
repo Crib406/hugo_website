@@ -62,6 +62,7 @@
 /*----Default Css----*/
 
 @import'default/variables';
+@import'default/fonts';
 @import'default/mixins';
 @import'default/extend';
 @import'default/typography';
@@ -132,3 +133,6 @@
 /*----Footer Style----*/
 @import'footer/footer';
 @import'template/color-theme';
+
+/*----UI-Refresh (muss zuletzt geladen werden) ----*/
+@import'elements/modern-refresh';

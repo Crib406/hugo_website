@@ -3,19 +3,18 @@
   <div class="container">
     <div class="footer-main footer-style-two">
       <div class="row g-5">
+        {{/* Spaltenbreiten von main uebernommen (5+3+4 = 12), Inhalt von hier:
+             das Zitat statt der Wiederholung des Untertitels aus dem Hero. */}}
         <div class="col-lg-5 col-md-12">
-          <div class="single-footer-wrapper">
-            <h5 class="ft-title">Christoph B. Reimann</h5>
-            <p class="disc">
-              Mensch · Betriebswirt · Generalist. Ich verbinde Menschen, Abläufe und
-              Technik für Zusammenarbeit auf Augenhöhe.
-            </p>
+          <div class="single-footer-wrapper border-right mr--20">
+            <h2 class="ft-title">Im Kern</h2>
+            <p class="footer-quote">Ich spreche einfach gerne mit Menschen. Über Austausch freue ich mich jederzeit.</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="quick-link-wrap">
-            <h5 class="ft-title">Quick Link</h5>
+            <h2 class="ft-title">Quick Link</h2>
             <ul class="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
               <li><a href="{{ "about/" | relURL }}">Über mich</a></li>
               <li><a href="{{ "mein-weg/" | relURL }}">Mein Weg</a></li>
@@ -28,7 +27,9 @@
 
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="single-footer-wrapper contact-wrap">
-            <h5 class="ft-title">Kontakt</h5>
+            {{/* h2 statt h5: die Footer-Ueberschriften stehen auf einer Ebene
+                 mit den Abschnitten der Seite, nicht vier darunter. */}}
+            <h2 class="ft-title">Kontakt</h2>
             <ul class="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
               <li>
                 <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>

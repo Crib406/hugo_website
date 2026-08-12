@@ -1,9 +1,15 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  {{/* Startseite fest */}}
+  {{/* Startseite fest. lastmod kommt wie bei allen anderen Seiten aus dem
+       letzten Git-Commit der Datei (enableGitInfo in hugo.toml). Das setzt
+       voraus, dass die CI mit fetch-depth: 0 auscheckt, sonst fehlt die
+       Historie und das Datum wäre falsch. */}}
   <url>
     <loc>{{ .Site.BaseURL }}</loc>
+    {{ with site.Home.Lastmod }}
+      <lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+    {{ end }}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

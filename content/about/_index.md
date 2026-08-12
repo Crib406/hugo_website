@@ -16,26 +16,25 @@ jsonld:
     text-align: center;
   }
 
-  /* Blocksatz + Fett NUR für Fließtext */
+  /* Flattersatz statt Blocksatz: in der schmalen Spalte riss der Blocksatz
+     sichtbare Lücken zwischen die Wörter. Normale Schriftstärke statt 700:
+     wenn alles fett ist, lässt sich nichts mehr betonen. */
   .blog-details-left-area .disc {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.7;
   }
 
   .blog-details-left-area .disc p {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
     margin-bottom: 1.2em;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   .blog-details-left-area .disc li {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
     margin-bottom: 0.6em;
   }
@@ -56,7 +55,7 @@ jsonld:
         <div class="blog-details-left-area text-center">
 
           <br>
-          <h4 class="title">Wer ich bin</h4>
+          <h2 class="title">Ich verstehe komplexe Abläufe schnell und gestalte sie.</h2>
 
           <div class="our-portfolio-swiper">
 
@@ -66,15 +65,18 @@ jsonld:
                   <img src="../assets/images/blog/cr_autor.webp" alt="Christoph B. Reimann mit Brille 2024" width="771" height="1028" loading="lazy" decoding="async">
                 </div>
                 <div class="card-left-content">
+                  <!-- Neben dem Bild steht bewusst nur EIN Absatz. Die Spalte
+                       daneben ist rund 45 Zeichen breit; standen dort drei
+                       Absaetze, lief der halbe Seitentext durch eine enge
+                       Spalte voller Trennstriche, und unter dem Bild blieb
+                       eine grosse Luecke. Alles Weitere laeuft in voller
+                       Breite, wie auf "Mein Weg".
+                       Reihenfolge der Seite: Aussage, dann Werdegang, dann
+                       Haltung. Der Werdegang stand vorher auseinandergerissen
+                       in zwei Absaetzen mit einem Absatz ueber Haltung
+                       dazwischen. -->
                   <p class="disc">
-                     Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
-              Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
-              <br>
-               Dank meines technischen Verständnisses aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
-              und sie zu gestalten.
-              <br>
-               Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
-              sehe ihn nicht nur als Produktionsfaktor.
+                    Technisches Verständnis aus der praktischen Anwendung, ausgeprägte digitale Kompetenz und kaufmännisches Denken kommen bei mir zusammen. Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert.
                   </p>
                 </div>
               </div>
@@ -82,49 +84,52 @@ jsonld:
             <br>
 
             <p class="disc">
-              Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt bis heute, wie ich auf Menschen und Zusammenarbeit schaue.
+              Durch unser Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. Ergänzend dazu habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt seitdem, wie ich auf Menschen und Zusammenarbeit schaue.
             </p>
+
+            <p class="disc">
+              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich sehe ihn nicht nur als Produktionsfaktor.
+            </p>
+
+            <!-- Die frühere Liste zählte Fähigkeiten auf und wiederholte damit die
+                 Karten der Startseite. Zusätzlich sagte sie teilweise dasselbe wie
+                 der Absatz, der direkt darunter stand. Beides ist jetzt zu einer
+                 Liste zusammengefasst, die die Haltung beschreibt statt der
+                 Fähigkeiten. Formulierungen stammen aus dem bisherigen Absatz. -->
+            <h2 class="title mt--40">Wie ich arbeite</h2>
 
             <div class="check-box-wrap">
               <ul>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Prozesse verstehen, vereinfachen und gestalten
-                  </h4>
+                    Klar und ehrlich kommunizieren, auf Augenhöhe
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Technisches Verständnis – vom Lkw bis zur Prozessautomation – mit digitaler Tiefe
-                  </h4>
+                    Den Menschen hinter der Rolle sehen, nicht den Produktionsfaktor
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Menschen ermutigen und Vertrauen fördern
-                  </h4>
+                    Unterschiedliche Perspektiven zusammenbringen
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Verantwortung übernehmen und unternehmerisch handeln
-                  </h4>
-                </li>
-                <li>
-                  <h4 class="check-box-item">
-                    <span><i class="fa-solid fa-circle-check"></i></span>
-                    Menschen, Abläufe und Technik verbinden
-                  </h4>
+                    Ausprobieren, statt es endlos zu besprechen
+                  </p>
                 </li>
               </ul>
 
               <br>
 
               <p class="disc">
-                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden und ich meine Vielseitigkeit leben darf. In einer Umgebung, wo klar kommuniziert wird und Dinge einfach mal ausprobiert werden, statt endloser Meetings und Hierarchie-Theater. 
-                Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt. 
-               
+                Ich arbeite am liebsten dort, wo ich meine Vielseitigkeit leben darf, statt in endlosen Meetings und Hierarchie-Theater. Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt.
               </p>
 
             </div>
@@ -139,24 +144,20 @@ jsonld:
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
 
-      <!-- war zuvor eine leere h2-Überschrift als Wrapper: gleiche Optik, aber valides HTML ohne leere Überschrift -->
-      <div class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-          <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
-            <span class="icon-reverse-wrapper">
-              <span class="btn-text">Mehr über meinen Weg erfahren</span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-            </span>
-          </a>
-          <a class="tmp-btn hover-icon-reverse radius-round" href="../kontakt/">
-            <span class="icon-reverse-wrapper">
-              <span class="btn-text">Kontakt aufnehmen</span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-              <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-            </span>
-          </a>
-        </div>
+      <!-- Bewusst nur ein Weg: Ein Kontakt-Button hier las sich wie eine
+           Bewerbung und erweckte den Eindruck einer Jobsuche. Der Kontakt ist
+           über Menü und Footer erreichbar.
+           Button NICHT in ein .inv-title-animation-wrap-Element schachteln:
+           die Split-Text-Animation zerlegt sonst den Buttontext in einzelne
+           Buchstaben mit opacity:0 und der Button bleibt leer. -->
+      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
+        <a class="tmp-btn hover-icon-reverse" href="../mein-weg/">
+          <span class="icon-reverse-wrapper">
+            <span class="btn-text">Mehr über meinen Weg</span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+          </span>
+        </a>
       </div>
 
     </div>

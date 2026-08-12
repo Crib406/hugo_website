@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - 'feature/**'
+      - 'claude/**'
 
 permissions:
   contents: write
@@ -30,6 +31,15 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
+
+      - name: Install Dart Sass
+        run: |
+          DART_SASS_VERSION="1.83.0"
+          curl -sSLo /tmp/dart-sass.tar.gz "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          tar -xzf /tmp/dart-sass.tar.gz -C /tmp
+          sudo mv /tmp/dart-sass /usr/local/dart-sass
+          sudo ln -sf /usr/local/dart-sass/sass /usr/local/bin/dart-sass
+          dart-sass --version
 
       - name: Load baseURL from hugo.toml
         id: load_baseurl
@@ -68,3 +78,44 @@ jobs:
           publish_dir: ./public
           destination_dir: ${{ env.DEST_DIR }}
           keep_files: true
+
+  # Übersicht aller Branch-Vorschauen unter /preview/ neu erzeugen.
+  # Läuft nach dem Deploy, damit eine neu hinzugekommene Vorschau
+  # sofort in der Liste steht.
+  preview-index:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    concurrency:
+      group: gh-pages-write
+      cancel-in-progress: false
+    steps:
+      - name: Skript holen
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          path: tools
+
+      - name: gh-pages auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Übersicht schreiben
+        working-directory: pages
+        run: |
+          chmod +x ../tools/.github/scripts/preview-tools.sh
+          ../tools/.github/scripts/preview-tools.sh index
+
+      - name: Änderungen übernehmen
+        working-directory: pages
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Übersicht unverändert"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Vorschau-Übersicht aktualisiert"
+          git push

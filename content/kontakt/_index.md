@@ -15,9 +15,9 @@ jsonld:
 <div class="about-content-area">
 
             <div class="text-para-doc-wrap">
-                       <h4 class="text-para-documents" style="text-align: center;">
+                       <h2 class="text-para-documents" style="text-align: center;">
                           Nehmen Sie <span>Kontakt</span> auf. 
-                      </h4>
+                      </h2>
  
             </div>
       
@@ -33,7 +33,7 @@ jsonld:
             <div class="service-card-icon">
               <i class="fa-solid fa-envelope"></i>
             </div>
-            <h4 class="service-title">Per Mail</h4>
+            <h3 class="service-title">Per Mail</h3>
           </div>
         </a>
       </div>
@@ -44,7 +44,7 @@ jsonld:
             <div class="service-card-icon">
               <i class="fa-brands fa-linkedin"></i>
             </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
+            <h3 class="service-title">Auf LinkedIn</h3>
           </div>
         </a>
       </div>
