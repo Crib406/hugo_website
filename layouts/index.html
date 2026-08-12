@@ -27,18 +27,9 @@
                                 Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten,
                                 ist das, was mich antreibt.
                             </p>
-                            {{/* Button bewusst NICHT in ein .inv-title-animation-wrap-Element
-                                 schachteln: die Split-Text-Animation zerlegt sonst auch den
-                                 Buttontext in Buchstaben mit opacity:0. */}}
-                            <div class="hero-actions tmp-scroll-trigger tmp-fade-in animation-order-5">
-                                <a class="tmp-btn hover-icon-reverse radius-round" href="{{ "about/" | relURL }}">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Mehr über mich erfahren</span>
-                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
+                            {{/* Kein Handlungsaufruf im Hero: hier hat der Besucher noch
+                                 keinen Grund, mehr wissen zu wollen. Der Button steht
+                                 weiter unten, wo die Neugier entstanden ist. */}}
                         </div>
                     </div>
 
@@ -54,8 +45,11 @@
     <div class="about-content-area">
         <div class="container tmp-section-gap">
             <div class="text-para-doc-wrap">
-                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                    <span>Generalist</span> mit praktischem Verständnis für Prozesse. Ich verbinde Betriebswirtschaft, technisches Know-how und ein gutes Gespür für <span>Menschen</span>, um <span>Verbindungen</span> zu schaffen bevor Brüche entstehen.
+                {{/* Ohne inv-title-animation-wrap, damit beide Aussagen-Absaetze
+                     gleich einblenden und der Text nicht in Wort-Elemente
+                     zerlegt wird. */}}
+                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span>Generalist</span> mit praktischem Verständnis für Prozesse. Ich verbinde Betriebswirtschaft, technisches Know-how und ein gutes Gespür für <span>Menschen</span>, um <span>Verbindungen</span> zu schaffen, bevor Brüche entstehen.
                 </h2>
             </div>
         </div>
@@ -150,6 +144,22 @@
                 </div>
 
             </div>
+
+            {{/* Handlungsaufruf hier statt im Hero: an dieser Stelle weiss der
+                 Besucher, was ich tue und wie ich arbeite - jetzt entsteht der
+                 Wunsch, mehr zu erfahren.
+                 Button NICHT in ein .inv-title-animation-wrap-Element schachteln:
+                 die Split-Text-Animation zerlegt sonst den Buttontext in
+                 Buchstaben mit opacity:0. */}}
+            <div class="home-cta tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <a class="tmp-btn hover-icon-reverse radius-round" href="{{ "about/" | relURL }}">
+                    <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Mehr über mich erfahren</span>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -157,11 +167,13 @@
     <div class="about-content-area about-content-area--stand">
         <div class="container">
             <div class="text-para-doc-wrap">
-                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">
-                    {{/* Die Split-Text-Animation schluckt Leerzeichen an
-                         Element-Grenzen ("aufLinkedIn.Ich"), daher hier
-                         geschuetzte Leerzeichen. */}}
-                    Woran ich aktuell arbeite, sehen Sie am besten auf&nbsp;<a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>.&nbsp;Ich spreche einfach gerne mit <span>Menschen</span>. Über Austausch zu allen möglichen Themen freue ich mich jederzeit.
+                {{/* Ohne inv-title-animation-wrap: die Split-Text-Animation
+                     zerlegt den Absatz in einzelne Wort-Elemente, schluckt
+                     dabei Leerzeichen an Element-Grenzen ("aufLinkedIn.Ich")
+                     und trennt den Satzpunkt vom Wort davor. Der Absatz blendet
+                     ueber tmp-fade-in weiterhin ein. */}}
+                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    Woran ich aktuell arbeite, sehen Sie am besten auf <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener"><span>LinkedIn</span></a>. Ich spreche einfach gerne mit <span>Menschen</span>. Über Austausch zu allen möglichen Themen freue ich mich jederzeit.
                 </h2>
             </div>
         </div>
