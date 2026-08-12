@@ -589,7 +589,7 @@ p {
 ----------------------------*/
 .blog-details-left-area {
     &:not(.legal-page) {
-        max-width: 700px;
+        max-width: 740px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -608,7 +608,7 @@ p {
     // 560px statt des frueheren "70ch": das ergab durch die 16px des
     // Containers genau diesen Wert, aber eben zufaellig statt absichtlich.
     &.legal-page {
-        max-width: 560px;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
 
@@ -661,7 +661,7 @@ p {
 
         .card-right-content {
             min-width: 0;
-            flex: 0 0 220px;
+            flex: 0 0 230px;
         }
     }
 }

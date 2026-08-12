@@ -65,16 +65,18 @@ jsonld:
                   <img src="/assets/images/blog/cr_autor.jpeg" alt="Christoph B. Reimann mit Brille 2024">
                 </div>
                 <div class="card-left-content">
-                  <!-- Aussage zuerst, Ausbildung danach als Beleg. Vorher stand die
-                       Reihenfolge umgekehrt, also Zeugnisse vor Bedeutung. -->
+                  <!-- Neben dem Bild steht bewusst nur EIN Absatz. Die Spalte
+                       daneben ist rund 45 Zeichen breit; standen dort drei
+                       Absaetze, lief der halbe Seitentext durch eine enge
+                       Spalte voller Trennstriche, und unter dem Bild blieb
+                       eine grosse Luecke. Alles Weitere laeuft in voller
+                       Breite, wie auf "Mein Weg".
+                       Reihenfolge der Seite: Aussage, dann Werdegang, dann
+                       Haltung. Der Werdegang stand vorher auseinandergerissen
+                       in zwei Absaetzen mit einem Absatz ueber Haltung
+                       dazwischen. -->
                   <p class="disc">
-                    Dank meines technischen Verständnisses aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen und sie zu gestalten.
-                  </p>
-                  <p class="disc">
-                    Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis.
-                  </p>
-                  <p class="disc">
-                    Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich sehe ihn nicht nur als Produktionsfaktor.
+                    Technisches Verständnis aus der praktischen Anwendung, ausgeprägte digitale Kompetenz und kaufmännisches Denken kommen bei mir zusammen. Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert.
                   </p>
                 </div>
               </div>
@@ -82,7 +84,11 @@ jsonld:
             <br>
 
             <p class="disc">
-              Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt seitdem, wie ich auf Menschen und Zusammenarbeit schaue.
+              Durch unser Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. Ergänzend dazu habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt seitdem, wie ich auf Menschen und Zusammenarbeit schaue.
+            </p>
+
+            <p class="disc">
+              Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich sehe ihn nicht nur als Produktionsfaktor.
             </p>
 
             <!-- Die frühere Liste zählte Fähigkeiten auf und wiederholte damit die
