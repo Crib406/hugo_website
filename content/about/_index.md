@@ -55,7 +55,7 @@ jsonld:
         <div class="blog-details-left-area text-center">
 
           <br>
-          <h4 class="title">Ich verstehe komplexe Abläufe schnell und gestalte sie.</h4>
+          <h2 class="title">Ich verstehe komplexe Abläufe schnell und gestalte sie.</h2>
 
           <div class="our-portfolio-swiper">
 
@@ -90,33 +90,33 @@ jsonld:
                  der Absatz, der direkt darunter stand. Beides ist jetzt zu einer
                  Liste zusammengefasst, die die Haltung beschreibt statt der
                  Fähigkeiten. Formulierungen stammen aus dem bisherigen Absatz. -->
-            <h4 class="title mt--40">Wie ich arbeite</h4>
+            <h2 class="title mt--40">Wie ich arbeite</h2>
 
             <div class="check-box-wrap">
               <ul>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                     Klar und ehrlich kommunizieren, auf Augenhöhe
-                  </h4>
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                     Den Menschen hinter der Rolle sehen, nicht den Produktionsfaktor
-                  </h4>
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                     Unterschiedliche Perspektiven zusammenbringen
-                  </h4>
+                  </p>
                 </li>
                 <li>
-                  <h4 class="check-box-item">
+                  <p class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                     Ausprobieren, statt es endlos zu besprechen
-                  </h4>
+                  </p>
                 </li>
               </ul>
 

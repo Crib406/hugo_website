@@ -57,7 +57,7 @@ jsonld:
 
           <!-- Herkunft & Familie -->
           <br>
-          <h4 class="title">Herkunft und Familie</h4>
+          <h2 class="title">Herkunft und Familie</h2>
 
           <div class="our-portfolio-swiper">
             <div class="blog-details-swiper">
@@ -92,7 +92,7 @@ jsonld:
                 "Herr Reimann verbindet technisches Verständnis mit unternehmerischem Denken.
                 Er arbeitet effizient, verantwortungsvoll und mit hoher Integrität."
               </p>
-              <h3 class="author">Bruno Reimann GmbH &amp; Co. KG, Bad Harzburg, 2023, Arbeitszeugnis</h3>
+              <p class="author">Bruno Reimann GmbH &amp; Co. KG, Bad Harzburg, 2023, Arbeitszeugnis</p>
             </div>
 
             <br>
@@ -103,7 +103,7 @@ jsonld:
             </p>
 
             <!-- Agiler Weg -->
-            <h4 class="title">Mein agiler Weg</h4>
+            <h2 class="title">Mein agiler Weg</h2>
 
             <p class="disc">
               Bei Ambient (heute Beyonder), mit denen ich zuvor zwei Softwareprojekte umgesetzt hatte, arbeitete ich anschließend als agiler Projektmanager und Coach.
@@ -123,7 +123,7 @@ jsonld:
                 und nimmst dir Zeit für ein echtes Kennenlernen. Dadurch konntest du Brücken zwischen Kunden
                 und Kollegen bauen, die die Zusammenarbeit nachhaltig geprägt haben."
               </p>
-              <h3 class="author">Ambient Innovation: GmbH, 2025, Arbeitszeugnis</h3>
+              <p class="author">Ambient Innovation: GmbH, 2025, Arbeitszeugnis</p>
             </div>
 
             <br>
@@ -134,7 +134,7 @@ jsonld:
             </p>
 
             <!-- Heute -->
-            <h4 class="title">Heute</h4>
+            <h2 class="title">Heute</h2>
             <br>
 
             <div class="blog-details-swiper">
