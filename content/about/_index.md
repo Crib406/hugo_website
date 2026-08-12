@@ -143,7 +143,7 @@ jsonld:
            die Split-Text-Animation zerlegt sonst auch den Buttontext in
            einzelne Buchstaben mit opacity:0 und der Button bleibt leer. -->
       <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
-        <a class="tmp-btn hover-icon-reverse radius-round" href="../mein-weg/">
+        <a class="tmp-btn hover-icon-reverse" href="../mein-weg/">
           <span class="icon-reverse-wrapper">
             <span class="btn-text">Mehr über meinen Weg erfahren</span>
             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>

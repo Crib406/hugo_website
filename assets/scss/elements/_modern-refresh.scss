@@ -190,11 +190,25 @@ h1, h2, h3, h4, h5, h6,
     background: var(--color-accent);
     color: var(--color-paper);
 
+    // Die Template-Pille (radius-round, 500px) wirkte neben den
+    // Karten wie ein Fremdkoerper. Gleiche Rundung wie die Karten.
+    border-radius: 12px;
+    height: auto;
+    line-height: 1.2;
+    padding: 17px 30px;
+    font-size: 16px;
+    letter-spacing: 0;
+
     // text-transform: capitalize aus dem Template macht aus
     // "Mehr ueber mich erfahren" ein "Mehr Ueber Mich Erfahren" - im
     // Deutschen falsch.
     text-transform: none;
     font-weight: 600;
+
+    i {
+        top: 0;
+        font-size: 15px;
+    }
 
     .btn-text,
     .btn-icon,
