@@ -17,27 +17,24 @@ jsonld:
     text-align: center;
   }
 
-  /* Blocksatz + fett ONLY im Fließtext (.disc) */
+  /* Flattersatz statt Blocksatz: in der schmalen Spalte riss der Blocksatz
+     sichtbare Lücken zwischen die Wörter. Normale Schriftstärke statt 700:
+     wenn alles fett ist, lässt sich nichts mehr betonen. */
   .blog-details-left-area .disc {
-    text-align: justify;        /* Blocksatz */
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
-    font-weight: 700;           /* fett wie gewünscht */
+    font-weight: 400;
     line-height: 1.7;
   }
 
-  /* Absätze innerhalb .disc sauber im Blocksatz */
   .blog-details-left-area .disc p {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
     margin-bottom: 1.2em;
   }
 
-  /* Listen auch im Blocksatz */
   .blog-details-left-area .disc li {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     hyphens: auto;
   }
 
