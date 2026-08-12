@@ -156,7 +156,7 @@ jsonld:
 
             <p class="disc">
               Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin immer neugierig und dadruch sehr vielseitig.
+              Ich bin immer neugierig und dadurch sehr vielseitig.
             </p>
 
             <div class="quote-area-blog-details">
@@ -168,16 +168,8 @@ jsonld:
 
             <br>
 
-              <p class="disc">
-              Heute verbinde ich Praxisverständnis aus dem Mittelstand, tiefes IT-Know-how und ein Gespür für Menschen und Systeme. 
-              Ich bin immer neugierig und dadruch sehr vielseitig.
-
-            </p>
-
-             <p class="disc">
-             
-
-              Woran ich gerade arbeite, sehen Sie auf LinkedIn. Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.</h3>
+            <p class="disc">
+              Woran ich gerade arbeite, sehen Sie auf LinkedIn. Über einen ehrlichen <span>Austausch</span> freue ich mich jederzeit sehr, ganz gleich zu welchem Thema.
             </p>
 
             

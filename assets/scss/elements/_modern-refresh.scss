@@ -229,6 +229,35 @@ h1, h2, h3, h4, h5, h6,
         background: var(--color-accent-strong);
         color: var(--color-paper);
     }
+
+    // Sekundaerer Button (Umriss). Das Template setzt im Hover
+    // background: var(--color-primary) UND color: var(--color-white) - mit der
+    // hellgruenen Primaerfarbe ergaebe das weissen Text auf Hellgruen, also
+    // kaum lesbar. Deshalb hier dunkler Text wie beim primaeren Button.
+    &.btn-border {
+        border-width: 1px;
+        border-color: var(--color-line);
+        color: var(--color-ink);
+        // Das Template setzt hier line-height: 57px. Zusammen mit dem
+        // Padding oben wird der Button dadurch fast doppelt so hoch - und
+        // zieht im Flex-Container den primaeren Button mit.
+        line-height: 1.2;
+
+        &:hover {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+            color: var(--color-paper);
+        }
+    }
+}
+
+// Zwei Handlungsaufrufe nebeneinander, auf schmalen Schirmen untereinander.
+.page-end-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
 }
 
 // Hinweis: das Hero-Bild ist ein freigestelltes PNG mit Transparenz -

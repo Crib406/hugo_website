@@ -55,7 +55,7 @@ jsonld:
         <div class="blog-details-left-area text-center">
 
           <br>
-          <h4 class="title">Wer ich bin</h4>
+          <h4 class="title">Ich verstehe komplexe Abläufe schnell, weil ich sie aus drei Richtungen kenne.</h4>
 
           <div class="our-portfolio-swiper">
 
@@ -65,15 +65,16 @@ jsonld:
                   <img src="/assets/images/blog/cr_autor.jpeg" alt="Christoph B. Reimann mit Brille 2024">
                 </div>
                 <div class="card-left-content">
+                  <!-- Aussage zuerst, Ausbildung danach als Beleg. Vorher stand die
+                       Reihenfolge umgekehrt, also Zeugnisse vor Bedeutung. -->
                   <p class="disc">
-                     Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser 
-              Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis. 
-              <br>
-               Dank meines technischen Verständnisses aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen
-              und sie zu gestalten.
-              <br>
-               Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich
-              sehe ihn nicht nur als Produktionsfaktor.
+                    Dank meines technischen Verständnisses aus der praktischen Anwendung, ausgeprägter digitaler Kompetenz und kaufmännischem Denken fällt es mir leicht, komplexe Abläufe schnell zu verstehen und sie zu gestalten.
+                  </p>
+                  <p class="disc">
+                    Ich bin gelernter Groß- und Außenhandelskaufmann und habe anschließend dual Betriebswirtschaftslehre an der DHBW Mosbach studiert. Durch unser Familienunternehmen bin ich früh mit Maschinen und gewerblicher Arbeit in Berührung gekommen und kenne die Praxis.
+                  </p>
+                  <p class="disc">
+                    Auf eine klare, ehrliche Kommunikation auf Augenhöhe lege ich großen Wert. Dabei interessiert mich immer der Mensch hinter der Rolle und ich sehe ihn nicht nur als Produktionsfaktor.
                   </p>
                 </div>
               </div>
@@ -84,36 +85,37 @@ jsonld:
               Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt bis heute, wie ich auf Menschen und Zusammenarbeit schaue.
             </p>
 
+            <!-- Die frühere Liste zählte Fähigkeiten auf und wiederholte damit die
+                 Karten der Startseite. Zusätzlich sagte sie teilweise dasselbe wie
+                 der Absatz, der direkt darunter stand. Beides ist jetzt zu einer
+                 Liste zusammengefasst, die die Haltung beschreibt statt der
+                 Fähigkeiten. Formulierungen stammen aus dem bisherigen Absatz. -->
+            <h4 class="title mt--40">Wie ich arbeite</h4>
+
             <div class="check-box-wrap">
               <ul>
                 <li>
                   <h4 class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Prozesse verstehen, vereinfachen und gestalten
+                    Klar und ehrlich kommunizieren, auf Augenhöhe
                   </h4>
                 </li>
                 <li>
                   <h4 class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Technisches Verständnis – vom Lkw bis zur Prozessautomation – mit digitaler Tiefe
+                    Den Menschen hinter der Rolle sehen, nicht den Produktionsfaktor
                   </h4>
                 </li>
                 <li>
                   <h4 class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Menschen ermutigen und Vertrauen fördern
+                    Unterschiedliche Perspektiven zusammenbringen
                   </h4>
                 </li>
                 <li>
                   <h4 class="check-box-item">
                     <span><i class="fa-solid fa-circle-check"></i></span>
-                    Verantwortung übernehmen und unternehmerisch handeln
-                  </h4>
-                </li>
-                <li>
-                  <h4 class="check-box-item">
-                    <span><i class="fa-solid fa-circle-check"></i></span>
-                    Menschen, Abläufe und Technik verbinden
+                    Ausprobieren, statt es endlos zu besprechen
                   </h4>
                 </li>
               </ul>
@@ -121,9 +123,7 @@ jsonld:
               <br>
 
               <p class="disc">
-                Ich arbeite am liebsten dort, wo unterschiedliche Perspektiven zusammenfinden und ich meine Vielseitigkeit leben darf. In einer Umgebung, wo klar kommuniziert wird und Dinge einfach mal ausprobiert werden, statt endloser Meetings und Hierarchie-Theater. 
-                Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt. 
-               
+                Ich arbeite am liebsten dort, wo ich meine Vielseitigkeit leben darf, statt in endlosen Meetings und Hierarchie-Theater. Verbindungen zu schaffen und Prozesse nachhaltig zu gestalten, ist das, was mich antreibt.
               </p>
 
             </div>
@@ -138,13 +138,23 @@ jsonld:
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
 
-      <!-- Button NICHT in ein .inv-title-animation-wrap-Element schachteln:
-           die Split-Text-Animation zerlegt sonst auch den Buttontext in
-           einzelne Buchstaben mit opacity:0 und der Button bleibt leer. -->
-      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
-        <a class="tmp-btn hover-icon-reverse" href="../mein-weg/">
+      <!-- Zwei Wege am Seitenende: "Über mich" ist die Seite, auf der jemand
+           entscheidet, ob er Kontakt aufnimmt. Vorher führte sie nur tiefer ins
+           Archiv. Kontakt bekommt deshalb das Gewicht.
+           Buttons NICHT in ein .inv-title-animation-wrap-Element schachteln:
+           die Split-Text-Animation zerlegt sonst den Buttontext in einzelne
+           Buchstaben mit opacity:0 und der Button bleibt leer. -->
+      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1 page-end-actions">
+        <a class="tmp-btn hover-icon-reverse" href="../kontakt/">
           <span class="icon-reverse-wrapper">
-            <span class="btn-text">Mehr über meinen Weg erfahren</span>
+            <span class="btn-text">Lassen Sie uns sprechen</span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+          </span>
+        </a>
+        <a class="tmp-btn btn-border hover-icon-reverse" href="../mein-weg/">
+          <span class="icon-reverse-wrapper">
+            <span class="btn-text">Mehr über meinen Weg</span>
             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
           </span>
