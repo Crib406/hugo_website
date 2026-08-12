@@ -9,12 +9,15 @@
     --color-line: #333A29;       // Linien / Raender
 
     --color-accent: #8FB89A;         // helles Gruen: Buttons, Akzente
-    // Hervorgehobene Woerter muessen mindestens so HELL sein wie der
-    // cremefarbene Fliesstext (--color-ink, Helligkeit ~0.82), sonst
-    // fallen sie optisch zurueck statt hervorzustechen - egal wie satt
-    // die Farbe ist. #8CFFC0 liegt auf gleicher Helligkeit und traegt
-    // die Betonung damit ueber den Farbunterschied.
-    --color-accent-strong: #8CFFC0;
+    // Hervorgehobene Woerter stehen im cremefarbenen Fliesstext
+    // (--color-ink #ECEAE0). Entscheidend ist der Abstand zu DIESEM Text,
+    // nicht zum Hintergrund. Zwei Fallstricke:
+    //   - zu dunkel (#6BE6A0) -> faellt gegenueber dem Fliesstext zurueck
+    //   - zu blass (#8CFFC0)  -> Helligkeit passt, aber zu viel Weissanteil,
+    //     dadurch farblich zu nah am Creme
+    // #2BFF8A haelt die Helligkeit und verdoppelt den Farbabstand
+    // (Delta-E 81 statt 48), Kontrast zum Hintergrund bleibt bei 13:1.
+    --color-accent-strong: #2BFF8A;
     --color-accent-tint: #26332A;    // gruene Flaeche hinter Icons
     --color-brass: #D6AA62;          // warmer Zweitakzent (Eyebrow, Chip)
     --color-brass-tint: #3A331E;
