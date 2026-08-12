@@ -82,7 +82,7 @@ jsonld:
             <br>
 
             <p class="disc">
-              Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt bis heute, wie ich auf Menschen und Zusammenarbeit schaue.
+              Ergänzend zu meinem kaufmännischen Hintergrund habe ich eine mehrjährige Ausbildung in der Individualpsychologie mit Schwerpunkt ermutigende Führung abgeschlossen. Sie prägt seitdem, wie ich auf Menschen und Zusammenarbeit schaue.
             </p>
 
             <!-- Die frühere Liste zählte Fähigkeiten auf und wiederholte damit die
