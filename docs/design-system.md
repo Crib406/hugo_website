@@ -87,19 +87,68 @@ umdrehen.
 
 ## Größen
 
-Gemessen im Browser, nicht aus dem Quelltext abgeleitet:
+Gemessen im Browser, nicht aus dem Quelltext abgeleitet. Handy heißt hier
+unter 768px (`$sm-layout`).
 
-| Element | Desktop | Handy |
+| Rolle | Desktop | Handy |
 |---|---|---|
-| Name im Hero (`h1.title`) | 54px | 28px |
-| Aussagen-Absatz (`.text-para-documents`) | 38px | 24px |
-| Abschnitts-Titel (`.home-section-title`) | 30px | 22px |
-| Karten-Titel (`.focus-card h3`) | 20px | 20px |
-| Fließtext (`.hero-lead`) | 18px | 18px |
+| Name im Hero (`h1.title`) | 54px | 32px |
+| Seitentitel (`.breadcrumb-inner .title`) | 44px | 32px |
+| Aussage (`.text-para-documents`) | 40px | 27px |
+| Abschnitt Unterseiten (`.title`) | 38px | 28px |
+| Abschnitt Startseite (`.home-section-title`) | 32px | 24px |
+| Kartentitel (`.focus-card h3`, `.service-title`) | 24px | 22px |
+| **Lesetext** (`p`, `.disc`, `.hero-lead`, `.focus-card p`, Impressum) | **20px** | **18px** |
+| **Nebentext** (`.service-para`) | **17px** | **16px** |
+| Navigation (Breadcrumb) | 16px | 16px |
 
-Die Staffelung ist bewusst: Der Aussagen-Absatz lag ursprünglich bei 48px und
-konkurrierte damit optisch mit dem Namen. Auf dem Handy war die Reihenfolge
-sogar verkehrt — der Abschnitts-Titel war größer als die Aussage.
+**Es gibt genau zwei Fließtext-Rollen.** Lesetext ist alles, was jemand
+tatsächlich liest — auch die Untertitel der Schwerpunktkarten auf der
+Startseite und die Listen der Datenschutzerklärung, denn beides sind ganze
+Sätze. Nebentext sind Zusätze zu einem einzelnen Wort, etwa „und lernbereit"
+unter „neugierig".
+
+Diese Unterscheidung ist der Kern der Skala. Vorher gab es unbemerkt **vier**
+Fließtextgrößen (15, 16, 17 und 18px) — dieselbe Rolle je nach Seite anders
+groß. Wer eine neue Stelle anlegt, ordnet sie einer der beiden Rollen zu und
+erfindet keine dritte Größe.
+
+Zwei Hierarchien waren zusätzlich verkehrt und sind bewusst so geradegezogen:
+Auf dem Handy war der Name (28px) kleiner als der Seitentitel „Impressum"
+(32px). Und die Eigenschaftskarten waren `h4` unter einer `h2` — eine Ebene zu
+tief, weshalb ein `h4` größer war als ein `h3`.
+
+Die Zwischenüberschriften im Impressum stehen bei 28 / 24 / 21px (Desktop) und
+24 / 21 / 19px (Handy). Vorher fiel die `h5` auf dem Handy auf 16px und war
+damit **kleiner als der Fließtext** — eine Überschrift, die sich nicht mehr
+abhebt.
+
+## Maß
+
+Gut lesbar sind **45 bis 75 Zeichen pro Zeile**, ideal rund 66. Über die volle
+Spaltenbreite kamen die Absätze auf 74 bis 137 Zeichen. Zu lange Zeilen sind
+der Grund, warum ein Text anstrengend wirkt, ohne dass man sagen kann warum:
+das Auge verliert beim Rücksprung die nächste Zeile.
+
+| | Breite |
+|---|---|
+| Lesespalte Unterseiten | 740px |
+| Lesespalte Impressum | 600px |
+| Bild in den Text-Bild-Karten (ab 1200px) | 230px fest |
+
+Das Impressum ist schmaler, weil dort keine Bildkarte eine Mindestbreite
+erzwingt. Unter 1200px stapeln die Karten, das Bild steht dann über dem Text.
+
+**Begrenzt wird die Spalte, nicht das einzelne Element.** Nur so teilen sich
+Überschriften, Absätze, Bildkarten und Zitatkästen eine linke Kante. Der erste
+Anlauf deckelte jedes Element für sich und erzeugte damit vier verschiedene
+Kanten auf einer Seite.
+
+**Die Werte stehen in Pixeln, nicht in `ch`.** Das ist bewusst und war teuer
+erkauft — warum, steht in `template-fallen.md` unter Punkt 9.
+
+Auf dem Handy greift die Begrenzung nicht: dort ist die Spalte ohnehin
+schmaler als jeder dieser Werte.
 
 ## Formen
 

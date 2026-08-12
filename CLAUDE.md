@@ -9,7 +9,7 @@ gebaut** und ist nur für Menschen und Werkzeuge gedacht.
 | Thema | Datei |
 |---|---|
 | Aufbau, SCSS-Pipeline, Deployment | `docs/architektur.md` |
-| Farben, Schriften, Größen | `docs/design-system.md` |
+| Farben, Schriften, Größen, Lesebreite | `docs/design-system.md` |
 | Fallstricke des Templates | `docs/template-fallen.md` |
 
 ## Lokal bauen
@@ -51,6 +51,16 @@ die Spezifität achten, siehe `docs/template-fallen.md`.
 **Hervorhebungen werden gegen den Fließtext gemessen, nicht gegen den
 Hintergrund.** Eine Farbe kann auf dunklem Grund gut lesbar sein und trotzdem
 neben dem cremefarbenen Text zurückfallen.
+
+**Die Lesebreite wird an der Spalte begrenzt, nicht am einzelnen Element, und
+in Pixeln statt in `ch`.** Elementweise gedeckelt entstehen unterschiedliche
+Kanten auf einer Seite. Und `ch` an einem Container misst dessen eigene
+Schriftgröße, nicht die seiner Kinder — beides ist schon passiert, siehe
+`docs/template-fallen.md`, Punkt 9.
+
+**Es gibt zwei Fließtextgrößen, nicht mehr.** Lesetext und Nebentext, Werte in
+`docs/design-system.md`. Wer eine neue Stelle anlegt, ordnet sie einer der
+beiden zu, statt eine dritte Größe zu erfinden.
 
 ## Struktur
 

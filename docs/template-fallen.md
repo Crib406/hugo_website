@@ -177,3 +177,63 @@ Das ist die größte Abweichung vom üblichen Hugo-Aufbau: Inhalt und Gestaltung
 sind vermischt, und Seiten-CSS steht außerhalb der SCSS-Pipeline. **Bewusst so
 belassen.** Wer dort Typografie ändert, muss in die Content-Datei — nicht ins
 SCSS.
+
+---
+
+## 9. `ch` an einem Container misst die falsche Schrift
+
+**Symptom:** Auf „Mein Weg" hatte die Seite vier verschiedene linke Kanten,
+obwohl für alle Elemente dieselbe Regel galt.
+
+```
+Spalte / Bildkarte / Überschrift   links 300   breit 840
+Absatz                             links 372   breit 696
+Zitatkasten                        links 442   breit 557
+Zitattext darin                    links 472   breit 497
+```
+
+**Ursache:** `max-width: 70ch` bezieht sich auf die **eigene** Schriftgröße des
+Elements, nicht auf die seiner Kinder. Der Zitatkasten erbt 16px vom Grundtext,
+seine Absätze stehen auf 20px — dieselbe Regel ergab dort 557px statt der
+696px, die sie an einem 20px-Absatz ergibt. Dazu kommt `box-sizing: border-box`
+mit 30px Innenabstand, was die letzte Kante erklärt.
+
+**Lösung:** Maße an Containern in Pixeln setzen. `ch` ist nur dort brauchbar,
+wo das Element selbst die Schriftgröße trägt, für die das Maß gedacht ist —
+etwa `.hero-lead { max-width: 46ch }`.
+
+Und grundsätzlich: die **Spalte** begrenzen, nicht jedes Element einzeln. Nur
+so teilen sich alle Elemente zwangsläufig eine Kante.
+
+---
+
+## 10. `min-width` schlägt immer `max-width`
+
+**Symptom:** Eine `max-width` tut sichtbar nichts, ohne Fehlermeldung.
+
+**Ursache:** In CSS gewinnt die Mindestbreite grundsätzlich gegen die
+Höchstbreite. Das Template gibt `.card-right-content` ein
+`min-width: 300px` — jede Deckelung darunter bleibt wirkungslos.
+
+**Lösung:** `min-width: 0` mitsetzen. Aber Vorsicht, siehe Punkt 11.
+
+---
+
+## 11. `max-width` an einem Flex-Kind verändert die ganze Verteilung
+
+**Symptom:** Eine Breitenänderung an einem Element verschiebt das
+Geschwister-Element mit, oft in die falsche Richtung.
+
+**Ursache:** In den Text-Bild-Karten haben beide Kinder `width: 100%` und
+teilen sich den verfügbaren Platz. Eine `max-width` ändert damit nicht nur das
+eigene Element, sondern die Größenverteilung des Containers.
+
+Zwei Fehlschläge in Folge:
+
+| Versuch | Ergebnis |
+|---|---|
+| `max-width` am Text | Text fiel von 55 auf 35 Zeichen pro Zeile |
+| `min-width: 0` am Bild | Bild schrumpfte auf 113px zusammen |
+
+**Lösung:** Feste Breite über `flex: 0 0 230px` statt über `min-width` oder
+`max-width`. Damit ist die Verteilung eindeutig.
