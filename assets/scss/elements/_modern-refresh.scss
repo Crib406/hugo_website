@@ -183,30 +183,6 @@ h1, h2, h3, h4, h5, h6,
     border-left: 2px solid var(--color-brass);
 }
 
-.footer-contact-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-line);
-    border-radius: var(--radius);
-    padding: 16px 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    a {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--color-accent);
-        font-weight: 600;
-        font-size: 15px;
-        text-decoration: none;
-
-        &:hover {
-            color: var(--color-accent-strong);
-        }
-    }
-}
-
 .tmp-btn {
     // Der Button ist jetzt hellgruen - der Text darauf muss dunkel sein,
     // nicht weiss wie im Template-Default.
