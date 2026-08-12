@@ -138,21 +138,14 @@ jsonld:
   <div class="about-content-area">
     <div class="text-para-doc-wrap">
 
-      <!-- Zwei Wege am Seitenende: "Über mich" ist die Seite, auf der jemand
-           entscheidet, ob er Kontakt aufnimmt. Vorher führte sie nur tiefer ins
-           Archiv. Kontakt bekommt deshalb das Gewicht.
-           Buttons NICHT in ein .inv-title-animation-wrap-Element schachteln:
+      <!-- Bewusst nur ein Weg: Ein Kontakt-Button hier las sich wie eine
+           Bewerbung und erweckte den Eindruck einer Jobsuche. Der Kontakt ist
+           über Menü und Footer erreichbar.
+           Button NICHT in ein .inv-title-animation-wrap-Element schachteln:
            die Split-Text-Animation zerlegt sonst den Buttontext in einzelne
            Buchstaben mit opacity:0 und der Button bleibt leer. -->
-      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1 page-end-actions">
-        <a class="tmp-btn hover-icon-reverse" href="../kontakt/">
-          <span class="icon-reverse-wrapper">
-            <span class="btn-text">Lassen Sie uns sprechen</span>
-            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-          </span>
-        </a>
-        <a class="tmp-btn btn-border hover-icon-reverse" href="../mein-weg/">
+      <div class="about-btn mt--40 text-center tmp-scroll-trigger tmp-fade-in animation-order-1">
+        <a class="tmp-btn hover-icon-reverse" href="../mein-weg/">
           <span class="icon-reverse-wrapper">
             <span class="btn-text">Mehr über meinen Weg</span>
             <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>

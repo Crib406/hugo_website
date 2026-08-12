@@ -175,20 +175,9 @@
         </div>
     </div>
 
-    {{/* Abschliessender Handlungsaufruf. Der Hero-Button fuehrt zu "Über mich",
-         dieser zum Gespräch - zwei verschiedene Ziele, kein Duplikat. */}}
-    <section class="home-section home-section--cta">
-        <div class="container">
-            <div class="home-cta tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <a class="tmp-btn hover-icon-reverse" href="{{ "kontakt/" | relURL }}">
-                    <span class="icon-reverse-wrapper">
-                        <span class="btn-text">Lassen Sie uns sprechen</span>
-                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
+    {{/* Bewusst kein abschliessender Handlungsaufruf: "Lassen Sie uns sprechen"
+         liest sich wie eine Bewerbung und erweckt den Eindruck einer Jobsuche.
+         Der Absatz darueber lädt bereits zum Austausch ein, der Kontakt steht
+         im Menü und im Footer. */}}
 
 {{ end }}
