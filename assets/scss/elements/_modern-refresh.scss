@@ -322,12 +322,26 @@ h1, h2, h3, h4, h5, h6,
 .home-section-title {
     font-family: var(--font-primary);
     color: var(--color-ink);
-    font-size: 38px;
-    line-height: 1.2;
+    font-size: 30px;
+    line-height: 1.25;
     margin: 0;
 
     @media #{$sm-layout} {
-        font-size: 27px;
+        font-size: 22px;
+    }
+}
+
+// Die Aussagen-Absaetze lagen mit 48px direkt unter der H1 (54px) und
+// konkurrierten dadurch mit dem Namen. Auf dem Handy war die Hierarchie
+// sogar verkehrt: Abschnitts-Titel 27px gegen Aussage 25px.
+// Neue Staffelung: 54 / 38 / 30 / 20 (Desktop), 28 / 24 / 22 / 20 (Handy).
+.text-para-doc-wrap .text-para-documents {
+    font-size: 38px;
+    line-height: 1.3;
+
+    @media #{$sm-layout} {
+        font-size: 24px;
+        line-height: 1.45;
     }
 }
 
