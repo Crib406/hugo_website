@@ -8,14 +8,12 @@
                     <div class="col-lg-6 order-lg-2">
                         <div class="banner-right-content">
                             {{/* LCP-Bild: bewusst eager + hohe Prioritaet, kein lazy.
-                                 Bewusst ich_cropped und nicht das freigestellte ich.webp:
-                                 freigestellt ergaebe mit dem gerahmten Portrait eine
-                                 schwebende Kante. Die WebP-Fassung ist beim Zusammenfuehren
-                                 mit main nachtraeglich erzeugt worden, weil dort nur das
-                                 freigestellte Motiv ein WebP bekommen hatte. */}}
+                                 Das freigestellte Motiv, nicht der gerahmte Ausschnitt:
+                                 hier blickt er nach links, also zum Text hin. Der
+                                 Ausschnitt zeigte in die andere Richtung, aus der Seite
+                                 heraus - der Blick fuehrt das Auge dann am Inhalt vorbei. */}}
                             <div class="main-img hero-portrait">
-                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich_cropped.webp" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro." width="902" height="843" fetchpriority="high" decoding="async">
-                                <span class="hero-chip">Bad Harzburg, Harz</span>
+                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="{{ "assets/images/banner/ich.webp" | relURL }}" alt="Christoph B. Reimann 2025 bei der Arbeit im Büro." width="902" height="1351" fetchpriority="high" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -95,7 +93,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="focus-card tmp-scroll-trigger tmp-fade-in animation-order-4">
                         <h3>Verantwortung übernehmen</h3>
-                        <p>Unternehmerisch denken und ins Handeln kommen.</p>
+                        <p>Unternehmerisch denken und handeln.</p>
                     </div>
                 </div>
             </div>

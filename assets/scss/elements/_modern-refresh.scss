@@ -148,37 +148,35 @@ h1, h2, h3, h4, h5, h6,
 // Freigestelltes PNG wuerde mit Rahmen eine schwebende Linie ergeben -
 // deshalb hier bewusst das nicht freigestellte Foto (ich_cropped.webp).
 .hero-portrait {
-    position: relative;
     display: inline-block;
-    overflow: visible;
 
-    // Das Template legt ueber .main-img einen Verlauf, der nach #060606
-    // (reines Schwarz der alten Palette) ausblendet. Er passt weder zur
-    // neuen Farbwelt noch zum gerahmten Foto und verdeckt den Chip.
+    // Der Verlauf des Templates blendet nach #060606 aus, dem Schwarz der
+    // alten Palette. Er liegt ausserdem als Flaeche ueber dem ganzen Rahmen -
+    // bei einem freigestellten Motiv wird daraus ein dunkler Kasten neben
+    // der Silhouette. Bleibt aus, die Kanten loest stattdessen die Maske.
     &::after {
         display: none;
     }
 
-    img {
-        border-radius: 18px;
-        display: block;
-        position: relative;
-        z-index: 1;
-    }
+    // Das Freistellen schneidet Oberkoerper und Arm an der rechten und
+    // unteren Rahmenkante senkrecht ab. Beide Kanten laufen deshalb ueber
+    // eine Maske aus.
+    //
+    // Die zwei Verlaeufe sitzen bewusst auf ZWEI Ebenen - waagerecht am
+    // Rahmen, senkrecht am Bild - statt als zwei Maskenschichten an einem
+    // Element. Zwei Schichten braeuchten mask-composite, und das loeste sich
+    // im Browser zu "source-in, source-in" auf: der senkrechte Verlauf wurde
+    // dabei verschluckt, die untere Kante blieb hart. Verschachtelt
+    // multiplizieren sich die Masken von allein, ohne Compositing.
+    mask-image: linear-gradient(90deg, #000 0%, #000 86%, rgb(0 0 0 / 0%) 100%);
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 86%, rgb(0 0 0 / 0%) 100%);
 
-    .hero-chip {
-        z-index: 2;
-        position: absolute;
-        left: 20px;
-        bottom: -14px;
-        background: var(--color-brass-tint);
-        color: var(--color-brass);
-        font-family: var(--font-secondary);
-        font-size: 14px;
-        font-weight: 600;
-        padding: 7px 14px;
-        border-radius: 999px;
-        white-space: nowrap;
+    // Keine Rundung: das Motiv steht frei auf dem Hintergrund, eine Rundung
+    // wuerde nur den unsichtbaren Rahmen beschneiden.
+    img {
+        display: block;
+        mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgb(0 0 0 / 0%) 100%);
+        -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgb(0 0 0 / 0%) 100%);
     }
 }
 
