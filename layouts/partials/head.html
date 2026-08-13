@@ -54,12 +54,20 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
 
-  {{/* Social-Preview: 1200x630, wie von Facebook/LinkedIn/WhatsApp erwartet */}}
+  {{/* Social-Preview: 1200x630, wie von Facebook/LinkedIn/WhatsApp erwartet.
+       Blogbeitraege bringen ein eigenes Bild mit - ohne das trug jeder
+       geteilte Beitrag das Portrait statt seines eigenen Motivs. */}}
   {{ $ogImage := printf "%s?v=%s" ("assets/images/about/og-card.jpg" | absURL) $version }}
+  {{ $isArticle := eq .Section "blog" }}
+  {{ if $isArticle }}
+    {{ with (or .Params.featured_image .Params.image) }}
+      {{ $ogImage = printf "%s?v=%s" (strings.TrimPrefix "/" . | absURL) $version }}
+    {{ end }}
+  {{ end }}
 
   <!-- Open Graph -->
   <meta property="og:locale" content="de_DE">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ if $isArticle }}article{{ else }}website{{ end }}">
   <meta property="og:title" content="{{ $title }}">
   {{ if $desc }}
     <meta property="og:description" content="{{ $desc }}">
@@ -67,10 +75,36 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="Christoph B. Reimann">
   <meta property="og:image" content="{{ $ogImage }}">
+  {{/* Format und Masse gelten nur fuer die feste Portrait-Karte. Die
+       Beitragsbilder liegen unter static/ und laufen nicht durch die
+       Bildpipeline, ihre Masse sind hier also nicht bekannt - beides
+       wegzulassen ist zulaessig, ein falscher Wert waere schlimmer. */}}
+  {{ $ogAlt := "Portrait von Christoph B. Reimann aus Bad Harzburg" }}
+  {{ if $isArticle }}
+    {{ $ogAlt = .Title }}
+    {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+    {{/* .Lastmod stammt bei enableGitInfo aus dem letzten Commit und schlaegt
+         damit auch bei einer reinen Umformatierung an. Wo im Frontmatter ein
+         dateModified gepflegt ist, gilt das - sonst stuenden im selben
+         Dokument zwei verschiedene Aenderungsdaten (OG gegen JSON-LD).
+         Hugo schreibt Frontmatter-Keys klein, deshalb "datemodified". */}}
+    {{ $mod := .Lastmod }}
+    {{ with .Params.jsonld }}
+      {{ with .datemodified }}
+        {{ $mod = time.AsTime . }}
+      {{ end }}
+    {{ end }}
+    {{ with $mod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+    <meta property="article:author" content="{{ .Params.author | default "Christoph B. Reimann" }}">
+    {{ with .Params.category }}<meta property="article:section" content="{{ . }}">{{ end }}
+    {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">
+    {{ end }}
+  {{ else }}
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
+  {{ end }}
+  <meta property="og:image:alt" content="{{ $ogAlt }}">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -79,7 +113,7 @@
     <meta name="twitter:description" content="{{ $desc }}">
   {{ end }}
   <meta name="twitter:image" content="{{ $ogImage }}">
-  <meta name="twitter:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
+  <meta name="twitter:image:alt" content="{{ $ogAlt }}">
 
   <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -97,10 +97,18 @@ unter 768px (`$sm-layout`).
 | Aussage (`.text-para-documents`) | 40px | 27px |
 | Abschnitt Unterseiten (`.title`) | 38px | 28px |
 | Abschnitt Startseite (`.home-section-title`) | 32px | 24px |
-| Kartentitel (`.focus-card h3`, `.service-title`) | 24px | 22px |
-| **Lesetext** (`p`, `.disc`, `.hero-lead`, `.focus-card p`, Impressum) | **20px** | **18px** |
-| **Nebentext** (`.service-para`) | **17px** | **16px** |
+| Kartentitel (`.focus-card h3`, `.service-title`, `.blog-title`) | 24px | 22px |
+| **Lesetext** (`p`, `.disc`, `.hero-lead`, `.focus-card p`, Impressum, Beitragsliste, Autorenzeile) | **20px** | **18px** |
+| **Nebentext** (`.service-para`, Beitrags-Metadaten, Kartenmarke, „Mehr lesen") | **17px** | **16px** |
 | Navigation (Breadcrumb) | 16px | 16px |
+
+Der Blog kam zuletzt dazu und brachte vier eigene Größen mit: 19px Fließtext
+(als `1.9rem`, weil `html` auf 10px steht), 16px in den Shortcode-Listen, 14px
+auf der Kartenmarke und 13px auf „Mehr lesen". Alle vier sind auf die zwei
+Rollen zurückgeführt. Die Autorenzeile eines Beitrags stand sogar auf 38px —
+sie ist ein `h4.title` und fiel damit unter die Regel für
+Abschnittsüberschriften, wodurch der Name größer war als die `h2` des
+Beitrags.
 
 **Es gibt genau zwei Fließtext-Rollen.** Lesetext ist alles, was jemand
 tatsächlich liest — auch die Untertitel der Schwerpunktkarten auf der

@@ -686,3 +686,190 @@ p {
         right: 0;
     }
 }
+
+/*----------------------------
+ Blog
+ Der Beitragstext stand vorher in einem 132-zeiligen <style>-Block in
+ layouts/blog/single.html - fast durchgehend mit !important, weil eine Regel
+ im Template gegen die naechste antrat. Er hat sich damit vom Rest der Seite
+ abgekoppelt: Fliesstext auf 1.9rem (= 19px, html steht auf 10px) statt der
+ 20px aus der Skala, font-weight 700 auf jedem Absatz, Blocksatz mit
+ Silbentrennung, dazu eine zweite Lesekante bei 760px gegen die 740px weiter
+ oben in dieser Datei.
+ Das ist alles ersatzlos raus. Was hier steht, ist nur noch das, was das
+ Template bei diesem Markup wirklich falsch macht.
+----------------------------*/
+
+// Die Shortcodes checklist_normal_green(_check) liefern
+// <ul class="check-box"> mit den <li> direkt darin. Die Template-Regel in
+// _pricing.scss:111 erwartet dagegen <div class="check-box"><ul><li>.
+// Von ihr greifen deshalb nur die Aussenmasse und .box-para, die
+// Listenregeln nicht - daraus folgen die drei Korrekturen unten.
+.check-box {
+    // 43px oben und 30-40px unten sind die Abstaende eines Preisblocks, nicht
+    // die einer Aufzaehlung im Fliesstext.
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0;
+
+    // Altfarbe aus dem Template (#9d9dff0d, Rest der Pink/Violett-Herkunft).
+    border-top-color: var(--color-line);
+
+    // _typography.scss:361 setzt ul { list-style: square }. Das Template
+    // faengt das ueber .check-box ul li ab, was bei diesem Markup nicht
+    // trifft - ohne die Zeile steht neben jedem Haken noch ein Quadrat.
+    list-style: none;
+    margin-bottom: 30px;
+
+    li {
+        margin: 0 0 0.7em 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // Die Verschachtelung bis .check-box-item ist noetig, nicht bequem: das
+    // Template setzt die Groesse ueber .check-box .check-box-item .box-para
+    // (0-3-0). Eine kuerzere Fassung verliert und laesst die Liste bei 16px.
+    .check-box-item {
+        // Das Template zentriert das Icon senkrecht. Bei Eintraegen ueber
+        // mehrere Zeilen sitzt es dann in der Mitte des Absatzes statt neben
+        // der ersten Zeile.
+        align-items: flex-start;
+
+        .box-icon {
+            flex: 0 0 auto;
+            line-height: 1;
+            margin-top: 0.25em;
+        }
+
+        // Die Eintraege sind ganze Saetze, also Lesetext. Das Template stellt
+        // sie auf 16px - das waere die dritte Fliesstextgroesse.
+        .box-para {
+            font-size: 20px;
+            line-height: 1.7;
+
+            @media #{$sm-layout} {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Kopfzeile eines Beitrags: Autor, Rubrik, Datum, Lesedauer.
+//
+// Die Autorenzeile ist ein h4.title und lag damit unter der Regel
+// .blog-details-left-area .title weiter oben in dieser Datei - die ist fuer
+// die ABSCHNITTS-Ueberschriften der Unterseiten gedacht (38px). Der Name
+// stand dadurch groesser da als die h2 des Beitrags (36px) und war nach dem
+// Seitentitel das Groesste auf der Seite. Eine Namensnennung, die die
+// Gliederung ueberstimmt.
+//
+// Die ganze Zeile ist Beiwerk zum Beitrag, kein Gliederungspunkt: Autor auf
+// Lesetext, die Angaben darunter auf Nebentext. Damit bleiben es die zwei
+// Rollen aus dem Design-System, keine dritte Groesse.
+// Der Selektor muss .blog-classic-tag mitnehmen (0-3-0), sonst gewinnt die
+// 38px-Regel ueber die gleiche Spezifitaet und die spaetere Position.
+.blog-details-left-area .blog-classic-tag {
+    .title {
+        font-size: 20px;
+        color: var(--color-heading);
+
+        @media #{$sm-layout} {
+            font-size: 18px;
+        }
+    }
+
+    // Der Selektor muss bis .tag-wrap ausgeschrieben werden: die
+    // Template-Regel steht als .blog-classic-tag ul li .tag-wrap .tag-title
+    // (0-3-2) in _blog.scss:775. Bei gleicher Klassenzahl entscheiden die
+    // Elementnamen - eine kuerzere Fassung verliert.
+    ul li .tag-wrap .tag-title {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
+// Autorenbiografie in der Sidebar. Sie lag bei 16px und war damit die letzte
+// fremde Groesse auf der Beitragsseite. Als Zusatz neben dem Beitrag ist sie
+// Nebentext, dieselbe Rolle wie die Kartentexte der Startseite.
+// Template-Regel: .signle-side-bar .about-me-details .about-me-para (0-3-0).
+.signle-side-bar .about-me-details .about-me-para {
+    font-size: 17px;
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+/*----------------------------
+ Blog-Uebersicht
+ Die Karten der Listenseite brachten aus dem Template zwei weitere
+ Fliesstextgroessen mit: 14px auf der Marke ueber dem Bild und 13px auf
+ "Mehr lesen". Beides sind Zusaetze, also Nebentext - und damit dieselbe
+ Rolle wie die Angaben in der Kopfzeile eines Beitrags. Ohne das steht auf
+ der Uebersicht 14px, was der Besucher eine Seite weiter als 17px
+ wiedersieht.
+----------------------------*/
+.blog-card {
+    // Template-Regel: .img-box .blog-tags li (0-2-1) in _blog.scss:73.
+    .img-box .blog-tags li {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+
+        // Das Symbol stand fest auf 11px und waere neben dem groesseren Text
+        // aus dem Verhaeltnis gefallen. Relativ gesetzt zieht es jetzt mit.
+        i {
+            font-size: 0.72em;
+        }
+    }
+
+    // Kartentitel: 24px auf dem Handy wie auf dem Desktop. Die uebrigen
+    // Kartentitel der Seite (.focus-card h3, .service-title) gehen dort auf
+    // 22px zurueck.
+    .blog-content-wrap .blog-title {
+        @media #{$sm-layout} {
+            font-size: 22px;
+        }
+    }
+
+    // Template-Regel: .blog-card .read-more-btn (0-2-0) in _blog.scss:189.
+    .blog-content-wrap .read-more-btn {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
+// .blog-details-discription gibt es nur in layouts/blog/single.html. Alles
+// hier drin gilt also fuer den Beitragstext und nicht fuer Impressum oder
+// 404, die sich dieselbe .blog-details-left-area teilen.
+.blog-details-discription .disc {
+    // Aufzaehlungen aus Markdown erben die 16px vom body und stuenden damit
+    // neben 20px-Absaetzen. Dieselbe Korrektur hat die Datenschutzerklaerung
+    // weiter oben schon fuer .legal-text li bekommen.
+    li {
+        font-size: 20px;
+        line-height: 1.7;
+
+        @media #{$sm-layout} {
+            font-size: 18px;
+        }
+    }
+
+    // Fett ausgezeichnete Woerter. Bewusst OHNE eigene Schriftgroesse: die
+    // 1.12em aus dem Inline-Block liessen die Zeilenhoehe mitten im Absatz
+    // springen. Die Hervorhebung traegt hier die Farbe, nicht das Mass.
+    strong {
+        color: var(--color-heading);
+    }
+}
