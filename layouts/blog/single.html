@@ -1,138 +1,5 @@
 {{ define "main" }}
 
-<style>
-  /* Bereich bleibt mittig */
-  .blog-details-left-area {
-    text-align: center;
-  }
-
-  .blog-details-discription .disc {
-    display: inline-block;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    hyphens: auto !important;
-    max-width: 760px;
-    line-height: 1.7 !important;
-    font-size: 1.9rem !important;
-  }
-
-  .blog-details-discription .disc p,
-  .blog-details-discription .disc li,
-  .blog-details-discription .disc span {
-    font-weight: 700 !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    hyphens: auto !important;
-    font-size: 1.9rem !important;
-    line-height: 1.7 !important;
-  }
-
-  .blog-details-discription .disc h1,
-  .blog-details-discription .disc h2,
-  .blog-details-discription .disc h3,
-  .blog-details-discription .disc h4,
-  .blog-details-discription .disc h5,
-  .blog-details-discription .disc h6 {
-    font-weight: inherit !important;
-    text-align: left !important;
-  }
-
-  .blog-details-discription .disc p {
-    margin-bottom: 1.4em;
-  }
-
-  .blog-details-discription .disc li {
-    margin-bottom: 0.7em;
-  }
-
-  .blog-details-discription .disc .check-box {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: 992px) {
-    .blog-details-discription .disc .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .blog-details-discription .disc .check-box li {
-    margin: 0 0 0.7em 0;
-  }
-
-  .blog-details-discription .disc .check-box-item,
-  .blog-details-discription .disc .check-box .box-para,
-  .blog-details-discription .disc .check-box .box-icon {
-    font-size: inherit !important;
-    line-height: inherit !important;
-    font-weight: inherit !important;
-    font-family: inherit !important;
-    color: inherit !important;
-  }
-
-  .blog-details-discription .disc .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .blog-details-discription .disc .check-box .box-icon {
-    flex: 0 0 auto;
-    line-height: 1;
-    margin-top: 0.2em;
-  }
-
-  .check-box {
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: 992px) {
-    .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .check-box li {
-    list-style: none;
-    margin: 0 0 0.7em 0;
-  }
-
-  .check-box .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .check-box .box-para {
-    font: inherit;
-    color: inherit;
-  }
-
-  .blog-details-discription .disc .check-box .box-icon,
-  .blog-details-discription .disc .check-box .box-icon i {
-    color: var(--color-primary) !important;
-  }
-
-  .check-box-item .box-para strong {
-    font-weight: 800 !important;
-    font-size: 1.12em;
-    color: var(--color-heading) !important;
-  }
-
-  .blog-details-discription .disc strong {
-    font-size: 1.12em;
-    font-weight: 800 !important;
-    color: var(--color-heading) !important;
-  }
-</style>
-
 {{ partial "breadcrumb.html" . }}
 
 <div class="blog-classic-area-wrapper tmp-section-gap">
@@ -151,7 +18,7 @@
 
           <div class="blog-details-discription">
             <div class="blog-classic-tag">
-              <h4 class="title">Von {{ .Params.author }}</h4>
+              <h4 class="title">Von {{ .Params.author | default "Christoph B. Reimann" }}</h4>
               <ul>
                 <li>
                   <div class="tag-wrap">
@@ -179,38 +46,37 @@
 
           </div>
 
+          {{/* Kontakt-Kacheln: bewusst ohne eigenen .container - der hier
+               umgebende .container gibt die Breite schon vor, ein zweiter
+               darin verdoppelt nur das Gutter. */}}
+          <div class="row justify-content-center">
+
+            <div class="col-6">
+              <a href="mailto:hello@creimann.cc" class="service-card-link">
+                <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <h4 class="service-title">Per Mail</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6">
+              <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
+                <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                  <div class="service-card-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                  <h4 class="service-title">Auf LinkedIn</h4>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
         </div>
-
-         <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
       </div>
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-      </div>
-
-      
 
       <div class="col-lg-4">
         <div class="tmp-sidebar">
@@ -228,11 +94,7 @@
                   </div>
                   <div class="about-me-right-content">
                     <h3 class="title">
-                      {{ with .Params.author }}
-                        {{ . }}
-                      {{ else }}
-                        Christoph B. Reimann
-                      {{ end }}
+                      {{ .Params.author | default "Christoph B. Reimann" }}
                     </h3>
                     {{ with .Params.author_role }}
                       <p class="para">{{ . }}</p>
@@ -243,7 +105,6 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </div>
-
                   </div>
                 </div>
 
@@ -251,7 +112,7 @@
                   {{ with .Params.author_bio }}
                     {{ . }}
                   {{ else }}
-                    Ich schreibe über Menschlichkeit, Werte und mutige Entscheidungen im Alltag mit dem Ziel, das Zugehörigkeitsgefühl zu steigern. 
+                    Ich schreibe über Menschlichkeit, Werte und mutige Entscheidungen im Alltag mit dem Ziel, das Zugehörigkeitsgefühl zu steigern.
                   {{ end }}
                 </p>
 
@@ -259,21 +120,44 @@
             </div>
           </div>
 
+          {{/* Weitere Beitraege. Bewusst auf die Section "blog" eingegrenzt:
+               ueber .Site.RegularPages allein stehen sonst Impressum,
+               Kontakt und Ueber mich in der Beitragsliste. */}}
+          {{ $weitere := where (where .Site.RegularPages "Section" "blog") "Permalink" "ne" .Permalink }}
+          {{ with first 5 $weitere }}
+          <div class="signle-side-bar recent-post-area tmponhover">
+            <div class="header">
+              <h3 class="title">Weitere Beiträge</h3>
+            </div>
+            <div class="body">
+              {{ range . }}
+                <a href="{{ .RelPermalink }}" class="single-post">
+                  <span class="single-post-left">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="post-title">{{ .Title }}</span>
+                  </span>
+                  <span class="post-num">{{ .Date.Format "02.01.2006" }}</span>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+
           <!-- Tags ohne Links -->
+          {{ with .Params.tags }}
           <div class="signle-side-bar tmponhover">
             <div class="header">
               <h3 class="title">Tags</h3>
             </div>
             <div class="body">
               <div class="tags-wrapper">
-                {{ with .Params.tags }}
-                  {{ range . }}
-                    <span class="tag-link">{{ . }}</span>
-                  {{ end }}
+                {{ range . }}
+                  <span class="tag-link">{{ . }}</span>
                 {{ end }}
               </div>
             </div>
           </div>
+          {{ end }}
 
         </div>
       </div>
@@ -281,6 +165,5 @@
     </div>
   </div>
 </div>
-
 
 {{ end }}
