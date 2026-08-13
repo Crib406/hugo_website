@@ -757,6 +757,99 @@ p {
     }
 }
 
+// Kopfzeile eines Beitrags: Autor, Rubrik, Datum, Lesedauer.
+//
+// Die Autorenzeile ist ein h4.title und lag damit unter der Regel
+// .blog-details-left-area .title weiter oben in dieser Datei - die ist fuer
+// die ABSCHNITTS-Ueberschriften der Unterseiten gedacht (38px). Der Name
+// stand dadurch groesser da als die h2 des Beitrags (36px) und war nach dem
+// Seitentitel das Groesste auf der Seite. Eine Namensnennung, die die
+// Gliederung ueberstimmt.
+//
+// Die ganze Zeile ist Beiwerk zum Beitrag, kein Gliederungspunkt: Autor auf
+// Lesetext, die Angaben darunter auf Nebentext. Damit bleiben es die zwei
+// Rollen aus dem Design-System, keine dritte Groesse.
+// Der Selektor muss .blog-classic-tag mitnehmen (0-3-0), sonst gewinnt die
+// 38px-Regel ueber die gleiche Spezifitaet und die spaetere Position.
+.blog-details-left-area .blog-classic-tag {
+    .title {
+        font-size: 20px;
+        color: var(--color-heading);
+
+        @media #{$sm-layout} {
+            font-size: 18px;
+        }
+    }
+
+    // Der Selektor muss bis .tag-wrap ausgeschrieben werden: die
+    // Template-Regel steht als .blog-classic-tag ul li .tag-wrap .tag-title
+    // (0-3-2) in _blog.scss:775. Bei gleicher Klassenzahl entscheiden die
+    // Elementnamen - eine kuerzere Fassung verliert.
+    ul li .tag-wrap .tag-title {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
+// Autorenbiografie in der Sidebar. Sie lag bei 16px und war damit die letzte
+// fremde Groesse auf der Beitragsseite. Als Zusatz neben dem Beitrag ist sie
+// Nebentext, dieselbe Rolle wie die Kartentexte der Startseite.
+// Template-Regel: .signle-side-bar .about-me-details .about-me-para (0-3-0).
+.signle-side-bar .about-me-details .about-me-para {
+    font-size: 17px;
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+/*----------------------------
+ Blog-Uebersicht
+ Die Karten der Listenseite brachten aus dem Template zwei weitere
+ Fliesstextgroessen mit: 14px auf der Marke ueber dem Bild und 13px auf
+ "Mehr lesen". Beides sind Zusaetze, also Nebentext - und damit dieselbe
+ Rolle wie die Angaben in der Kopfzeile eines Beitrags. Ohne das steht auf
+ der Uebersicht 14px, was der Besucher eine Seite weiter als 17px
+ wiedersieht.
+----------------------------*/
+.blog-card {
+    // Template-Regel: .img-box .blog-tags li (0-2-1) in _blog.scss:73.
+    .img-box .blog-tags li {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+
+        // Das Symbol stand fest auf 11px und waere neben dem groesseren Text
+        // aus dem Verhaeltnis gefallen. Relativ gesetzt zieht es jetzt mit.
+        i {
+            font-size: 0.72em;
+        }
+    }
+
+    // Kartentitel: 24px auf dem Handy wie auf dem Desktop. Die uebrigen
+    // Kartentitel der Seite (.focus-card h3, .service-title) gehen dort auf
+    // 22px zurueck.
+    .blog-content-wrap .blog-title {
+        @media #{$sm-layout} {
+            font-size: 22px;
+        }
+    }
+
+    // Template-Regel: .blog-card .read-more-btn (0-2-0) in _blog.scss:189.
+    .blog-content-wrap .read-more-btn {
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
 // .blog-details-discription gibt es nur in layouts/blog/single.html. Alles
 // hier drin gilt also fuer den Beitragstext und nicht fuer Impressum oder
 // 404, die sich dieselbe .blog-details-left-area teilen.

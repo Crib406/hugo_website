@@ -31,7 +31,10 @@
                     <span class="tag-icon">
                       <i class="fa-solid fa-calendar-days"></i>
                     </span>
-                    {{ .Date.Format "02. Jan 2006" }}
+                    {{/* Numerisch wie auf der Beitragsseite. "02. Jan 2006"
+                         lieferte den englischen Monatsnamen ("06. Dec 2025")
+                         - .Date.Format kennt die Sprache der Seite nicht. */}}
+                    {{ .Date.Format "02.01.2006" }}
                   </li>
                 </ul>
               </div>

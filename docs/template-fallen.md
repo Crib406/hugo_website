@@ -72,11 +72,28 @@ Konkret aufgetreten:
 | `.text-para-doc-wrap .text-para-documents span` | 2 | `.text-para-documents span` |
 | `.tmp-btn.btn-border` | 2 | `.tmp-btn` |
 | `.banner-two-main-wrapper .inner .sub-title` | 3 | `.sub-title` |
+| `.check-box .check-box-item .box-para` | 3 | `.check-box .box-para` |
+| `.img-box .blog-tags li` | 2 | `.blog-tags li` |
+| `.blog-card .read-more-btn` | 2 | `.read-more-btn` |
 
 **Symptom war jeweils:** Die eigene Farbe wurde ignoriert, ohne Fehlermeldung.
 
 **Lösung:** Selektor auf dieselbe Länge bringen. Nicht `!important` benutzen —
 außer beim Sicherheitsnetz oben, wo es gegen Inline-Styles aus JavaScript geht.
+
+### 2a. Klassen zählen reicht nicht
+
+`.blog-classic-tag ul li .tag-wrap .tag-title` hat drei Klassen — genau so
+viele wie `.blog-details-left-area .blog-classic-tag .tag-title`. Trotzdem
+gewinnt die Template-Regel, denn bei **gleicher Klassenzahl entscheiden die
+Elementnamen**, und `ul li` sind zwei mehr.
+
+Das ist keine Theorie: die Schriftgröße der Kopfzeile eines Blogbeitrags blieb
+beim ersten Anlauf unverändert, ohne dass irgendwo etwas gemeldet wurde.
+
+**Konsequenz:** Nach jeder Größen- oder Farbänderung im Browser nachmessen,
+nicht im Quelltext nachlesen. `getComputedStyle` sagt die Wahrheit, der
+Selektor nur die Absicht.
 
 Sonderfall: `.radius-round` nutzt selbst `!important` (500px Pille). Deshalb
 wurde die Klasse aus den Buttons entfernt, statt dagegen anzuschreiben.
