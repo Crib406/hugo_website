@@ -1,0 +1,30 @@
+{{- /*
+  Weiterleitungsseite fuer Aliase, vor allem /visitenkarte -> Startseite.
+
+  Der Dateiname muss alias.html heissen und direkt in layouts/ liegen. Die
+  frueher hier vorhandene layouts/_default/aliases.html hat Hugo nie benutzt,
+  ausgeliefert wurde die eingebaute Vorlage.
+
+  Wichtig ist das Favicon: ohne <link rel="icon"> fragt der Browser von sich
+  aus /favicon.ico an, das es nicht gibt — ein 404 und eine verschenkte
+  Anfrage auf genau der Adresse, die auf der Visitenkarte steht.
+
+  Die Weiterleitung laeuft ueber meta refresh UND location.replace. replace()
+  ersetzt den Eintrag im Verlauf, sodass der Zurueck-Knopf nicht in der
+  Weiterleitungsschleife haengen bleibt.
+*/ -}}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Weiterleitung …</title>
+  <link rel="icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+  <script>window.location.replace({{ .Permalink }});</script>
+</head>
+<body>
+  <p>Weiterleitung zu <a href="{{ .Permalink }}">{{ .Permalink }}</a> …</p>
+</body>
+</html>

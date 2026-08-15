@@ -1,30 +1,48 @@
-{{- $version := now | time.Format "200601021504" -}}
+{{/* JavaScript: ein Buendel statt zwanzig einzelner Dateien.
 
-<!-- Scripts -->
-<script src="{{ "assets/js/vendor/jquery.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/vendor/jquery-ui.min.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/vendor/waypoints.min.js" | relURL }}?v={{ $version }}"></script>
+     Die Reihenfolge ist die alte und muss sie bleiben — jQuery zuerst, main.js
+     zuletzt. resources.Concat haengt die Dateien in genau dieser Reihenfolge
+     aneinander, defer fuehrt sie in Dokumentreihenfolge aus.
 
-<script src="{{ "assets/js/plugins/odometer.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/vendor/appear.js" | relURL }}?v={{ $version }}"></script>
+     defer heisst: der Browser laedt die Datei nebenher und fuehrt sie erst aus,
+     wenn das HTML fertig geparst ist. Vorher blockierte jede der zwanzig
+     Dateien den Parser an ihrer Stelle. Auf ein $(document).ready wirkt sich
+     das nicht aus — das DOM steht dann ohnehin.
 
-<script src="{{ "assets/js/vendor/jquery-one-page-nav.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/swiper.js" | relURL }}?v={{ $version }}"></script>
+     Rausgeworfen, weil nachweislich unbenutzt:
+       jquery-ui.min.js  234 KB, keine einzige jQuery-UI-Methode im Projekt
+       swiper.js         145 KB, siehe unten
+       isotop.js          35 KB, kein Isotope-Aufruf, keine Filtergitter
+       odometer.js        10 KB, main.js zaehlt selbst und setzt nur .html()
+       text-type.js        7 KB, nirgends eingebunden
 
-<script src="{{ "assets/js/plugins/gsap.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/splittext.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/scrolltigger.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/scrolltoplugins.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/smoothscroll.js" | relURL }}?v={{ $version }}"></script>
+     Zu Swiper: die Seite hat keinen einzigen Slider. Was nach einem aussieht,
+     sind eigene Klassennamen mit dem Wort darin — our-portfolio-swiper,
+     blog-details-swiper, our-portfoli-swiper-card — gestaltet im eigenen SCSS
+     (elements/_blog.scss, elements/_modern-refresh.scss). Die Bibliothek
+     sucht dagegen .swiper-slide und .testimonial-swiper, und die gibt es hier
+     nirgends. Wer spaeter wirklich einen Slider einbaut, holt swiper.js und
+     swiper.css zurueck; main.js prueft vorher, ob Swiper da ist.
 
-<!-- bootstrap Js-->
-<script src="{{ "assets/js/vendor/bootstrap.min.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/vendor/waw.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/isotop.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/animation.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/contact.form.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/vendor/backtop.js" | relURL }}?v={{ $version }}"></script>
-<script src="{{ "assets/js/plugins/text-type.js" | relURL }}?v={{ $version }}"></script>
-
-<!-- custom Js -->
-<script src="{{ "assets/js/main.js" | relURL }}?v={{ $version }}"></script>
+     Der Fingerabdruck im Dateinamen kommt aus dem Inhalt: gleiche Datei =
+     gleiche Adresse = Browser-Zwischenspeicher greift ueber Deploys hinweg. */}}
+{{ $scripts := slice
+     (resources.Get "js/vendor/jquery.js")
+     (resources.Get "js/vendor/waypoints.min.js")
+     (resources.Get "js/vendor/appear.js")
+     (resources.Get "js/vendor/jquery-one-page-nav.js")
+     (resources.Get "js/plugins/gsap.js")
+     (resources.Get "js/plugins/splittext.js")
+     (resources.Get "js/plugins/scrolltigger.js")
+     (resources.Get "js/plugins/scrolltoplugins.js")
+     (resources.Get "js/plugins/smoothscroll.js")
+     (resources.Get "js/vendor/bootstrap.min.js")
+     (resources.Get "js/vendor/waw.js")
+     (resources.Get "js/plugins/animation.js")
+     (resources.Get "js/plugins/contact.form.js")
+     (resources.Get "js/vendor/backtop.js")
+     (resources.Get "js/main.js")
+}}
+{{ with $scripts | resources.Concat "assets/js/bundle.js" | minify | fingerprint "sha256" }}
+  <script defer src="{{ .RelPermalink }}"></script>
+{{ end }}
