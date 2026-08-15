@@ -44,6 +44,21 @@ dreimal passiert.
 dort als Text. Interne Links deshalb relativ setzen (`../kontakt/`), nie
 absolut (`/kontakt/`), sonst führen sie aus der Vorschau heraus.
 
+**CSS und JS gehen als je ein gebündeltes, fingerabdruckbenanntes Paket raus.**
+Neue Skripte gehören in die Liste in `layouts/partials/scripts.html`, nicht als
+eigenes `<script>` ins Template — und nach `assets/`, nicht nach `static/`.
+Die Reihenfolge in der Liste ist bedeutsam: jQuery zuerst, `main.js` zuletzt.
+Kein `?v=`-Anhängsel von Hand, das erledigt `fingerprint`.
+
+**Font Awesome liegt nur als Teilmenge vor.** Ein neues Icon erscheint sonst
+als leeres Kästchen. Nach jedem neuen Icon:
+`python3 tools/build-fontawesome-subset.py && python3 tools/check-icons.py`.
+Details in `docs/architektur.md`.
+
+**Textmaße erst nach `document.fonts.ready` messen.** Umbruch, Höhe und
+Zeilenzahl vorher zu messen liefert die Werte der Ersatzschrift. `SplitText`
+friert den Umbruch dauerhaft ein, siehe `docs/template-fallen.md`, Punkt 12.
+
 **Eigene Anpassungen gehören nach `assets/scss/elements/_modern-refresh.scss`.**
 Diese Datei wird als letzte geladen. Beim Überschreiben von Template-Regeln auf
 die Spezifität achten, siehe `docs/template-fallen.md`.
@@ -67,8 +82,12 @@ beiden zu, statt eine dritte Größe zu erfinden.
 Standard-Hugo, keine Abweichungen:
 
 ```
-archetypes/  assets/  content/  layouts/  static/
+archetypes/  assets/  content/  layouts/  static/  tools/
 ```
+
+`assets/` enthält SCSS, CSS und JS — alles, was Hugo verarbeitet. In `static/`
+liegen nur noch Bilder und Schriften. `tools/` sind Hilfsskripte samt ihrer
+Quelldateien und wird nicht gebaut.
 
 Das Template ist direkt ins Projekt kopiert, nicht als Hugo-Modul oder unter
 `themes/` eingebunden. Es gibt also kein Update, das eigene Änderungen

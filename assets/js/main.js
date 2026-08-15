@@ -125,6 +125,16 @@
     },
 
     swiperJs: function () {
+      // Swiper wird nicht mehr mitgeliefert: die Seite hat keinen Slider,
+      // die Bibliothek fand nichts zu tun (Begruendung in
+      // layouts/partials/scripts.html). Ohne diese Abfrage wuerde der erste
+      // new Swiper(...) einen ReferenceError werfen und alles abbrechen, was
+      // danach kommt. Kommt spaeter ein Slider dazu, laeuft dieser Block
+      // wieder, sobald swiper.js wieder im Buendel liegt.
+      if (typeof Swiper === "undefined") {
+        return;
+      }
+
       $(document).ready(function () {
         var swiper = new Swiper(".testimonial-swiper", {
           // slidesPerView: 2,
@@ -754,10 +764,18 @@
         }
       });
       
-      if ($('.inv-title-animation-wrap').length) {
-        let animatedTextElements = document.querySelectorAll('.inv-title-animation-wrap');
-
-        animatedTextElements.forEach((element) => {
+      // SplitText friert den Zeilenumbruch ein: es misst, wo der Text gerade
+      // umbricht, und giesst das Ergebnis in feste <div class="split-line">.
+      // Misst es, waehrend noch die Ersatzschrift steht, bleiben die falschen
+      // Umbrueche stehen, auch nachdem Fraunces geladen ist — einzelne Woerter
+      // haengen dann allein auf einer Zeile.
+      //
+      // Vorher lief das Skript blockierend mitten im Seitenaufbau und kam
+      // dadurch meist nach den Schriften dran. Mit defer laeuft es frueher,
+      // und das Rennen ging regelmaessig verloren. Also nicht auf Glueck
+      // setzen, sondern abwarten, bis die Schriften wirklich da sind.
+      const splitAnimatedTitles = function (elements) {
+        elements.forEach((element) => {
           //Reset if needed
           if (element.animation) {
             element.animation.progress(1).kill();
@@ -787,6 +805,17 @@
             stagger: 0.02,
           });
         });
+      };
+
+      if ($('.inv-title-animation-wrap').length) {
+        const animatedTextElements = document.querySelectorAll('.inv-title-animation-wrap');
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function () {
+            splitAnimatedTitles(animatedTextElements);
+          });
+        } else {
+          splitAnimatedTitles(animatedTextElements);
+        }
       }
 
     },

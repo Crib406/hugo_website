@@ -2,12 +2,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {{/* Version-String: JahrMonatTagStundeMinute */}}
-  {{ $version := now | time.Format "200601021504" }}
+  {{/* Kein ?v=<Bauzeit> mehr: das aenderte bei jedem Bau jede einzelne
+       Adresse und zwang Besucher, alles neu zu laden. CSS und JS tragen
+       stattdessen weiter unten einen Fingerabdruck aus dem Dateiinhalt —
+       neue Adresse nur bei echter Aenderung. Favicon und Vorschaubild
+       bleiben ohne Anhaengsel, damit Browser und die Bildzwischenspeicher
+       von LinkedIn und WhatsApp sie behalten koennen. */}}
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}?v={{ $version }}">
-  <link rel="icon" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}?v={{ $version }}" type="image/png">
+  <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}">
+  <link rel="icon" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}" type="image/png">
 
   {{/* Title: seo_title (Frontmatter) > Startseite: globaler SEO-Titel > "Seitentitel – Christoph B. Reimann" */}}
   {{ $title := "" }}
@@ -55,7 +59,7 @@
   <link rel="canonical" href="{{ .Permalink }}">
 
   {{/* Social-Preview: 1200x630, wie von Facebook/LinkedIn/WhatsApp erwartet */}}
-  {{ $ogImage := printf "%s?v=%s" ("assets/images/about/og-card.jpg" | absURL) $version }}
+  {{ $ogImage := "assets/images/about/og-card.jpg" | absURL }}
 
   <!-- Open Graph -->
   <meta property="og:locale" content="de_DE">
@@ -81,9 +85,16 @@
   <meta name="twitter:image" content="{{ $ogImage }}">
   <meta name="twitter:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
 
+  {{/* Beide Zaehlskripte liegen auf fremden Servern. Ohne async haelt so ein
+       Skript den Seitenaufbau an, bis DNS, Verbindung und Antwort durch sind —
+       auf dem Handy im Mobilfunknetz kostet das sichtbar Zeit. counter.dev
+       stand hier ohne async und hat genau das getan. */}}
+  <link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.counter.dev" crossorigin>
+
   <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <script src="https://cdn.counter.dev/script.js"
+  <script async src="https://cdn.counter.dev/script.js"
           data-id="49810d93-4338-4e6c-9b58-02ab2a6bd2fe"
           data-utcoffset="1"></script>
 
@@ -202,18 +213,26 @@
 {{ end }}
 
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ "assets/css/vendor/fontawesome.css" | relURL }}?v={{ $version }}">
-  <link rel="stylesheet" href="{{ "assets/css/plugins/swiper.css" | relURL }}?v={{ $version }}">
-  <link rel="stylesheet" href="{{ "assets/css/plugins/odometer.css" | relURL }}?v={{ $version }}">
-  <link rel="stylesheet" href="{{ "assets/css/vendor/animate.min.css" | relURL }}?v={{ $version }}">
-  <link rel="stylesheet" href="{{ "assets/css/vendor/bootstrap.min.css" | relURL }}?v={{ $version }}">
+  {{/* CSS: ein einziges Buendel statt sechs Dateien.
 
-  {{/* Eigenes SCSS ueber Hugo Pipes (Dart Sass, in Hugo Extended eingebaut) statt vorkompiliert eingecheckt */}}
-  {{ with resources.Get "scss/style.scss" }}
-    {{ $opts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" "outputStyle" "compressed" }}
-    {{ with . | css.Sass $opts }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ $version }}">
-    {{ end }}
+       Die Reihenfolge ist die alte und muss sie bleiben — das eigene SCSS
+       kommt zuletzt und ueberschreibt Bootstrap.
+
+       Font Awesome steckt nicht mehr als 545-KB-Datei hier, sondern als
+       Teilmenge im SCSS (assets/scss/vendor/_fontawesome-subset.scss).
+       Ersatzlos entfallen sind ausserdem:
+         animate.min.css  57 KB, Keyframes stehen doppelt in _animations.scss
+         odometer.css      3 KB, es gibt keine .odometer-Elemente
+         swiper.css       22 KB, es gibt keinen Slider (siehe scripts.html)
+
+       Das Ziel liegt weiter unter assets/css/, damit ../fonts/ aus dem SCSS
+       wie bisher auf /assets/fonts/ zeigt. */}}
+  {{ $sassOpts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" "outputStyle" "compressed" }}
+  {{ $styles := slice
+       (resources.Get "css/vendor/bootstrap.min.css")
+       (resources.Get "scss/style.scss" | css.Sass $sassOpts)
+  }}
+  {{ with $styles | resources.Concat "assets/css/bundle.css" | minify | fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{ end }}
 </head>

@@ -8,8 +8,9 @@ Wie eine Änderung von der Quelldatei auf die Live-Seite kommt.
 |---|---|
 | `content/` | Texte und Seiten. **Wird gebaut.** |
 | `layouts/` | Templates, Partials, Shortcodes |
-| `assets/` | SCSS. Wird von Hugo verarbeitet, landet nicht 1:1 im Ergebnis. |
-| `static/` | Bilder, Schriften, Vendor-CSS und -JS. **Wird 1:1 kopiert.** |
+| `assets/` | SCSS **sowie CSS und JS**. Wird von Hugo verarbeitet, landet nicht 1:1 im Ergebnis. |
+| `static/` | Bilder und Schriften. **Wird 1:1 kopiert.** |
+| `tools/` | Hilfsskripte und deren Quelldateien. Wird **nicht** gebaut. |
 | `docs/` | Diese Doku. Wird **nicht** gebaut. |
 | `public/` | Bauergebnis. Nicht eingecheckt. |
 
@@ -31,20 +32,63 @@ hugo --minify && find public -ipath "*docs*"   # bleibt leer
 ## SCSS-Pipeline
 
 Einstiegspunkt ist `assets/scss/style.scss`, das alle Partials importiert.
-Kompiliert wird in `layouts/partials/head.html`:
+Kompiliert und mit Bootstrap zu **einer** Datei zusammengelegt wird in
+`layouts/partials/head.html`:
 
 ```go-html-template
-{{ with resources.Get "scss/style.scss" }}
-  {{ $opts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" "outputStyle" "compressed" }}
-  {{ with . | css.Sass $opts }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ $version }}">
-  {{ end }}
+{{ $sassOpts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" "outputStyle" "compressed" }}
+{{ $styles := slice
+     (resources.Get "css/vendor/bootstrap.min.css")
+     (resources.Get "scss/style.scss" | css.Sass $sassOpts)
+}}
+{{ with $styles | resources.Concat "assets/css/bundle.css" | minify | fingerprint "sha256" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }}
 ```
 
 Früher lag das SCSS unter `static/assets/scss/`, wurde von Hand kompiliert und
 das Ergebnis als `static/assets/css/style.css` eingecheckt. Diese Datei gibt es
 nicht mehr — sie entsteht jetzt bei jedem Build.
+
+**Das Ziel muss unter `assets/css/` bleiben.** Das SCSS adressiert die
+Schriften relativ als `../fonts/…`; landet das Buendel woanders, zeigt der
+Pfad ins Leere.
+
+## Buendelung und Fingerabdruck
+
+CSS und JS gehen je als **eine** Datei raus, minimiert und mit einem
+Fingerabdruck aus dem Dateiinhalt im Namen
+(`bundle.min.<hash>.css`). Vorher waren es 28 einzelne Dateien mit
+`?v=<Bauzeit>` dahinter — dieser Anhang aenderte sich bei **jedem** Bau und
+zwang jeden Besucher, alles neu zu laden. Jetzt aendert sich die Adresse nur,
+wenn sich die Datei wirklich aendert.
+
+Die Reihenfolge in `layouts/partials/scripts.html` ist die alte und muss sie
+bleiben: jQuery zuerst, `main.js` zuletzt. `resources.Concat` haengt in genau
+dieser Reihenfolge aneinander, `defer` fuehrt in Dokumentreihenfolge aus.
+
+## Font Awesome liegt als Teilmenge vor
+
+Das Original brachte 545 KB CSS und rund 1,2 MB Icon-Schriften mit, um
+22 Icons zu zeichnen. Ausgeliefert wird stattdessen eine Teilmenge:
+`assets/scss/vendor/_fontawesome-subset.scss` (2,6 KB) und vier
+`static/assets/fonts/fa-subset-*.woff2` (zusammen 7,3 KB).
+
+Beides ist erzeugt, nicht von Hand geschrieben. Wer ein **neues Icon**
+einbaut, traegt es in die Liste `ICONS` in
+`tools/build-fontawesome-subset.py` ein und laesst laufen:
+
+```bash
+python3 tools/build-fontawesome-subset.py   # braucht: pip install fonttools brotli
+python3 tools/check-icons.py                # prueft jede Verwendung im Markup
+```
+
+`check-icons.py` vergleicht jedes `fa-…` im Markup mit dem Schnitt, in dem es
+benutzt wird, und meldet fehlende Zeichen. Ohne diesen Lauf faellt ein
+fehlendes Icon erst im Browser auf — als leeres Kaestchen.
+
+Die vollstaendigen Originale liegen in `tools/fontawesome-src/`. Der Ordner
+liegt bewusst **nicht** unter `static/`, damit Hugo ihn nicht mit ausliefert.
 
 **Die Reihenfolge der Imports ist bedeutsam.** `elements/modern-refresh` steht
 als letztes in `style.scss`, damit eigene Anpassungen die Template-Regeln

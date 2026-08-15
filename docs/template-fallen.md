@@ -237,3 +237,41 @@ Zwei Fehlschläge in Folge:
 
 **Lösung:** Feste Breite über `flex: 0 0 230px` statt über `min-width` oder
 `max-width`. Damit ist die Verteilung eindeutig.
+
+---
+
+## 12. SplitText friert den Zeilenumbruch ein
+
+**Symptom:** Auf der Startseite hingen einzelne Wörter allein auf einer Zeile
+(„Ich", „verbinde"), obwohl der Absatz vorher sauber umbrach. Nur die
+Startseite war betroffen, alle anderen Seiten sahen unverändert aus.
+
+**Ursache:** `SplitText` mit `type: "lines,words,chars"` misst, wo der Text
+**im Moment des Aufrufs** umbricht, und gießt das Ergebnis in feste
+`<div class="split-line">`. Läuft das, solange noch die Ersatzschrift steht,
+werden deren Umbrüche eingefroren — sie bleiben stehen, auch nachdem Fraunces
+geladen ist. `font-display: swap` sorgt genau dafür, dass zuerst die
+Ersatzschrift zu sehen ist.
+
+Vorher lief das Skript blockierend mitten im Seitenaufbau und kam dadurch
+meist erst nach den Schriften dran. Das war Glück, keine Absicht. Seit die
+Skripte mit `defer` laufen, kommen sie früher — und das Rennen ging
+regelmäßig verloren.
+
+**Lösung:** In `assets/js/main.js` wird erst gespalten, wenn die Schriften
+wirklich da sind:
+
+```js
+document.fonts.ready.then(function () {
+  splitAnimatedTitles(animatedTextElements);
+});
+```
+
+**Merke:** Jede Messung von Textmaßen — Umbruch, Höhe, Zeilenzahl — gehört
+hinter `document.fonts.ready`. Vorher misst man die Ersatzschrift.
+
+Zum Nachprüfen taugt der Bildvergleich: alte und neue Fassung nebeneinander
+bauen und die Seitenhöhen vergleichen. Weicht eine Seite ab, ist etwas
+verrutscht. Dabei ist zu beachten, dass die Buchstaben-Animation selbst nicht
+pixelgenau reproduzierbar ist — derselbe Build weicht von sich selbst ab.
+Aussagekräftig ist die **Seitenhöhe**, nicht die Zahl abweichender Pixel.
