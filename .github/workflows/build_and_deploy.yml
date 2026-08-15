@@ -32,6 +32,17 @@ jobs:
           hugo-version: "latest"
           extended: true
 
+      # PurgeCSS laeuft ueber PostCSS mitten in der Hugo-Pipeline und wirft
+      # ungenutztes CSS aus dem Buendel. Ohne diesen Schritt bricht der Bau ab.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install npm dependencies
+        run: npm ci
+
       - name: Install Dart Sass
         run: |
           DART_SASS_VERSION="1.83.0"

@@ -14,14 +14,17 @@ gebaut** und ist nur für Menschen und Werkzeuge gedacht.
 
 ## Lokal bauen
 
-Es braucht **zwei** Programme, nicht nur Hugo:
+Es braucht **drei** Dinge, nicht nur Hugo:
 
 ```bash
 hugo version      # muss "+extended" enthalten
 dart-sass --version
+npm ci            # einmalig, fuer PurgeCSS im Produktionsbau
 ```
 
 Ohne Dart Sass bricht der Build ab mit `no Dart Sass binary found in $PATH`.
+Ohne `npm ci` bricht `hugo --minify` beim CSS-Aussieben ab. `hugo server`
+laeuft auch ohne, dort wird nicht ausgesiebt.
 Warum das so ist, steht in `docs/architektur.md`.
 
 ```bash
@@ -54,6 +57,15 @@ Kein `?v=`-Anhängsel von Hand, das erledigt `fingerprint`.
 als leeres Kästchen. Nach jedem neuen Icon:
 `python3 tools/build-fontawesome-subset.py && python3 tools/check-icons.py`.
 Details in `docs/architektur.md`.
+
+**Ungenutztes CSS fliegt beim Produktionsbau raus.** Eine Klasse, die erst
+JavaScript setzt, steht in keiner Datei und wird deshalb weggeworfen — sie
+gehört in die Freiliste in `postcss.config.js`. Sonst fehlt der Stil nur live,
+während lokal alles stimmt.
+
+**Vorladen (`rel="preload"`) nur mit Messung.** Es verschiebt Bandbreite, statt
+welche zu schaffen, und kann den ersten Anblick verzögern. Siehe
+`docs/template-fallen.md`, Punkt 13.
 
 **Textmaße erst nach `document.fonts.ready` messen.** Umbruch, Höhe und
 Zeilenzahl vorher zu messen liefert die Werte der Ersatzschrift. `SplitText`

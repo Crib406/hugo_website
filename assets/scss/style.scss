@@ -94,7 +94,8 @@
 @import'elements/tmpbutton';
 @import'elements/blog';
 @import'elements/testimonial';
-@import'elements/banner';
+// elements/banner stand hier ein zweites Mal und wurde damit doppelt in die
+// Ausgabe geschrieben - 61 KB umsonst. Der Import oben genuegt.
 @import'elements/testimonial-swiper';
 @import'elements/error';
 @import'elements/pricing';
