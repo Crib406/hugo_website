@@ -1,0 +1,10 @@
+{
+  "name": "creimann-cc",
+  "private": true,
+  "description": "Bauwerkzeuge fuer creimann.cc. Nur PostCSS mit PurgeCSS, um ungenutztes CSS aus dem Produktionsbau zu werfen. Die Seite selbst laedt kein npm-Paket.",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "postcss": "^8.5.26",
+    "postcss-cli": "^11.0.1"
+  }
+}

@@ -67,6 +67,52 @@ Die Reihenfolge in `layouts/partials/scripts.html` ist die alte und muss sie
 bleiben: jQuery zuerst, `main.js` zuletzt. `resources.Concat` haengt in genau
 dieser Reihenfolge aneinander, `defer` fuehrt in Dokumentreihenfolge aus.
 
+## Ungenutztes CSS wird ausgesiebt
+
+Das Template bringt Stile für Dutzende Bausteine mit, die es hier nie gab —
+Portfolio, Preistabellen, Team, Testimonials und so weiter. Gemessen wurden
+**687 KB ausgeliefert und 126 KB benutzt, also 18 %**. Der Rest verzögerte nur
+den ersten Anblick, denn CSS blockiert das Zeichnen: der Browser zeigt gar
+nichts an, bevor er es vollständig geladen und geparst hat.
+
+PurgeCSS läuft über PostCSS mitten in der Hugo-Pipeline, konfiguriert in
+`postcss.config.js`:
+
+```go-html-template
+{{ $bundle := $styles | resources.Concat "assets/css/bundle.css" }}
+{{ if hugo.IsProduction }}
+  {{ $bundle = $bundle | css.PostCSS }}
+{{ end }}
+{{ with $bundle | minify | fingerprint "sha256" }}
+```
+
+Zwei Dinge daran sind Absicht:
+
+**Nur beim Produktionsbau.** `hugo server` lässt das CSS unangetastet, damit
+beim Entwickeln garantiert nichts fehlt und der Bau schnell bleibt.
+
+**Vor dem Fingerabdruck.** Sonst stünde im Dateinamen der Hash des
+ungekürzten Inhalts, und eine Änderung am Markup — die das Ergebnis des
+Aussiebens verändert — käme bei niemandem an, der die Datei schon im
+Zwischenspeicher hat.
+
+PurgeCSS entscheidet anhand der Namen im Markup, **nicht** anhand dessen, was
+in einem bestimmten Browserfenster sichtbar ist. Regeln für große Bildschirme
+bleiben deshalb erhalten. Klassen, die erst JavaScript setzt, stehen in keiner
+Datei und müssen in die Freiliste in `postcss.config.js` — dort steht auch,
+welche das sind.
+
+> **Neue zustandsabhängige Klasse eingebaut?** Dann gehört sie in die
+> Freiliste. Sonst fehlt der Stil nur im Produktionsbau, während lokal alles
+> richtig aussieht — der unangenehmste Fehler, den dieses Setup kennt.
+
+Der Bau braucht dadurch zusätzlich Node:
+
+```bash
+npm ci            # einmalig, danach nur bei Änderungen an package.json
+hugo --minify
+```
+
 ## Font Awesome liegt als Teilmenge vor
 
 Das Original brachte 545 KB CSS und rund 1,2 MB Icon-Schriften mit, um

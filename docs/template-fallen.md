@@ -275,3 +275,23 @@ bauen und die Seitenhöhen vergleichen. Weicht eine Seite ab, ist etwas
 verrutscht. Dabei ist zu beachten, dass die Buchstaben-Animation selbst nicht
 pixelgenau reproduzierbar ist — derselbe Build weicht von sich selbst ab.
 Aussagekräftig ist die **Seitenhöhe**, nicht die Zahl abweichender Pixel.
+
+---
+
+## 13. Vorladen kann den ersten Anblick verzögern
+
+**Symptom:** Ein `<link rel="preload">` für die beiden Textschriften — an sich
+die Lehrbuchmaßnahme — machte die Seite messbar langsamer. Die Zeit bis zum
+ersten Inhalt stieg von 936 ms auf 1300 ms.
+
+**Ursache:** Vorladen bedeutet nicht „zusätzlich", sondern „vorgezogen und mit
+hoher Priorität". Die 94 KB Schriften nehmen dem CSS die Bandbreite, und das
+CSS blockiert das Zeichnen. Die Schriften kamen früher, der Text dafür später.
+
+**Lösung:** Nur das Hero-Bild wird vorgeladen — es ist das größte Element und
+liegt nicht im CSS-Pfad. Die Schriften bleiben ungeladen, `font-display: swap`
+sorgt ohnehin dafür, dass sofort Text steht, zunächst in der Ersatzschrift.
+
+**Merke:** Vorladen verschiebt Bandbreite, es schafft keine. Auf einer
+schmalen Leitung gewinnt nur, wer dem *blockierenden* Pfad nichts wegnimmt.
+Jede Vorladung gehört gemessen, nicht angenommen.

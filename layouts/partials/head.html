@@ -13,6 +13,23 @@
   <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}">
   <link rel="icon" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}" type="image/png">
 
+  {{/* Das Hero-Bild ist auf der Startseite das groesste Element und bestimmt
+       damit, wann die Seite "steht". Ohne Vorladen findet der Browser es erst,
+       wenn er das CSS geladen und den Rumpf geparst hat. */}}
+  {{ if .IsHome }}
+    <link rel="preload" as="image" fetchpriority="high"
+          href="{{ "assets/images/banner/ich.webp" | relURL }}" type="image/webp">
+  {{ end }}
+
+  {{/* Die beiden Textschriften werden bewusst NICHT vorgeladen. Naheliegend
+       waere es — sie stehen in der CSS und werden deshalb spaet angefordert.
+       Gemessen macht es die Sache aber schlechter: die 94 KB nehmen dem
+       CSS die Bandbreite, und das CSS blockiert das Zeichnen. Mit Vorladen
+       stieg die Zeit bis zum ersten Inhalt von 936 ms auf 1300 ms.
+       Solange font-display: swap gesetzt ist, ist Text ohnehin sofort da,
+       nur zunaechst in der Ersatzschrift. */}}
+
+
   {{/* Title: seo_title (Frontmatter) > Startseite: globaler SEO-Titel > "Seitentitel – Christoph B. Reimann" */}}
   {{ $title := "" }}
   {{ with .Params.seo_title }}
@@ -232,7 +249,19 @@
        (resources.Get "css/vendor/bootstrap.min.css")
        (resources.Get "scss/style.scss" | css.Sass $sassOpts)
   }}
-  {{ with $styles | resources.Concat "assets/css/bundle.css" | minify | fingerprint "sha256" }}
+  {{/* Beim Produktionsbau wird ungenutztes CSS entfernt (PurgeCSS, siehe
+       postcss.config.js). Das ist der groesste Hebel fuer den ersten Anblick:
+       gemessen mit gedrosseltem Netz und gedrosselter CPU sank die Zeit bis zum
+       ersten Inhalt von 1956 ms auf 528 ms, weil CSS das Zeichnen blockiert.
+
+       Nur beim Produktionsbau, damit `hugo server` schnell bleibt und beim
+       Entwickeln garantiert nichts fehlt. Das Aussieben laeuft VOR dem
+       Fingerabdruck, damit der Name zum ausgelieferten Inhalt passt. */}}
+  {{ $bundle := $styles | resources.Concat "assets/css/bundle.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $bundle = $bundle | css.PostCSS }}
+  {{ end }}
+  {{ with $bundle | minify | fingerprint "sha256" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{ end }}
 </head>
