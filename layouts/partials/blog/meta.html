@@ -1,10 +1,13 @@
-{{/* Kategorie · Datum · Lesezeit. Für Beitragsseite, Übersicht und
-     "Weiterlesen" gleich, damit die Zeile überall dieselbe ist.
+{{/* Kopfzeile eines Beitrags: Kategorie, Datum, Lesezeit. Markup der
+     Template-Komponente .blog-classic-tag, fuer Beitrag und Uebersicht gleich.
      Das Datum steht numerisch: .Date.Format kennt die Sprache der Seite
      nicht und schriebe englische Monatsnamen. */}}
-<p class="blog-meta">
-  {{- with .Params.category }}<span>{{ . }}</span>{{ end -}}
-  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>
-  {{- /* ReadingTime rechnet mit 213 Wörtern pro Minute */ -}}
-  <span>{{ .ReadingTime }} min</span>
-</p>
+<div class="blog-classic-tag">
+  <ul>
+    {{ with .Params.category }}
+    <li><div class="tag-wrap"><i class="fa-solid fa-tag"></i><span class="tag-title">{{ . }}</span></div></li>
+    {{ end }}
+    <li><div class="tag-wrap"><i class="fa-solid fa-calendar-day"></i><time class="tag-title" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time></div></li>
+    <li><div class="tag-wrap"><i class="fa-regular fa-clock"></i><span class="tag-title">{{ .ReadingTime }} min</span></div></li>
+  </ul>
+</div>

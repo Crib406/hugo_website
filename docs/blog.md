@@ -46,12 +46,20 @@ beim Kopieren auseinander.
 - Zwischenüberschriften ab `##`. Die `#` ist der Titel.
 - Bilder mit normalem Markdown, die Bildunterschrift in Anführungszeichen:
   `![Alternativtext](skizze.jpg "Bildunterschrift")`
-- Interne Links relativ, zum Beispiel `../` für die Übersicht oder
-  `../anderer-beitrag/`. Siehe CLAUDE.md.
-- Zusammenfassung am Ende:
+- Zitate mit normalem Markdown. Der letzte Absatz ist die Quelle:
 
   ```
-  {{</* checklist title="Das Wichtigste" */>}}
+  > Das Zitat.
+  >
+  > Quelle
+  ```
+
+- Interne Links relativ, zum Beispiel `../` für die Übersicht oder
+  `../anderer-beitrag/`. Siehe CLAUDE.md.
+- Zusammenfassung am Ende als Haken-Liste, ein Punkt pro Zeile:
+
+  ```
+  {{</* checklist */>}}
   Erster Punkt
   Zweiter Punkt
   {{</* /checklist */>}}
@@ -67,65 +75,67 @@ Zum Veröffentlichen `draft: false` setzen und nach `main` bringen.
 
 ## Aufbau
 
+Gebaut aus den Bausteinen des Templates, nicht neu erfunden. Der Beitrag sieht
+damit aus wie „Mein Weg“, die Leiste wie die Blog-Seiten des Templates.
+
+| Teil | Template-Baustein |
+|---|---|
+| Textspalte | `.blog-details-left-area` mit `.disc` (740px, wie „Mein Weg“) |
+| Kopfzeile | `.blog-classic-tag` |
+| Titelbild, Bilder im Text | `.thumbnail-top` |
+| Zwischenüberschrift `##` | `.title` (wie die Abschnitte auf „Mein Weg“) |
+| Zitat | `.quote-area-blog-details` |
+| Haken-Liste | `.check-box-wrap` |
+| Kontakt am Ende | `.service-card-v1` |
+| Leiste | `.tmp-sidebar` mit `.signle-side-bar`: „Über mich“ (`.about-me-details`), „Weitere Beiträge“ (`.recent-post-area`), „Inhalt“ |
+| Übersicht | `.blog-classic-card` |
+
+Damit Markdown dieses Markup ergibt, gibt es drei Render-Hooks unter
+`layouts/blog/_markup/` (Überschrift, Zitat, Bild) und den Shortcode
+`checklist`. Sie gelten nur für den Blog.
+
 ```
 layouts/blog/
-  single.html              Beitragsseite, nur das Gerüst
-  list.html                Übersicht
-  _markup/render-image.html  Bilder im Beitragstext
+  single.html, list.html
+  _markup/render-heading.html     ## -> h2.title
+  _markup/render-blockquote.html  > -> .quote-area-blog-details
+  _markup/render-image.html       ![]() -> .thumbnail-top, verkleinert
 layouts/partials/blog/
-  meta.html                Kategorie · Datum · Lesezeit
-  toc.html                 Inhaltsverzeichnis
-  picture.html             Bild als WebP in passenden Breiten
-  author.html              Autorenbox (partialCached)
-  related.html             Zwei weitere Beiträge
-  jsonld.html              BlogPosting, BreadcrumbList, Blog
+  meta.html      Kopfzeile
+  picture.html   Bild als WebP in passenden Breiten
+  author.html    Kasten "Über mich" (partialCached)
+  related.html   Kasten "Weitere Beiträge"
+  toc.html       Kasten "Inhalt"
+  contact.html   Kontakt-Kacheln
+  jsonld.html    BlogPosting, BreadcrumbList, Blog
 layouts/shortcodes/checklist.html
 assets/js/blog-toc.js
 assets/scss/elements/_modern-refresh.scss   Abschnitt "Blog"
 archetypes/blog.md
 ```
 
-### Eigene Klassen statt Template-Klassen
+Eigenes CSS steht nur dort, wo das Template von der Schriftskala abweicht
+(14/16px statt Neben- und Lesetext) oder bei diesem Markup etwas falsch macht
+(Aufzählungszeichen, `capitalize` in Titeln, 462px Mindesthöhe der
+Listenbilder). Jede Regel hat ihren Grund als Kommentar.
 
-Alles Markup trägt Klassen mit `blog-`, die im Template nicht vorkommen. Der
-alte Blog benutzte `blog-details-left-area`, `signle-side-bar`, `check-box`
-und musste deshalb gegen die Template-Regeln anschreiben: längere Selektoren,
-am Ende ein 132-zeiliger `<style>`-Block fast nur aus `!important`. Mit
-eigenen Klassen trifft keine Template-Regel, eine Klasse plus Element reicht.
+### Die mitlaufende Leiste
 
-Was trotzdem vom Template durchschlägt, sind die Element-Regeln
-(`li`, `ul`, `blockquote`, `p`). Die setzt der Abschnitt „Blog“ im SCSS
-zurück, jeweils mit Kommentar.
+Das Template lässt den **letzten** Kasten der Leiste mitlaufen
+(`.signle-side-bar:last-child` ist `sticky`, `top: 120px`, in `_blog.scss`).
+Deshalb steht „Inhalt“ als letzter Kasten.
 
-### Raster und Leiste
+Damit das wirkt, muss `.tmp-sidebar` so hoch sein wie die Spalte: `sticky`
+wirkt nur innerhalb des Elternelements. Das setzt der Abschnitt „Blog“ ab lg
+mit `height: 100%`. Fehlt das, bleibt der Kasten stehen, ohne Fehlermeldung.
 
-Die Beitragsseite ist ein CSS-Grid:
+Dass `body` `overflow-x: hidden` trägt, stört nicht: `html` hat keinen
+Overflow, deshalb geht der Wert an den Viewport. Wer `html` oder einem
+Elternelement der Leiste `overflow` gibt, macht sie starr.
 
-| Breite | Spalten | Bereiche |
-|---|---|---|
-| ab 1200px | 740px Text, 64px Abstand, 220px Leiste | `head toc` / `body toc` / `end .` |
-| darunter | eine Spalte, 740px höchstens | `head` / `toc` / `body` / `end` |
-
-Das Inhaltsverzeichnis steht im HTML **vor** dem Text. So kommt es auf dem
-Handy an der richtigen Stelle (eingeklappt unter dem Titelbild) und
-Screenreader treffen es vor dem Text. Auf breiten Bildschirmen schiebt es
-das Raster nach rechts. Es gibt also nur ein HTML für beide Fälle.
-
-Die Leiste läuft per `position: sticky` mit. Das funktioniert, obwohl `body`
-`overflow-x: hidden` trägt: `html` hat keinen Overflow, deshalb geht der Wert
-an den Viewport über, und `body` wird kein eigener Scroll-Container. Wer
-`html` oder einem Elternelement von `.blog-post` einmal `overflow` gibt,
-macht die Leiste starr.
-
-Das Inhaltsverzeichnis erscheint erst ab **drei** Zwischenüberschriften.
-Bei weniger bleibt die rechte Spalte leer, der Text steht aber an derselben
-Stelle wie in jedem anderen Beitrag.
-
-`blog-toc.js` klappt das Verzeichnis ab 1200px auf, markiert den aktuellen
-Abschnitt und füllt den Fortschrittsbalken. Ohne JS bleibt das Verzeichnis in
-der Leiste trotzdem sichtbar (CSS zeigt den Inhalt des `<details>` dort
-immer). Der Umschaltpunkt 1200px steht zweimal, als `$blog-wide` im SCSS
-und im Skript. Wer ihn ändert, ändert beide.
+„Inhalt“ erscheint erst ab drei Zwischenüberschriften und erst ab 992px.
+Darunter steht die Leiste unter dem Text, ein Inhaltsverzeichnis wäre dort
+nutzlos. `blog-toc.js` markiert den Abschnitt, in dem man gerade liest.
 
 ### Bilder
 

@@ -1,15 +1,22 @@
-{{/* Autor am Ende jedes Beitrags. Für alle Beiträge gleich, deshalb
-     als partialCached eingebunden: einmal pro Build gerendert.
-     Das Foto liegt fertig verkleinert (176px für 88px bei 2x) unter static/,
-     siehe docs/blog.md. */}}
-<section class="blog-author" aria-label="Über den Autor">
-  <img src="{{ "assets/images/blog/autor-176.webp" | relURL }}" alt="Christoph B. Reimann" width="88" height="88" loading="lazy" decoding="async">
-  <div>
-    <h2 class="blog-author__name">Christoph B. Reimann</h2>
-    <p>Mensch, Betriebswirt und Generalist aus Bad Harzburg. Ich schreibe über Werte, Haltung und Zugehörigkeit. Schreiben Sie mir gern, was Sie dazu denken.</p>
-    <div class="blog-author__links">
-      <a class="tmp-btn" href="mailto:hello@creimann.cc">Per Mail</a>
-      <a class="tmp-btn btn-border" href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener">Auf LinkedIn</a>
+{{/* Kasten "Ueber mich" in der Leiste (.about-me-details aus dem Template).
+     Fuer alle Beitraege gleich, deshalb als partialCached eingebunden.
+     Das Foto liegt fertig verkleinert unter static/, siehe docs/blog.md. */}}
+<div class="signle-side-bar">
+  <div class="header">
+    <h2 class="title">Über mich</h2>
+  </div>
+  <div class="body">
+    <div class="about-me-details">
+      <div class="about-me-details-head">
+        <div class="about-me-img">
+          <img src="{{ "assets/images/blog/autor-176.webp" | relURL }}" alt="Christoph B. Reimann" width="88" height="88" loading="lazy" decoding="async">
+        </div>
+        <div class="about-me-right-content">
+          <h3 class="title">Christoph B. Reimann</h3>
+          <p class="para">Mensch, Betriebswirt und Generalist aus Bad Harzburg</p>
+        </div>
+      </div>
+      <p class="about-me-para">Ich schreibe über Werte, Haltung und Zugehörigkeit.</p>
     </div>
   </div>
-</section>
+</div>

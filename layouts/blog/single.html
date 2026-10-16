@@ -1,40 +1,51 @@
 {{ define "main" }}
-{{/* Beitragsseite. Aufbau und Gründe: docs/blog.md
-
-     Eigenes Markup mit eigenen Klassen (blog-*), keine Template-Klassen wie
-     blog-details-left-area oder signle-side-bar. Damit greift keine
-     Template-Regel, gegen die man anschreiben müsste.
-
-     Das Raster (Textspalte + Leiste) steht in _modern-refresh.scss, Abschnitt
-     "Blog". Die Reihenfolge im HTML ist die für schmale Bildschirme und
-     Screenreader: Kopf, Inhalt, Text, Ende. */}}
-<div class="blog-page">
+{{/* Beitragsseite, gebaut aus den Bausteinen des Templates:
+       Inhalt      .blog-details-left-area mit .thumbnail-top, .disc,
+                   .quote-area-blog-details (wie "Mein Weg")
+       Kopfzeile   .blog-classic-tag
+       Leiste      .tmp-sidebar mit .signle-side-bar-Kaesten
+       Kontakt     .service-card-v1
+     Der letzte Kasten der Leiste (Inhalt) laeuft laut Template mit
+     (_blog.scss: .signle-side-bar:last-child, sticky).
+     Eigene Regeln nur, wo das Template von der Schriftskala abweicht:
+     _modern-refresh.scss, Abschnitt "Blog". Aufbau: docs/blog.md */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
   <div class="container">
-    <article class="blog-post">
+    <div class="row">
 
-      <header class="blog-post__head">
-        {{ partial "blog/meta.html" . }}
-        <h1 class="blog-post__title">{{ .Title }}</h1>
-        {{ with .Description }}<p class="blog-post__lead">{{ . }}</p>{{ end }}
-        {{ with .Resources.Get .Params.image }}
-        <figure class="blog-figure blog-post__cover">
-          {{ partial "blog/picture.html" (dict "img" . "alt" ($.Params.image_alt | default "") "eager" true) }}
-        </figure>
-        {{ end }}
-      </header>
+      <div class="col-lg-8">
+        <article class="blog-details-left-area">
 
-      {{ partial "blog/toc.html" . }}
+          {{ partial "blog/meta.html" . }}
+          <h1 class="title blog-page-title">{{ .Title }}</h1>
+          {{ with .Description }}<p class="blog-lead">{{ . }}</p>{{ end }}
 
-      <div class="blog-post__body">
-        {{ .Content }}
+          {{ with .Resources.Get .Params.image }}
+          <div class="thumbnail-top">
+            {{ partial "blog/picture.html" (dict "img" . "alt" ($.Params.image_alt | default "") "eager" true) }}
+          </div>
+          {{ end }}
+
+          <div class="blog-details-discription">
+            <div class="disc">
+              {{ .Content }}
+            </div>
+          </div>
+
+          {{ partial "blog/contact.html" . }}
+
+        </article>
       </div>
 
-      <footer class="blog-post__end">
-        {{ partialCached "blog/author.html" . }}
-        {{ partial "blog/related.html" . }}
-      </footer>
+      <div class="col-lg-4">
+        <aside class="tmp-sidebar">
+          {{ partialCached "blog/author.html" . }}
+          {{ partial "blog/related.html" . }}
+          {{ partial "blog/toc.html" . }}
+        </aside>
+      </div>
 
-    </article>
+    </div>
   </div>
 </div>
 {{ end }}

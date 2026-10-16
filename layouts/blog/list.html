@@ -1,39 +1,41 @@
 {{ define "main" }}
-{{/* Blog-Übersicht als Liste: der neueste Beitrag groß, die übrigen als
-     Zeilen. Ein Kartenraster bliebe mit ein, zwei Beiträgen zu zwei Dritteln
-     leer, die Liste sieht mit einem Beitrag aus wie mit dreißig. */}}
-<div class="blog-page">
+{{/* Blog-Uebersicht mit der Listen-Karte des Templates (.blog-classic-card):
+     ein Beitrag pro Zeile, neuester oben. Ein Raster mit drei Spalten bliebe
+     mit ein, zwei Beitraegen zu zwei Dritteln leer. */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
   <div class="container">
-    <div class="blog-list">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
 
-      <header class="blog-list__head">
-        <h1 class="blog-post__title">{{ .Title }}</h1>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      </header>
+        <header class="blog-list-head">
+          <h1 class="title blog-page-title">{{ .Title }}</h1>
+          {{ with .Description }}<p class="blog-lead">{{ . }}</p>{{ end }}
+        </header>
 
-      {{ range $i, $p := .Pages.ByDate.Reverse }}
-        {{ $featured := eq $i 0 }}
-        <a class="blog-entry{{ if $featured }} blog-entry--featured{{ end }}" href="{{ .RelPermalink }}">
+        {{ range $i, $p := .Pages.ByDate.Reverse }}
+        <div class="blog-classic-card">
           {{ with .Resources.Get .Params.image }}
-            <div class="blog-entry__img">
-              {{ if $featured }}
-                {{ partial "blog/picture.html" (dict "img" . "alt" "" "eager" true) }}
-              {{ else }}
-                {{ partial "blog/picture.html" (dict "img" . "alt" "" "widths" (slice 480 960) "sizes" "(min-width: 768px) 240px, 100vw") }}
-              {{ end }}
-            </div>
-          {{ end }}
-          <div class="blog-entry__text">
-            {{ partial "blog/meta.html" . }}
-            <h2 class="blog-entry__title">{{ .Title }}</h2>
-            {{ with .Summary }}<p class="blog-entry__summary">{{ . | plainify }}</p>{{ end }}
-            <span class="blog-entry__more">Weiterlesen →</span>
+          <div class="img-box">
+            <a href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+              {{ partial "blog/picture.html" (dict "img" . "alt" "" "eager" (eq $i 0)) }}
+            </a>
           </div>
-        </a>
-      {{ else }}
-        <p class="blog-list__empty">Hier erscheinen bald die ersten Beiträge.</p>
-      {{ end }}
+          {{ end }}
+          <div class="blog-classic-content">
+            {{ partial "blog/meta.html" . }}
+            <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ with .Summary }}<p class="para">{{ . | plainify }}</p>{{ end }}
+            <a href="{{ .RelPermalink }}" class="read-more-btn">
+              Weiterlesen
+              <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+          </div>
+        </div>
+        {{ else }}
+        <p class="blog-lead text-center">Hier erscheinen bald die ersten Beiträge.</p>
+        {{ end }}
 
+      </div>
     </div>
   </div>
 </div>

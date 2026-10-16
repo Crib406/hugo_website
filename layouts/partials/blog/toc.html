@@ -1,23 +1,17 @@
-{{/* Inhaltsverzeichnis. Ab 1200px als mitlaufende Leiste rechts neben dem
-     Text, darunter eingeklappt unter dem Titelbild. Beides ist dasselbe
-     HTML, die Position regelt das Raster in _modern-refresh.scss.
+{{/* Kasten "Inhalt" in der Leiste. Er muss der LETZTE Kasten sein: das
+     Template laesst genau den mitlaufen (.signle-side-bar:last-child ist
+     sticky, _blog.scss).
 
-     Erst ab drei Zwischenüberschriften: mit weniger ist ein
-     Inhaltsverzeichnis länger als nötig.
-
-     Das <details> ist im HTML zu. Auf breiten Bildschirmen öffnet es
-     assets/js/blog-toc.js, ohne JS bleibt es dort per CSS sichtbar. */}}
+     Erst ab drei Zwischenueberschriften. Auf dem Handy steht die Leiste unter
+     dem Text, ein Inhaltsverzeichnis waere dort nutzlos - deshalb erst ab lg.
+     assets/js/blog-toc.js markiert den Abschnitt, in dem man gerade liest. */}}
 {{ if ge (len .Fragments.HeadingsMap) 3 }}
-<aside class="blog-post__toc" aria-label="Inhalt">
-  <div class="blog-toc">
-    <details class="blog-toc__box">
-      <summary>Inhalt</summary>
-      <div class="blog-toc__body">
-        <p class="blog-toc__label" aria-hidden="true">Inhalt</p>
-        <div class="blog-toc__progress" aria-hidden="true"><span></span></div>
-        {{ .TableOfContents }}
-      </div>
-    </details>
+<nav class="signle-side-bar blog-toc d-none d-lg-block" aria-label="Inhalt">
+  <div class="header">
+    <h2 class="title">Inhalt</h2>
   </div>
-</aside>
+  <div class="body">
+    {{ .TableOfContents }}
+  </div>
+</nav>
 {{ end }}

@@ -1,0 +1,4 @@
+{{- /* Zwischenueberschriften im Beitrag. h2 bekommt die Klasse .title und
+       damit dieselbe Groesse wie die Abschnitte auf "Mein Weg" und
+       "Ueber mich" (.blog-details-left-area .title). */ -}}
+<h{{ .Level }} id="{{ .Anchor }}"{{ if eq .Level 2 }} class="title"{{ end }}>{{ .Text }}</h{{ .Level }}>

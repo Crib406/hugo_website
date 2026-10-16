@@ -19,8 +19,9 @@ Die Textspalte ist 740 Pixel breit, genau wie auf „Über mich“ und „Mein W
 Bei 20 Pixeln Schriftgröße sind das rund 70 Zeichen pro Zeile. Das Auge findet
 beim Zeilensprung zuverlässig den Anfang der nächsten Zeile.
 
-Rechts läuft das Inhaltsverzeichnis mit. Es zeigt, wo Sie gerade sind und wie
-viel noch kommt. Auf dem Handy steht es eingeklappt unter dem Titelbild.
+Rechts in der Leiste stehen „Über mich“, weitere Beiträge und das
+Inhaltsverzeichnis. Das Verzeichnis läuft beim Scrollen mit und zeigt, wo Sie
+gerade sind. Auf dem Handy steht die Leiste unter dem Text.
 
 ## Wie ein Abschnitt aussieht
 
@@ -31,9 +32,8 @@ eine Stufe ein.
 ### Absätze und Hervorhebungen
 
 Fließtext steht in Source Sans, Überschriften in Fraunces. **Fett gesetzte
-Wörter** heben sich durch das helle Creme vom grauen Fließtext ab, nicht durch
-eine eigene Farbe. So bleibt Grün den Links und Haken vorbehalten, etwa diesem
-[Link zur Übersicht](../).
+Wörter** heben sich durch das helle Creme vom grauen Fließtext ab. Links sind
+grün, etwa dieser [Link zur Übersicht](../).
 
 Ein Absatz trägt einen Gedanken. Wird er länger als fünf oder sechs Zeilen,
 lohnt es sich meist, ihn zu teilen. Das gilt hier genauso wie in jedem Brief.
@@ -54,8 +54,8 @@ Für Reihenfolgen gibt es die nummerierte Liste:
 
 ## Zitat und Bild
 
-Ein Zitat steht eingerückt mit grüner Kante und in der Überschriftenschrift.
-Die Quelle darunter ist Nebentext.
+Ein Zitat steht im Zitatkasten, wie auf „Mein Weg“. Der letzte Absatz ist
+die Quelle.
 
 > Gut lesbar sind 45 bis 75 Zeichen pro Zeile.
 >
@@ -71,9 +71,9 @@ Breite und Höhe dazu und lädt sie erst, wenn sie ins Bild scrollen.
 Jeder Beitrag endet mit einer kurzen Zusammenfassung. Sie ist für alle
 gedacht, die nur bis hierher scrollen.
 
-{{< checklist title="Das Wichtigste" >}}
+{{< checklist >}}
 Eine Textspalte, eine linke Kante
 Zwei Schriftgrößen für Text, nicht mehr
-Das Inhaltsverzeichnis begleitet beim Lesen
-Wer bis zum Ende liest, findet den Autor
+Das Inhaltsverzeichnis läuft beim Lesen mit
+Am Ende geht es direkt zum Kontakt
 {{< /checklist >}}

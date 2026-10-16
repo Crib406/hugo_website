@@ -1,0 +1,19 @@
+{{- /* Zitat im Beitrag: normales Markdown, ausgegeben als Zitatkasten des
+       Templates (.quote-area-blog-details, wie auf "Mein Weg").
+
+         > Das Zitat.
+         >
+         > Quelle
+
+       Hat das Zitat mehr als einen Absatz, ist der letzte die Quelle. */ -}}
+{{- $ps := findRE `(?s)<p>.*?</p>` .Text -}}
+<div class="quote-area-blog-details">
+  {{- range $i, $p := $ps }}
+    {{- $inner := $p | strings.TrimPrefix "<p>" | strings.TrimSuffix "</p>" | safeHTML }}
+    {{- if and (gt (len $ps) 1) (eq (add $i 1) (len $ps)) }}
+  <p class="author">{{ $inner }}</p>
+    {{- else }}
+  <p class="disc">{{ $inner }}</p>
+    {{- end }}
+  {{- end }}
+</div>

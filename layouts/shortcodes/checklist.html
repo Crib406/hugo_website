@@ -1,16 +1,15 @@
-{{/* Haken-Liste, gedacht für "Kurz gesagt" am Ende eines Beitrags.
+{{/* Haken-Liste, gedacht fuer "Kurz gesagt" am Ende eines Beitrags.
      Jede Zeile ist ein Punkt, Markdown in der Zeile wird ausgewertet.
-     Optional mit Überschrift:  {{< checklist title="Das Wichtigste" >}}
-
-     Erzeugt eine normale Liste mit eigener Klasse. Die Template-Klasse
-     .check-box ist bewusst nicht dabei, siehe docs/blog.md. */}}
-<ul class="blog-checks">
-  {{- with .Get "title" }}
-  <li class="blog-checks__title">{{ . }}</li>
-  {{- end }}
-  {{- range split (trim .Inner "\n") "\n" }}
-    {{- with trim . " " }}
-  <li>{{ . | markdownify }}</li>
+     Markup der Template-Komponente .check-box-wrap; die Schriftgroesse
+     regelt _modern-refresh.scss (Lesetext). */}}
+<div class="check-box-wrap">
+  <ul>
+    {{- range split (trim .Inner "\n") "\n" }}
+      {{- with trim . " " }}
+    <li>
+      <p class="check-box-item"><span><i class="fa-solid fa-check"></i></span>{{ . | markdownify }}</p>
+    </li>
+      {{- end }}
     {{- end }}
-  {{- end }}
-</ul>
+  </ul>
+</div>
