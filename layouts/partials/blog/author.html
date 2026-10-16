@@ -1,0 +1,22 @@
+{{/* Kasten "Ueber mich" in der Leiste (.about-me-details aus dem Template).
+     Fuer alle Beitraege gleich, deshalb als partialCached eingebunden.
+     Das Foto liegt fertig verkleinert unter static/, siehe docs/blog.md. */}}
+<div class="signle-side-bar">
+  <div class="header">
+    <h2 class="title">Über mich</h2>
+  </div>
+  <div class="body">
+    <div class="about-me-details">
+      <div class="about-me-details-head">
+        <div class="about-me-img">
+          <img src="{{ "assets/images/blog/autor-176.webp" | relURL }}" alt="Christoph B. Reimann" width="88" height="88" loading="lazy" decoding="async">
+        </div>
+        <div class="about-me-right-content">
+          <h3 class="title">Christoph B. Reimann</h3>
+          <p class="para">Mensch, Betriebswirt und Generalist aus Bad Harzburg</p>
+        </div>
+      </div>
+      <p class="about-me-para">Ich schreibe über Werte, Haltung und Zugehörigkeit.</p>
+    </div>
+  </div>
+</div>

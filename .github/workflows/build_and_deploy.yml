@@ -60,6 +60,9 @@ jobs:
           else
             echo "BASE_URL=${BASE_DOMAIN}/preview/${BRANCH}/" >> $GITHUB_ENV
             echo "DEST_DIR=preview/${BRANCH}" >> $GITHUB_ENV
+            # Entwuerfe (draft: true) nur in Vorschauen bauen, nie auf main.
+            # Hugo liest HUGO_BUILDDRAFTS wie --buildDrafts.
+            echo "HUGO_BUILDDRAFTS=true" >> $GITHUB_ENV
           fi
 
           echo "Deploying branch: $BRANCH"

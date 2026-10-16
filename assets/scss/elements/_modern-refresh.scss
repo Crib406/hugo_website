@@ -584,10 +584,15 @@ p {
  "70ch" ergab deshalb 557px statt der 696px, die dieselbe Regel an einem
  20px-Absatz ergibt. 700px entsprechen rund 70 Zeichen bei 20px Fliesstext.
  Auf dem Handy ohne Wirkung, dort ist die Spalte ohnehin schmaler.
+
+ $reading-width gilt auch fuer die Textspalte des Blogs (Abschnitt "Blog"
+ unten) - eine Zahl, eine Kante auf allen Seiten.
 ----------------------------*/
+$reading-width: 740px;
+
 .blog-details-left-area {
     &:not(.legal-page) {
-        max-width: 740px;
+        max-width: $reading-width;
         margin-left: auto;
         margin-right: auto;
     }
@@ -684,5 +689,345 @@ p {
     &.active .inner {
         left: auto;
         right: 0;
+    }
+}
+
+/*----------------------------
+ Blog
+ Beitragsseite und Uebersicht sind aus Template-Bausteinen gebaut
+ (layouts/blog/, Partials unter layouts/partials/blog/). Hier steht nur,
+ was das Template bei diesem Markup anders macht als die Schriftskala oben.
+ Aufbau: docs/blog.md
+
+ Die Selektoren sind so lang wie die Template-Regeln, die sie schlagen
+ muessen (template-fallen.md, Punkt 2). Kein !important.
+----------------------------*/
+
+// Der Kopf liegt absolut ueber der Seite (header--transparent). Auf den
+// anderen Unterseiten haelt der Banner den Abstand, hier steht der Titel in
+// der Spalte. Werte wie .breadcrumb-area in _breadcrumb.scss.
+.blog-classic-area-wrapper.blog-page {
+    padding-top: 150px;
+
+    @media #{$sm-layout} {
+        padding-top: 100px;
+    }
+}
+
+// Seitentitel: Groesse des Banner-Titels der Unterseiten, nicht die der
+// Abschnittstitel (.blog-details-left-area .title, 38px).
+.blog-details-left-area .title.blog-page-title,
+.blog-page .blog-list-head .title {
+    margin-bottom: 18px;
+    font-size: 44px;
+    line-height: 1.12;
+
+    @media #{$sm-layout} {
+        font-size: 32px;
+    }
+}
+
+// Einleitung: Lesetext, nur heller
+.blog-lead {
+    color: var(--color-ink);
+    margin-bottom: 30px;
+}
+
+.blog-list-head {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+// Kopfzeile (.blog-classic-tag): Nebentext. Die Template-Regel
+// .blog-classic-tag ul li .tag-wrap .tag-title hat zwei Elementnamen mehr als
+// eine gleich lange Klassenkette und gewinnt sonst (template-fallen.md, 2a).
+.blog-classic-tag ul li .tag-wrap .tag-title {
+    font-size: 17px;
+    color: var(--color-brass);
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+.blog-classic-tag ul li .tag-wrap i {
+    color: var(--color-brass);
+}
+
+.blog-classic-tag ul {
+    margin: 0;
+    padding: 0;
+}
+
+// --- Beitragstext ---------------------------------------------------------
+.blog-details-left-area .blog-details-discription {
+    padding-top: 10px;
+
+    .disc h3 {
+        margin-top: 1.4em;
+        font-size: 26px;
+
+        @media #{$sm-layout} {
+            font-size: 22px;
+        }
+    }
+
+    // Abstand ueber den Abschnittstiteln; der erste braucht keinen
+    .disc .title {
+        margin-top: 1.6em;
+    }
+
+    .disc > .title:first-child {
+        margin-top: 0;
+    }
+
+    // Sprungziele aus dem Inhaltsverzeichnis nicht unter den fixierten Kopf
+    .disc :is(h2, h3) {
+        scroll-margin-top: 120px;
+    }
+
+    .disc strong {
+        color: var(--color-ink);
+    }
+
+    // Listen aus Markdown sind Lesetext. Das Template setzt li auf 16px und
+    // nimmt den Aufzaehlungszeichen den Stil.
+    .disc > ul,
+    .disc > ol {
+        padding-left: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .disc > ul { list-style-type: disc; }
+    .disc > ol { list-style-type: decimal; }
+
+    .disc > ul li,
+    .disc > ol li {
+        list-style-type: inherit;
+        font-size: 20px;
+        line-height: 1.65;
+        margin: 0 0 0.4em;
+
+        &::marker {
+            color: var(--color-accent);
+        }
+
+        @media #{$sm-layout} {
+            font-size: 18px;
+        }
+    }
+
+    .disc .quote-area-blog-details,
+    .disc .check-box-wrap,
+    .disc .thumbnail-top {
+        margin-bottom: 30px;
+    }
+
+    .disc figcaption {
+        margin-top: 10px;
+        font-size: 17px;
+
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
+// Haken-Liste: Text wie im Template in Fraunces, aber in Lesetext-Groesse
+// (Regel oben bei .check-box-wrap ul li .check-box-item). Der Haken sitzt
+// oben, nicht mittig, damit er bei zweizeiligen Punkten nicht wandert.
+.check-box-wrap ul li .check-box-item {
+    align-items: flex-start;
+}
+
+.blog-details-left-area .check-box-wrap ul {
+    list-style: none;
+    padding: 0;
+}
+
+// Zitat: wie auf "Mein Weg"
+.blog-details-left-area .quote-area-blog-details p.disc {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-ink);
+
+    @media #{$sm-layout} {
+        font-size: 18px;
+    }
+}
+
+.blog-contact {
+    margin-top: 60px;
+
+    .title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+// --- Leiste ---------------------------------------------------------------
+// Unter lg steht sie unter dem Text. Ab lg muss sie so hoch sein wie die
+// Spalte: sticky wirkt nur innerhalb des Elternelements, und das waere sonst
+// nur so hoch wie die Kaesten selbst - der letzte Kasten liefe nicht mit.
+.blog-page .tmp-sidebar {
+    @media (max-width: 991px) {
+        margin-top: 60px;
+    }
+
+    @media (min-width: 992px) {
+        height: 100%;
+    }
+}
+
+// Nebentext statt 14/16px aus dem Template
+.signle-side-bar.recent-post-area .body .single-post .single-post-left .post-title,
+.signle-side-bar .about-me-details .about-me-para,
+.signle-side-bar .about-me-details .about-me-details-head .about-me-right-content .para {
+    font-size: 17px;
+    line-height: 1.5;
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+.signle-side-bar.recent-post-area .body .single-post .post-num {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.signle-side-bar .about-me-details .about-me-details-head .about-me-img {
+    width: 88px;
+    flex: none;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+// Inhaltsverzeichnis. Hugo gibt nav > ul > li > a aus.
+.blog-toc .body {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul ul {
+        padding-left: 14px;
+    }
+
+    li {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    a {
+        display: block;
+        padding: 5px 0 5px 14px;
+        border-left: 2px solid var(--color-line);
+        color: var(--color-ink-soft);
+
+        &:hover {
+            color: var(--color-ink);
+        }
+
+        &.is-active {
+            color: var(--color-ink);
+            border-left-color: var(--color-accent-strong);
+        }
+    }
+}
+
+// --- Kategorien und Tags ----------------------------------------------------
+// Chips aus dem Template (.tags-wrapper .tag-link): Leiste "Tags" und der
+// Filter ueber der Uebersicht. Das Template setzt einen festen Hintergrund
+// (#060606, aus der Zeit vor der Palette), 14px und im Hover helles Gruen
+// unter cremefarbener Schrift - kaum lesbar.
+.signle-side-bar .tags-wrapper .tag-link,
+.blog-filter.tags-wrapper .tag-link {
+    background: var(--color-surface-2);
+    color: var(--color-ink);
+    font-size: 17px;
+
+    &:hover,
+    &.is-active {
+        background: var(--color-accent);
+        color: var(--color-paper);
+    }
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+// Filter: Chips mittig unter dem Titel der Uebersicht. Das Template formt
+// .tag-link nur innerhalb von .signle-side-bar, ausserhalb der Leiste fehlen
+// Form und Abstaende - hier dieselben Werte wie in _blog.scss.
+.blog-filter.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    .tag-link {
+        display: block;
+        height: 40px;
+        padding: 0 21px;
+        border-radius: 100px;
+        line-height: 40px;
+        transition: 0.3s;
+    }
+}
+
+// Kategorie in der Kopfzeile ist ein Link
+.blog-classic-tag ul li .tag-wrap a.tag-title:hover {
+    color: var(--color-accent-strong);
+}
+
+// Zahl der Beitraege je Kategorie
+.signle-side-bar.recent-post-area .body .single-post .post-num {
+    font-variant-numeric: tabular-nums;
+}
+
+// --- Uebersicht -----------------------------------------------------------
+// Das Template gibt dem Bild eine Mindesthoehe von 462px; bei 16:9 in der
+// Spalte entstand darunter ein leerer Streifen.
+.blog-classic-card .img-box {
+    min-height: 0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.blog-classic-card .blog-classic-content {
+    .title {
+        // "capitalize" aus dem Template macht im Deutschen jedes Wort gross
+        text-transform: none;
+        margin-bottom: 14px;
+
+        @media #{$sm-layout} {
+            font-size: 24px;
+        }
+    }
+
+    .para {
+        font-size: 20px;
+        line-height: 1.65;
+        margin-bottom: 20px;
+
+        @media #{$sm-layout} {
+            font-size: 18px;
+        }
+    }
+
+    .read-more-btn {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--color-accent);
     }
 }

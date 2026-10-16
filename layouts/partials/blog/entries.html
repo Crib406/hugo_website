@@ -1,0 +1,25 @@
+{{/* Liste von Beitraegen als Listen-Karten des Templates (.blog-classic-card),
+     neuester oben. Fuer die Blog-Uebersicht und die Seiten je Kategorie/Tag.
+     Aufruf: partial "blog/entries.html" .Pages */}}
+{{ range $i, $p := .ByDate.Reverse }}
+<div class="blog-classic-card">
+  {{ with .Resources.Get .Params.image }}
+  <div class="img-box">
+    <a href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      {{ partial "blog/picture.html" (dict "img" . "alt" "" "eager" (eq $i 0)) }}
+    </a>
+  </div>
+  {{ end }}
+  <div class="blog-classic-content">
+    {{ partial "blog/meta.html" . }}
+    <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Summary }}<p class="para">{{ . | plainify }}</p>{{ end }}
+    <a href="{{ .RelPermalink }}" class="read-more-btn">
+      Weiterlesen
+      <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
+    </a>
+  </div>
+</div>
+{{ else }}
+<p class="blog-lead text-center">Hier erscheinen bald die ersten Beiträge.</p>
+{{ end }}

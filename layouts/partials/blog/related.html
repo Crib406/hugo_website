@@ -1,0 +1,22 @@
+{{/* Kasten "Weitere Beitraege" in der Leiste (.recent-post-area aus dem
+     Template): bis zu fuenf, die neuesten zuerst, ohne den aktuellen.
+     Gibt es keinen weiteren Beitrag, entfaellt der Kasten. */}}
+{{ $others := where (where site.RegularPages "Section" "blog") "Permalink" "ne" .Permalink }}
+{{ with first 5 $others }}
+<div class="signle-side-bar recent-post-area">
+  <div class="header">
+    <h2 class="title">Weitere Beiträge</h2>
+  </div>
+  <div class="body">
+    {{ range . }}
+    <a href="{{ .RelPermalink }}" class="single-post">
+      <span class="single-post-left">
+        <i class="fa-solid fa-angle-right"></i>
+        <span class="post-title">{{ .Title }}</span>
+      </span>
+      <span class="post-num">{{ .Date.Format "02.01.2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

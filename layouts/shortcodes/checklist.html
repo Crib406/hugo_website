@@ -1,0 +1,15 @@
+{{/* Haken-Liste, gedacht fuer "Kurz gesagt" am Ende eines Beitrags.
+     Jede Zeile ist ein Punkt, Markdown in der Zeile wird ausgewertet.
+     Markup der Template-Komponente .check-box-wrap; die Schriftgroesse
+     regelt _modern-refresh.scss (Lesetext). */}}
+<div class="check-box-wrap">
+  <ul>
+    {{- range split (trim .Inner "\n") "\n" }}
+      {{- with trim . " " }}
+    <li>
+      <p class="check-box-item"><span><i class="fa-solid fa-check"></i></span>{{ . | markdownify }}</p>
+    </li>
+      {{- end }}
+    {{- end }}
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+{{/* Kopfzeile eines Beitrags: Kategorie, Datum, Lesezeit. Markup der
+     Template-Komponente .blog-classic-tag, fuer Beitrag und Uebersicht gleich.
+     Die Kategorie fuehrt auf die Seite mit allen Beitraegen dieser Kategorie.
+     Das Datum steht numerisch: .Date.Format kennt die Sprache der Seite
+     nicht und schriebe englische Monatsnamen. */}}
+<div class="blog-classic-tag">
+  <ul>
+    {{ range .GetTerms "kategorien" }}
+    <li><div class="tag-wrap"><i class="fa-solid fa-tag"></i><a class="tag-title" href="{{ .RelPermalink }}">{{ .Title }}</a></div></li>
+    {{ end }}
+    <li><div class="tag-wrap"><i class="fa-solid fa-calendar-day"></i><time class="tag-title" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time></div></li>
+    <li><div class="tag-wrap"><i class="fa-regular fa-clock"></i><span class="tag-title">{{ .ReadingTime }} min</span></div></li>
+  </ul>
+</div>

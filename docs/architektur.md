@@ -14,6 +14,9 @@ Wie eine Änderung von der Quelldatei auf die Live-Seite kommt.
 | `docs/` | Diese Doku. Wird **nicht** gebaut. |
 | `public/` | Bauergebnis. Nicht eingecheckt. |
 
+Ausnahme: Ein Blogbeitrag ist ein Ordner, seine Bilder liegen darin und
+laufen durch die Bildverarbeitung. Siehe `blog.md`.
+
 Der Unterschied zwischen `assets/` und `static/` ist der wichtigste:
 Alles unter `static/` landet unverändert auf dem Server. Alles unter `assets/`
 geht durch Hugos Pipeline und wird dabei verarbeitet.

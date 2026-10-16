@@ -1,0 +1,39 @@
+{{/* Zwei Kaesten der Leiste: alle Kategorien mit Zahl der Beitraege
+     (Markup von .recent-post-area) und alle Tags als Chips (.tags-wrapper).
+     Jeder Eintrag fuehrt auf die Seite, die nur diese Beitraege zeigt. */}}
+{{ $page := . }}
+{{ with site.Taxonomies.kategorien }}
+<div class="signle-side-bar recent-post-area">
+  <div class="header">
+    <h2 class="title">Kategorien</h2>
+  </div>
+  <div class="body">
+    {{ range .Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}" class="single-post">
+      <span class="single-post-left">
+        <i class="fa-solid fa-angle-right"></i>
+        <span class="post-title">{{ .Page.Title }}</span>
+      </span>
+      <span class="post-num">{{ .Count }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ with site.Taxonomies.tags }}
+<div class="signle-side-bar">
+  <div class="header">
+    <h2 class="title">Tags</h2>
+  </div>
+  <div class="body">
+    <div class="tags-wrapper">
+      {{ $own := $page.GetTerms "tags" }}
+      {{ range .Alphabetical }}
+        {{ $on := in $own .Page }}
+      <a class="tag-link{{ if $on }} is-active{{ end }}" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

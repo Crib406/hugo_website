@@ -1,63 +1,21 @@
 {{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
+{{/* Blog-Uebersicht: Filter nach Kategorie, darunter die Beitraege als
+     Listen-Karten. Dieselbe Seite, nur gefiltert, ist _default/term.html. */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
 
-  <div class="blog-classic-area-wrapper tmp-section-gap">
-    <div class="container">
-      <div class="row">
-        {{ $index := 0 }}
-        {{ range .Pages }}
-          {{ $index = add $index 1 }}
-          {{ $animIndex := add (mod (sub $index 1) 3) 1 }} {{/* ergibt 1,2,3,1,2,3,... */}}
+        <header class="blog-list-head">
+          <h1 class="title blog-page-title">{{ .Title }}</h1>
+          {{ with .Description }}<p class="blog-lead">{{ . }}</p>{{ end }}
+          {{ partial "blog/filter.html" . }}
+        </header>
 
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-{{ $animIndex }}">
-              <div class="img-box">
-                <a href="{{ .RelPermalink }}">
-                  {{ $alt := .Title }}
-                  {{ with .Params.image }}
-                    <img class="w-100" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $alt }}" width="1000" height="600" loading="lazy" decoding="async">
-                  {{ end }}
-                </a>
-                <ul class="blog-tags">
-                  {{ with .Params.category }}
-                    <li>
-                      <span class="tag-icon">
-                        <i class="fa-solid fa-tag"></i>
-                      </span>
-                      {{ . }}
-                    </li>
-                  {{ end }}
-                  <li>
-                    <span class="tag-icon">
-                      <i class="fa-solid fa-calendar-days"></i>
-                    </span>
-                    {{ .Date.Format "02. Jan 2006" }}
-                  </li>
-                </ul>
-              </div>
+        {{ partial "blog/entries.html" .Pages }}
 
-              <div class="blog-content-wrap">
-                <h3 class="blog-title">
-                  <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h3>
-
-                {{ if .Summary }}
-                  <p class="para">{{ .Summary | plainify | truncate 150 }}</p>
-                {{ end }}
-
-                <div class="more-btn tmp-link-animation">
-                  <a href="{{ .RelPermalink }}" class="read-more-btn">
-                    Mehr lesen
-                    <span class="read-more-icon">
-                      <i class="fa-solid fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        {{ end }}
       </div>
     </div>
   </div>
+</div>
 {{ end }}

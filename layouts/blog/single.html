@@ -1,286 +1,52 @@
 {{ define "main" }}
-
-<style>
-  /* Bereich bleibt mittig */
-  .blog-details-left-area {
-    text-align: center;
-  }
-
-  .blog-details-discription .disc {
-    display: inline-block;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    hyphens: auto !important;
-    max-width: 760px;
-    line-height: 1.7 !important;
-    font-size: 1.9rem !important;
-  }
-
-  .blog-details-discription .disc p,
-  .blog-details-discription .disc li,
-  .blog-details-discription .disc span {
-    font-weight: 700 !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    hyphens: auto !important;
-    font-size: 1.9rem !important;
-    line-height: 1.7 !important;
-  }
-
-  .blog-details-discription .disc h1,
-  .blog-details-discription .disc h2,
-  .blog-details-discription .disc h3,
-  .blog-details-discription .disc h4,
-  .blog-details-discription .disc h5,
-  .blog-details-discription .disc h6 {
-    font-weight: inherit !important;
-    text-align: left !important;
-  }
-
-  .blog-details-discription .disc p {
-    margin-bottom: 1.4em;
-  }
-
-  .blog-details-discription .disc li {
-    margin-bottom: 0.7em;
-  }
-
-  .blog-details-discription .disc .check-box {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: 992px) {
-    .blog-details-discription .disc .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .blog-details-discription .disc .check-box li {
-    margin: 0 0 0.7em 0;
-  }
-
-  .blog-details-discription .disc .check-box-item,
-  .blog-details-discription .disc .check-box .box-para,
-  .blog-details-discription .disc .check-box .box-icon {
-    font-size: inherit !important;
-    line-height: inherit !important;
-    font-weight: inherit !important;
-    font-family: inherit !important;
-    color: inherit !important;
-  }
-
-  .blog-details-discription .disc .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .blog-details-discription .disc .check-box .box-icon {
-    flex: 0 0 auto;
-    line-height: 1;
-    margin-top: 0.2em;
-  }
-
-  .check-box {
-    border-top: 2px solid rgba(157, 157, 255, 0.05);
-    padding-top: 43px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: 992px) {
-    .check-box {
-      padding-bottom: 40px;
-    }
-  }
-
-  .check-box li {
-    list-style: none;
-    margin: 0 0 0.7em 0;
-  }
-
-  .check-box .check-box-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .check-box .box-para {
-    font: inherit;
-    color: inherit;
-  }
-
-  .blog-details-discription .disc .check-box .box-icon,
-  .blog-details-discription .disc .check-box .box-icon i {
-    color: var(--color-primary) !important;
-  }
-
-  .check-box-item .box-para strong {
-    font-weight: 800 !important;
-    font-size: 1.12em;
-    color: var(--color-heading) !important;
-  }
-
-  .blog-details-discription .disc strong {
-    font-size: 1.12em;
-    font-weight: 800 !important;
-    color: var(--color-heading) !important;
-  }
-</style>
-
-{{ partial "breadcrumb.html" . }}
-
-<div class="blog-classic-area-wrapper tmp-section-gap">
+{{/* Beitragsseite, gebaut aus den Bausteinen des Templates:
+       Inhalt      .blog-details-left-area mit .thumbnail-top, .disc,
+                   .quote-area-blog-details (wie "Mein Weg")
+       Kopfzeile   .blog-classic-tag
+       Leiste      .tmp-sidebar mit .signle-side-bar-Kaesten
+       Kontakt     .service-card-v1
+     Der letzte Kasten der Leiste (Inhalt) laeuft laut Template mit
+     (_blog.scss: .signle-side-bar:last-child, sticky).
+     Eigene Regeln nur, wo das Template von der Schriftskala abweicht:
+     _modern-refresh.scss, Abschnitt "Blog". Aufbau: docs/blog.md */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
-        <div class="blog-details-left-area">
 
-          {{/* Bild: featured_image ODER image */}}
-          {{ $img := or .Params.featured_image .Params.image }}
-          {{ with $img }}
+      <div class="col-lg-8">
+        <article class="blog-details-left-area">
+
+          {{ partial "blog/meta.html" . }}
+          <h1 class="title blog-page-title">{{ .Title }}</h1>
+          {{ with .Description }}<p class="blog-lead">{{ . }}</p>{{ end }}
+
+          {{ with .Resources.Get .Params.image }}
           <div class="thumbnail-top">
-            <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}" width="1000" height="600" fetchpriority="high" decoding="async">
+            {{ partial "blog/picture.html" (dict "img" . "alt" ($.Params.image_alt | default "") "eager" true) }}
           </div>
           {{ end }}
 
           <div class="blog-details-discription">
-            <div class="blog-classic-tag">
-              <h4 class="title">Von {{ .Params.author }}</h4>
-              <ul>
-                <li>
-                  <div class="tag-wrap">
-                    <i class="fa-solid fa-tag"></i>
-                    <h4 class="tag-title">{{ .Params.category }}</h4>
-                  </div>
-                </li>
-                <li>
-                  <div class="tag-wrap">
-                    <i class="fa-solid fa-calendar-day"></i>
-                    <h4 class="tag-title">
-                      {{ .Date.Format "02.01.2006" }}
-                      {{ if .Params.reading_time }}
-                        • <i class="fa-regular fa-clock"></i> {{ .Params.reading_time }} min
-                      {{ end }}
-                    </h4>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
             <div class="disc">
               {{ .Content }}
             </div>
-
           </div>
 
-        </div>
+          {{ partial "blog/contact.html" . }}
 
-         <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="mailto:hello@creimann.cc" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h4 class="service-title">Per Mail</h4>
-          </div>
-        </a>
+        </article>
       </div>
-
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener" class="service-card-link">
-          <div class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-            <div class="service-card-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <h4 class="service-title">Auf LinkedIn</h4>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-      </div>
-
-      
 
       <div class="col-lg-4">
-        <div class="tmp-sidebar">
-
-          <!-- Autorenbox -->
-          <div class="signle-side-bar tmponhover">
-            <div class="header">
-              <h3 class="title">Über mich</h3>
-            </div>
-            <div class="body">
-              <div class="about-me-details">
-                <div class="about-me-details-head">
-                  <div class="about-me-img">
-                    <img src="{{ "assets/images/blog/cr_autor.webp" | relURL }}" alt="{{ .Params.author | default "Christoph B. Reimann" }}" width="771" height="1028" loading="lazy" decoding="async">
-                  </div>
-                  <div class="about-me-right-content">
-                    <h3 class="title">
-                      {{ with .Params.author }}
-                        {{ . }}
-                      {{ else }}
-                        Christoph B. Reimann
-                      {{ end }}
-                    </h3>
-                    {{ with .Params.author_role }}
-                      <p class="para">{{ . }}</p>
-                    {{ end }}
-
-                    <div class="social-link">
-                      <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-
-                <p class="about-me-para">
-                  {{ with .Params.author_bio }}
-                    {{ . }}
-                  {{ else }}
-                    Ich schreibe über Menschlichkeit, Werte und mutige Entscheidungen im Alltag mit dem Ziel, das Zugehörigkeitsgefühl zu steigern. 
-                  {{ end }}
-                </p>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Tags ohne Links -->
-          <div class="signle-side-bar tmponhover">
-            <div class="header">
-              <h3 class="title">Tags</h3>
-            </div>
-            <div class="body">
-              <div class="tags-wrapper">
-                {{ with .Params.tags }}
-                  {{ range . }}
-                    <span class="tag-link">{{ . }}</span>
-                  {{ end }}
-                {{ end }}
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <aside class="tmp-sidebar">
+          {{ partialCached "blog/author.html" . }}
+          {{ partial "blog/taxonomies.html" . }}
+          {{ partial "blog/related.html" . }}
+          {{ partial "blog/toc.html" . }}
+        </aside>
       </div>
 
     </div>
   </div>
 </div>
-
-
 {{ end }}

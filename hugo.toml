@@ -2,11 +2,36 @@ baseURL = "https://creimann.cc/"
 languageCode = "de-de"
 title = "Christoph B. Reimann"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
 
 [outputs]
 home = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
+# Kategorien und Tags gibt es nur im Blog. Sie liegen deshalb unter /blog/
+# und haben deutsche Namen statt der Hugo-Vorgaben "categories"/"tags".
+# Frontmatter eines Beitrags:  kategorien: ["..."]  und  tags: ["..."]
+[taxonomies]
+kategorie = "kategorien"
+tag = "tags"
+
+[permalinks.taxonomy]
+kategorien = "/blog/kategorien/"
+tags = "/blog/tags/"
+
+[permalinks.term]
+kategorien = "/blog/kategorien/:slug/"
+tags = "/blog/tags/:slug/"
+
+# Solange der Blog nicht verlinkt ist, gehoeren auch seine Kategorie- und
+# Tag-Seiten nicht in die Sitemap. Wie in content/blog/_index.md: entfernen,
+# sobald der Blog freigeschaltet ist.
+[[cascade]]
+  [cascade.params]
+    sitemap_exclude = true
+  [cascade.target]
+    kind = "{taxonomy,term}"
 
 [params.siteseo]
 title = "Christoph B. Reimann – Mensch, Betriebswirt & Generalist aus Bad Harzburg (Harz)"
@@ -15,3 +40,8 @@ personDescription = "Betriebswirt und Generalist für Unternehmenskultur, Strukt
 
 [markup.goldmark.renderer]
 unsafe = true
+
+# Ein Bild, das allein in einer Zeile steht, nicht in ein <p> packen - der
+# Render-Hook des Blogs gibt ein <figure> aus, und das darf in kein <p>.
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
