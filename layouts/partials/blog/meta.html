@@ -1,0 +1,10 @@
+{{/* Kategorie · Datum · Lesezeit. Für Beitragsseite, Übersicht und
+     "Weiterlesen" gleich, damit die Zeile überall dieselbe ist.
+     Das Datum steht numerisch: .Date.Format kennt die Sprache der Seite
+     nicht und schriebe englische Monatsnamen. */}}
+<p class="blog-meta">
+  {{- with .Params.category }}<span>{{ . }}</span>{{ end -}}
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>
+  {{- /* ReadingTime rechnet mit 213 Wörtern pro Minute */ -}}
+  <span>{{ .ReadingTime }} min</span>
+</p>

@@ -1,0 +1,38 @@
+{{/* Ein Bild aus dem Ordner eines Beitrags, als WebP in passenden Breiten.
+
+     Aufruf:
+       partial "blog/picture.html" (dict
+         "img"    $resource              Pflicht
+         "alt"    "Alternativtext"
+         "widths" (slice 740 1480)       optional, Standard: Textspalte 1x/2x
+         "sizes"  "(min-width: 800px) 740px, 100vw"   optional
+         "eager"  true                   optional, nur für das Titelbild)
+
+     Nie größer als das Original: zu breite Stufen fallen weg. Breite und
+     Höhe stehen im HTML, damit beim Laden nichts springt. */}}
+{{- $img := .img -}}
+{{- $widths := .widths | default (slice 740 1480) -}}
+{{- $sizes := .sizes | default "(min-width: 800px) 740px, 100vw" -}}
+
+{{- $set := slice -}}
+{{- range $widths -}}
+  {{- if le . $img.Width -}}
+    {{- $set = $set | append ($img.Resize (printf "%dx webp q80" .)) -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $set -}}
+  {{- $set = slice ($img.Resize (printf "%dx webp q80" $img.Width)) -}}
+{{- end -}}
+
+{{- $srcset := slice -}}
+{{- range $set -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" .RelPermalink .Width) -}}
+{{- end -}}
+{{- $fallback := index $set 0 -}}
+<img src="{{ $fallback.RelPermalink }}"
+     srcset="{{ delimit $srcset ", " }}"
+     sizes="{{ $sizes }}"
+     width="{{ $fallback.Width }}" height="{{ $fallback.Height }}"
+     alt="{{ .alt }}"
+     {{- if .eager }} fetchpriority="high"{{ else }} loading="lazy"{{ end }}
+     decoding="async">

@@ -1,0 +1,23 @@
+{{/* Inhaltsverzeichnis. Ab 1200px als mitlaufende Leiste rechts neben dem
+     Text, darunter eingeklappt unter dem Titelbild. Beides ist dasselbe
+     HTML, die Position regelt das Raster in _modern-refresh.scss.
+
+     Erst ab drei Zwischenüberschriften: mit weniger ist ein
+     Inhaltsverzeichnis länger als nötig.
+
+     Das <details> ist im HTML zu. Auf breiten Bildschirmen öffnet es
+     assets/js/blog-toc.js, ohne JS bleibt es dort per CSS sichtbar. */}}
+{{ if ge (len .Fragments.HeadingsMap) 3 }}
+<aside class="blog-post__toc" aria-label="Inhalt">
+  <div class="blog-toc">
+    <details class="blog-toc__box">
+      <summary>Inhalt</summary>
+      <div class="blog-toc__body">
+        <p class="blog-toc__label" aria-hidden="true">Inhalt</p>
+        <div class="blog-toc__progress" aria-hidden="true"><span></span></div>
+        {{ .TableOfContents }}
+      </div>
+    </details>
+  </div>
+</aside>
+{{ end }}

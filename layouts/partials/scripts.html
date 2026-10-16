@@ -41,6 +41,7 @@
      (resources.Get "js/plugins/animation.js")
      (resources.Get "js/plugins/contact.form.js")
      (resources.Get "js/vendor/backtop.js")
+     (resources.Get "js/blog-toc.js")
      (resources.Get "js/main.js")
 }}
 {{ with $scripts | resources.Concat "assets/js/bundle.js" | minify | fingerprint "sha256" }}

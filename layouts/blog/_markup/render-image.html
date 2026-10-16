@@ -1,0 +1,16 @@
+{{/* Bilder im Beitragstext: ![Alternativtext](datei.jpg "Bildunterschrift")
+     Liegt die Datei im Ordner des Beitrags, läuft sie durch die
+     Bildverarbeitung. Sonst wird sie unverändert eingebunden.
+     Dass kein <p> drumherum entsteht, regelt hugo.toml
+     (wrapStandAloneImageWithinParagraph). */}}
+{{- $img := .Page.Resources.Get .Destination -}}
+<figure class="blog-figure">
+  {{- with $img }}
+    {{- partial "blog/picture.html" (dict "img" . "alt" $.Text) }}
+  {{- else }}
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async">
+  {{- end }}
+  {{- with .Title }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

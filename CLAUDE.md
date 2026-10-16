@@ -11,6 +11,7 @@ gebaut** und ist nur für Menschen und Werkzeuge gedacht.
 | Aufbau, SCSS-Pipeline, Deployment | `docs/architektur.md` |
 | Farben, Schriften, Größen, Lesebreite | `docs/design-system.md` |
 | Fallstricke des Templates | `docs/template-fallen.md` |
+| Blog: Beiträge schreiben, Aufbau, Leiste | `docs/blog.md` |
 
 ## Lokal bauen
 
@@ -86,7 +87,8 @@ archetypes/  assets/  content/  layouts/  static/  tools/
 ```
 
 `assets/` enthält SCSS, CSS und JS — alles, was Hugo verarbeitet. In `static/`
-liegen nur noch Bilder und Schriften. `tools/` sind Hilfsskripte samt ihrer
+liegen nur noch Bilder und Schriften. Ausnahme: Bilder eines Blogbeitrags liegen in
+seinem Ordner unter `content/blog/`, damit Hugo sie verkleinern kann. `tools/` sind Hilfsskripte samt ihrer
 Quelldateien und wird nicht gebaut.
 
 Das Template ist direkt ins Projekt kopiert, nicht als Hugo-Modul oder unter

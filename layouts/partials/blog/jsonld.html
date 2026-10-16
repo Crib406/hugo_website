@@ -1,0 +1,50 @@
+{{/* Strukturierte Daten für den Blog, vollständig aus Frontmatter und
+     Seitendaten erzeugt. Nichts davon wird im Beitrag von Hand gepflegt:
+     früher stand das JSON-LD in jedem Beitrag einzeln und lief beim
+     Kopieren auseinander (falsche Überschrift, falsche URL).
+
+     Beitrag:   BlogPosting + BreadcrumbList
+     Übersicht: Blog */}}
+{{ $author := dict "@type" "Person" "name" "Christoph B. Reimann" "url" site.Home.Permalink }}
+{{ $blog := site.GetPage "/blog" }}
+{{ $graph := slice }}
+
+{{ if .IsPage }}
+  {{ $post := dict
+      "@type" "BlogPosting"
+      "headline" .Title
+      "description" .Description
+      "url" .Permalink
+      "mainEntityOfPage" .Permalink
+      "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+      "inLanguage" "de-DE"
+      "author" $author
+      "publisher" $author
+      "isPartOf" (dict "@type" "Blog" "name" $blog.Title "url" $blog.Permalink)
+  }}
+  {{ with .Params.category }}{{ $post = merge $post (dict "articleSection" .) }}{{ end }}
+  {{ with .Resources.Get .Params.image }}
+    {{ $post = merge $post (dict "image" (.Fill "1200x630 Center jpg q80").Permalink) }}
+  {{ end }}
+  {{ $crumbs := dict
+      "@type" "BreadcrumbList"
+      "itemListElement" (slice
+        (dict "@type" "ListItem" "position" 1 "name" "Start" "item" site.Home.Permalink)
+        (dict "@type" "ListItem" "position" 2 "name" $blog.Title "item" $blog.Permalink)
+        (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink))
+  }}
+  {{ $graph = slice $post $crumbs }}
+{{ else }}
+  {{ $graph = slice (dict
+      "@type" "Blog"
+      "name" (printf "%s von Christoph B. Reimann" .Title)
+      "description" .Description
+      "url" .Permalink
+      "inLanguage" "de-DE"
+      "author" $author) }}
+{{ end }}
+
+<script type="application/ld+json">
+{{- dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS -}}
+</script>

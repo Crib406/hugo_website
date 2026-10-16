@@ -59,11 +59,30 @@
   <link rel="canonical" href="{{ .Permalink }}">
 
   {{/* Social-Preview: 1200x630, wie von Facebook/LinkedIn/WhatsApp erwartet */}}
-  {{ $ogImage := "assets/images/about/og-card.jpg" | absURL }}
+  {{ $portrait := "assets/images/about/og-card.jpg" | absURL }}
+  {{ $ogImage := $portrait }}
+  {{ $ogAlt := "Portrait von Christoph B. Reimann aus Bad Harzburg" }}
+
+  {{/* Blogbeitraege teilen sich mit ihrem eigenen Titelbild, auf dasselbe
+       Format zugeschnitten wie die Portrait-Karte. Die Masse bleiben damit
+       auch hier richtig. */}}
+  {{ $isPost := and (eq .Section "blog") .IsPage }}
+  {{ if $isPost }}
+    {{ with .Resources.Get .Params.image }}
+      {{ $ogImage = (.Fill "1200x630 Center jpg q80").Permalink }}
+      {{ $ogAlt = $.Params.image_alt | default $.Title }}
+    {{ end }}
+  {{ end }}
 
   <!-- Open Graph -->
   <meta property="og:locale" content="de_DE">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ if $isPost }}article{{ else }}website{{ end }}">
+  {{ if $isPost }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:author" content="Christoph B. Reimann">
+    {{ with .Params.category }}<meta property="article:section" content="{{ . }}">{{ end }}
+  {{ end }}
   <meta property="og:title" content="{{ $title }}">
   {{ if $desc }}
     <meta property="og:description" content="{{ $desc }}">
@@ -74,7 +93,7 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
+  <meta property="og:image:alt" content="{{ $ogAlt }}">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -83,7 +102,7 @@
     <meta name="twitter:description" content="{{ $desc }}">
   {{ end }}
   <meta name="twitter:image" content="{{ $ogImage }}">
-  <meta name="twitter:image:alt" content="Portrait von Christoph B. Reimann aus Bad Harzburg">
+  <meta name="twitter:image:alt" content="{{ $ogAlt }}">
 
   {{/* Beide Zaehlskripte liegen auf fremden Servern. Ohne async haelt so ein
        Skript den Seitenaufbau an, bis DNS, Verbindung und Antwort durch sind —
@@ -111,7 +130,7 @@
     ],
     "jobTitle": "Mensch · Betriebswirt · Generalist",
     "url": "{{ .Site.BaseURL }}",
-    "image": "{{ $ogImage }}",
+    "image": "{{ $portrait }}",
     "description": {{ printf "%q" .Site.Params.siteseo.personDescription }},
     "address": {
     "@type": "PostalAddress",
@@ -203,6 +222,11 @@
     ]
     }
   </script>
+
+{{/* Der Blog erzeugt sein JSON-LD selbst, siehe partials/blog/jsonld.html */}}
+{{ if eq .Section "blog" }}
+  {{ partial "blog/jsonld.html" . }}
+{{ end }}
 
 {{ with .Params.jsonld }}
   {{/* Frontmatter-Keys sind von Hugo kleingeschrieben – Schema.org-Schreibweise wiederherstellen */}}

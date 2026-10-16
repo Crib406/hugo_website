@@ -15,3 +15,8 @@ personDescription = "Betriebswirt und Generalist für Unternehmenskultur, Strukt
 
 [markup.goldmark.renderer]
 unsafe = true
+
+# Ein Bild, das allein in einer Zeile steht, nicht in ein <p> packen - der
+# Render-Hook des Blogs gibt ein <figure> aus, und das darf in kein <p>.
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
