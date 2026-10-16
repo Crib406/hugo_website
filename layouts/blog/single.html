@@ -40,6 +40,7 @@
       <div class="col-lg-4">
         <aside class="tmp-sidebar">
           {{ partialCached "blog/author.html" . }}
+          {{ partial "blog/taxonomies.html" . }}
           {{ partial "blog/related.html" . }}
           {{ partial "blog/toc.html" . }}
         </aside>

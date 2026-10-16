@@ -1,7 +1,6 @@
 {{ define "main" }}
-{{/* Blog-Uebersicht mit der Listen-Karte des Templates (.blog-classic-card):
-     ein Beitrag pro Zeile, neuester oben. Ein Raster mit drei Spalten bliebe
-     mit ein, zwei Beitraegen zu zwei Dritteln leer. */}}
+{{/* Blog-Uebersicht: Filter nach Kategorie, darunter die Beitraege als
+     Listen-Karten. Dieselbe Seite, nur gefiltert, ist _default/term.html. */}}
 <div class="blog-classic-area-wrapper tmp-section-gap blog-page">
   <div class="container">
     <div class="row justify-content-center">
@@ -10,30 +9,10 @@
         <header class="blog-list-head">
           <h1 class="title blog-page-title">{{ .Title }}</h1>
           {{ with .Description }}<p class="blog-lead">{{ . }}</p>{{ end }}
+          {{ partial "blog/filter.html" . }}
         </header>
 
-        {{ range $i, $p := .Pages.ByDate.Reverse }}
-        <div class="blog-classic-card">
-          {{ with .Resources.Get .Params.image }}
-          <div class="img-box">
-            <a href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
-              {{ partial "blog/picture.html" (dict "img" . "alt" "" "eager" (eq $i 0)) }}
-            </a>
-          </div>
-          {{ end }}
-          <div class="blog-classic-content">
-            {{ partial "blog/meta.html" . }}
-            <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            {{ with .Summary }}<p class="para">{{ . | plainify }}</p>{{ end }}
-            <a href="{{ .RelPermalink }}" class="read-more-btn">
-              Weiterlesen
-              <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
-            </a>
-          </div>
-        </div>
-        {{ else }}
-        <p class="blog-lead text-center">Hier erscheinen bald die ersten Beiträge.</p>
-        {{ end }}
+        {{ partial "blog/entries.html" .Pages }}
 
       </div>
     </div>

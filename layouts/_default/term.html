@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{/* Alle Beitraege einer Kategorie oder eines Tags, z. B.
+     /blog/kategorien/haltung/ oder /blog/tags/mut/. Taxonomien gibt es nur
+     im Blog (hugo.toml), deshalb sieht die Seite aus wie die Blog-Uebersicht. */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <header class="blog-list-head">
+          <p class="blog-lead">{{ if eq .Data.Plural "tags" }}Tag{{ else }}Kategorie{{ end }}</p>
+          <h1 class="title blog-page-title">{{ .Title }}</h1>
+          {{ partial "blog/filter.html" . }}
+        </header>
+
+        {{ partial "blog/entries.html" .Pages }}
+
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

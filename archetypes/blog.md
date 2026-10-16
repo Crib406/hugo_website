@@ -6,7 +6,8 @@ date: {{ .Date }}
 draft: true
 description: ""
 summary: ""
-category: ""
+kategorien: []
+tags: []
 image: "titel.jpg"
 image_alt: ""
 ---

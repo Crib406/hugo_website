@@ -1,0 +1,15 @@
+{{/* Filter ueber der Beitragsliste: "Alle" und je Kategorie ein Chip
+     (.tags-wrapper / .tag-link aus dem Template). Gefiltert wird ohne JS:
+     jeder Chip fuehrt auf die Seite seiner Kategorie, die Hugo baut.
+     Aufruf mit der aktuellen Seite; deren Chip ist markiert. */}}
+{{ $current := . }}
+{{ with site.Taxonomies.kategorien }}
+<nav class="blog-filter tags-wrapper" aria-label="Nach Kategorie filtern">
+  {{ $all := site.GetPage "/blog" }}
+  <a class="tag-link{{ if eq $current.Permalink $all.Permalink }} is-active{{ end }}" href="{{ $all.RelPermalink }}"{{ if eq $current.Permalink $all.Permalink }} aria-current="page"{{ end }}>Alle</a>
+  {{ range .ByCount }}
+    {{ $on := eq $current.Permalink .Page.Permalink }}
+  <a class="tag-link{{ if $on }} is-active{{ end }}" href="{{ .Page.RelPermalink }}"{{ if $on }} aria-current="page"{{ end }}>{{ .Page.Title }}</a>
+  {{ end }}
+</nav>
+{{ end }}

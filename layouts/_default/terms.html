@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{/* Uebersicht aller Kategorien bzw. aller Tags (/blog/kategorien/,
+     /blog/tags/) mit der Zahl ihrer Beitraege.
+
+     Der Dateiname ist terms.html, nicht taxonomy.html: unter _default/ gilt
+     noch Hugos alte Benennung, und dort ist taxonomy.html die Vorlage fuer
+     EINE Kategorie. Mit diesem Namen hier zeigte jede Kategorieseite die
+     Liste aller Kategorien statt ihrer Beitraege. */}}
+<div class="blog-classic-area-wrapper tmp-section-gap blog-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <header class="blog-list-head">
+          <h1 class="title blog-page-title">{{ if eq .Data.Plural "tags" }}Tags{{ else }}Kategorien{{ end }}</h1>
+        </header>
+        <div class="signle-side-bar recent-post-area">
+          <div class="body">
+            {{ range .Data.Terms.Alphabetical }}
+            <a href="{{ .Page.RelPermalink }}" class="single-post">
+              <span class="single-post-left">
+                <i class="fa-solid fa-angle-right"></i>
+                <span class="post-title">{{ .Page.Title }}</span>
+              </span>
+              <span class="post-num">{{ .Count }}</span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

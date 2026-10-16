@@ -31,7 +31,8 @@ content/blog/mein-thema/
 | `draft` | ja | `true` = nur in Vorschauen sichtbar |
 | `description` | ja | Einleitung unter dem Titel, Meta-Description, Vorschau beim Teilen |
 | `summary` | nein | Text in der Übersicht. Fehlt er, nimmt Hugo den Textanfang. |
-| `category` | nein | Eine Kategorie, steht in der Meta-Zeile |
+| `kategorien` | nein | Liste, meist ein Eintrag: `["Haltung"]`. Steht in der Kopfzeile, filtert die Übersicht |
+| `tags` | nein | Liste: `["Werte", "Mut"]`. Stehen in der Leiste |
 | `image` | nein | Dateiname des Titelbilds im Ordner |
 | `image_alt` | nein | Alternativtext des Titelbilds |
 
@@ -87,7 +88,8 @@ damit aus wie „Mein Weg“, die Leiste wie die Blog-Seiten des Templates.
 | Zitat | `.quote-area-blog-details` |
 | Haken-Liste | `.check-box-wrap` |
 | Kontakt am Ende | `.service-card-v1` |
-| Leiste | `.tmp-sidebar` mit `.signle-side-bar`: „Über mich“ (`.about-me-details`), „Weitere Beiträge“ (`.recent-post-area`), „Inhalt“ |
+| Leiste | `.tmp-sidebar` mit `.signle-side-bar`: „Über mich“ (`.about-me-details`), „Kategorien“ (`.recent-post-area`), „Tags“ (`.tags-wrapper`), „Weitere Beiträge“, „Inhalt“ |
+| Filter über der Übersicht | `.tags-wrapper` mit `.tag-link` |
 | Übersicht | `.blog-classic-card` |
 
 Damit Markdown dieses Markup ergibt, gibt es drei Render-Hooks unter
@@ -105,6 +107,9 @@ layouts/partials/blog/
   picture.html   Bild als WebP in passenden Breiten
   author.html    Kasten "Über mich" (partialCached)
   related.html   Kasten "Weitere Beiträge"
+  taxonomies.html  Kästen "Kategorien" und "Tags"
+  filter.html    Chips über der Übersicht
+  entries.html   Beitragsliste (Übersicht, Kategorie, Tag)
   toc.html       Kasten "Inhalt"
   contact.html   Kontakt-Kacheln
   jsonld.html    BlogPosting, BreadcrumbList, Blog
@@ -152,11 +157,37 @@ Das Autorenfoto liegt fertig verkleinert als
 doppelter Pixeldichte). Das Original `cr_autor.webp` daneben braucht „Über
 mich“.
 
+## Kategorien und Tags
+
+Beides sind Hugo-Taxonomien (`hugo.toml`, `[taxonomies]`). Hugo baut daraus
+ohne JS und ohne Pflege eigene Seiten:
+
+| Adresse | Inhalt | Vorlage |
+|---|---|---|
+| `/blog/kategorien/` | alle Kategorien mit Zahl der Beiträge | `_default/terms.html` |
+| `/blog/kategorien/haltung/` | alle Beiträge dieser Kategorie | `_default/term.html` |
+| `/blog/tags/`, `/blog/tags/mut/` | dasselbe für Tags | dieselben |
+
+Gefiltert wird über diese Seiten: die Chips über der Übersicht
+(`partials/blog/filter.html`), die Kategorie in der Kopfzeile und die Kästen
+„Kategorien“ und „Tags“ in der Leiste (`partials/blog/taxonomies.html`)
+verlinken darauf. Eine neue Kategorie entsteht, sobald ein Beitrag sie
+trägt.
+
+**Falle bei den Dateinamen:** Unter `layouts/_default/` gilt noch Hugos alte
+Benennung. Dort ist `taxonomy.html` die Vorlage für *eine* Kategorie, nicht
+für die Liste aller. Die Liste heißt deshalb `terms.html`. Mit
+`taxonomy.html` zeigte jede Kategorieseite die Liste aller Kategorien.
+
+Taxonomien gibt es nur im Blog. Die übrigen Seiten tragen weder
+`kategorien` noch `tags`.
+
 ## Freischalten
 
 Wenn die ersten echten Beiträge stehen:
 
 1. Den Blog-Eintrag in `layouts/partials/header.html` (zweimal) und
    `footer.html` wieder einkommentieren.
-2. In `content/blog/_index.md` beide `sitemap_exclude` entfernen.
+2. In `content/blog/_index.md` beide `sitemap_exclude` entfernen, ebenso den
+   `[[cascade]]`-Block in `hugo.toml` (Kategorie- und Tag-Seiten).
 3. Die beiden Testartikel löschen.

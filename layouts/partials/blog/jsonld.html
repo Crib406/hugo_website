@@ -23,7 +23,8 @@
       "publisher" $author
       "isPartOf" (dict "@type" "Blog" "name" $blog.Title "url" $blog.Permalink)
   }}
-  {{ with .Params.category }}{{ $post = merge $post (dict "articleSection" .) }}{{ end }}
+  {{ with .GetTerms "kategorien" }}{{ $post = merge $post (dict "articleSection" (index . 0).Title) }}{{ end }}
+  {{ with .Params.tags }}{{ $post = merge $post (dict "keywords" (delimit . ", ")) }}{{ end }}
   {{ with .Resources.Get .Params.image }}
     {{ $post = merge $post (dict "image" (.Fill "1200x630 Center jpg q80").Permalink) }}
   {{ end }}

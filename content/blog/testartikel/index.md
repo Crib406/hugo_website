@@ -4,7 +4,8 @@ date: 2026-10-16T10:00:00+02:00
 draft: true
 description: "Dieser Beitrag zeigt jedes Element einmal: Zwischenüberschriften, Listen, ein Zitat, ein Bild und die Zusammenfassung am Ende. An ihm wird die Darstellung geprüft, bevor echte Texte kommen."
 summary: "Jedes Element eines Beitrags an einer Stelle, damit die Darstellung geprüft werden kann, bevor echte Texte kommen."
-category: "Zugehörigkeit"
+kategorien: ["Zugehörigkeit"]
+tags: ["Werte", "Vertrauen", "Testen"]
 image: "titel.jpg"
 image_alt: "Platzhalter: Hügelkette im Abendlicht"
 ---

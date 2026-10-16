@@ -2,9 +2,10 @@
 title: "Zweiter Testartikel"
 date: 2026-10-02T10:00:00+02:00
 draft: true
-description: "Ein kurzer zweiter Beitrag. Er sorgt dafür, dass die Übersicht eine Zeile und die Beitragsseite den Block „Weiterlesen“ zeigt."
-summary: "Ältere Beiträge stehen in der Übersicht als Zeilen mit kleinem Bild. Dieser hier ist nur dafür da."
-category: "Haltung"
+description: "Ein kurzer zweiter Beitrag. Er sorgt dafür, dass die Übersicht mehr als einen Beitrag, die Leiste „Weitere Beiträge“ und der Filter zwei Kategorien zeigt."
+summary: "Ein zweiter Beitrag in einer anderen Kategorie, damit sich der Filter ausprobieren lässt."
+kategorien: ["Haltung"]
+tags: ["Werte", "Mut"]
 image: "titel.jpg"
 image_alt: "Platzhalter: Hügel im Gegenlicht"
 ---

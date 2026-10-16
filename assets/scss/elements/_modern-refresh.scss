@@ -940,6 +940,58 @@ $reading-width: 740px;
     }
 }
 
+// --- Kategorien und Tags ----------------------------------------------------
+// Chips aus dem Template (.tags-wrapper .tag-link): Leiste "Tags" und der
+// Filter ueber der Uebersicht. Das Template setzt einen festen Hintergrund
+// (#060606, aus der Zeit vor der Palette), 14px und im Hover helles Gruen
+// unter cremefarbener Schrift - kaum lesbar.
+.signle-side-bar .tags-wrapper .tag-link,
+.blog-filter.tags-wrapper .tag-link {
+    background: var(--color-surface-2);
+    color: var(--color-ink);
+    font-size: 17px;
+
+    &:hover,
+    &.is-active {
+        background: var(--color-accent);
+        color: var(--color-paper);
+    }
+
+    @media #{$sm-layout} {
+        font-size: 16px;
+    }
+}
+
+// Filter: Chips mittig unter dem Titel der Uebersicht. Das Template formt
+// .tag-link nur innerhalb von .signle-side-bar, ausserhalb der Leiste fehlen
+// Form und Abstaende - hier dieselben Werte wie in _blog.scss.
+.blog-filter.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    .tag-link {
+        display: block;
+        height: 40px;
+        padding: 0 21px;
+        border-radius: 100px;
+        line-height: 40px;
+        transition: 0.3s;
+    }
+}
+
+// Kategorie in der Kopfzeile ist ein Link
+.blog-classic-tag ul li .tag-wrap a.tag-title:hover {
+    color: var(--color-accent-strong);
+}
+
+// Zahl der Beitraege je Kategorie
+.signle-side-bar.recent-post-area .body .single-post .post-num {
+    font-variant-numeric: tabular-nums;
+}
+
 // --- Uebersicht -----------------------------------------------------------
 // Das Template gibt dem Bild eine Mindesthoehe von 462px; bei 16:9 in der
 // Spalte entstand darunter ein leerer Streifen.
