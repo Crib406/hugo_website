@@ -1,12 +1,11 @@
 ---
 title: "Über mich"
 layout: "about"
-description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Klar, verbindlich und menschlich. Verbindet Menschen, Abläufe und Technik für Zusammenarbeit auf Augenhöhe."
+description: "Über Christoph B. Reimann aus Bad Harzburg: Hintergrund, Haltung und Schwerpunkte eines Betriebswirts und Generalisten. Klar, verbindlich, menschlich."
+# Profilseite: macht die Person zum Hauptgegenstand dieser Seite.
+# Alles Weitere (Name, URL, Bezug zur Person) leitet layouts/partials/jsonld.html ab.
 jsonld:
-  "@context": "https://schema.org"
-  "@type": "WebPage"
-  name: "Über mich"
-  url: "/about/"
+  "@type": "ProfilePage"
   description: "Über mich Christoph Reimann aus Bad Harzburg. Hintergrund, Haltung, Schwerpunkte und Ziel von Christoph B. Reimann aus Bad Harzburg (Harz)."
 ---
 

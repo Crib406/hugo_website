@@ -9,9 +9,11 @@ enableGitInfo = true
 home = ["HTML"]
 
 [params.siteseo]
-title = "Christoph B. Reimann – Mensch, Betriebswirt & Generalist aus Bad Harzburg (Harz)"
-metaundogDescription = "Verbindet Menschen, Abläufe und Technik für Zusammenarbeit auf Augenhöhe. Führt ermutigend, schafft Vertrauen und bringt digitale Kompetenz sowie echte Praxiserfahrung zusammen."
-personDescription = "Betriebswirt und Generalist für Unternehmenskultur, Struktur und vertrauensvolle Zusammenarbeit. Verbindet Strategie, Führung und Praxis – mit Klarheit, Integrität und Menschlichkeit."
+# Google zeigt rund 60 Zeichen Titel und 155 Zeichen Beschreibung, der Rest
+# wird abgeschnitten. Die Beschreibung ist der Ersatz fuer Seiten ohne eigene.
+# Die Personenbeschreibung fuer die strukturierten Daten steht in data/person.yaml.
+title = "Christoph B. Reimann – Betriebswirt & Generalist, Bad Harzburg"
+metaundogDescription = "Christoph B. Reimann verbindet Menschen, Abläufe und Technik für Zusammenarbeit auf Augenhöhe – Betriebswirt und Generalist aus Bad Harzburg."
 
 [markup.goldmark.renderer]
 unsafe = true

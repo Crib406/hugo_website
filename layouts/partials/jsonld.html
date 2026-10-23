@@ -1,0 +1,90 @@
+{{/*
+  Strukturierte Daten als ein zusammenhaengender Graph:
+
+    WebSite  <Startseite>#website   die Website als Ganzes
+    Person   <Startseite>#person    Daten aus data/person.yaml
+    Seite    <Seiten-URL>           WebPage, ProfilePage, BlogPosting, …
+
+  Die Knoten verweisen per @id aufeinander. So weiss Google, dass jede Seite
+  zu derselben Website gehoert und von derselben Person handelt — statt auf
+  jeder Seite eine lose Person neben einer losen Seite zu finden.
+
+  Die Seite wird aus Titel, Beschreibung und Datum abgeleitet. Im Frontmatter
+  steht unter jsonld nur, was davon abweicht, meist nur der @type:
+
+    jsonld:
+      "@type": "ProfilePage"
+
+  @id, url und isPartOf werden danach erzwungen, damit der Graph nicht
+  versehentlich aus dem Frontmatter heraus zerbricht.
+
+  Die BreadcrumbList erzeugt breadcrumb.html selbst, sie steht nicht hier.
+
+  Aufruf:  {{ partial "jsonld.html" (dict "page" . "image" $ogImage) }}
+*/}}
+{{ $page := .page }}
+{{ $home := site.Home.Permalink }}
+{{ $personID := printf "%s#person" $home }}
+{{ $websiteID := printf "%s#website" $home }}
+{{ $personRef := dict "@id" $personID }}
+{{ $websiteRef := dict "@id" $websiteID }}
+{{ $dateFormat := "2006-01-02T15:04:05Z07:00" }}
+
+{{ $website := dict
+  "@type" "WebSite"
+  "@id" $websiteID
+  "url" $home
+  "name" site.Title
+  "inLanguage" "de-DE"
+  "publisher" $personRef
+}}
+
+{{ $person := merge site.Data.person (dict
+  "@type" "Person"
+  "@id" $personID
+  "url" $home
+  "image" .image
+) }}
+
+{{ $isPost := and (eq $page.Section "blog") (eq $page.Kind "page") }}
+{{ $node := dict
+  "@type" (cond $isPost "BlogPosting" "WebPage")
+  "name" (cond $page.IsHome site.Title $page.Title)
+  "inLanguage" "de-DE"
+}}
+{{ with $page.Description }}
+  {{ $node = merge $node (dict "description" .) }}
+{{ end }}
+{{ with $page.Lastmod }}
+  {{ $node = merge $node (dict "dateModified" (.Format $dateFormat)) }}
+{{ end }}
+{{ if $isPost }}
+  {{ $node = merge $node (dict "headline" $page.Title "author" $personRef "mainEntityOfPage" $page.Permalink) }}
+  {{ with $page.Date }}
+    {{ $node = merge $node (dict "datePublished" (.Format $dateFormat)) }}
+  {{ end }}
+  {{ with $page.Params.image }}
+    {{ $node = merge $node (dict "image" (. | absURL)) }}
+  {{ end }}
+{{ else }}
+  {{ $node = merge $node (dict "about" $personRef) }}
+{{ end }}
+
+{{ with $page.Params.jsonld }}
+  {{/* Frontmatter-Keys sind von Hugo kleingeschrieben – Schema.org-Schreibweise wiederherstellen */}}
+  {{ $node = merge $node (partial "jsonld-fixkeys.html" .) }}
+{{ end }}
+
+{{ if eq (index $node "@type") "ProfilePage" }}
+  {{ $node = merge $node (dict "mainEntity" $personRef) }}
+{{ end }}
+
+{{ $node = merge $node (dict
+  "@id" $page.Permalink
+  "url" $page.Permalink
+  "isPartOf" $websiteRef
+) }}
+
+<script type="application/ld+json">
+{{- dict "@context" "https://schema.org" "@graph" (slice $website $person $node) | jsonify | safeJS -}}
+</script>
