@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creimann.cc/preview/claude/seo-grundlagen/sitemap.xml
