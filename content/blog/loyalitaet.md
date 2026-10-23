@@ -26,20 +26,8 @@ type: "blog"
 layout: "single"
 
 jsonld:
-  "@context": "https://schema.org"
-  "@type": "BlogPosting"
-  mainEntityOfPage:
-    "@type": "WebPage"
-    "@id": "/blog/loyalitaet"
   headline: "Loyalität – Treue zu anderen, ohne sich selbst zu verlieren"
   description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt aus eigener Erfahrung über Loyalität: worin sie sich von blinder Gefolgschaft unterscheidet und wo ihre Grenzen liegen."
-  author:
-    "@type": "Person"
-    name: "Christoph B. Reimann"
-  datePublished: "2025-11-27T10:00:00+01:00"
-  dateModified: "2025-11-27T10:00:00+01:00"
-  url: "/blog/loyalitaet"
-  inLanguage: "de-DE"
   keywords:
     - "loyalitaet"
     - "Vertrauen"

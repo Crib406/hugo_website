@@ -1,13 +1,9 @@
 ---
 title: "Kontakt"
 layout: "kontakt"
-description: "Christoph B. Reimann. Kontaktdaten."
+description: "Kontakt zu Christoph B. Reimann aus Bad Harzburg – per E-Mail oder über LinkedIn."
 jsonld:
-  "@context": "https://schema.org"
-  "@type": "WebPage"
-  name: "Kontakt"
-  url: "/kontakt/"
-  description: "Über mich – Kontaktdaten."
+  "@type": "ContactPage"
 ---
 
 <br>

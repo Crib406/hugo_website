@@ -8,7 +8,7 @@ gebaut** und ist nur für Menschen und Werkzeuge gedacht.
 
 | Thema | Datei |
 |---|---|
-| Aufbau, SCSS-Pipeline, Deployment | `docs/architektur.md` |
+| Aufbau, SCSS-Pipeline, SEO/JSON-LD, Deployment | `docs/architektur.md` |
 | Farben, Schriften, Größen, Lesebreite | `docs/design-system.md` |
 | Fallstricke des Templates | `docs/template-fallen.md` |
 
@@ -82,8 +82,11 @@ beiden zu, statt eine dritte Größe zu erfinden.
 Standard-Hugo, keine Abweichungen:
 
 ```
-archetypes/  assets/  content/  layouts/  static/  tools/
+archetypes/  assets/  content/  data/  layouts/  static/  tools/
 ```
+
+`data/person.yaml` hält die Angaben zur Person für die strukturierten Daten
+(JSON-LD); Aufbau in `docs/architektur.md`, Abschnitt „Suchmaschinen“.
 
 `assets/` enthält SCSS, CSS und JS — alles, was Hugo verarbeitet. In `static/`
 liegen nur noch Bilder und Schriften. `tools/` sind Hilfsskripte samt ihrer

@@ -1,5 +1,11 @@
+{{- /*
+  Kein "Disallow: /preview/" mehr: Ein gesperrter Pfad wird nicht gelesen,
+  Google sieht dann auch das noindex der Vorschauseiten nicht und kann eine
+  verlinkte Vorschau-Adresse trotzdem in den Index aufnehmen (ohne Inhalt).
+  Die Vorschauen schuetzen sich selbst: noindex plus canonical auf die
+  Hauptseite, siehe layouts/partials/head.html.
+*/ -}}
 User-agent: *
-Disallow: /preview/
 Allow: /
 
-Sitemap: https://creimann.cc/sitemap.xml
+Sitemap: {{ "sitemap.xml" | absURL }}

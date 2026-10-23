@@ -6,8 +6,9 @@
   ausgeliefert wurde die eingebaute Vorlage.
 
   Wichtig ist das Favicon: ohne <link rel="icon"> fragt der Browser von sich
-  aus /favicon.ico an, das es nicht gibt — ein 404 und eine verschenkte
-  Anfrage auf genau der Adresse, die auf der Visitenkarte steht.
+  aus /favicon.ico an — eine verschenkte Anfrage auf genau der Adresse, die
+  auf der Visitenkarte steht. Die Links kommen aus demselben Partial wie auf
+  allen anderen Seiten.
 
   Die Weiterleitung laeuft ueber meta refresh UND location.replace. replace()
   ersetzt den Eintrag im Verlauf, sodass der Zurueck-Knopf nicht in der
@@ -18,7 +19,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Weiterleitung …</title>
-  <link rel="icon" type="image/png" href="{{ "assets/images/favicon/favicon-32x32.png" | absURL }}">
+  {{ partial "favicons.html" . }}
   <link rel="canonical" href="{{ .Permalink }}">
   <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="refresh" content="0; url={{ .Permalink }}">

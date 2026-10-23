@@ -8,6 +8,7 @@ Wie eine Änderung von der Quelldatei auf die Live-Seite kommt.
 |---|---|
 | `content/` | Texte und Seiten. **Wird gebaut.** |
 | `layouts/` | Templates, Partials, Shortcodes |
+| `data/` | Strukturierte Daten für Templates, z. B. `person.yaml` |
 | `assets/` | SCSS **sowie CSS und JS**. Wird von Hugo verarbeitet, landet nicht 1:1 im Ergebnis. |
 | `static/` | Bilder und Schriften. **Wird 1:1 kopiert.** |
 | `tools/` | Hilfsskripte und deren Quelldateien. Wird **nicht** gebaut. |
@@ -93,6 +94,47 @@ liegt bewusst **nicht** unter `static/`, damit Hugo ihn nicht mit ausliefert.
 **Die Reihenfolge der Imports ist bedeutsam.** `elements/modern-refresh` steht
 als letztes in `style.scss`, damit eigene Anpassungen die Template-Regeln
 überschreiben können.
+
+## Suchmaschinen: Kopfbereich und strukturierte Daten
+
+Alles, was Suchmaschinen und Link-Vorschauen lesen, entsteht in
+`layouts/partials/head.html`: Titel, Beschreibung, Canonical, Robots,
+Open Graph. Titel und Beschreibung kommen aus dem Frontmatter, sonst aus
+`[params.siteseo]` in `hugo.toml`. Google zeigt rund 60 Zeichen Titel und
+155 Zeichen Beschreibung.
+
+**Strukturierte Daten (JSON-LD)** baut `layouts/partials/jsonld.html` als einen
+Graphen mit drei Knoten, die per `@id` aufeinander verweisen:
+
+| Knoten | `@id` | Quelle |
+|---|---|---|
+| `WebSite` | `<Startseite>#website` | `hugo.toml` |
+| `Person` | `<Startseite>#person` | `data/person.yaml` |
+| die Seite | ihre URL | Titel, Beschreibung, Datum der Seite |
+
+Im Frontmatter steht unter `jsonld:` nur, was abweicht — meist der Typ
+(`ProfilePage` für Über mich, `ContactPage` für Kontakt). Blogbeiträge werden
+automatisch `BlogPosting` mit der Person als Autor. Die `BreadcrumbList`
+erzeugt `breadcrumb.html`.
+
+Die Daten nie als JSON-Text von Hand ins Template schreiben, sondern als
+`dict` bauen und mit `jsonify` ausgeben. Im `<script>` maskiert Hugo jeden
+`{{ }}`-Wert selbst; mit `printf "%q"` davor stand die Beschreibung schon
+einmal doppelt in Anführungszeichen im Graphen.
+
+Prüfen: <https://search.google.com/test/rich-results> und
+<https://validator.schema.org/>.
+
+## Favicons
+
+`tools/build-favicons.py` setzt das Monogramm „CBR“ in Fraunces und schreibt
+`static/favicon.ico` (16/32/48), ein SVG und PNGs in 96, 180 und 192 px. Google
+zeigt das Favicon in den Suchergebnissen nur ab 48 px. Eingebunden werden alle
+über `layouts/partials/favicons.html`, auch auf der Weiterleitungsseite.
+
+```bash
+python3 tools/build-favicons.py   # braucht: pip install fonttools brotli pillow
+```
 
 ## Warum Dart Sass zwingend ist
 
@@ -184,3 +226,8 @@ gegenseitig überschreiben.
 und Link zur Übersicht. Sie erkennt am `/preview/` in der `baseURL`, ob sie
 erscheinen soll — dadurch braucht es keine Konfiguration und keine
 Umgebungsvariable, und auf der Hauptseite bleibt sie automatisch aus.
+
+Am selben Merkmal setzt `head.html` in Vorschauen `noindex` und richtet die
+Canonical-URL auf die Hauptseite. Deshalb sperrt `robots.txt` den Pfad
+`/preview/` **nicht**: Ein gesperrter Pfad wird nicht gelesen, Google sähe das
+`noindex` nie und könnte eine irgendwo verlinkte Vorschau trotzdem aufnehmen.

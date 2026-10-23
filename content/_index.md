@@ -1,12 +1,6 @@
 ---
 title: "Startseite"
-description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Kommuniziert klar auf Augenhöhe, integer und loyal. Verfügt über ein tiefes Verständnis für Menschen, Prozesse und Technik, verbindet praktische Erfahrung mit digitalem Know-how."
-jsonld:
-  "@context": "https://schema.org"
-  "@type": "WebPage"
-  name: "Startseite"
-  url: "https://creimann.cc/"
-  description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Kommuniziert klar auf Augenhöhe, integer und loyal. Verfügt über ein tiefes Verständnis für Menschen, Prozesse und Technik, verbindet praktische Erfahrung mit digitalem Know-how."
+description: "Christoph B. Reimann aus Bad Harzburg (Harz): Betriebswirt und Generalist, der Menschen, Abläufe und Technik verbindet – klar, integer und auf Augenhöhe."
 aliases:
   - "/visitenkarte"
 

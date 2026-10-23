@@ -25,20 +25,8 @@ type: "blog"
 layout: "single"
 
 jsonld:
-  "@context": "https://schema.org"
-  "@type": "BlogPosting"
-  mainEntityOfPage:
-    "@type": "WebPage"
-    "@id": "/blog/integritaet"
   headline: "Integrität – der Grundstein für echtes Vertrauen"
   description: "Christoph B. Reimann – Mensch, Betriebswirt und Generalist aus Bad Harzburg (Harz). Schreibt aus eigener Erfahrung über Integrität und die Tugenden Wahrhaftigkeit, Verlässlichkeit und Mut zur Konsequenz und darüber, wo die Grenzen der Integrität liegen. Dabei fließen Themen der Individualspychologie mit ein."
-  author:
-    "@type": "Person"
-    name: "Christoph B. Reimann"
-  datePublished: "2025-12-06T10:00:00+01:00"
-  dateModified: "2025-12-09T10:00:00+01:00"
-  url: "/blog/integritaet"
-  inLanguage: "de-DE"
   keywords:
     - "Integrität"
     - "Vertrauen"
